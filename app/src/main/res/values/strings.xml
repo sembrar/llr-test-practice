@@ -14,4 +14,8 @@
     <string name="test_details">Details</string>
     <string name="test_old">View/Continue previous test</string>
     <string name="test_new">New test</string>
+
+    <string name="button_previous">Previous</string>
+    <string name="button_next">Next</string>
+    <string name="button_check">Check</string>
 </resources>
