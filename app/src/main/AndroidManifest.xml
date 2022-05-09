@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LLRTestPreparation">
         <activity
+            android:name=".LearnActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
