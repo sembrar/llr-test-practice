@@ -2,17 +2,159 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_constraint_layout_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/main_textView_readOrPracticeHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/read_or_practice_heading"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_textView_readOrPracticeDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/read_or_practice_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/main_textView_readOrPracticeHeading"
+        app:layout_constraintTop_toBottomOf="@+id/main_textView_readOrPracticeHeading" />
+
+    <Button
+        android:id="@+id/main_button_RP_subject1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/rp_subject1_name"
+        app:layout_constraintStart_toStartOf="@+id/main_textView_readOrPracticeDetails"
+        app:layout_constraintTop_toBottomOf="@+id/main_textView_readOrPracticeDetails" />
+
+    <TextView
+        android:id="@+id/main_textView_RP_subject1Details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/rp_subject1_details"
+        app:layout_constraintBaseline_toBaselineOf="@+id/main_button_RP_subject1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_button_RP_subject1" />
+
+    <Button
+        android:id="@+id/main_button_RP_subject2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/rp_subject2_name"
+        app:layout_constraintStart_toStartOf="@+id/main_textView_readOrPracticeDetails"
+        app:layout_constraintTop_toBottomOf="@+id/main_button_RP_subject1" />
+
+    <TextView
+        android:id="@+id/main_textView_RP_subject2Details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/rp_subject2_details"
+        app:layout_constraintBaseline_toBaselineOf="@+id/main_button_RP_subject2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_button_RP_subject2" />
+
+    <Button
+        android:id="@+id/main_button_RP_subject3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/rp_subject3_name"
+        app:layout_constraintStart_toStartOf="@+id/main_textView_readOrPracticeDetails"
+        app:layout_constraintTop_toBottomOf="@+id/main_button_RP_subject2" />
+
+    <TextView
+        android:id="@+id/main_textView_RP_subject3Details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/rp_subject3_details"
+        app:layout_constraintBaseline_toBaselineOf="@+id/main_button_RP_subject3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_button_RP_subject3" />
+
+    <View
+        android:id="@+id/main_divider_RP_and_Test"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_button_RP_subject3" />
+
+    <TextView
+        android:id="@+id/main_textView_TestHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/test_heading"
+        app:layout_constraintStart_toStartOf="@+id/main_textView_readOrPracticeHeading"
+        app:layout_constraintTop_toBottomOf="@+id/main_divider_RP_and_Test" />
+
+    <TextView
+        android:id="@+id/main_textView_testDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/test_details"
+        app:layout_constraintStart_toStartOf="@+id/main_textView_readOrPracticeDetails"
+        app:layout_constraintTop_toBottomOf="@+id/main_textView_TestHeading" />
+
+    <Button
+        android:id="@+id/main_button_test_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/test_old"
+        app:layout_constraintStart_toStartOf="@+id/main_textView_readOrPracticeDetails"
+        app:layout_constraintTop_toBottomOf="@+id/main_textView_testDetails" />
+
+    <TextView
+        android:id="@+id/main_textView_test_oldDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/main_button_test_old"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_button_test_old" />
+
+    <Button
+        android:id="@+id/main_button_test_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/test_new"
+        app:layout_constraintStart_toStartOf="@+id/main_textView_readOrPracticeDetails"
+        app:layout_constraintTop_toBottomOf="@+id/main_button_test_old" />
+
+    <TextView
+        android:id="@+id/main_textView_test_newDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/main_button_test_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_button_test_new" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
