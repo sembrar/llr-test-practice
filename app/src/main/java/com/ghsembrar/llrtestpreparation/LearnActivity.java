@@ -1,5 +1,6 @@
 package com.ghsembrar.llrtestpreparation;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -7,6 +8,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 public class LearnActivity extends AppCompatActivity {
 
@@ -52,5 +56,36 @@ public class LearnActivity extends AppCompatActivity {
     private boolean is_activity_start_data_not_valid() {
         if (subject_index < 0 || subject_index >= getResources().getStringArray(R.array.subject_names).length) return true;
         return false;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // return super.onCreateOptionsMenu(menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.app_bar_menu_learn_activity, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.learnAct_menu_item_settings:
+                startSettingsActivity();
+                return true;
+            case R.id.learnAct_menu_item_about:
+                // startAboutActivity();  // todo
+                return true;
+            case R.id.learnAct_menu_item_read_mode:
+                return true;  // todo
+            case R.id.learnAct_menu_item_practice_mode:
+                return true;  // todo
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void startSettingsActivity() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
 }
