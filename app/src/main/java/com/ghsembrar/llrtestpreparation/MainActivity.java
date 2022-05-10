@@ -1,11 +1,13 @@
 package com.ghsembrar.llrtestpreparation;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,9 +33,29 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        // handle options menu item selection
+        switch (item.getItemId()) {
+            case R.id.mainAct_menu_item_settings:
+                startSettingsActivity();
+                return true;
+            case R.id.mainAct_menu_item_about:
+                // startAboutActivity();  // todo
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
     private void startLearnActivity(int subjectIndex) {
         Intent intent = new Intent(this, LearnActivity.class);
         intent.putExtra(INTENT_EXTRA_KEY_SUBJECT_INDEX, subjectIndex);
+        startActivity(intent);
+    }
+
+    private void startSettingsActivity() {
+        Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
 }
