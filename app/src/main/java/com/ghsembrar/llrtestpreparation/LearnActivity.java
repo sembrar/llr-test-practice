@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -17,6 +18,7 @@ public class LearnActivity extends AppCompatActivity {
     private static final String TAG = "LearnActivityLogTag";
 
     private int subject_index = -1;
+    private Resources resources;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,9 +55,32 @@ public class LearnActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        updateResourcesVariable();  // this helps load resources of different language than system's
+    }
+
     private boolean is_activity_start_data_not_valid() {
         if (subject_index < 0 || subject_index >= getResources().getStringArray(R.array.subject_names).length) return true;
         return false;
+    }
+
+    private void updateResourcesVariable() {
+        SharedPreferences sharedPreferences = getSharedPreferences(SettingsActivity.SHARED_PREFS_FILE_SETTINGS, Context.MODE_PRIVATE);
+        boolean use_system_language = sharedPreferences.getBoolean(SettingsActivity.SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, true);
+        if (use_system_language) {
+            resources = getResources();
+            return;
+        }
+        // not use system language => use chosen language
+        String chosen_language = sharedPreferences.getString(SettingsActivity.SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, null);
+        if (chosen_language == null) {  // this shouldn't happen
+            resources = getResources();
+            return;
+        }
+        // todo resources take given language resources
     }
 
     @Override

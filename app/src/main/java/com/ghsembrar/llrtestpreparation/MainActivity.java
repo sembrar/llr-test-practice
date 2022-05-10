@@ -11,8 +11,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String PACKAGE_NAME_FOR_KEY_PREFIX = "com.ghsembrar.llrtestpreparation.";
-    public static final String INTENT_EXTRA_KEY_SUBJECT_INDEX = PACKAGE_NAME_FOR_KEY_PREFIX + "subject_index";
+    public static final String INTENT_EXTRA_KEY_SUBJECT_INDEX = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "subject_index";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
