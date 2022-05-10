@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +21,14 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.main_button_learn_subject0).setOnClickListener(v -> startLearnActivity(0));
         findViewById(R.id.main_button_learn_subject1).setOnClickListener(v -> startLearnActivity(1));
         findViewById(R.id.main_button_learn_subject2).setOnClickListener(v -> startLearnActivity(2));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // return super.onCreateOptionsMenu(menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.app_bar_menu_main_activity, menu);
+        return true;
     }
 
     private void startLearnActivity(int subjectIndex) {
