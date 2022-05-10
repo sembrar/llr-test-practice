@@ -6,4 +6,85 @@
     android:layout_height="match_parent"
     tools:context=".SettingsActivity">
 
+    <TextView
+        android:id="@+id/settings_textView_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/setting_theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/settings_RadioGroup_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/settings_textView_theme"
+        app:layout_constraintTop_toBottomOf="@+id/settings_textView_theme">
+
+        <RadioButton
+            android:id="@+id/settings_radioButton_theme_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/settings_radioButton_theme_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/settings_radioButton_theme_follow_system"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/settings_divider_1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_RadioGroup_theme" />
+
+    <Switch
+        android:id="@+id/settings_switch_use_system_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:text="@string/setting_use_system_language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_divider_1" />
+
+    <TextView
+        android:id="@+id/settings_textView_choose_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/setting_choose_language"
+        app:layout_constraintStart_toStartOf="@+id/settings_switch_use_system_language"
+        app:layout_constraintTop_toBottomOf="@+id/settings_switch_use_system_language" />
+
+    <Spinner
+        android:id="@+id/settings_spinner_language"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/settings_textView_choose_language"
+        app:layout_constraintTop_toTopOf="@+id/settings_textView_choose_language" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
