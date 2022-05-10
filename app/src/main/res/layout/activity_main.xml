@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/read_or_practice_heading"
+        android:text="@string/learn_heading"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,7 +24,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/read_or_practice_details"
+        android:text="@string/learn_details"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/main_textView_learnHeading"
         app:layout_constraintTop_toBottomOf="@+id/main_textView_learnHeading" />
@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/rp_subject0_name"
+        android:text="@string/learn_subject0_name"
         app:layout_constraintStart_toStartOf="@+id/main_textView_learnDetails"
         app:layout_constraintTop_toBottomOf="@+id/main_textView_learnDetails" />
 
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/rp_subject0_details"
+        android:text="@string/learn_subject0_details"
         app:layout_constraintBaseline_toBaselineOf="@+id/main_button_learn_subject0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/main_button_learn_subject0" />
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/rp_subject1_name"
+        android:text="@string/learn_subject1_name"
         app:layout_constraintStart_toStartOf="@+id/main_textView_learnDetails"
         app:layout_constraintTop_toBottomOf="@+id/main_button_learn_subject0" />
 
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/rp_subject1_details"
+        android:text="@string/learn_subject1_details"
         app:layout_constraintBaseline_toBaselineOf="@+id/main_button_learn_subject1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/main_button_learn_subject1" />
@@ -74,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/rp_subject2_name"
+        android:text="@string/learn_subject2_name"
         app:layout_constraintStart_toStartOf="@+id/main_textView_learnDetails"
         app:layout_constraintTop_toBottomOf="@+id/main_button_learn_subject1" />
 
@@ -84,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/rp_subject2_details"
+        android:text="@string/learn_subject2_details"
         app:layout_constraintBaseline_toBaselineOf="@+id/main_button_learn_subject2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/main_button_learn_subject2" />
