@@ -3,12 +3,12 @@
 
     <string name="read_or_practice_heading">Read/Practice:</string>
     <string name="read_or_practice_details">Details R/P</string>
+    <string name="rp_subject0_name">Subject 0</string>
     <string name="rp_subject1_name">Subject 1</string>
     <string name="rp_subject2_name">Subject 2</string>
-    <string name="rp_subject3_name">Subject 3</string>
+    <string name="rp_subject0_details">Details 0</string>
     <string name="rp_subject1_details">Details 1</string>
     <string name="rp_subject2_details">Details 2</string>
-    <string name="rp_subject3_details">Details 3</string>
 
     <string name="test_heading">Test:</string>
     <string name="test_details">Details</string>
