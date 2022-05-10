@@ -32,4 +32,8 @@
 
     <string name="menu_item_read_mode">Read mode</string>
     <string name="menu_item_practice_mode">Practice mode</string>
+
+    <string-array name="available_languages">
+        <item>en</item>
+    </string-array>
 </resources>

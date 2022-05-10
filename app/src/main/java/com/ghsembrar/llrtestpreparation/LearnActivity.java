@@ -6,12 +6,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import java.util.Locale;
 
 public class LearnActivity extends AppCompatActivity {
 
@@ -69,18 +72,29 @@ public class LearnActivity extends AppCompatActivity {
 
     private void updateResourcesVariable() {
         SharedPreferences sharedPreferences = getSharedPreferences(SettingsActivity.SHARED_PREFS_FILE_SETTINGS, Context.MODE_PRIVATE);
+
         boolean use_system_language = sharedPreferences.getBoolean(SettingsActivity.SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, true);
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, String.format("updateResourcesVariable: Use system language: %b", use_system_language)); }
+
         if (use_system_language) {
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "updateResourcesVariable: Using default resources"); }
             resources = getResources();
             return;
         }
+
         // not use system language => use chosen language
         String chosen_language = sharedPreferences.getString(SettingsActivity.SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, null);
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, String.format("updateResourcesVariable: Chosen language: %s", chosen_language)); }
+
         if (chosen_language == null) {  // this shouldn't happen
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "updateResourcesVariable: Using default resources"); }
             resources = getResources();
             return;
         }
-        // todo resources take given language resources
+
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "updateResourcesVariable: Using chosen language resources"); }
+        Locale chosenLocale = new Locale(chosen_language);
+        resources = getLocalizedResources(this, chosenLocale);
     }
 
     @Override
@@ -112,5 +126,16 @@ public class LearnActivity extends AppCompatActivity {
     private void startSettingsActivity() {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
+    }
+
+    // the following function is from stack overflow
+    // todo place link to the page
+    @NonNull
+    private Resources getLocalizedResources(Context context, Locale desiredLocale) {
+        Configuration configuration = context.getResources().getConfiguration();
+        configuration = new Configuration(configuration);
+        configuration.setLocale(desiredLocale);
+        Context localizedContext = context.createConfigurationContext(configuration);
+        return localizedContext.getResources();
     }
 }
