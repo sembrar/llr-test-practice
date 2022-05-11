@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <integer-array name="num_questions">
+        <item>94</item>
+        <item>159</item>
+        <item>159</item>
+    </integer-array>
+    
+    <string name="no_string">No string found!</string>
+</resources>

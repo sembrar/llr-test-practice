@@ -13,6 +13,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import java.util.Locale;
 
@@ -22,6 +24,8 @@ public class LearnActivity extends AppCompatActivity {
 
     private int subject_index = -1;
     private Resources resources;
+    private int currentQuestionIndex = 0;
+    private int numQuestions = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +59,11 @@ public class LearnActivity extends AppCompatActivity {
         // show activity start data
         if (CONSTANTS.ALLOW_DEBUG) {
             Log.i(TAG, String.format("onCreate: subject_index: %d", subject_index));
+            Log.i(TAG, String.format("onCreate: numQuestions: %d", numQuestions));
         }
+
+        findViewById(R.id.lean_button_previous).setOnClickListener(this::clickedPrev);
+        findViewById(R.id.learn_button_next).setOnClickListener(this::clickedNext);
     }
 
     @Override
@@ -63,6 +71,9 @@ public class LearnActivity extends AppCompatActivity {
         super.onResume();
 
         updateResourcesVariable();  // this helps load resources of different language than system's
+        numQuestions = resources.getIntArray(R.array.num_questions)[subject_index];
+
+        setCurrentQuestion();
     }
 
     private boolean is_activity_start_data_not_valid() {
@@ -137,5 +148,46 @@ public class LearnActivity extends AppCompatActivity {
         configuration.setLocale(desiredLocale);
         Context localizedContext = context.createConfigurationContext(configuration);
         return localizedContext.getResources();
+    }
+
+    private void setCurrentQuestion() {
+        // displays current question in activity
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, String.format("setCurrentQuestion: SubjectIndex,QuestionIndex: %d,%d", subject_index, currentQuestionIndex)); }
+
+        final String packageName = getPackageName();
+
+        int quesResID = resources.getIdentifier(String.format("s%d_%dq", subject_index, currentQuestionIndex), "string", packageName);
+        if (quesResID == 0) quesResID = R.string.no_string;
+        ((TextView) findViewById(R.id.learn_textView_question)).setText(quesResID);
+    }
+
+    public void clickedPrev(View view) {
+        if (currentQuestionIndex == 0) {
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "clickedPrev: Already in first question"); }
+            return;
+        }
+
+        currentQuestionIndex--;
+        if (currentQuestionIndex < 0) {  // this should never happen
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "clickedPrev: ERR: currentQuestionIndex < 0"); }
+            currentQuestionIndex = 0;
+        }
+
+        setCurrentQuestion();
+    }
+
+    public void clickedNext(View view) {
+        if (currentQuestionIndex == (numQuestions - 1)) {
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "clickedNext: Already in last question"); }
+            return;
+        }
+
+        currentQuestionIndex++;
+        if (currentQuestionIndex >= numQuestions) {  // this should never happpen
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "clickedNext: ERR: currentQuestionIndex > numQuestions"); }
+            currentQuestionIndex = numQuestions - 1;
+        }
+
+        setCurrentQuestion();
     }
 }
