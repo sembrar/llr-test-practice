@@ -36,15 +36,28 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         // set the item selected listener
         spinnerLanguage.setOnItemSelectedListener(this);
 
+        Switch switch_use_system_language = findViewById(R.id.settings_switch_use_system_language);
+        switch_use_system_language.setOnClickListener(this::clicked_use_system_language_switch);
+
         // read existing settings from SharedPrefs
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS_FILE_SETTINGS, Context.MODE_PRIVATE);
         use_system_language = sharedPreferences.getBoolean(SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, true);
         code_of_language_choice_if_not_use_system_lang = sharedPreferences.getString(SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, "en");
 
-        Switch switch_use_system_language = findViewById(R.id.settings_switch_use_system_language);
-        switch_use_system_language.setOnClickListener(this::clicked_use_system_language_switch);
+        // fill the GUI with loaded settings
+
+        // set use system language switch
         switch_use_system_language.setChecked(use_system_language);
-        clicked_use_system_language_switch(null);
+        clicked_use_system_language_switch(null);  // to hide/show language choice spinner
+
+        // set spinner choice
+        String[] language_codes_array = getResources().getStringArray(R.array.available_languages_as_codes);
+        for (int i = 0; i < language_codes_array.length; i++) {
+            if (language_codes_array[i].equals(code_of_language_choice_if_not_use_system_lang)) {
+                spinnerLanguage.setSelection(i);
+                break;
+            }
+        }
     }
 
     @Override
