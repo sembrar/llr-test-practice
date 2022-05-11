@@ -34,6 +34,9 @@
     <string name="menu_item_practice_mode">Practice mode</string>
 
     <string-array name="available_languages">
+        <item>English</item>
+    </string-array>
+    <string-array name="available_languages_as_codes">
         <item>en</item>
     </string-array>
 </resources>
