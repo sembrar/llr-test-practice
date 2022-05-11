@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -22,6 +23,11 @@ public class LearnActivity extends AppCompatActivity {
 
     private static final String TAG = "LearnActivityLogTag";
 
+    private static final int[] radioButtonIDs = {
+            R.id.learn_radioButton_choice1, R.id.learn_radioButton_choice2,
+            R.id.learn_radioButton_choice3, R.id.learn_radioButton_choice4
+    };
+    private static final String[] radioButtonOptionSuffixes = {"a", "b", "c", "d"};
     private int subject_index = -1;
     private Resources resources;
     private int currentQuestionIndex = 0;
@@ -156,9 +162,17 @@ public class LearnActivity extends AppCompatActivity {
 
         final String packageName = getPackageName();
 
+        // set question
         int quesResID = resources.getIdentifier(String.format("s%d_%dq", subject_index, currentQuestionIndex), "string", packageName);
         if (quesResID == 0) quesResID = R.string.no_string;
         ((TextView) findViewById(R.id.learn_textView_question)).setText(quesResID);
+
+        // set options
+        for (int i = 0; i < radioButtonIDs.length; i++) {
+            int resID = resources.getIdentifier(String.format("s%d_%d%s", subject_index, currentQuestionIndex, radioButtonOptionSuffixes[i]), "string", packageName);
+            if (resID == 0) resID = R.string.no_string;
+            ((RadioButton) findViewById(radioButtonIDs[i])).setText(resID);
+        }
     }
 
     public void clickedPrev(View view) {
