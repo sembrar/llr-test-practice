@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -169,11 +170,27 @@ public class LearnActivity extends AppCompatActivity {
                         resources.getString(R.string.no_string) :
                         resources.getString(quesResID, currentQuestionIndex + 1)
         );
+
         // set options
         for (int i = 0; i < radioButtonIDs.length; i++) {
             int resID = resources.getIdentifier(String.format("s%d_%d%s", subject_index, currentQuestionIndex, radioButtonOptionSuffixes[i]), "string", packageName);
             if (resID == 0) resID = R.string.no_string;
             ((RadioButton) findViewById(radioButtonIDs[i])).setText(resID);
+        }
+
+        // set image if exists else hide image view
+        String imageName = String.format("i%d_%d", subject_index, currentQuestionIndex);  // note: don't add extension (.jpg) in name, may not be found
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("setCurrentQuestion: ImageName = %s", imageName)); }
+        int imageResID = resources.getIdentifier(imageName, "drawable", packageName);
+        if (imageResID == 0) {
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "setCurrentQuestion: Image doesn't exist"); }
+            findViewById(R.id.learn_imageView_accompanyingImage).setVisibility(View.GONE);
+        }
+        else {
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "setCurrentQuestion: Image exists"); }
+            ImageView imageView = findViewById(R.id.learn_imageView_accompanyingImage);
+            imageView.setVisibility(View.VISIBLE);
+            imageView.setImageResource(imageResID);
         }
     }
 
