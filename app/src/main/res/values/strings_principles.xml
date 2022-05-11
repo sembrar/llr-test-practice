@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="s2_0q">%1$d. Driving is a repetition of three things. Which are they in correct order?</string>
+    <string name="s2_0a">Think, do and see</string>
+    <string name="s2_0b">Do, think and see</string>
+    <string name="s2_0c">See, think and do</string>
+    <string name="s2_0d">See, do and think</string>
+
+    <string name="s2_1q">%1$d. Which of the following should be done continuously while driving a vehicle?</string>
+    <string name="s2_1a">Checking level of fuel tank</string>
+    <string name="s2_1b">Assessing road conditions ahead</string>
+    <string name="s2_1c">Adjusting vehicle controls for smooth running</string>
+    <string name="s2_1d">Making a visual check for all controls</string>
+
+    <string name="s2_2q">%1$d. You start to feel tired while driving. What should you do?</string>
+    <string name="s2_2a">Increase your speed slightly</string>
+    <string name="s2_2b">Decrease your speed slightly</string>
+    <string name="s2_2c">Find a less busy route</string>
+    <string name="s2_2d">Stop at a safe place to rest</string>
+
+    <string name="s2_3q">%1$d. While driving a car, a properly adjusted head restraint will</string>
+    <string name="s2_3a">Make you more comfortable</string>
+    <string name="s2_3b">Help you to avoid neck injury</string>
+    <string name="s2_3c">Help you to relax</string>
+    <string name="s2_3d">Help you to maintain your driving position</string>
+
+    <string name="s2_4q">%1$d. You should only use a mobile phone when</string>
+    <string name="s2_4a">Receiving a call.</string>
+    <string name="s2_4b">The vehicle is stationary &amp; parked suitably.</string>
+    <string name="s2_4c">Driving at less than 30 kmph</string>
+    <string name="s2_4d">Driving an automatic transmission vehicle.</string>
+
+    <string name="s2_5q">%1$d. While driving, avoid</string>
+    <string name="s2_5a">Reacting to wrong behaviour of other drivers.</string>
+    <string name="s2_5b">Getting distracted by hoardings</string>
+    <string name="s2_5c">Both of the above.</string>
+    <string name="s2_5d">Observing dash board gauges because this will affect your concentration.</string>
+
+    <string name="s2_6q">%1$d. To help concentration on long journeys you should stop frequently and</string>
+    <string name="s2_6a">Have a rest</string>
+    <string name="s2_6b">Fill up with fuel</string>
+    <string name="s2_6c">Eat a meal</string>
+    <string name="s2_6d">Have a drink</string>
+
+    <string name="s2_7q">%1$d. What is meant by ‘defensive driving’?</string>
+    <string name="s2_7a">Being alert and thinking ahead</string>
+    <string name="s2_7b">Always driving slowly and gently</string>
+    <string name="s2_7c">Always letting others go first</string>
+    <string name="s2_7d">Pulling over for faster traffic</string>
+
+    <string name="s2_8q">%1$d. To drive on the road, learners must</string>
+    <string name="s2_8a">Have only the registration certificate of the vehicle</string>
+    <string name="s2_8b">Have taken professional instruction</string>
+    <string name="s2_8c">Have a valid learners licence</string>
+    <string name="s2_8d">Apply for a driving test within 12 months.</string>
+
+    <string name="s2_9q">%1$d. Which of the following types of eye glasses should not be worn when driving at night?</string>
+    <string name="s2_9a">Half-moon</string>
+    <string name="s2_9b">Round</string>
+    <string name="s2_9c">Bi-focal</string>
+    <string name="s2_9d">Tinted</string>
+
+    <string name="s2_10q">%1$d. Objects hanging from your interior mirror may</string>
+    <string name="s2_10a">Restrict your view &amp; distract your attention</string>
+    <string name="s2_10b">Improve your driving</string>
+    <string name="s2_10c">Help you concentration</string>
+    <string name="s2_10d">None of the above</string>
+
+    <string name="s2_11q">%1$d. What is the best way to prevent fatigue when driving?</string>
+    <string name="s2_11a">Avoid night driving</string>
+    <string name="s2_11b">Stop for rest</string>
+    <string name="s2_11c">Don\'t carry any load</string>
+    <string name="s2_11d">Drink two pegs of good quality whisky</string>
+
+    <string name="s2_12q">%1$d. Your overall stopping distance will be much longer when driving</string>
+    <string name="s2_12a">In rain</string>
+    <string name="s2_12b">In fog</string>
+    <string name="s2_12c">At night</string>
+    <string name="s2_12d">In strong winds</string>
+
+    <string name="s2_13q">%1$d. When driving at sunset or dawn on a dark day. What should you do?</string>
+    <string name="s2_13a">Keep your sunglasses on to cut down headlight glare.</string>
+    <string name="s2_13b">Turn on your lights on low beam.</string>
+    <string name="s2_13c">Turn on your hazard warning lights.</string>
+    <string name="s2_13d">Drive very fast</string>
+
+    <string name="s2_14q">%1$d. At road junctions which of the following are most vulnerable?</string>
+    <string name="s2_14a">Motorcyclists</string>
+    <string name="s2_14b">Cyclists</string>
+    <string name="s2_14c">Pedestrians</string>
+    <string name="s2_14d">All of the above</string>
+
+    <string name="s2_15q">%1$d. In what situation are other drivers allowed to flash their headlights at you?</string>
+    <string name="s2_15a">To warn you of their presence</string>
+    <string name="s2_15b">To warn you danger is ahead</string>
+    <string name="s2_15c">To warn you when you\'re breaking the speed limit</string>
+    <string name="s2_15d">To tell you that they are giving way to you</string>
+
+    <string name="s2_16q">%1$d. What is the best way to avoid hitting other vehicles, people or animals when moving off from the kerb?</string>
+    <string name="s2_16a">Get out of the car, look around and quickly drive off.</string>
+    <string name="s2_16b">Sound your horn continuously.</string>
+    <string name="s2_16c">Check your mirrors and look over your shoulder before moving off.</string>
+    <string name="s2_16d">All of the above</string>
+
+    <string name="s2_17q">%1$d. Which of these statements is true?</string>
+    <string name="s2_17a">Pedestrians have no special rights on the road</string>
+    <string name="s2_17b">You must give right of way to pedestrians only on zebra crossings.</string>
+    <string name="s2_17c">Pedestrians have right of way at uncontrolled pedestrian crossing</string>
+    <string name="s2_17d">None of the above</string>
+
+    <string name="s2_18q">%1$d. When driving in wet weather you should</string>
+    <string name="s2_18a">Drive in the middle of the road to avoid splashing water on pedestrians?</string>
+    <string name="s2_18b">Watch out for pedestrians who may hurry and take risks.</string>
+    <string name="s2_18c">Stop and help elderly people cross the road</string>
+    <string name="s2_18d">Drive at specified speed limit</string>
+
+    <string name="s2_19q">%1$d. You must obey signs giving orders. These signs are mostly in</string>
+    <string name="s2_19a">Black triangles</string>
+    <string name="s2_19b">Red triangles</string>
+    <string name="s2_19c">Blue rectangles</string>
+    <string name="s2_19d">Red / blue circles</string>
+
+    <string name="s2_20q">%1$d. A red traffic light means</string>
+    <string name="s2_20a">You may go straight on if there is no other traffic</string>
+    <string name="s2_20b">You must stop behind white stop line</string>
+    <string name="s2_20c">You may turn left if it is safe to do so</string>
+    <string name="s2_20d">You must slow down and prepare to stop if traffic has started to cross.</string>
+
+    <string name="s2_21q">%1$d. As a learning licence-holder you should not drive a vehicle</string>
+    <string name="s2_21a">Up to 50 kmph</string>
+    <string name="s2_21b">At night</string>
+    <string name="s2_21c">On the motorway without a permanent licence holder.</string>
+    <string name="s2_21d">None of the above</string>
+
+    <string name="s2_22q">%1$d. On which of these occasions must you stop your vehicle?</string>
+    <string name="s2_22a">When involved in an accident</string>
+    <string name="s2_22b">At a red traffic light</string>
+    <string name="s2_22c">When signaled to do so by a police officer</string>
+    <string name="s2_22d">All of the above</string>
+
+    <string name="s2_23q">%1$d. Why should you make sure that you have cancelled your indicators after turning?</string>
+    <string name="s2_23a">To avoid flattening the battery</string>
+    <string name="s2_23b">To avoid misleading other road users</string>
+    <string name="s2_23c">To avoid dazzling other road users</string>
+    <string name="s2_23d">To avoid damage to the indicator relay</string>
+
+    <string name="s2_24q">%1$d. How much distance should you keep from a vehicle travelling in front of you?</string>
+    <string name="s2_24a">15 meters</string>
+    <string name="s2_24b">10 meters</string>
+    <string name="s2_24c">Depends on the speed of the vehicle travelling in front of you</string>
+    <string name="s2_24d">A distance sufficient to avoid collision if the vehicle in front of you suddenly slows down or stops</string>
+
+    <string name="s2_25q">%1$d. You must not use your horn when you are stationary</string>
+    <string name="s2_25a">Unless a moving vehicle may cause you danger</string>
+    <string name="s2_25b">At any time whatsoever</string>
+    <string name="s2_25c">Unless it is used only briefly</string>
+    <string name="s2_25d">Except for signaling that you have just arrived</string>
+
+    <string name="s2_26q">%1$d. When other drivers flash their headlights at you it means</string>
+    <string name="s2_26a">That there is a radar speed trap ahead</string>
+    <string name="s2_26b">That they are giving way to you</string>
+    <string name="s2_26c">That they are warning you of their presence</string>
+    <string name="s2_26d">That there is something wrong with your vehicle</string>
+
+    <string name="s2_27q">%1$d. While driving, a warning light on your vehicle\'s instrument panel comes on. You should</string>
+    <string name="s2_27a">Continue if the engine sounds alright</string>
+    <string name="s2_27b">Hope that it is just a temporary electrical fault</string>
+    <string name="s2_27c">Deal with the problem when there is more time</string>
+    <string name="s2_27d">Check out the problem quickly and safely</string>
+
+    <string name="s2_28q">%1$d. Which of these must be in good working order for your car to be roadworthy?</string>
+    <string name="s2_28a">Speedometer</string>
+    <string name="s2_28b">Horn</string>
+    <string name="s2_28c">Windscreen wiper</string>
+    <string name="s2_28d">All of the above</string>
+
+    <string name="s2_29q">%1$d. Rear view mirror is?</string>
+    <string name="s2_29a">For viewing the traffic approaching from behind</string>
+    <string name="s2_29b">For keeping an eye on the passengers on the rear seat</string>
+    <string name="s2_29c">Not necessary in the vehicle</string>
+    <string name="s2_29d">A hazard as it causes distraction</string>
+
+    <string name="s2_30q">%1$d. Hand brake is to be used to?</string>
+    <string name="s2_30a">Reduce speed</string>
+    <string name="s2_30b">Park the vehicle</string>
+    <string name="s2_30c">Brake suddenly</string>
+    <string name="s2_30d">Control a skid</string>
+
+    <string name="s2_31q">%1$d. The most effective device for protecting passengers during accident is</string>
+    <string name="s2_31a">Seat belts</string>
+    <string name="s2_31b">Safety door latches</string>
+    <string name="s2_31c">Padded instrument panels</string>
+    <string name="s2_31d">None of these</string>
+
+    <string name="s2_32q">%1$d. You borrow a friend\'s car and find that the position of the driver\'s seat puts you sitting a long way from the steering wheel and controls. What should you do?</string>
+    <string name="s2_32a">You should never borrow another person\'s vehicle.</string>
+    <string name="s2_32b">You should not adjust another person\'s seat</string>
+    <string name="s2_32c">Adjust the seat forward to fit you</string>
+    <string name="s2_32d">Ask your friend for a cushion to place behind your back.</string>
+
+    <string name="s2_33q">%1$d. Mirrors are often slightly curved (convex), so that</string>
+    <string name="s2_33a">They totally cover blind spots</string>
+    <string name="s2_33b">They give a wider field of vision</string>
+    <string name="s2_33c">They make it easier to judge the speed of following traffic</string>
+    <string name="s2_33d">They make following traffic look bigger</string>
+
+    <string name="s2_34q">%1$d. What should be the colour scheme for number plates for private vehicles?</string>
+    <string name="s2_34a">Black base and white numerals</string>
+    <string name="s2_34b">Yellow base and white numerals</string>
+    <string name="s2_34c">White base and black numerals</string>
+    <string name="s2_34d">None of the above</string>
+
+    <string name="s2_35q">%1$d. You have a valid learner\'s licence to drive a car, you are allowed to</string>
+    <string name="s2_35a">Drive only at daytime</string>
+    <string name="s2_35b">Practice driving on roads that have very little traffic</string>
+    <string name="s2_35c">Drive at any time, any place</string>
+    <string name="s2_35d">Drive at any time, and any place provided there is a permanent licence holder with you who can control the vehicle in case of emergency</string>
+
+    <string name="s2_36q">%1$d. If you have a valid driving licence for a light motor vehicle, what are you allowed to drive?</string>
+    <string name="s2_36a">Motor car only</string>
+    <string name="s2_36b">Motor car and motorcycle above 50cc</string>
+    <string name="s2_36c">Every motor vehicle</string>
+    <string name="s2_36d">None of the above</string>
+
+    <string name="s2_37q">%1$d. If you meet with an accident while driving a vehicle, without a valid driving licence, the insurance company will</string>
+    <string name="s2_37a">Compensate partly for damages</string>
+    <string name="s2_37b">Compensate fully for damages</string>
+    <string name="s2_37c">Not compensate for damages</string>
+    <string name="s2_37d">None of the above</string>
+
+    <string name="s2_38q">%1$d. While driving on the road without a valid driving licence, when can you face a penal action?</string>
+    <string name="s2_38a">Only when you have met with an accident</string>
+    <string name="s2_38b">When checking officer check your vehicle</string>
+    <string name="s2_38c">Will not face a penal action</string>
+    <string name="s2_38d">None of the above</string>
+
+    <string name="s2_39q">%1$d. Learners licence is valid</string>
+    <string name="s2_39a">For 30 days</string>
+    <string name="s2_39b">Till permanent licence is issued</string>
+    <string name="s2_39c">For six months</string>
+    <string name="s2_39d">For one year</string>
+
+    <string name="s2_40q">%1$d. Pucc stands for</string>
+    <string name="s2_40a">Primary unlicenced car &amp; carrier</string>
+    <string name="s2_40b">Pollution under control certificate</string>
+    <string name="s2_40c">Pollution uncontrolled cancellation certificate</string>
+    <string name="s2_40d">None of the above</string>
+
+    <string name="s2_41q">%1$d. Minimum age to obtain a car driving licence is?</string>
+    <string name="s2_41a">20 year</string>
+    <string name="s2_41b">15 years</string>
+    <string name="s2_41c">16 years</string>
+    <string name="s2_41d">18 years</string>
+
+    <string name="s2_42q">%1$d. Your car is involved in an accident hurting people, you should</string>
+    <string name="s2_42a">Report to the nearest police station and take the persons to the hospital</string>
+    <string name="s2_42b">Need not report to the police station</string>
+    <string name="s2_42c">Need not report to the police station but should take the persons to the hospital.</string>
+    <string name="s2_42d">Run away</string>
+
+    <string name="s2_43q">%1$d. Is it an offence to obstruct clear vision of your number plates?</string>
+    <string name="s2_43a">Depends on the type of obstruction</string>
+    <string name="s2_43b">Yes, at any time</string>
+    <string name="s2_43c">No, you are allowed to cover your number plates if you want to.</string>
+    <string name="s2_43d">Yes, but is legal for a towbar or bicycle rack to cover the rear number plate.</string>
+
+    <string name="s2_44q">%1$d. Are you allowed to use a hand- held mobile phone while driving a car?</string>
+    <string name="s2_44a">Yes, but only when you stop at intersections.</string>
+    <string name="s2_44b">No</string>
+    <string name="s2_44c">Yes, but you must hold the steering wheel with at least one hand.</string>
+    <string name="s2_44d">Only at night</string>
+
+    <string name="s2_45q">%1$d. Which of the following is a basic step to take after an accident?</string>
+    <string name="s2_45a">Protect the area.</string>
+    <string name="s2_45b">Inform to authorities</string>
+    <string name="s2_45c">Care for the injured.</string>
+    <string name="s2_45d">All of the above</string>
+
+    <string name="s2_46q">%1$d. What phone number will you dial in case of a medical emergency to get assistance by the ambulance?</string>
+    <string name="s2_46a">102</string>
+    <string name="s2_46b">103</string>
+    <string name="s2_46c">108</string>
+    <string name="s2_46d">105</string>
+
+    <string name="s2_47q">%1$d. You arrive at the scene of an accident. What is the first thing you should do?</string>
+    <string name="s2_47a">Call the police</string>
+    <string name="s2_47b">Warn other traffic</string>
+    <string name="s2_47c">Call the ambulance</string>
+    <string name="s2_47d">None of the above</string>
+
+    <string name="s2_48q">%1$d. Accidents occur</string>
+    <string name="s2_48a">Due to the negligence of drivers.</string>
+    <string name="s2_48b">Due to vehicle failure.</string>
+    <string name="s2_48c">Because of difficult road &amp; climatic conditions</string>
+    <string name="s2_48d">All of the above</string>
+
+    <string name="s2_49q">%1$d. The age group of drivers mostly involved in a road accident?</string>
+    <string name="s2_49a">36 to 45 year old</string>
+    <string name="s2_49b">55 year old and over</string>
+    <string name="s2_49c">46 to 55 years old</string>
+    <string name="s2_49d">17 to 25 years old</string>
+
+    <string name="s2_50q">%1$d. An older person\'s driving ability could be affected because they may be unable to</string>
+    <string name="s2_50a">Understand road signs</string>
+    <string name="s2_50b">Obtain car insurance</string>
+    <string name="s2_50c">React very quickly</string>
+    <string name="s2_50d">Give signals correctly</string>
+
+    <string name="s2_51q">%1$d. You should not use a mobile phone while driving</string>
+    <string name="s2_51a">Until you are satisfied that no other traffic is near</string>
+    <string name="s2_51b">Unless you are able to drive one handed</string>
+    <string name="s2_51c">Because it might distract your attention from the road ahead.</string>
+    <string name="s2_51d">Because reception ispoor when the engine is running</string>
+
+    <string name="s2_52q">%1$d. You are taking drugs that are likely to affect your driving. What should you do?</string>
+    <string name="s2_52a">Seek medical advice before driving</string>
+    <string name="s2_52b">Limit your driving to essential journeys</string>
+    <string name="s2_52c">Only drive if accompanied by a permanent licence holder</string>
+    <string name="s2_52d">Drive only for short distances</string>
+
+    <string name="s2_53q">%1$d. You have been involved in an argument before starting your journey. This has made you feel angry. You should</string>
+    <string name="s2_53a">Start to drive, but open a window</string>
+    <string name="s2_53b">Drive slower than normal and turn your radio on</string>
+    <string name="s2_53c">Have an alcoholic drink to help you relax before driving</string>
+    <string name="s2_53d">Calm down before you start to drive.</string>
+
+    <string name="s2_54q">%1$d. A driver\'s behaviour has upset you. It may help if you</string>
+    <string name="s2_54a">Stop and take a break</string>
+    <string name="s2_54b">Shout abusive language</string>
+    <string name="s2_54c">Gesture to them with your hand</string>
+    <string name="s2_54d">Follow their car, flashing the headlights</string>
+
+    <string name="s2_55q">%1$d. A motor driving licence issued in any state of india</string>
+    <string name="s2_55a">Is valid through out the india</string>
+    <string name="s2_55b">Is valid throughout the world</string>
+    <string name="s2_55c">Is valid only in the state</string>
+    <string name="s2_55d">Not valid anywhere</string>
+
+    <string name="s2_56q">%1$d. What should you use your horn for?</string>
+    <string name="s2_56a">To alert others of your presence</string>
+    <string name="s2_56b">To allow you right of way</string>
+    <string name="s2_56c">To greet other road users</string>
+    <string name="s2_56d">To signal your annoyance</string>
+
+    <string name="s2_57q">%1$d. Before driving a new vehicle the driver should</string>
+    <string name="s2_57a">Be familiar with the position of controls</string>
+    <string name="s2_57b">Take a bath and make himself fit for driving.</string>
+    <string name="s2_57c">Always use choke before starting.</string>
+    <string name="s2_57d">Check its number plates.</string>
+
+    <string name="s2_58q">%1$d. The first thing that alcohol affects is</string>
+    <string name="s2_58a">Vision.</string>
+    <string name="s2_58b">Speech.</string>
+    <string name="s2_58c">Hearing</string>
+    <string name="s2_58d">Judgement.</string>
+
+    <string name="s2_59q">%1$d. You have to drive in the evening. You are invited to a lunch . What is your best course of action?</string>
+    <string name="s2_59a">Have only two pegs</string>
+    <string name="s2_59b">Dont drink any alcohol at all</string>
+    <string name="s2_59c">Have some milk before drinking alcohol</string>
+    <string name="s2_59d">Eat a hot meal with your alcoholic drinks</string>
+
+    <string name="s2_60q">%1$d. What advice should you give to a driver who has had a few alcoholic drinks at a party?</string>
+    <string name="s2_60a">Have a strong cup of coffee and then drive home</string>
+    <string name="s2_60b">Drive home carefully and slowly</string>
+    <string name="s2_60c">Go home by public transport</string>
+    <string name="s2_60d">Wait for a short while and then drive home.</string>
+
+    <string name="s2_61q">%1$d. What else can seriously affect your concentration, other than alcoholic drinks?</string>
+    <string name="s2_61a">Drugs</string>
+    <string name="s2_61b">Tiredness</string>
+    <string name="s2_61c">Loud music</string>
+    <string name="s2_61d">All of the above</string>
+
+    <string name="s2_62q">%1$d. Do you have any responsibility when opening a vehicle door on a roadway?</string>
+    <string name="s2_62a">The driver may open his door when ever he wishes to.</string>
+    <string name="s2_62b">No, any following traffic must stop if the door interferes with progress.</string>
+    <string name="s2_62c">No, there is no regulation to cover this situation.</string>
+    <string name="s2_62d">Yes, you must not open a door if you are likely to cause danger to road users or impede traffic.</string>
+
+    <string name="s2_63q">%1$d. Generally, if you hear the siren of an emergency vehicle you should</string>
+    <string name="s2_63a">Sound your horn</string>
+    <string name="s2_63b">Immediately come to a stop</string>
+    <string name="s2_63c">Let the emergency vehicle pass and follow it closely behind.</string>
+    <string name="s2_63d">Pull over to the left until the emergency vehicle passes.</string>
+
+    <string name="s2_64q">%1$d. You arrive at the scene of a motorcycle accident. No other vehicle is involved. The rider is unconscious, lying in the middle of the road. The first thing you should do is to</string>
+    <string name="s2_64a">Move the rider out of the road.</string>
+    <string name="s2_64b">Warn other traffic</string>
+    <string name="s2_64c">Clear the road of debris.</string>
+    <string name="s2_64d">Give the rider reassurance</string>
+
+    <string name="s2_65q">%1$d. Which of the following attitudes are most likely to make you a safe driver?</string>
+    <string name="s2_65a">When i drive, i am responsible for my safety as well as the safety of other road users.</string>
+    <string name="s2_65b">Crashing or not crashing is a matter of luck</string>
+    <string name="s2_65c">Other road users must ensure their safety</string>
+    <string name="s2_65d">Other drivers are rash, i am safety conscious.</string>
+
+    <string name="s2_66q">%1$d. Your vehicle has broken down on a highway, what is the first thing you should do?</string>
+    <string name="s2_66a">Warn other traffic</string>
+    <string name="s2_66b">Stop the following traffic and ask for help</string>
+    <string name="s2_66c">Attempt to repair your vehicle quickly</string>
+    <string name="s2_66d">Place a warning triangle on the road.</string>
+
+    <string name="s2_67q">%1$d. Which of the following should not be kept in your vehicle?</string>
+    <string name="s2_67a">A first aid kit</string>
+    <string name="s2_67b">A road atlas</string>
+    <string name="s2_67c">Inflammable material</string>
+    <string name="s2_67d">Tool kit</string>
+
+    <string name="s2_68q">%1$d. Which of the following is true</string>
+    <string name="s2_68a">The pedestrians have the right of way at all pedestrian crossings</string>
+    <string name="s2_68b">Pedestrians have no right to cross the road</string>
+    <string name="s2_68c">Pedestrians shall allow the vehicles to pass</string>
+    <string name="s2_68d">Pedestrians shall move slowly at road crossings</string>
+
+    <string name="s2_69q">%1$d. What is the maximum speed limit when towing another mechanically disabled vehicle</string>
+    <string name="s2_69a">60kmph</string>
+    <string name="s2_69b">50kmph</string>
+    <string name="s2_69c">24kmph</string>
+    <string name="s2_69d">10kmph</string>
+
+    <string name="s2_70q">%1$d. Which of the following is correct</string>
+    <string name="s2_70a">You should not sound horn in silence zones</string>
+    <string name="s2_70b">You should not use multi toned horns</string>
+    <string name="s2_70c">You should not drive a vehicle creating undue noise</string>
+    <string name="s2_70d">All the above</string>
+
+    <string name="s2_71q">%1$d. When you approach a road where workers are undertaking repairs, your speed shall not be more than</string>
+    <string name="s2_71a">25kmph</string>
+    <string name="s2_71b">35kmph</string>
+    <string name="s2_71c">45kmph</string>
+    <string name="s2_71d">55kmph</string>
+
+    <string name="s2_72q">%1$d. What shall be your maximum speed when you are passing a procession or meetings on the road</string>
+    <string name="s2_72a">35kmph</string>
+    <string name="s2_72b">25kmph</string>
+    <string name="s2_72c">45kmph</string>
+    <string name="s2_72d">55kmph</string>
+
+    <string name="s2_73q">%1$d. A driver of goods vehicle can carry passengers</string>
+    <string name="s2_73a">On the trailor</string>
+    <string name="s2_73b">On the body of the vehicle</string>
+    <string name="s2_73c">For hire or reward</string>
+    <string name="s2_73d">Can not carry passengers</string>
+
+    <string name="s2_74q">%1$d. Which of the following documents need not be carried while driving the vehicle</string>
+    <string name="s2_74a">Driving licence</string>
+    <string name="s2_74b">Registration certificate</string>
+    <string name="s2_74c">Insurance certificate</string>
+    <string name="s2_74d">Invoice</string>
+
+    <string name="s2_75q">%1$d. Which of the following are authorised to ask you for production of documents while you are driving on the road</string>
+    <string name="s2_75a">Officers of police department in uniform</string>
+    <string name="s2_75b">Officers of transport department in uniform</string>
+    <string name="s2_75c">Any other officer authorised by government</string>
+    <string name="s2_75d">All of these</string>
+
+    <string name="s2_76q">%1$d. What is the maximum speed with which you are allowed to drive a two wheeler on the road</string>
+    <string name="s2_76a">60kmph</string>
+    <string name="s2_76b">80kmph</string>
+    <string name="s2_76c">50kmph</string>
+    <string name="s2_76d">100kmph</string>
+
+    <string name="s2_77q">%1$d. Stopping with the help of gears can be achieved by</string>
+    <string name="s2_77a">Bringing the gear into neutral</string>
+    <string name="s2_77b">Switching off the engine</string>
+    <string name="s2_77c">Lowering gears one by one</string>
+    <string name="s2_77d">Depressing the clutch &amp; brake simultaneously</string>
+
+    <string name="s2_78q">%1$d. Which of the following may cause loss of concentration while driving?</string>
+    <string name="s2_78a">Loud music</string>
+    <string name="s2_78b">Arguing with a passenger</string>
+    <string name="s2_78c">Using a mobile phone</string>
+    <string name="s2_78d">All of the above</string>
+
+    <string name="s2_79q">%1$d. On a long motorway journey boredom can cause you to feel sleepy. You should</string>
+    <string name="s2_79a">Leave the motorway and find a safe place to stop and ensure a supply of fresh air into your vehicle</string>
+    <string name="s2_79b">Keep looking around at the surrounding landscape</string>
+    <string name="s2_79c">Drive faster to complete your journey sooner</string>
+    <string name="s2_79d">Stop on the hard shoulder for a rest</string>
+
+    <string name="s2_80q">%1$d. Which of these does the law require you to keep in good condition?</string>
+    <string name="s2_80a">Headlights</string>
+    <string name="s2_80b">Windscreen</string>
+    <string name="s2_80c">Seat belts</string>
+    <string name="s2_80d">All of the above</string>
+
+    <string name="s2_81q">%1$d. You are carrying two 13 year old children and their parents in your car. Who is responsible for seeing that the children wear seat belts?</string>
+    <string name="s2_81a">The children\'s parents</string>
+    <string name="s2_81b">You, the driver</string>
+    <string name="s2_81c">The front-seat passenger</string>
+    <string name="s2_81d">The children</string>
+
+    <string name="s2_82q">%1$d. Noise pollution may result in</string>
+    <string name="s2_82a">Disturbing mental equilibrium.</string>
+    <string name="s2_82b">Disturbing the concentration of driver.</string>
+    <string name="s2_82c">Loss of hearing capacity.</string>
+    <string name="s2_82d">All of the above</string>
+
+    <string name="s2_83q">%1$d. A driver does something that upsets you. You should</string>
+    <string name="s2_83a">Try not to react</string>
+    <string name="s2_83b">Let them know how you feel</string>
+    <string name="s2_83c">Flash your headlights several times</string>
+    <string name="s2_83d">Sound your horn</string>
+
+    <string name="s2_84q">%1$d. How should you react to drivers who appear to be inexperienced?</string>
+    <string name="s2_84a">Sound your horn to warn them of your presence</string>
+    <string name="s2_84b">Be patient and prepared for their slow reaction</string>
+    <string name="s2_84c">Flash your headlights to indicate that it is safe for them to proceed</string>
+    <string name="s2_84d">Overtake them as soon as possible</string>
+
+    <string name="s2_85q">%1$d. You should only flash your headlights at other road users</string>
+    <string name="s2_85a">To show that you are giving way</string>
+    <string name="s2_85b">To show that you are about to turn</string>
+    <string name="s2_85c">To tell them that you have right of way</string>
+    <string name="s2_85d">To let them know that you are there</string>
+
+    <string name="s2_86q">%1$d. Pressing the clutch pedal down or rolling in neutral for too long while driving will</string>
+    <string name="s2_86a">Use more fuel</string>
+    <string name="s2_86b">Cause the engine to overheat</string>
+    <string name="s2_86c">Reduce your control</string>
+    <string name="s2_86d">Improve tyre wear</string>
+
+    <string name="s2_87q">%1$d. How can you use the gears of your vehicle to control your speed?</string>
+    <string name="s2_87a">By changing to a lower gear</string>
+    <string name="s2_87b">By selecting reverse gear</string>
+    <string name="s2_87c">By changing to a higher gear</string>
+    <string name="s2_87d">By selecting neutral gear</string>
+
+    <string name="s2_88q">%1$d. You are driving down a steep hill. Why could keeping the clutch down or selecting neutral for too long be dangerous?</string>
+    <string name="s2_88a">Fuel consumption will be higher</string>
+    <string name="s2_88b">Your vehicle will pick up speed</string>
+    <string name="s2_88c">It will damage the engine</string>
+    <string name="s2_88d">It will wear tyres out more quickly</string>
+
+    <string name="s2_89q">%1$d. You are travelling in very heavy rain. Your overall stopping distance is likely to</string>
+    <string name="s2_89a">Increase</string>
+    <string name="s2_89b">Decrease</string>
+    <string name="s2_89c">Be up to ten times greater</string>
+    <string name="s2_89d">Remain the same</string>
+
+    <string name="s2_90q">%1$d. What is the legal minimum insurance cover you must have to drive on public roads?</string>
+    <string name="s2_90a">Third party, fire and theft</string>
+    <string name="s2_90b">Fully comprehensive</string>
+    <string name="s2_90c">Third party only</string>
+    <string name="s2_90d">Personal injury cover</string>
+
+    <string name="s2_91q">%1$d. You have just bought a second hand vehicle. When should you tell the licensing authority of change of ownership?</string>
+    <string name="s2_91a">Within 14 days</string>
+    <string name="s2_91b">Within 28 days</string>
+    <string name="s2_91c">Within one month</string>
+    <string name="s2_91d">Only when you insure it</string>
+
+    <string name="s2_92q">%1$d. You are the first to arrive at the scene of an accident. Which of these should you do?</string>
+    <string name="s2_92a">Switch off the vehicle engine</string>
+    <string name="s2_92b">Move uninjured people away from the vehicle(s)</string>
+    <string name="s2_92c">Call the emergency services</string>
+    <string name="s2_92d">All of the above</string>
+
+    <string name="s2_93q">%1$d. An accident has just happened. An injured person is lying on the busy road. What is the first thing you should do?</string>
+    <string name="s2_93a">Treat the person for shock</string>
+    <string name="s2_93b">Warn other traffic</string>
+    <string name="s2_93c">Place him in the recovery position</string>
+    <string name="s2_93d">Make sure that the injured person is kept warm</string>
+
+    <string name="s2_94q">%1$d. You have stopped at the scene of an accident to give help. Which of these things should you do?</string>
+    <string name="s2_94a">Keep injured people warm and comfortable</string>
+    <string name="s2_94b">Keep injured people calm by talking to them reassuringly</string>
+    <string name="s2_94c">Make sure that injured people are not left alone</string>
+    <string name="s2_94d">All of the above</string>
+
+    <string name="s2_95q">%1$d. Your indicators may be difficult to see in bright sunlight. What should you do?</string>
+    <string name="s2_95a">Give an arm signal as well as use your indicators</string>
+    <string name="s2_95b">Put your indicator on earlier</string>
+    <string name="s2_95c">Touch the brake several time to show the stop lights</string>
+    <string name="s2_95d">Turn as quickly as you can</string>
+
+    <string name="s2_96q">%1$d. What are the documents you need to carry with you in your vehicle always while driving?</string>
+    <string name="s2_96a">Driving licence</string>
+    <string name="s2_96b">Driving licence and insurance certificate</string>
+    <string name="s2_96c">Driving licence, certificate of insurance, registration certificate and pollution under control certificate</string>
+    <string name="s2_96d">No need to carry these documents since they can be stolen or misplaced</string>
+
+    <string name="s2_97q">%1$d. What is the validity period of a learner\'s licence?</string>
+    <string name="s2_97a">180 days</string>
+    <string name="s2_97b">30 days</string>
+    <string name="s2_97c">60 days</string>
+    <string name="s2_97d">90 days</string>
+
+    <string name="s2_98q">%1$d. What is the grace period for the renewal of a permanent driving licence?</string>
+    <string name="s2_98a">Nil</string>
+    <string name="s2_98b">30 days</string>
+    <string name="s2_98c">60 days</string>
+    <string name="s2_98d">90 days</string>
+
+    <string name="s2_99q">%1$d. Under what circumstances can your vehicle be impounded?</string>
+    <string name="s2_99a">When driving a vehicle without registration</string>
+    <string name="s2_99b">When flashing headlights unnecessarily</string>
+    <string name="s2_99c">When registration numbers are written in incorrect size dimensions</string>
+    <string name="s2_99d">When registration plate has a wrong colour background</string>
+
+    <string name="s2_100q">%1$d. How does alcohol affect your driving?</string>
+    <string name="s2_100a">It speeds up your reactions</string>
+    <string name="s2_100b">It reduces your concentration</string>
+    <string name="s2_100c">It increases your awareness</string>
+    <string name="s2_100d">It improves your co- ordination</string>
+
+    <string name="s2_101q">%1$d. What does the law require with regard to the negotiating of uncontrolled pedestrian crossing?</string>
+    <string name="s2_101a">Speed up but avoid hitting pedestrians who are already on the pedestrian crossing</string>
+    <string name="s2_101b">Slow down and proceed</string>
+    <string name="s2_101c">Stop and give precedence to pedestrians who are already on the pedestrian crossing</string>
+    <string name="s2_101d">Speed up keeping in mind pedestrians who are already on the pedestrian crossing</string>
+
+    <string name="s2_102q">%1$d. What should you do when you are dazzled by headlights of other vehicles at night?</string>
+    <string name="s2_102a">Slow down or stop, if necessary</string>
+    <string name="s2_102b">Look to the left side of the road and slow down. Keep headlights on low beam</string>
+    <string name="s2_102c">Dip your headlights continuously</string>
+    <string name="s2_102d">Speed up</string>
+
+    <string name="s2_103q">%1$d. A cover note is a document issued before you receive your</string>
+    <string name="s2_103a">Driving licence.</string>
+    <string name="s2_103b">Registration document</string>
+    <string name="s2_103c">Insurance certificate</string>
+    <string name="s2_103d">Puc certificate</string>
+
+    <string name="s2_104q">%1$d. When you smell or see fire in your vehicle, what should you do?</string>
+    <string name="s2_104a">Pull to the side of the road immediately, turn off the engine and all electrical switches and try to smoother burning wires with sand or heavy cloth.</string>
+    <string name="s2_104b">Pull to the side of the road immediately, turn off the engine and all electrical switches and smother burning wires by pouring water on them.</string>
+    <string name="s2_104c">Don\'t do anything but call the fire brigade.</string>
+    <string name="s2_104d">None of the above.</string>
+
+    <string name="s2_105q">%1$d. You should not drive with your foot on the clutch for longer than necessary because it</string>
+    <string name="s2_105a">Reduces control over the vehicle and will result in premature clutch failure</string>
+    <string name="s2_105b">Increases wear of the gearbox</string>
+    <string name="s2_105c">Decreases petrol consumption</string>
+    <string name="s2_105d">Reduces the grip of the tyres</string>
+
+    <string name="s2_106q">%1$d. Function of choke is to</string>
+    <string name="s2_106a">Enrich fuel in the air-fuel mixture</string>
+    <string name="s2_106b">Enrich air in the air-fuel mixture</string>
+    <string name="s2_106c">Enrich fuel in the air- water-fuel mixture</string>
+    <string name="s2_106d">None of the above</string>
+
+    <string name="s2_107q">%1$d. You have third party insurance. What does this cover?</string>
+    <string name="s2_107a">Injury to another person.</string>
+    <string name="s2_107b">Damage to someone\'s property.</string>
+    <string name="s2_107c">Damage to other vehicles.</string>
+    <string name="s2_107d">All of the above.</string>
+
+    <string name="s2_108q">%1$d. What is the main reason that your stopping distance increases after heavy rain?</string>
+    <string name="s2_108a">You are not able to see large puddles.</string>
+    <string name="s2_108b">The brakes are cold because they\'re wet.</string>
+    <string name="s2_108c">Your tyres have less grip on the road.</string>
+    <string name="s2_108d">Water on the windscreen blurs your view of the road ahead.</string>
+
+    <string name="s2_109q">%1$d. When your vehicle is loaded you must make sure that the load will</string>
+    <string name="s2_109a">Remain secure</string>
+    <string name="s2_109b">Be easy to unload</string>
+    <string name="s2_109c">Not be damaged</string>
+    <string name="s2_109d">Not damage the vehicle.</string>
+
+    <string name="s2_110q">%1$d. You see a pedestrian carrying a white stick. This shows that the person is</string>
+    <string name="s2_110a">Disabled</string>
+    <string name="s2_110b">Deaf</string>
+    <string name="s2_110c">Elderly</string>
+    <string name="s2_110d">Blind</string>
+
+    <string name="s2_111q">%1$d. While driving, you approach road works. You see a temporary maximum speed limit sign. You must</string>
+    <string name="s2_111a">Comply with the sign during the working day</string>
+    <string name="s2_111b">Comply with the sign at all times</string>
+    <string name="s2_111c">Comply with the sign when the lanes are narrow</string>
+    <string name="s2_111d">Comply with the sign during the hours of darkness.</string>
+
+    <string name="s2_112q">%1$d. The driver of a four wheeler must ensure that any load that is carried on a roof rack must be</string>
+    <string name="s2_112a">Securely fastened when driving</string>
+    <string name="s2_112b">Carried only when strictly necessary</string>
+    <string name="s2_112c">As light as possible</string>
+    <string name="s2_112d">Covered with plastic sheeting</string>
+
+    <string name="s2_113q">%1$d. Why passing a lorry is more risky than passing a car?</string>
+    <string name="s2_113a">Lorries are longer than cars.</string>
+    <string name="s2_113b">Lorries may suddenly pull up</string>
+    <string name="s2_113c">The brakes of lorries are not as good</string>
+    <string name="s2_113d">Lorries climb hills more slowly</string>
+
+    <string name="s2_114q">%1$d. Before starting the vehicle the driver should check-</string>
+    <string name="s2_114a">If the no. Plates are clean</string>
+    <string name="s2_114b">Tyre condition, pressure &amp; wheel nut for proper tightening.</string>
+    <string name="s2_114c">Leakage of fuel, coolant or oil.</string>
+    <string name="s2_114d">All of the above</string>
+
+    <string name="s2_115q">%1$d. Which is illegal while driving a four wheeler vehicle?</string>
+    <string name="s2_115a">Improper working of all lights &amp; indicators.</string>
+    <string name="s2_115b">Not using seat belts.</string>
+    <string name="s2_115c">Both of the above.</string>
+    <string name="s2_115d">None of the above</string>
+
+    <string name="s2_116q">%1$d. While driving you should always keep the following in mind-</string>
+    <string name="s2_116a">Condition of the road &amp; weather.</string>
+    <string name="s2_116b">Type of vehicle &amp; traffic condition.</string>
+    <string name="s2_116c">Your own skill &amp; concentration.</string>
+    <string name="s2_116d">All of the above</string>
+
+    <string name="s2_117q">%1$d. When you are being overtaken or passed by another vehicle. Do not</string>
+    <string name="s2_117a">Give hand signals.</string>
+    <string name="s2_117b">Reduce your vehicle’s speed.</string>
+    <string name="s2_117c">Use head lights.</string>
+    <string name="s2_117d">Increase your speed.</string>
+
+    <string name="s2_118q">%1$d. Who is responsible for ensuring that the vehicle is not overloaded?</string>
+    <string name="s2_118a">The passengers.</string>
+    <string name="s2_118b">The mechanic of the vehicle.</string>
+    <string name="s2_118c">The driver of the vehicle.</string>
+    <string name="s2_118d">All of the above</string>
+
+    <string name="s2_119q">%1$d. On a foggy day you have to unavoidably park your vehicle on the road. What should you do?</string>
+    <string name="s2_119a">Leave headlights on</string>
+    <string name="s2_119b">Leave side lights on</string>
+    <string name="s2_119c">Keep stones/bricks around your vehicle</string>
+    <string name="s2_119d">None of these</string>
+
+    <string name="s2_120q">%1$d. You should use a mobile telephone only when you</string>
+    <string name="s2_120a">Have stopped at a safe place</string>
+    <string name="s2_120b">Are travelling slowly</string>
+    <string name="s2_120c">Are on a motorway</string>
+    <string name="s2_120d">Are approaching a light traffic</string>
+
+    <string name="s2_121q">%1$d. Turbulence is created by large vehicles travelling at speed. This is most likely to be a danger to</string>
+    <string name="s2_121a">Cyclists</string>
+    <string name="s2_121b">Pedestrians</string>
+    <string name="s2_121c">Motorcyclists</string>
+    <string name="s2_121d">All of the above</string>
+
+    <string name="s2_122q">%1$d. You are driving in heavy rain. Your steering suddenly becomes very light. You should</string>
+    <string name="s2_122a">Steer towards the side of the road</string>
+    <string name="s2_122b">Apply gentle acceleration</string>
+    <string name="s2_122c">Brake firmly to reduce speed</string>
+    <string name="s2_122d">Ease off the accelerator</string>
+
+    <string name="s2_123q">%1$d. You are following a large lorry on a wet road. Spray makes it difficult to see. You should</string>
+    <string name="s2_123a">Drop back until you can see better</string>
+    <string name="s2_123b">Put your headlights on full beam</string>
+    <string name="s2_123c">Keep close to the lorry, away from the spray</string>
+    <string name="s2_123d">Speed up and overtake quickly</string>
+
+    <string name="s2_124q">%1$d. You are driving in fog. Why should you keep well back from the vehicle in front?</string>
+    <string name="s2_124a">In case it changes direction suddenly</string>
+    <string name="s2_124b">In case it’s fog lights dazzle you</string>
+    <string name="s2_124c">In case it stops suddenly</string>
+    <string name="s2_124d">In case its brake lights dazzle you</string>
+
+    <string name="s2_125q">%1$d. You arrive at an accident where someone is suffering from severe burns. Which of the following would help?</string>
+    <string name="s2_125a">Douse the burns with cold water</string>
+    <string name="s2_125b">Remove anything stuck to the burns</string>
+    <string name="s2_125c">Burst blisters that form on the burns</string>
+    <string name="s2_125d">Apply ointment to the burns</string>
+
+    <string name="s2_126q">%1$d. Air pollution effects</string>
+    <string name="s2_126a">Human beings</string>
+    <string name="s2_126b">Plants</string>
+    <string name="s2_126c">Animals</string>
+    <string name="s2_126d">All of the above</string>
+
+    <string name="s2_127q">%1$d. What will happen if the wheels are not properly balanced?</string>
+    <string name="s2_127a">Vehicle pulling to the right.</string>
+    <string name="s2_127b">Vehicle pulling to the left.</string>
+    <string name="s2_127c">Steering wobbling.</string>
+    <string name="s2_127d">None of the above.</string>
+
+    <string name="s2_128q">%1$d. What is meant by clutch riding?</string>
+    <string name="s2_128a">Keeping your foot on the clutch while driving</string>
+    <string name="s2_128b">Not using the clutch while changing gear</string>
+    <string name="s2_128c">Keeping your foot off the clutch while driving</string>
+    <string name="s2_128d">None of the above</string>
+
+    <string name="s2_129q">%1$d. There is vibration on your steering wheel as you drive. What is the probable cause?</string>
+    <string name="s2_129a">Low level of engine oil.</string>
+    <string name="s2_129b">Low level of coolant.</string>
+    <string name="s2_129c">Unbalanced wheels.</string>
+    <string name="s2_129d">Balding of tyres.</string>
+
+    <string name="s2_130q">%1$d. When may a driver lend his driving licence to another person?</string>
+    <string name="s2_130a">For driving lessons.</string>
+    <string name="s2_130b">At no time.</string>
+    <string name="s2_130c">For identification only.</string>
+    <string name="s2_130d">If the person is well known to him.</string>
+
+    <string name="s2_131q">%1$d. If your vehicle hits a pedestrian you should</string>
+    <string name="s2_131a">Identify yourself and leave.</string>
+    <string name="s2_131b">Help the person and call an ambulance.</string>
+    <string name="s2_131c">Help the injured person, identify yourself and then report to the police.</string>
+    <string name="s2_131d">None of the above</string>
+
+    <string name="s2_132q">%1$d. Stickers, posters and other non- official items may not be placed on the windshield of an automobile because:-</string>
+    <string name="s2_132a">It is unlawful to advertise in this way.</string>
+    <string name="s2_132b">They obstruct the driver\'s vision.</string>
+    <string name="s2_132c">Other drivers cannot see you.</string>
+    <string name="s2_132d">None of the above.</string>
+
+    <string name="s2_133q">%1$d. A person having driving licence suspended or cancelled may</string>
+    <string name="s2_133a">Drive in an emergency?</string>
+    <string name="s2_133b">Drive only when a valid driving licence holder is with him.</string>
+    <string name="s2_133c">Not drive under any conditions.</string>
+    <string name="s2_133d">None of the above.</string>
+
+    <string name="s2_134q">%1$d. If a person\'s driving licence validity period is over, he can apply for renewal of motor driving licence within without penalty</string>
+    <string name="s2_134a">Ten days.</string>
+    <string name="s2_134b">Twenty days.</string>
+    <string name="s2_134c">Thirty days</string>
+    <string name="s2_134d">Twenty five days.</string>
+
+    <string name="s2_135q">%1$d. Any person may hold</string>
+    <string name="s2_135a">Maximum 3 licences at a time, one for each class.</string>
+    <string name="s2_135b">Only one licence.</string>
+    <string name="s2_135c">Any number of licences however each licence must authorise only one class of motor vehicle for driving.</string>
+    <string name="s2_135d">None of the above.</string>
+
+    <string name="s2_136q">%1$d. Lending of a motor vehicle to a person for driving, who is not holding a valid licence is:-</string>
+    <string name="s2_136a">Not an offence since the borrower is solely responsible.</string>
+    <string name="s2_136b">A serious offence.</string>
+    <string name="s2_136c">An offence only when vehicle is involved in an accident.</string>
+    <string name="s2_136d">None of the above.</string>
+
+    <string name="s2_137q">%1$d. Driving a vehicle having pollution values above the limit specified by the law: -</string>
+    <string name="s2_137a">Is permitted only in emergency.</string>
+    <string name="s2_137b">Is an offence</string>
+    <string name="s2_137c">Is liable for a strict warning from authorities.</string>
+    <string name="s2_137d">None of the above.</string>
+
+    <string name="s2_138q">%1$d. Fitment of a multitoned horn to a motor vehicle: -</string>
+    <string name="s2_138a">Is permitted only in emergency.</string>
+    <string name="s2_138b">Is an offence under the law as it causes noise pollution.</string>
+    <string name="s2_138c">Is liable for a strict warning from authorities.</string>
+    <string name="s2_138d">None of the above.</string>
+
+    <string name="s2_139q">%1$d. The aim of first aid is</string>
+    <string name="s2_139a">To save life</string>
+    <string name="s2_139b">To promote recovery</string>
+    <string name="s2_139c">To prevent worsening of victim\'s condition</string>
+    <string name="s2_139d">All of the above.</string>
+
+    <string name="s2_140q">%1$d. Alcohol may result in</string>
+    <string name="s2_140a">Irritability</string>
+    <string name="s2_140b">Loose temper</string>
+    <string name="s2_140c">Anger</string>
+    <string name="s2_140d">All of the above</string>
+
+    <string name="s2_141q">%1$d. Alcohol affects</string>
+    <string name="s2_141a">Decision making</string>
+    <string name="s2_141b">Self control</string>
+    <string name="s2_141c">Thinking</string>
+    <string name="s2_141d">All of the above</string>
+
+    <string name="s2_142q">%1$d. Alcohol may result in</string>
+    <string name="s2_142a">Hostile behaviour</string>
+    <string name="s2_142b">Indecision</string>
+    <string name="s2_142c">Violent behaviour</string>
+    <string name="s2_142d">All of the above</string>
+
+    <string name="s2_143q">%1$d. Alcohol may affect adversely by</string>
+    <string name="s2_143a">Reducing alertness</string>
+    <string name="s2_143b">Affecting vision</string>
+    <string name="s2_143c">Loss of decision making</string>
+    <string name="s2_143d">All of the above</string>
+
+    <string name="s2_144q">%1$d. Increasing your speed has what effect on stopping distance?</string>
+    <string name="s2_144a">No difference in stopping distance.</string>
+    <string name="s2_144b">The more the speed the lesser the stopping distance</string>
+    <string name="s2_144c">The more the speed the more the stopping distance</string>
+    <string name="s2_144d">None of the above</string>
+
+    <string name="s2_145q">%1$d. While starting the vehicle which of the following things should be done</string>
+    <string name="s2_145a">Gear should be in neutral.</string>
+    <string name="s2_145b">Parking brake should be on.</string>
+    <string name="s2_145c">Clutch pedal should be depressed.</string>
+    <string name="s2_145d">All of the above.</string>
+
+    <string name="s2_146q">%1$d. The right of way should be given to</string>
+    <string name="s2_146a">Police vehicles</string>
+    <string name="s2_146b">Buses</string>
+    <string name="s2_146c">Emergency vehicles</string>
+    <string name="s2_146d">Two wheelers</string>
+
+    <string name="s2_147q">%1$d. Fog lamps are used</string>
+    <string name="s2_147a">At night</string>
+    <string name="s2_147b">Instead of parking lights</string>
+    <string name="s2_147c">On highways</string>
+    <string name="s2_147d">When there is mist</string>
+
+    <string name="s2_148q">%1$d. Zebra crossing is meant for</string>
+    <string name="s2_148a">Pedestrians</string>
+    <string name="s2_148b">Emergency vehicles</string>
+    <string name="s2_148c">Slow moving vehicles</string>
+    <string name="s2_148d">Stopping the vehicle</string>
+
+    <string name="s2_149q">%1$d. Boarding and alighting while the vehicle is in motion</string>
+    <string name="s2_149a">Is permitted for buses</string>
+    <string name="s2_149b">Is prohibited for all types of vehicles</string>
+    <string name="s2_149c">Is prohibited for buses</string>
+    <string name="s2_149d">Is permitted for passenger vehicles</string>
+
+    <string name="s2_150q">%1$d. More than two persons on a two wheeler is</string>
+    <string name="s2_150a">Allowed when traffic density is low</string>
+    <string name="s2_150b">Violation of law</string>
+    <string name="s2_150c">Allowed in some places</string>
+    <string name="s2_150d">All of the above</string>
+
+    <string name="s2_151q">%1$d. Using unregistered vehicle in public places is</string>
+    <string name="s2_151a">Illegal</string>
+    <string name="s2_151b">Legal</string>
+    <string name="s2_151c">Allowed in some places</string>
+    <string name="s2_151d">Any of the above</string>
+
+    <string name="s2_152q">%1$d. Driving at high speed</string>
+    <string name="s2_152a">Gives you a better fuel average</string>
+    <string name="s2_152b">Does not give you sufficient time to react to hazards</string>
+    <string name="s2_152c">Take less time for your journey</string>
+    <string name="s2_152d">Will cause less damage to your engine</string>
+
+    <string name="s2_153q">%1$d. A basic rule when on highways is</string>
+    <string name="s2_153a">Use the lane that has least traffic</string>
+    <string name="s2_153b">Keep the left lane unless overtaking</string>
+    <string name="s2_153c">Overtake on the side that is clearest</string>
+    <string name="s2_153d">Try to keep above 50 kmph to prevent congestion</string>
+
+    <string name="s2_154q">%1$d. Causes of the automobile pollution is / are</string>
+    <string name="s2_154a">Poor maintenance</string>
+    <string name="s2_154b">Over loading of vehicles</string>
+    <string name="s2_154c">Frequent traffic jams</string>
+    <string name="s2_154d">All of the above</string>
+
+    <string name="s2_155q">%1$d. Which of the following will affect your stopping distance</string>
+    <string name="s2_155a">How fast you are going</string>
+    <string name="s2_155b">The tyres of your vehicle</string>
+    <string name="s2_155c">Weather</string>
+    <string name="s2_155d">All of the above</string>
+
+    <string name="s2_156q">%1$d. To reduce the volume of traffic on the roads you could</string>
+    <string name="s2_156a">Use public transport more often</string>
+    <string name="s2_156b">Share a car when possible</string>
+    <string name="s2_156c">Walk or cycle on short journeys</string>
+    <string name="s2_156d">All of the above</string>
+
+    <string name="s2_157q">%1$d. To prevent polluting the environment, you can help by</string>
+    <string name="s2_157a">Having your vehicle properly serviced</string>
+    <string name="s2_157b">Making sure your tyres are correctly inflated</string>
+    <string name="s2_157c">Not over driving in lower gears</string>
+    <string name="s2_157d">All of the above</string>
+
+    <string name="s2_158q">%1$d. A properly serviced vehicle will give</string>
+    <string name="s2_158a">Lower insurance premiums</string>
+    <string name="s2_158b">You a refund on your road tax</string>
+    <string name="s2_158c">Better fuel economy and cleaner exhaust emissions</string>
+    <string name="s2_158d">None of the above</string>
+</resources>

@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="s1_0q">%1$d. You want to turn right at a junction. But you think that your indicators can not be seen clearly. What should you do?</string>
+    <string name="s1_0a">Get out and check if your indicators can be seen</string>
+    <string name="s1_0b">Stay in the left hand lane</string>
+    <string name="s1_0c">Keep well over to the right</string>
+    <string name="s1_0d">Give arm signal and indicator signal</string>
+
+    <string name="s1_1q">%1$d. You have to make a journey in foggy conditions. You should</string>
+    <string name="s1_1a">Follow closely other vehicle\'s tail lights</string>
+    <string name="s1_1b">Never use demisters and windscreen wipers</string>
+    <string name="s1_1c">Leave plenty of time for your journey</string>
+    <string name="s1_1d">Keep safe distance of two seconds</string>
+
+    <string name="s1_2q">%1$d. Your are driving a vehicle. You notice animals in front. What should you do first?</string>
+    <string name="s1_2a">Pull out to the middle of the road</string>
+    <string name="s1_2b">Be prepared to slow down</string>
+    <string name="s1_2c">Accelerate around them</string>
+    <string name="s1_2d">Signal right</string>
+
+    <string name="s1_3q">%1$d. You are driving past a lane of parked cars. You notice ball bouncing out into the road ahead. What should you do?</string>
+    <string name="s1_3a">Continue driving at the same speed and sound your horn</string>
+    <string name="s1_3b">Continue driving at the same speed and flash your headlights</string>
+    <string name="s1_3c">Slow down and be prepared to stop for children</string>
+    <string name="s1_3d">Stop and wave the children across to fetch their ball.</string>
+
+    <string name="s1_4q">%1$d. What is the main hazard you should be aware of when following a cyclist?</string>
+    <string name="s1_4a">The cyclist may move into the left and dismount</string>
+    <string name="s1_4b">The cyclist may turn either way into the road</string>
+    <string name="s1_4c">The contents of the cyclist\'s carrier may fall onto the road</string>
+    <string name="s1_4d">The cyclist may wish to turn right at the end of the road</string>
+
+    <string name="s1_5q">%1$d. Be extra cautious while overtaking</string>
+    <string name="s1_5a">`l\' mark vehicles.</string>
+    <string name="s1_5b">Slow speed vehicles.</string>
+    <string name="s1_5c">Old vehicles.</string>
+    <string name="s1_5d">Light vehicles.</string>
+
+    <string name="s1_6q">%1$d. Be careful while overtaking `l\' mark (learner driver) vehicle because</string>
+    <string name="s1_6a">Their intention is always to drive in right hand lane.</string>
+    <string name="s1_6b">This will reduce their confidence.</string>
+    <string name="s1_6c">They may get nervous and it may lead to an accident.</string>
+    <string name="s1_6d">Generally they are not medically fit.</string>
+
+    <string name="s1_7q">%1$d. You are following a two wheeler on a poor road surface. You should</string>
+    <string name="s1_7a">Make sure you stay well back</string>
+    <string name="s1_7b">Look out as they may wobble</string>
+    <string name="s1_7c">Be aware they may suddenly turn eitherway</string>
+    <string name="s1_7d">All of the above</string>
+
+    <string name="s1_8q">%1$d. You should not overtake when?</string>
+    <string name="s1_8a">Intending to turn left shortly afterwards</string>
+    <string name="s1_8b">Approaching a junction</string>
+    <string name="s1_8c">The view ahead is blocked</string>
+    <string name="s1_8d">All of the above</string>
+
+    <string name="s1_9q">%1$d. You should never attempt to overtake a cyclist!</string>
+    <string name="s1_9a">When approaching a roundabout</string>
+    <string name="s1_9b">On a narrow road</string>
+    <string name="s1_9c">Just before you turn left</string>
+    <string name="s1_9d">On a right hand bend</string>
+
+    <string name="s1_10q">%1$d. When you approach a bus signalling to move off from a bus stop, you should</string>
+    <string name="s1_10a">Get past before it moves</string>
+    <string name="s1_10b">Allow it to pull away, if it is safe to do so</string>
+    <string name="s1_10c">Flash your headlights as you approach</string>
+    <string name="s1_10d">Signal left and wave the bus to move on</string>
+
+    <string name="s1_11q">%1$d. You have just been overtaken by a motorcyclist who is cutting in sharply. You should</string>
+    <string name="s1_11a">Sound the horn</string>
+    <string name="s1_11b">Brake firmly</string>
+    <string name="s1_11c">Keep a safe gap</string>
+    <string name="s1_11d">Flash your lights</string>
+
+    <string name="s1_12q">%1$d. You are driving a two wheeler on the motorway in windy conditions. When passing high- sided vehicles you should</string>
+    <string name="s1_12a">Increase your speed.</string>
+    <string name="s1_12b">Beaware of sudden blast of wind.</string>
+    <string name="s1_12c">Drive alongside very closely.</string>
+    <string name="s1_12d">Expect normal conditions.</string>
+
+    <string name="s1_13q">%1$d. You are driving up to an intersection where there is no signal. People are crossing in front of your car. You should</string>
+    <string name="s1_13a">Continue driving into the intersection without reducing speed.</string>
+    <string name="s1_13b">Slow down and be careful</string>
+    <string name="s1_13c">Stop and allow pedestrians to cross</string>
+    <string name="s1_13d">Sound your horn repeatedly</string>
+
+    <string name="s1_14q">%1$d. You wish to take a "u" turn. If there is a policeman at the intersection controlled by a traffic light, you should</string>
+    <string name="s1_14a">Drive to another intersection that has no traffic light</string>
+    <string name="s1_14b">Wait until the light turns green before making the "u" turn</string>
+    <string name="s1_14c">Make the "u" turn if there is a policeman at the intersection.</string>
+    <string name="s1_14d">Avoid making a \'u\' turn</string>
+
+    <string name="s1_15q">%1$d. You are driving on a two-lane street. The vehicle in front of you is moving very slowly, and the road ahead is clear for overtaking, you should</string>
+    <string name="s1_15a">Pass the vehicle from left hand side</string>
+    <string name="s1_15b">Pass the vehicle from right hand side</string>
+    <string name="s1_15c">Pass the vehicle from any convenient side</string>
+    <string name="s1_15d">Never overtake at all.</string>
+
+    <string name="s1_16q">%1$d. As you approach an intersection, you should check for traffic on your left and right.</string>
+    <string name="s1_16a">At all times before entering the intersection.</string>
+    <string name="s1_16b">Only when the traffic is heavy</string>
+    <string name="s1_16c">Only when you approach a stop sign.</string>
+    <string name="s1_16d">None of the above</string>
+
+    <string name="s1_17q">%1$d. While driving on the motorway you have to slow down quickly due to a hazard. What should you do?</string>
+    <string name="s1_17a">Sound your horn</string>
+    <string name="s1_17b">Switch on your hazard light</string>
+    <string name="s1_17c">Switch on your fog light</string>
+    <string name="s1_17d">Switch on your headlight to full beam</string>
+
+    <string name="s1_18q">%1$d. You drive up to a corner where you see some loose gravel on the road. You should</string>
+    <string name="s1_18a">Check the mirrors and change lanes</string>
+    <string name="s1_18b">Speed up and drive over the gravel as quickly as possible.</string>
+    <string name="s1_18c">Slow down</string>
+    <string name="s1_18d">None of the above</string>
+
+    <string name="s1_19q">%1$d. When you have started to overtake the car ahead, you notice that its right indicator is flashing. You should</string>
+    <string name="s1_19a">Accelerate quickly to get pass</string>
+    <string name="s1_19b">Immediately brake to a stop</string>
+    <string name="s1_19c">Flash your headlights and accelerate pass.</string>
+    <string name="s1_19d">Check your mirror and move back behind the car.</string>
+
+    <string name="s1_20q">%1$d. A dotted white central line on the road means that you may</string>
+    <string name="s1_20a">Cross it whenever you feel</string>
+    <string name="s1_20b">Cross it when there is no traffic coming from the opposite direction</string>
+    <string name="s1_20c">Never cross it under any circumstances</string>
+    <string name="s1_20d">Cross it when it is safe to do so but should come back to your lane after overtaking</string>
+
+    <string name="s1_21q">%1$d. A continuous yellow or white line in the center of the road indicates that you may cross it</string>
+    <string name="s1_21a">Whenever you feel it is safe to do so</string>
+    <string name="s1_21b">When there is no traffic coming from the opposite direction</string>
+    <string name="s1_21c">Under no circumstances</string>
+    <string name="s1_21d">But avoid as far as possible</string>
+
+    <string name="s1_22q">%1$d. Two continuous yellow lines in the middle of the road indicate that</string>
+    <string name="s1_22a">Overtaking permitted</string>
+    <string name="s1_22b">Overtaking not permitted</string>
+    <string name="s1_22c">Overtaking and right turning both are not permitted</string>
+    <string name="s1_22d">Overtaking not permitted but right turn permitted.</string>
+
+    <string name="s1_23q">%1$d. Speed limit signs indicate the maximum speed during ideal conditions.</string>
+    <string name="s1_23a">True</string>
+    <string name="s1_23b">False</string>
+    <string name="s1_23c">Both</string>
+    <string name="s1_23d">None</string>
+
+    <string name="s1_24q">%1$d. While approaching a pedestrian crossing which is controlled by a traffic signal, the signal has turned green for you. But the pedestrians are still crossing. You should</string>
+    <string name="s1_24a">Slow down and give way to pedestrians</string>
+    <string name="s1_24b">Speed up since the signal is in your favour</string>
+    <string name="s1_24c">Speed up but take care of the pedestrians</string>
+    <string name="s1_24d">None of the above</string>
+
+    <string name="s1_25q">%1$d. Under what circumstances you will not go forward when the signal lights are in your favour?</string>
+    <string name="s1_25a">If road repair work is in progress near the intersection</string>
+    <string name="s1_25b">If you want to give coin to a beggar who is a little away from you</string>
+    <string name="s1_25c">If by doing so, you will be blocking the intersection</string>
+    <string name="s1_25d">If a policeman on duty has signalled you to stop</string>
+
+    <string name="s1_26q">%1$d. A flashing red light at an inter section means</string>
+    <string name="s1_26a">You should slow down and drive with increased caution.</string>
+    <string name="s1_26b">You should slow down, and give right way to vehicles approaching from left or right side</string>
+    <string name="s1_26c">Signal light is out of order and as such you should proceed with caution.</string>
+    <string name="s1_26d">You should stop, give way to vehicles in the priority road and proceed only when the way is clear</string>
+
+    <string name="s1_27q">%1$d. When you approach an intersection, the green signal has just changed into amber, you should</string>
+    <string name="s1_27a">Hurry up and cross</string>
+    <string name="s1_27b">Apply brakes and cross</string>
+    <string name="s1_27c">See, if you have crossed the stop line or are so close to it that you cannot stop safely, cross the intersection with caution</string>
+    <string name="s1_27d">See, if there is no policeman, cross, otherwise stop.</string>
+
+    <string name="s1_28q">%1$d. Which of these lights will come after amber at a traffic light?</string>
+    <string name="s1_28a">Red</string>
+    <string name="s1_28b">Green</string>
+    <string name="s1_28c">Blue</string>
+    <string name="s1_28d">None of the above</string>
+
+    <string name="s1_29q">%1$d. As you approach the stop line at an intersection you see the light turn amber. You should</string>
+    <string name="s1_29a">Prepare to go</string>
+    <string name="s1_29b">Go if the way is clear</string>
+    <string name="s1_29c">Go if no pedestrians are crossing</string>
+    <string name="s1_29d">Get ready to stop before the stop line</string>
+
+    <string name="s1_30q">%1$d. While driving you decided to stop immediately	the correct hand signal is</string>
+    <string name="s1_30a">Extend right arm horizontal to the ground with palm downwards</string>
+    <string name="s1_30b">Extend the right arm &amp; bend the elbow at right angles and turning palm to the front.</string>
+    <string name="s1_30c">No signal required</string>
+    <string name="s1_30d">None of the above</string>
+
+    <string name="s1_31q">%1$d. You are driving towards an intersection where there is a flashing yellow traffic light. You should</string>
+    <string name="s1_31a">Slow down and proceed with caution</string>
+    <string name="s1_31b">Stop, if possible to do so, safely</string>
+    <string name="s1_31c">Continue at the same speed</string>
+    <string name="s1_31d">Rush past the signal</string>
+
+    <string name="s1_32q">%1$d. Before turning your vehicle on the road you should</string>
+    <string name="s1_32a">Check all around for other road users</string>
+    <string name="s1_32b">Use a driveway if possible</string>
+    <string name="s1_32c">Keep your hand on the handbrake throughout</string>
+    <string name="s1_32d">Switch on your headlights</string>
+
+    <string name="s1_33q">%1$d. Your mobile phone rings while you are driving.	You should</string>
+    <string name="s1_33a">Stop immediately</string>
+    <string name="s1_33b">Answer it immediately</string>
+    <string name="s1_33c">Stop at a suitable place and attend phone</string>
+    <string name="s1_33d">Stop at the nearest kerb</string>
+
+    <string name="s1_34q">%1$d. You are most likely to lose concentration while driving if you</string>
+    <string name="s1_34a">Switch on the a.c</string>
+    <string name="s1_34b">Use a mobile phone</string>
+    <string name="s1_34c">Look at the rear view mirrors</string>
+    <string name="s1_34d">All of the above</string>
+
+    <string name="s1_35q">%1$d. You are approaching a zebra crossing. Pedestrians are waiting to cross. You should</string>
+    <string name="s1_35a">Give way to the elderly and disabled only</string>
+    <string name="s1_35b">Slow down and be prepared to stop</string>
+    <string name="s1_35c">Use your headlights to indicate that they can cross</string>
+    <string name="s1_35d">Wave at them to cross the road.</string>
+
+    <string name="s1_36q">%1$d. Which of the following should you do before stopping?</string>
+    <string name="s1_36a">Sound the horn</string>
+    <string name="s1_36b">Use the mirrors</string>
+    <string name="s1_36c">Select a higher gear</string>
+    <string name="s1_36d">Flash your headlights</string>
+
+    <string name="s1_37q">%1$d. When you are moving off from behind a parked car you should</string>
+    <string name="s1_37a">Look around before you move off</string>
+    <string name="s1_37b">Use all the mirrors on the vehicle</string>
+    <string name="s1_37c">Give a signal</string>
+    <string name="s1_37d">All of the above</string>
+
+    <string name="s1_38q">%1$d. When being followed by an ambulance showing a flashing blue light you should</string>
+    <string name="s1_38a">Stop safely and as soon as possible to let it pass</string>
+    <string name="s1_38b">Accelerate hard to get away from it</string>
+    <string name="s1_38c">Maintain your speed and course</string>
+    <string name="s1_38d">Brake harshly and immediately stop on the road.</string>
+
+    <string name="s1_39q">%1$d. When parking and leaving your vehicle you should</string>
+    <string name="s1_39a">Park under a shady tree</string>
+    <string name="s1_39b">Park under the sun</string>
+    <string name="s1_39c">Park on a quiet road</string>
+    <string name="s1_39d">Engage the steering lock</string>
+
+    <string name="s1_40q">%1$d. Which of the following should be allowed extra room when overtaking?</string>
+    <string name="s1_40a">Motorcycles &amp; bicycles</string>
+    <string name="s1_40b">Tractor</string>
+    <string name="s1_40c">Trailers</string>
+    <string name="s1_40d">None of the above</string>
+
+    <string name="s1_41q">%1$d. When may you stop on a motorway?</string>
+    <string name="s1_41a">If traffic signal is red</string>
+    <string name="s1_41b">When told by the police</string>
+    <string name="s1_41c">In an emergency or a breakdown</string>
+    <string name="s1_41d">All of the above</string>
+
+    <string name="s1_42q">%1$d. In which of these places you must not park or wait?</string>
+    <string name="s1_42a">At a bus stop</string>
+    <string name="s1_42b">Opposite a traffic island</string>
+    <string name="s1_42c">In front of someone else\'s gate</string>
+    <string name="s1_42d">All of the above</string>
+
+    <string name="s1_43q">%1$d. When leaving your vehicle where should you park if possible?</string>
+    <string name="s1_43a">Opposite a traffic island</string>
+    <string name="s1_43b">In a secure parking place</string>
+    <string name="s1_43c">On a bend</string>
+    <string name="s1_43d">Near a tunnel</string>
+
+    <string name="s1_44q">%1$d. Which of these places you must not park?</string>
+    <string name="s1_44a">Near a shopping mall</string>
+    <string name="s1_44b">At or near a bus stop</string>
+    <string name="s1_44c">Within 10 metres (32feet) of a junction</string>
+    <string name="s1_44d">All of the above</string>
+
+    <string name="s1_45q">%1$d. In which of these place you must not park?</string>
+    <string name="s1_45a">Near a school entrance</string>
+    <string name="s1_45b">Near a police station</string>
+    <string name="s1_45c">On a side road</string>
+    <string name="s1_45d">All of the above</string>
+
+    <string name="s1_46q">%1$d. When leaving your vehicle unattended for a few minutes you should</string>
+    <string name="s1_46a">Lock it and remove the key</string>
+    <string name="s1_46b">Leave the engine running</string>
+    <string name="s1_46c">Switch the engine off but leave the key in</string>
+    <string name="s1_46d">Park near a traffic policeman</string>
+
+    <string name="s1_47q">%1$d. At a two road junction there are no road signs. Two vehicles approach. Which has priority?</string>
+    <string name="s1_47a">Neither vehicle</string>
+    <string name="s1_47b">The vehicle travelling the fastest</string>
+    <string name="s1_47c">The vehicle on the widest road</string>
+    <string name="s1_47d">Vehicle approaching from the right</string>
+
+    <string name="s1_48q">%1$d. Pedestrians are waiting to cross at a zebra crossing. They are standing on the pavement you should normally</string>
+    <string name="s1_48a">Go on quickly before they step onto the crossing</string>
+    <string name="s1_48b">Stop on the zebra crossing and let them cross</string>
+    <string name="s1_48c">Stop before the stop line, let them cross, wait patiently</string>
+    <string name="s1_48d">Ignore them as they are still on the pavement</string>
+
+    <string name="s1_49q">%1$d. You must not reverse</string>
+    <string name="s1_49a">On a busy road</string>
+    <string name="s1_49b">On a one way road</string>
+    <string name="s1_49c">On a round about</string>
+    <string name="s1_49d">All of the above</string>
+
+    <string name="s1_50q">%1$d. When you are not sure that it is safe to reverse your vehicle you should</string>
+    <string name="s1_50a">Use your horn</string>
+    <string name="s1_50b">Raise your engine</string>
+    <string name="s1_50c">Get out and check</string>
+    <string name="s1_50d">Reverse slowly</string>
+
+    <string name="s1_51q">%1$d. When may you reverse from a side road into a main road?</string>
+    <string name="s1_51a">Only if both roads are clear of traffic</string>
+    <string name="s1_51b">Not at any time</string>
+    <string name="s1_51c">At any time</string>
+    <string name="s1_51d">Only if the main road is clear of traffic</string>
+
+    <string name="s1_52q">%1$d. Your are signalling to turn right in busy traffic. How would you confirm your intention safely?</string>
+    <string name="s1_52a">Sound the horn</string>
+    <string name="s1_52b">Give an arm signal</string>
+    <string name="s1_52c">Flash your headlights</string>
+    <string name="s1_52d">Position over the centre line</string>
+
+    <string name="s1_53q">%1$d. When traffic lights are out of order, what precaution should you take?</string>
+    <string name="s1_53a">Slow down and move</string>
+    <string name="s1_53b">Stop, look right and left and proceed cautiously.</string>
+    <string name="s1_53c">No precaution is necessary</string>
+    <string name="s1_53d">Move at the same speed</string>
+
+    <string name="s1_54q">%1$d. There is a police car following you, the police officer flashes the headlights and points to the left. What should you do?</string>
+    <string name="s1_54a">Turn at the next left</string>
+    <string name="s1_54b">Stop on the left</string>
+    <string name="s1_54c">Stop immediately</string>
+    <string name="s1_54d">Move over to the right</string>
+
+    <string name="s1_55q">%1$d. When approaching a roundabout give way to</string>
+    <string name="s1_55a">Cyclists</string>
+    <string name="s1_55b">Slow-moving vehicles</string>
+    <string name="s1_55c">Traffic on your right</string>
+    <string name="s1_55d">Traffic on your left</string>
+
+    <string name="s1_56q">%1$d. You are reversing a car into a side road. While reversing you should mainly look</string>
+    <string name="s1_56a">In the rear view mirror</string>
+    <string name="s1_56b">Through the rear windscreen</string>
+    <string name="s1_56c">In the side view mirror nearest the kerb</string>
+    <string name="s1_56d">In the side view mirror away from the kerb</string>
+
+    <string name="s1_57q">%1$d. To move off safely from a parked position you should</string>
+    <string name="s1_57a">Use your mirrors and look around for a final check</string>
+    <string name="s1_57b">Signal for other drivers to slow down</string>
+    <string name="s1_57c">Not look around if there is a parked vehicle close in front of you</string>
+    <string name="s1_57d">Give a hand signal as well as use your indicator</string>
+
+    <string name="s1_58q">%1$d. When approaching road works, you should not</string>
+    <string name="s1_58a">Start to overtake &amp; increase speed</string>
+    <string name="s1_58b">Flash your headlights</string>
+    <string name="s1_58c">Give any signals</string>
+    <string name="s1_58d">None of the above</string>
+
+    <string name="s1_59q">%1$d. Which is the best reason for not following other vehicles too closely?</string>
+    <string name="s1_59a">To avoid exhaust fumes</string>
+    <string name="s1_59b">To avoid getting dirty from wheel spray</string>
+    <string name="s1_59c">To get increased angle of vision of traffic conditions ahead and to avoid hitting vehicles in front, if they stop suddenly</string>
+    <string name="s1_59d">As it will require less attention for the operation of your vehicle</string>
+
+    <string name="s1_60q">%1$d. When approaching from the rear, where two lanes of traffic have stopped at a signal, you should?</string>
+    <string name="s1_60a">Pass all the vehicles and stop in front of them</string>
+    <string name="s1_60b">Pass between all the vehicles standing in the two lanes</string>
+    <string name="s1_60c">Stop behind the last vehicle in the appropriate lane</string>
+    <string name="s1_60d">Stop anywhere</string>
+
+    <string name="s1_61q">%1$d. A pedestrian is crossing the street at an unmarked cross- walk, you should</string>
+    <string name="s1_61a">Yield to the pedestrian the "right of way"</string>
+    <string name="s1_61b">Proceed with care</string>
+    <string name="s1_61c">Reduce speed and warn pedestrian.</string>
+    <string name="s1_61d">Wave to the pedestrian to cross quickly</string>
+
+    <string name="s1_62q">%1$d. While driving, you wish to change from one lane to another, you should</string>
+    <string name="s1_62a">Give the proper turn signal</string>
+    <string name="s1_62b">Change lanes only when it is safe to do so by giving the proper turn signal</string>
+    <string name="s1_62c">Never change lanes as it is against the law</string>
+    <string name="s1_62d">Lane should not be changed</string>
+
+    <string name="s1_63q">%1$d. You approach an intersection that does not have traffic lights, a policeman or traffic signs, you should</string>
+    <string name="s1_63a">Slow down and move with caution</string>
+    <string name="s1_63b">Come to a full stop</string>
+    <string name="s1_63c">Dont change speed if the way is clear.</string>
+    <string name="s1_63d">Wait for the policeman to arrive</string>
+
+    <string name="s1_64q">%1$d. What must you do if you miss your exit on a freeway?</string>
+    <string name="s1_64a">Continue until you reach the next appropriate exit.</string>
+    <string name="s1_64b">Stop and reverse back along the free way to the exit you missed.</string>
+    <string name="s1_64c">Stop immediately and turn around</string>
+    <string name="s1_64d">Look into the rear view mirror and reverse.</string>
+
+    <string name="s1_65q">%1$d. You are about to take a right turn at an intersection. The signal is green for you. You hear a siren and see a fire brigade about to overtake you. You should</string>
+    <string name="s1_65a">Continue to make the turn since you have the right of way.</string>
+    <string name="s1_65b">Stop and let the fire brigade overtake you.</string>
+    <string name="s1_65c">Speed up and beat the fire brigade.</string>
+    <string name="s1_65d">Any of the above.</string>
+
+    <string name="s1_66q">%1$d. While driving you approach a large puddle that is close to the left-hand kerb. Pedestrians are close to the water. You should</string>
+    <string name="s1_66a">Ignore the puddle</string>
+    <string name="s1_66b">Brake suddenly and sound your horn</string>
+    <string name="s1_66c">Slow down before the puddle &amp; try to avoid splashing the pedestrians</string>
+    <string name="s1_66d">Wave at the pedestrians to keep back</string>
+
+    <string name="s1_67q">%1$d. What action would you take when elderly people are crossing the road?</string>
+    <string name="s1_67a">Wave them across so they know that you have seen them.</string>
+    <string name="s1_67b">Be patient and give them sufficient time to cross.</string>
+    <string name="s1_67c">Speed up the engine to let them know that you are waiting.</string>
+    <string name="s1_67d">Tap the horn in case they are hard of hearing.</string>
+
+    <string name="s1_68q">%1$d. You see a pedestrian with a stick and dark glasses trying to cross the road. What do you interpret?</string>
+    <string name="s1_68a">The person is dumb</string>
+    <string name="s1_68b">The person is deaf</string>
+    <string name="s1_68c">The person in normal</string>
+    <string name="s1_68d">The person is blind</string>
+
+    <string name="s1_69q">%1$d. When driving near children playing or walking near the edge of the road, you should</string>
+    <string name="s1_69a">Wait for them to finish their game</string>
+    <string name="s1_69b">Sound your horn to warn them of your presence.</string>
+    <string name="s1_69c">Slow down, and be ready to make a safe stop.</string>
+    <string name="s1_69d">Continue at the same speed and drive around them.</string>
+
+    <string name="s1_70q">%1$d. When driving in an area where there are many pedestrians (e.g.a bus stop) it is important to</string>
+    <string name="s1_70a">Sound your horn repeatedly</string>
+    <string name="s1_70b">Put your headlights on high beam so they can see you better.</string>
+    <string name="s1_70c">Increase your speed to avoid the change of hitting them.</string>
+    <string name="s1_70d">Slow down and watch for an indication that they will enter the road.</string>
+
+    <string name="s1_71q">%1$d. A vehicle ahead of you has stopped at a pedestrian crossing. You</string>
+    <string name="s1_71a">Must not overtake the vehicle</string>
+    <string name="s1_71b">May overtake the vehicle if there are no pedestrians on the crossing</string>
+    <string name="s1_71c">May overtake the vehicle if there are no other vehicles coming the other way.</string>
+    <string name="s1_71d">None of the above</string>
+
+    <string name="s1_72q">%1$d. While driving motor vehicle on the road</string>
+    <string name="s1_72a">You should drive the vehicle close to the left hand side of the road</string>
+    <string name="s1_72b">You should drive the vehicle close to the right hand side of the road</string>
+    <string name="s1_72c">You have carefully keep to the middle of the road</string>
+    <string name="s1_72d">You can drive either to the right or the left as per convenience</string>
+
+    <string name="s1_73q">%1$d. While driving motor vehicle on the road you should allow the traffic coming from the opposite direction</string>
+    <string name="s1_73a">To pass to the right hand side</string>
+    <string name="s1_73b">To pass to the left hand side</string>
+    <string name="s1_73c">To pass at the centre of the road</string>
+    <string name="s1_73d">To pass from either left or right hand side as per convenience</string>
+
+    <string name="s1_74q">%1$d. When you want to turn into the road on the left side, you have to drive</string>
+    <string name="s1_74a">As close as maybe to the left side of the road</string>
+    <string name="s1_74b">As close as maybe to the right side of the road</string>
+    <string name="s1_74c">At the centre of the road to facilitate easy turning of the vehicle</string>
+    <string name="s1_74d">To the right side or left side of the road as per convenience</string>
+
+    <string name="s1_75q">%1$d. When you want to turn into the road on the right side, you have to drive</string>
+    <string name="s1_75a">With signal indicator to the right</string>
+    <string name="s1_75b">As near as maybe to the centre of road along which you are travelling</string>
+    <string name="s1_75c">Arrive as near as maybe to left of the road which you are entering</string>
+    <string name="s1_75d">All of the above</string>
+
+    <string name="s1_76q">%1$d. When you want to overtake a vehicle in front of you, you can overtake</string>
+    <string name="s1_76a">Only from the right hand side of that vehicle</string>
+    <string name="s1_76b">Only from the left hand side of that vehicle</string>
+    <string name="s1_76c">Either from right or left hand side of the vehicle</string>
+    <string name="s1_76d">None of the above</string>
+
+    <string name="s1_77q">%1$d. You can overtake a vehicle in front of you from the left hand side</string>
+    <string name="s1_77a">When the driver of that vehicle indicates intention to turn to the right and has drawn his vehicle to the centre of the road</string>
+    <string name="s1_77b">When the driver of that vehicle is not responding to your signals</string>
+    <string name="s1_77c">When you are in a hurry to reach your destination</string>
+    <string name="s1_77d">On the national highways</string>
+
+    <string name="s1_78q">%1$d. You want to overtake a vehicle in front of you. You suddenly find that the vehicle coming behind you has begun to overtake you. What should you do.?</string>
+    <string name="s1_78a">Overtake the front vehicle with higher speed</string>
+    <string name="s1_78b">Continue driving without giving way to the vehicle behind</string>
+    <string name="s1_78c">Stop overtaking the vehicle in front as it is not safe to do so</string>
+    <string name="s1_78d">None of the above</string>
+
+    <string name="s1_79q">%1$d. Overtaking is prohibited in which of the following cases</string>
+    <string name="s1_79a">If overtaking is likely to cause inconvenience or danger to other traffic proceeding in any direction</string>
+    <string name="s1_79b">If the vehicle is near a bend, corner or hill making the road ahead not clearly visible</string>
+    <string name="s1_79c">If the driver of the vehicle in front of you has not signalled that you may overtake him</string>
+    <string name="s1_79d">All of the above</string>
+
+    <string name="s1_80q">%1$d. You are driving a vehicle. Another vehicle from behind wants to overtake you. What should you do.?</string>
+    <string name="s1_80a">Increase the speed of your vehicle</string>
+    <string name="s1_80b">Go with your own speed without bothering about that vehicle</string>
+    <string name="s1_80c">Slow down and allow the vehicle to overtake</string>
+    <string name="s1_80d">None of the above</string>
+
+    <string name="s1_81q">%1$d. You shall slow down the vehicle</string>
+    <string name="s1_81a">When approaching a road intersection</string>
+    <string name="s1_81b">When approaching a road junction</string>
+    <string name="s1_81c">When approaching a pedestrian crossing</string>
+    <string name="s1_81d">All of the above</string>
+
+    <string name="s1_82q">%1$d. When you are entering into a main road at a road junction</string>
+    <string name="s1_82a">You should give way to the vehicles proceeding along that road</string>
+    <string name="s1_82b">You can speed up into the main road</string>
+    <string name="s1_82c">You can obstruct all the vehicles coming from your right hand side</string>
+    <string name="s1_82d">You signal that the traffic on the main road shall stop for you</string>
+
+    <string name="s1_83q">%1$d. When you are driving on the road, you shall give free passage to</string>
+    <string name="s1_83a">Fire service vehicles</string>
+    <string name="s1_83b">Ambulances</string>
+    <string name="s1_83c">Heavy vehicles</string>
+    <string name="s1_83d">Only 1 &amp; 2</string>
+
+    <string name="s1_84q">%1$d. At a traffic junction, you got a green signal to move on. But the pedestrians are still on the zebra crossing. What should you do.?</string>
+    <string name="s1_84a">Move your vehicle by blowing horn</string>
+    <string name="s1_84b">Patiently wait and allow pedestrians to pass</string>
+    <string name="s1_84c">Signal the pedestrians to stop</string>
+    <string name="s1_84d">Turn your vehicle to the right and go</string>
+
+    <string name="s1_85q">%1$d. When you want to take a u- turn at a traffic junction</string>
+    <string name="s1_85a">You should first signal for a right turn and watch the rear view mirror and turn</string>
+    <string name="s1_85b">You should take u- turn very fast</string>
+    <string name="s1_85c">You should bring your vehicle to the left most side of the road</string>
+    <string name="s1_85d">Blow the horn and take u-turn</string>
+
+    <string name="s1_86q">%1$d. If you want to slow down while driving, the hand signal you should give is</string>
+    <string name="s1_86a">Extend the right arm, palm down, to the right of the vehicle and move the extended arm up and down several times</string>
+    <string name="s1_86b">Raise the right fore arm vertically out side to the right of the vehicle, palm to the front</string>
+    <string name="s1_86c">Extend right arm in horizontal position to the right of the vehicle with palm of the hand turned to the front</string>
+    <string name="s1_86d">Extend right arm to the right of the vehicle and rotate it in an anti clock wise direction</string>
+
+    <string name="s1_87q">%1$d. If you are about to stop the vehicle on the road, the hand signal you should give is</string>
+    <string name="s1_87a">Extend the right arm, palm down, to the right of the vehicle and move the extended arm up and down several times</string>
+    <string name="s1_87b">Raise the right fore arm vertically out side to the right of the vehicle, palm to the front</string>
+    <string name="s1_87c">Extend right arm in horizontal position to the right of the vehicle with palm of the hand turned to the front</string>
+    <string name="s1_87d">Extend right arm to the right of the vehicle and rotate it in an anti clock wise direction</string>
+
+    <string name="s1_88q">%1$d. If you are about to turn to the right, the hand signal you should give is</string>
+    <string name="s1_88a">Extend the right arm, palm down, to the right of the vehicle and move the extended arm up and down several times</string>
+    <string name="s1_88b">Raise the right fore arm vertically out side to the right of the vehicle, palm to the front</string>
+    <string name="s1_88c">Extend right arm in horizontal position to the right of the vehicle with palm of the hand turned to the front</string>
+    <string name="s1_88d">Extend right arm to the right of the vehicle and rotate it in an anti clock wise direction</string>
+
+    <string name="s1_89q">%1$d. If you are about to turn to the left, the hand signal you should give is</string>
+    <string name="s1_89a">Extend the right arm, palm down, to the right of the vehicle and move the extended arm up and down several times</string>
+    <string name="s1_89b">Raise the right fore arm vertically out side to the right of the vehicle, palm to the front</string>
+    <string name="s1_89c">Extend right arm in horizontal position to the right of the vehicle with palm of the hand turned to the front</string>
+    <string name="s1_89d">Extend right arm to the right of the vehicle and rotate it in an anti clock wise direction</string>
+
+    <string name="s1_90q">%1$d. In which of the following places can you park your vehicle</string>
+    <string name="s1_90a">Near a road crossing</string>
+    <string name="s1_90b">Near a bend on the road</string>
+    <string name="s1_90c">On a foot path</string>
+    <string name="s1_90d">None of these</string>
+
+    <string name="s1_91q">%1$d. In which of the following places can you park your vehicle</string>
+    <string name="s1_91a">Near traffic light</string>
+    <string name="s1_91b">Near pedestrians crossing</string>
+    <string name="s1_91c">On a main road with heavy traffic</string>
+    <string name="s1_91d">None of these</string>
+
+    <string name="s1_92q">%1$d. In which of the following places can you park your vehicle</string>
+    <string name="s1_92a">Opposite another parked vehicle on the road</string>
+    <string name="s1_92b">Along side another parked vehicle on the road</string>
+    <string name="s1_92c">Where there is a continuous white line on the road</string>
+    <string name="s1_92d">In a place, off the road</string>
+
+    <string name="s1_93q">%1$d. While driving on a road which is marked into lanes</string>
+    <string name="s1_93a">You can change lanes when there is no traffic</string>
+    <string name="s1_93b">You can change lanes freely if you are moving slowly</string>
+    <string name="s1_93c">You can change the lane only after giving proper signal</string>
+    <string name="s1_93d">There are no restrictions for two wheelers</string>
+
+    <string name="s1_94q">%1$d. When a road is marked with a yellow line dividing the road</string>
+    <string name="s1_94a">You can overtake the vehicle in front, with out crossing the yellow line</string>
+    <string name="s1_94b">You can not overtake the vehicle in front of you</string>
+    <string name="s1_94c">You have to overtake the vehicle only by crossing the yellow line</string>
+    <string name="s1_94d">You have to signal the vehicle in front of you to cross the yellow line and then overtake</string>
+
+    <string name="s1_95q">%1$d. You are driving behind another vehicle in a busy traffic, you should</string>
+    <string name="s1_95a">Follow the front vehicle close behind</string>
+    <string name="s1_95b">Keep sufficient distance from the front vehicle to avoid collission</string>
+    <string name="s1_95c">Keep a very long distance from the front vehicle</string>
+    <string name="s1_95d">None of these</string>
+
+    <string name="s1_96q">%1$d. You are going down a narrow mountain road and you face another vehicle in opposite direction. What should you do</string>
+    <string name="s1_96a">You ask the upcoming vehicle to stop to allow you to proceed</string>
+    <string name="s1_96b">You allow the upcoming vehicle to pass first</string>
+    <string name="s1_96c">You obstruct the upcoming vehicle by keeping your vehicle across</string>
+    <string name="s1_96d">You raise the speed of your vehicle</string>
+
+    <string name="s1_97q">%1$d. A bus is stopped at a bus stop ahead of you. Its right indicator is flashing. You should-</string>
+    <string name="s1_97a">Flash your headlights and slow down</string>
+    <string name="s1_97b">Slow down and give way if it is safe to do so</string>
+    <string name="s1_97c">Sound your horn and keep going</string>
+    <string name="s1_97d">Slow down and then sound your horn</string>
+
+    <string name="s1_98q">%1$d. You are approaching the traffic lights that have been green for some time. You should</string>
+    <string name="s1_98a">Accelerate hard</string>
+    <string name="s1_98b">Maintain your speed</string>
+    <string name="s1_98c">Be ready to stop</string>
+    <string name="s1_98d">Brake hard</string>
+
+    <string name="s1_99q">%1$d. You are driving behind a large goods vehicle. It signals left but steers to the right. You should</string>
+    <string name="s1_99a">Slow down and let the vehicle turn</string>
+    <string name="s1_99b">Drive on, keeping to the left</string>
+    <string name="s1_99c">Overtake on the right of it</string>
+    <string name="s1_99d">Hold your speed and sound your horn</string>
+
+    <string name="s1_100q">%1$d. A person herding sheep asks you to stop. You should-</string>
+    <string name="s1_100a">Ignore them as they have no authority</string>
+    <string name="s1_100b">Stop and switch off your engine</string>
+    <string name="s1_100c">Continue on but drive slowly</string>
+    <string name="s1_100d">Try and get past quickly</string>
+
+    <string name="s1_101q">%1$d. You cannot see clearly behind when reversing. What should you do?</string>
+    <string name="s1_101a">Open your window to look behind</string>
+    <string name="s1_101b">Open the door and look behind</string>
+    <string name="s1_101c">Look in the side mirror</string>
+    <string name="s1_101d">Ask someone to guide you</string>
+
+    <string name="s1_102q">%1$d. You are following two cyclists. They approach a roundabout in the left-hand lane. In which direction should you expect the cyclists to go?</string>
+    <string name="s1_102a">Left</string>
+    <string name="s1_102b">Right</string>
+    <string name="s1_102c">Any direction</string>
+    <string name="s1_102d">Straight ahead</string>
+
+    <string name="s1_103q">%1$d. You are on a narrow road at night. A slower moving vehicle ahead has been signalling right for some time. What should you do?</string>
+    <string name="s1_103a">Overtake on the left</string>
+    <string name="s1_103b">Flash your headlights before overtaking</string>
+    <string name="s1_103c">Signal right and sound your horn</string>
+    <string name="s1_103d">Wait for the signal to be cancelled before overtaking</string>
+
+    <string name="s1_104q">%1$d. When joining a motorway you must always</string>
+    <string name="s1_104a">Use the hard shoulder</string>
+    <string name="s1_104b">Stop at the end of the acceleration lane</string>
+    <string name="s1_104c">Come to a stop before joining the motorway</string>
+    <string name="s1_104d">Give way to traffic already on the motorway</string>
+
+    <string name="s1_105q">%1$d. You are driving on a motorway. By mistake you go past the exit that you wanted to take. You should</string>
+    <string name="s1_105a">Carefully reverse on the hard shoulder</string>
+    <string name="s1_105b">Carry on to the next exit</string>
+    <string name="s1_105c">Carefully reverse in the left-hand lane</string>
+    <string name="s1_105d">Make a u-turn at the next gap</string>
+
+    <string name="s1_106q">%1$d. You are leaving your vehicle parked on a road. When may you leave the engine running?</string>
+    <string name="s1_106a">If your vehicle will be parked for less than five minutes</string>
+    <string name="s1_106b">If the battery is flat</string>
+    <string name="s1_106c">When in a 20 kmph zone</string>
+    <string name="s1_106d">Not on any occasion</string>
+
+    <string name="s1_107q">%1$d. When going straight ahead at a roundabout you should</string>
+    <string name="s1_107a">Indicate left before leaving the roundabout</string>
+    <string name="s1_107b">Dont indicate at any time</string>
+    <string name="s1_107c">Indicate right when approaching the roundabout</string>
+    <string name="s1_107d">Indicate left when approaching the roundabout</string>
+
+    <string name="s1_108q">%1$d. While driving on a hill, who should be given right of way?</string>
+    <string name="s1_108a">Vehicles travelling downhill</string>
+    <string name="s1_108b">Vehicles travelling uphill</string>
+    <string name="s1_108c">No precedence to anyone</string>
+    <string name="s1_108d">Depends on the conditions of the road</string>
+
+    <string name="s1_109q">%1$d. What must you do when approaching an intersection if the traffic lights change from green to amber?</string>
+    <string name="s1_109a">Speed up to reach the intersection before lights changes to red.</string>
+    <string name="s1_109b">Stop if you can do safely before the intersection.</string>
+    <string name="s1_109c">Stop immediately.</string>
+    <string name="s1_109d">Swing hard and stop immediately around the corner.</string>
+
+    <string name="s1_110q">%1$d. What must you do when you intend to turn right from a road into a driveway or intersection?</string>
+    <string name="s1_110a">Signal immediately before you turn</string>
+    <string name="s1_110b">Do not signal unless traffic is approaching you</string>
+    <string name="s1_110c">No signal is necessary</string>
+    <string name="s1_110d">Give a right turn signal at least three seconds before you intend to turn</string>
+
+    <string name="s1_111q">%1$d. While driving a vehicle, if you find an animal running across the road suddenly in front of you,</string>
+    <string name="s1_111a">You should apply brakes immediately</string>
+    <string name="s1_111b">You should blow the horn and overtake the animal from any side you find convenient</string>
+    <string name="s1_111c">You should speed up and move in front of the animal</string>
+    <string name="s1_111d">You should check traffic from behind, slow down or stop to enable the animal to cross</string>
+
+    <string name="s1_112q">%1$d. While braking in rainy and wet conditions, you should</string>
+    <string name="s1_112a">Apply full force</string>
+    <string name="s1_112b">Apply brakes frequently</string>
+    <string name="s1_112c">Try to lock the wheels</string>
+    <string name="s1_112d">None of the above</string>
+
+    <string name="s1_113q">%1$d. You are driving down a steep hill. To control the speed of your vehicle you must</string>
+    <string name="s1_113a">Select low gear and use the brakes carefully</string>
+    <string name="s1_113b">Select a high gear and use the brakes carefully</string>
+    <string name="s1_113c">Select a high gear and avoid using the brakes</string>
+    <string name="s1_113d">Keep the gear in neutral and use brakes firmly</string>
+
+    <string name="s1_114q">%1$d. While driving downhill....</string>
+    <string name="s1_114a">Use top gear for optimum performance</string>
+    <string name="s1_114b">Use neutral gear to reduce engine noise</string>
+    <string name="s1_114c">Drive with ignition off and neutral gear to save fuel</string>
+    <string name="s1_114d">Use same gear selection as driving uphill</string>
+
+    <string name="s1_115q">%1$d. You stop for pedestrians waiting to cross at a zebra crossing. They do not start to cross. What should you do?</string>
+    <string name="s1_115a">Be patient and wait.</string>
+    <string name="s1_115b">Sound your horn.</string>
+    <string name="s1_115c">Drive on.</string>
+    <string name="s1_115d">Wave them to cross.</string>
+
+    <string name="s1_116q">%1$d. You should never attempt to overtake a cyclist</string>
+    <string name="s1_116a">Just before you turn left</string>
+    <string name="s1_116b">Just before you turn right</string>
+    <string name="s1_116c">On a one-way street</string>
+    <string name="s1_116d">On a dual carriageway.</string>
+
+    <string name="s1_117q">%1$d. It is very windy. You are behind a motorcyclist who is overtaking a high-sided vehicle. What should you do?</string>
+    <string name="s1_117a">Overtake the motorcyclist immediately.</string>
+    <string name="s1_117b">Keep well back.</string>
+    <string name="s1_117c">Stay level with the motorcyclist.</string>
+    <string name="s1_117d">Keep close to the motorcyclist.</string>
+
+    <string name="s1_118q">%1$d. You intend to turn right into a side road. Just before turning you should check for motorcyclists who might be</string>
+    <string name="s1_118a">Overtaking on your left</string>
+    <string name="s1_118b">Following you closely</string>
+    <string name="s1_118c">Emerging from the side road</string>
+    <string name="s1_118d">Overtaking on your right.</string>
+
+    <string name="s1_119q">%1$d. You keep well back while waiting to overtake a large vehicle. Another car fills the gap. You should</string>
+    <string name="s1_119a">Sound your horn</string>
+    <string name="s1_119b">Drop back further</string>
+    <string name="s1_119c">Flash your headlights</string>
+    <string name="s1_119d">Start to overtake.</string>
+
+    <string name="s1_120q">%1$d. When should you direct pedestrians to cross the road?</string>
+    <string name="s1_120a">At pedestrian crossings.</string>
+    <string name="s1_120b">At no time.</string>
+    <string name="s1_120c">At junctions.</string>
+    <string name="s1_120d">At school crossings.</string>
+
+    <string name="s1_121q">%1$d. There is a slow-moving motorcyclist ahead of you. You are unsure what the rider is going to do. You should</string>
+    <string name="s1_121a">Pass on the left</string>
+    <string name="s1_121b">Pass on the right</string>
+    <string name="s1_121c">Stay behind</string>
+    <string name="s1_121d">Move closer</string>
+
+    <string name="s1_122q">%1$d. Braking hard at speed on a sharp bend can make your vehicle</string>
+    <string name="s1_122a">More stable</string>
+    <string name="s1_122b">Unstable</string>
+    <string name="s1_122c">Stall</string>
+    <string name="s1_122d">Corner safely</string>
+
+    <string name="s1_123q">%1$d. A long, heavily loaded lorry is taking a long time to overtake you. What should you do?</string>
+    <string name="s1_123a">Speed up.</string>
+    <string name="s1_123b">Slow down.</string>
+    <string name="s1_123c">Hold your speed.</string>
+    <string name="s1_123d">Change direction.</string>
+
+    <string name="s1_124q">%1$d. What is the main hazard a driver should be aware of when following a cyclist?</string>
+    <string name="s1_124a">The cyclist may move into the left and dismount</string>
+    <string name="s1_124b">The cyclist may swerve out into the road.</string>
+    <string name="s1_124c">The contents of the cyclist\'s carrier may fall onto the road.</string>
+    <string name="s1_124d">The cyclist may wish to turn right at the end of the road.</string>
+
+    <string name="s1_125q">%1$d. You are driving on a well-lit motorway at night. You must</string>
+    <string name="s1_125a">Use only your sidelights</string>
+    <string name="s1_125b">Always use your headlights</string>
+    <string name="s1_125c">Always use rear fog lights</string>
+    <string name="s1_125d">Use headlights only in bad weather</string>
+
+    <string name="s1_126q">%1$d. You are driving behind a cyclist. You wish to turn left just ahead. You should</string>
+    <string name="s1_126a">Overtake the cyclist before the junction</string>
+    <string name="s1_126b">Pull alongside the cyclist and stay level until after the junction</string>
+    <string name="s1_126c">Hold back until the cyclist has passed the junction</string>
+    <string name="s1_126d">Go around the cyclist on the junction.</string>
+
+    <string name="s1_127q">%1$d. The first thing you should do when you want to overtake a large lorry is</string>
+    <string name="s1_127a">Move close behind so that you can pass quickly</string>
+    <string name="s1_127b">Keep in close to the left-hand side</string>
+    <string name="s1_127c">Flash your headlights and wait for the driver to wave you on</string>
+    <string name="s1_127d">Stay well back to get a better view.</string>
+
+    <string name="s1_128q">%1$d. You have stopped at a pedestrian crossing. To allow pedestrians to cross, you should</string>
+    <string name="s1_128a">Wait until they have crossed</string>
+    <string name="s1_128b">Edge your vehicle forward slowly</string>
+    <string name="s1_128c">Wait, stop your engine</string>
+    <string name="s1_128d">Signal pedestrians to cross.</string>
+
+    <string name="s1_129q">%1$d. You are turning left at a junction. Pedestrians have started to cross the road. You should</string>
+    <string name="s1_129a">Go on, giving them plenty of room</string>
+    <string name="s1_129b">Stop and wave at them to cross</string>
+    <string name="s1_129c">Blow your horn and proceed</string>
+    <string name="s1_129d">Give way to them</string>
+
+    <string name="s1_130q">%1$d. A pedestrian steps out into the road just ahead of you. What should you do first?</string>
+    <string name="s1_130a">Sound your horn.</string>
+    <string name="s1_130b">Check your mirror</string>
+    <string name="s1_130c">Flash your headlights</string>
+    <string name="s1_130d">Press the brake</string>
+
+    <string name="s1_131q">%1$d. You are coming up to a roundabout. A cyclist is signalling to turn right. What should you do?</string>
+    <string name="s1_131a">Overtake on the right.</string>
+    <string name="s1_131b">Give a horn warning</string>
+    <string name="s1_131c">Signal the cyclist to move across</string>
+    <string name="s1_131d">Give the cyclist plenty of room</string>
+
+    <string name="s1_132q">%1$d. Even if your traffic signal gives you a clearway, you should-</string>
+    <string name="s1_132a">Be ready to stop.</string>
+    <string name="s1_132b">Dont obey them in emergency.</string>
+    <string name="s1_132c">Be observant for drivers who do not respect traffic signals.</string>
+    <string name="s1_132d">Dont go in foggy conditions.</string>
+
+    <string name="s1_133q">%1$d. You meet an obstruction on your side of the road-you should</string>
+    <string name="s1_133a">Carry on, you have priority.</string>
+    <string name="s1_133b">You should wave oncoming vehicles through.</string>
+    <string name="s1_133c">Give way to oncoming traffic.</string>
+    <string name="s1_133d">Accelerate to get past first.</string>
+
+    <string name="s1_134q">%1$d. When making a short stop, facing uphill, you should</string>
+    <string name="s1_134a">Hold the vehicle on the clutch</string>
+    <string name="s1_134b">Hold the vehicle on the footbrake</string>
+    <string name="s1_134c">Select neutral and apply the parking brake</string>
+    <string name="s1_134d">Apply the parking brake after stopping</string>
+
+    <string name="s1_135q">%1$d. If a person carrying a white stick with red ring is crossing the road, what should you do?</string>
+    <string name="s1_135a">Wait until he cross the road</string>
+    <string name="s1_135b">Man handle him</string>
+    <string name="s1_135c">Give him lift</string>
+    <string name="s1_135d">Let him go unnoticed</string>
+
+    <string name="s1_136q">%1$d. You are waiting at a t-junction. A vehicle is coming from the right with the left signal flashing. What should you do?</string>
+    <string name="s1_136a">Move out and accelerate hard</string>
+    <string name="s1_136b">Wait until the vehicle starts to turn in</string>
+    <string name="s1_136c">Pull out before the vehicle reaches the junction</string>
+    <string name="s1_136d">Move out slowly</string>
+
+    <string name="s1_137q">%1$d. You enter a road where there are road humps. What should you do?</string>
+    <string name="s1_137a">Maintain a reduced speed throughout</string>
+    <string name="s1_137b">Accelerate quickly between each one</string>
+    <string name="s1_137c">Always keep to the maximum legal speed</string>
+    <string name="s1_137d">Drive slowly at school timings only</string>
+
+    <string name="s1_138q">%1$d. When approaching a right- hand curve you should keep well to the left. Why is this?</string>
+    <string name="s1_138a">To improve your view of the road</string>
+    <string name="s1_138b">To overcome the effect of the road\'s slope</string>
+    <string name="s1_138c">To let faster traffic from behind overtake</string>
+    <string name="s1_138d">To be positioned safely if you skid</string>
+
+    <string name="s1_139q">%1$d. You are on a long, downhill slope. What should you do to help control the speed of your vehicle?</string>
+    <string name="s1_139a">Select neutral</string>
+    <string name="s1_139b">Select a lower gear</string>
+    <string name="s1_139c">Grip the handbrake firmly</string>
+    <string name="s1_139d">Apply the parking brake gently</string>
+
+    <string name="s1_140q">%1$d. What should the driver of the car approaching the crossing do?</string>
+    <string name="s1_140a">Continue at the same speed</string>
+    <string name="s1_140b">Sound the horn</string>
+    <string name="s1_140c">Drive through quickly</string>
+    <string name="s1_140d">Slow down and get ready to stop</string>
+
+    <string name="s1_141q">%1$d. You are behind the cyclist. When the traffic lights change, what should you do?</string>
+    <string name="s1_141a">Try to move off before the cyclist</string>
+    <string name="s1_141b">Allow the cyclist time and room</string>
+    <string name="s1_141c">Turn right but give the cyclist room</string>
+    <string name="s1_141d">Tap your horn and drive through first</string>
+
+    <string name="s1_142q">%1$d. You intend to turn left at the traffic lights. Just before turning you should</string>
+    <string name="s1_142a">Check your right mirror</string>
+    <string name="s1_142b">Move close up to the white car</string>
+    <string name="s1_142c">Straddle the lanes</string>
+    <string name="s1_142d">Check for bicycles on your left</string>
+
+    <string name="s1_143q">%1$d. You are following a cyclist. You wish to turn left just ahead. You should-</string>
+    <string name="s1_143a">Overtake the cyclist before the junction</string>
+    <string name="s1_143b">Pull alongside the cyclist and stay level until after the junction</string>
+    <string name="s1_143c">Hold back until the cyclist has passed the junction</string>
+    <string name="s1_143d">Go around the cyclist on the junction</string>
+
+    <string name="s1_144q">%1$d. You are driving in town. There is a bus at the bus stop on the other side of the road. Why should you be careful?</string>
+    <string name="s1_144a">The bus may have broken down</string>
+    <string name="s1_144b">Pedestrians may come from behind the bus</string>
+    <string name="s1_144c">The bus may move off suddenly</string>
+    <string name="s1_144d">The bus may remain stationary</string>
+
+    <string name="s1_145q">%1$d. You are approaching a mini- roundabout. The long vehicle in front is signalling left but positioned over to the right. You should-</string>
+    <string name="s1_145a">Sound your horn</string>
+    <string name="s1_145b">Overtake on the left</string>
+    <string name="s1_145c">Follow the same course as the lorry</string>
+    <string name="s1_145d">Keep well back</string>
+
+    <string name="s1_146q">%1$d. You meet an obstruction on your side of the road. You should-</string>
+    <string name="s1_146a">Carry on .you have priority</string>
+    <string name="s1_146b">Give way to oncoming traffic</string>
+    <string name="s1_146c">Wave oncoming vehicles through</string>
+    <string name="s1_146d">Accelerate to get past first</string>
+
+    <string name="s1_147q">%1$d. The white line along the side of the road</string>
+    <string name="s1_147a">Shows the edge of the carriageway</string>
+    <string name="s1_147b">Shows the approach to a hazard</string>
+    <string name="s1_147c">Means no parking</string>
+    <string name="s1_147d">Means no overtaking</string>
+
+    <string name="s1_148q">%1$d. You are waiting at a t-junction. A vehicle is coming from the right with the left signal flashing. What should you do?</string>
+    <string name="s1_148a">Move out and accelerate hard</string>
+    <string name="s1_148b">Wait until the vehicle starts to turn in</string>
+    <string name="s1_148c">Pull out before the vehicle reaches the junction</string>
+    <string name="s1_148d">Move out slowly</string>
+
+    <string name="s1_149q">%1$d. How should you stop when going up the gradient?</string>
+    <string name="s1_149a">Using clutch &amp; footbrake</string>
+    <string name="s1_149b">Using only gears</string>
+    <string name="s1_149c">Switching off the engine</string>
+    <string name="s1_149d">Using the hand brake</string>
+
+    <string name="s1_150q">%1$d. Which of these should you do when passing sheep on a road?</string>
+    <string name="s1_150a">Drive very slowly.</string>
+    <string name="s1_150b">Allow plenty of room.</string>
+    <string name="s1_150c">Be ready to stop.</string>
+    <string name="s1_150d">All of the above.</string>
+
+    <string name="s1_151q">%1$d. Which hand signal is used for \'u\' turn</string>
+    <string name="s1_151a">Left turn signal</string>
+    <string name="s1_151b">Slow down signal</string>
+    <string name="s1_151c">Right turn signal</string>
+    <string name="s1_151d">Special \'u\' turn signal</string>
+
+    <string name="s1_152q">%1$d. When your vehicle is being overtaken</string>
+    <string name="s1_152a">You can increase speed with care</string>
+    <string name="s1_152b">You can change lanes</string>
+    <string name="s1_152c">You should move to overtaking lane</string>
+    <string name="s1_152d">Do not increase speed</string>
+
+    <string name="s1_153q">%1$d. You are approaching a narrow bridge. Another vehicle from the opposite direction is already on the bridge. You should</string>
+    <string name="s1_153a">Increase our speed and try to cross the bridge quickly</string>
+    <string name="s1_153b">Switch on your headlights</string>
+    <string name="s1_153c">Wait till the other vehicle has crossed the bridge and then proceed</string>
+    <string name="s1_153d">Sound horn and drive through</string>
+
+    <string name="s1_154q">%1$d. When a vehicle arrives at an unguarded railway crossing</string>
+    <string name="s1_154a">The driver must sound horn and drive through</string>
+    <string name="s1_154b">The driver must switch on the headlights and drive</string>
+    <string name="s1_154c">The driver must get out of the vehicle and check for any approaching train and then pass.</string>
+    <string name="s1_154d">The driver must check with the railway authorities about train timings</string>
+
+    <string name="s1_155q">%1$d. You wish to park facing down hill. Which of the following should you do?</string>
+    <string name="s1_155a">Turn the steering wheel towards the kerb and put the hand brake firmly</string>
+    <string name="s1_155b">Park close to the bumper of the another car</string>
+    <string name="s1_155c">Park with two wheels on the kerb</string>
+    <string name="s1_155d">Turn the steering wheel away from the kerb</string>
+
+    <string name="s1_156q">%1$d. Lending of a motor vehicle to a person for driving, who is not holding a valid licence is:-</string>
+    <string name="s1_156a">Not an offence since the borrower is solely responsible.</string>
+    <string name="s1_156b">A serious offence.</string>
+    <string name="s1_156c">An offence only when vehicle is involved in an accident.</string>
+    <string name="s1_156d">None of the above</string>
+
+    <string name="s1_157q">%1$d. U turn is prohibited on</string>
+    <string name="s1_157a">A road with a "no u turn" sign</string>
+    <string name="s1_157b">A busy road</string>
+    <string name="s1_157c">A road where safety may be compromised</string>
+    <string name="s1_157d">All of the above</string>
+
+    <string name="s1_158q">%1$d. Pedestrians must not cross the road, from behind a vehicle or near to a bend, because</string>
+    <string name="s1_158a">They may not be able to run across the road</string>
+    <string name="s1_158b">They may cause inconvenience to the pedestrians</string>
+    <string name="s1_158c">Children may feel scared</string>
+    <string name="s1_158d">Drivers of the other vehicles may not be able to see the person crossing the road</string>
+</resources>
