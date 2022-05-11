@@ -80,4 +80,16 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
             findViewById(R.id.settings_spinner_language).setVisibility(View.VISIBLE);
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        // save settings
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS_FILE_SETTINGS, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean(SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, use_system_language);
+        editor.putString(SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, code_of_language_choice_if_not_use_system_lang);
+        editor.apply();
+    }
 }
