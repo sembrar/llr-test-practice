@@ -164,9 +164,11 @@ public class LearnActivity extends AppCompatActivity {
 
         // set question
         int quesResID = resources.getIdentifier(String.format("s%d_%dq", subject_index, currentQuestionIndex), "string", packageName);
-        if (quesResID == 0) quesResID = R.string.no_string;
-        ((TextView) findViewById(R.id.learn_textView_question)).setText(quesResID);
-
+        ((TextView) findViewById(R.id.learn_textView_question)).setText(
+                quesResID == 0 ?
+                        resources.getString(R.string.no_string) :
+                        resources.getString(quesResID, currentQuestionIndex + 1)
+        );
         // set options
         for (int i = 0; i < radioButtonIDs.length; i++) {
             int resID = resources.getIdentifier(String.format("s%d_%d%s", subject_index, currentQuestionIndex, radioButtonOptionSuffixes[i]), "string", packageName);
