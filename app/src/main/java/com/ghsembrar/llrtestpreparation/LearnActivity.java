@@ -19,6 +19,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import java.util.Arrays;
 import java.util.Locale;
 
 public class LearnActivity extends AppCompatActivity {
@@ -92,6 +93,7 @@ public class LearnActivity extends AppCompatActivity {
         // set onClickListeners for buttons
         findViewById(R.id.lean_button_previous).setOnClickListener(this::clickedPrev);
         findViewById(R.id.learn_button_next).setOnClickListener(this::clickedNext);
+        findViewById(R.id.learn_button_check).setOnClickListener(this::clickedCheck);
     }
 
     @Override
@@ -101,6 +103,8 @@ public class LearnActivity extends AppCompatActivity {
         updateResourcesVariable();  // this helps load resources of different language than system's
 
         numQuestions = resources.getIntArray(R.array.num_questions)[subject_index];
+        practiceAnswers = new int[numQuestions];
+        Arrays.fill(practiceAnswers, -1);
 
         setActivityAccordingToMode();  // readMode => choices not clickable etc.  // also sets current question
     }
@@ -259,8 +263,9 @@ public class LearnActivity extends AppCompatActivity {
             currentCorrectAnswer = -1;
         }
 
-        if (is_read_mode) {
-            checkResponse();  // this is to put background color on the correct option, in future, can be overridden with a Setting(no-background-color-in-read-mode)
+        if (is_read_mode || practiceAnswers[currentQuestionIndex] != -1) {
+            // note: in the condition, if first is false => it is practiceMode, so second can be checked
+            checkResponse();
         }
     }
 
@@ -361,5 +366,17 @@ public class LearnActivity extends AppCompatActivity {
             }
             findViewById(radioButtonIDs[i]).setBackgroundColor(color);
         }
+    }
+
+    public void clickedCheck(View view) {  // note that this is only called in practiceMode
+        // save selection to practiceAnswers and call checkResponse
+        practiceAnswers[currentQuestionIndex] = -1;  // -1 means no option selected
+        for (int i = 0; i < radioButtonIDs.length; i++) {
+            if (((RadioButton) findViewById(radioButtonIDs[i])).isChecked()) {
+                practiceAnswers[currentQuestionIndex] = i;
+                break;
+            }
+        }
+        checkResponse();
     }
 }
