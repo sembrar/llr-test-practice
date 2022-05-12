@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -29,10 +30,12 @@ public class LearnActivity extends AppCompatActivity {
             R.id.learn_radioButton_choice3, R.id.learn_radioButton_choice4
     };
     private static final String[] radioButtonOptionSuffixes = {"a", "b", "c", "d"};
-    private int subject_index = -1;
     private Resources resources;
-    private int currentQuestionIndex = 0;
+    private int subject_index = -1;
     private int numQuestions = 0;
+    private int currentQuestionIndex = 0;
+    private int currentCorrectAnswer = -1;
+    private boolean is_read_mode = true;  // if false, it's practice mode
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -191,6 +194,23 @@ public class LearnActivity extends AppCompatActivity {
             ImageView imageView = findViewById(R.id.learn_imageView_accompanyingImage);
             imageView.setVisibility(View.VISIBLE);
             imageView.setImageResource(imageResID);
+        }
+
+        // clear existing response
+        ((RadioGroup) findViewById(R.id.learn_RadioGroup_choices)).clearCheck();
+
+        // get answer, mark it in read mode
+        int ansResId = resources.getIdentifier(String.format("a%d_%d", subject_index, currentQuestionIndex), "integer", packageName);
+        if (ansResId != 0) {
+            currentCorrectAnswer = resources.getInteger(ansResId);
+            if (is_read_mode) {
+                ((RadioButton) findViewById(radioButtonIDs[currentCorrectAnswer])).setChecked(true);
+            } else {
+
+            }
+        } else {
+            // todo should(also will) never happen, so handle it properly
+            currentCorrectAnswer = -1;
         }
     }
 
