@@ -23,8 +23,6 @@ import java.util.Locale;
 
 public class LearnActivity extends AppCompatActivity {
 
-    private static final String TAG = "LearnActivityLogTag";
-
     private static final int[] radioButtonIDs = {
             R.id.learn_radioButton_choice1, R.id.learn_radioButton_choice2,
             R.id.learn_radioButton_choice3, R.id.learn_radioButton_choice4
@@ -49,27 +47,21 @@ public class LearnActivity extends AppCompatActivity {
         // if data set by intent is wrong, read it from shared prefs
         // this can happen if android force re-started this activity
         if (is_activity_start_data_not_valid()) {
-            if (CONSTANTS.ALLOW_DEBUG) {
-                Log.i(TAG, "onCreate: Activity start data from intent is bad. Reading from prefs.");
-            }
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "onCreate: Activity start data from intent is bad. Reading from prefs."); }
 
             SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
             subject_index = sharedPreferences.getInt(MainActivity.INTENT_EXTRA_KEY_SUBJECT_INDEX, -1);
         }
 
         if (is_activity_start_data_not_valid()) {
-            if (CONSTANTS.ALLOW_DEBUG) {
-                Log.i(TAG, "onCreate: Activity start data from prefs is bad. Stopping activity.");
-            }
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "onCreate: Activity start data from prefs is bad. Stopping activity."); }
 
             finish();  // todo may be show a Toast for the user that an error occurred
             return;
         }
 
         // show activity start data
-        if (CONSTANTS.ALLOW_DEBUG) {
-            Log.i(TAG, String.format("onCreate: subject_index: %d", subject_index));
-        }
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("onCreate: subject_index: %d", subject_index)); }
 
         findViewById(R.id.lean_button_previous).setOnClickListener(this::clickedPrev);
         findViewById(R.id.learn_button_next).setOnClickListener(this::clickedNext);
@@ -94,25 +86,25 @@ public class LearnActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(SettingsActivity.SHARED_PREFS_FILE_SETTINGS, Context.MODE_PRIVATE);
 
         boolean use_system_language = sharedPreferences.getBoolean(SettingsActivity.SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, true);
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, String.format("updateResourcesVariable: Use system language: %b", use_system_language)); }
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("updateResourcesVariable: Use system language: %b", use_system_language)); }
 
         if (use_system_language) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "updateResourcesVariable: Using default resources"); }
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "updateResourcesVariable: Using default resources"); }
             resources = getResources();
             return;
         }
 
         // not use system language => use chosen language
         String chosen_language = sharedPreferences.getString(SettingsActivity.SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, null);
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, String.format("updateResourcesVariable: Chosen language: %s", chosen_language)); }
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("updateResourcesVariable: Chosen language: %s", chosen_language)); }
 
         if (chosen_language == null) {  // this shouldn't happen
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "updateResourcesVariable: Using default resources"); }
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "updateResourcesVariable: Using default resources"); }
             resources = getResources();
             return;
         }
 
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "updateResourcesVariable: Using chosen language resources"); }
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "updateResourcesVariable: Using chosen language resources"); }
         Locale chosenLocale = new Locale(chosen_language);
         resources = getLocalizedResources(this, chosenLocale);
     }
@@ -161,7 +153,7 @@ public class LearnActivity extends AppCompatActivity {
 
     private void setCurrentQuestion() {
         // displays current question in activity
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, String.format("setCurrentQuestion: SubjectIndex,QuestionIndex: %d,%d", subject_index, currentQuestionIndex)); }
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("setCurrentQuestion: SubjectIndex,QuestionIndex: %d,%d", subject_index, currentQuestionIndex)); }
 
         final String packageName = getPackageName();
 
@@ -215,13 +207,13 @@ public class LearnActivity extends AppCompatActivity {
 
     public void clickedPrev(View view) {
         if (currentQuestionIndex == 0) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "clickedPrev: Already in first question"); }
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedPrev: Already in first question"); }
             return;
         }
 
         currentQuestionIndex--;
         if (currentQuestionIndex < 0) {  // this should never happen
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "clickedPrev: ERR: currentQuestionIndex < 0"); }
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedPrev: ERR: currentQuestionIndex < 0"); }
             currentQuestionIndex = 0;
         }
 
@@ -230,13 +222,13 @@ public class LearnActivity extends AppCompatActivity {
 
     public void clickedNext(View view) {
         if (currentQuestionIndex == (numQuestions - 1)) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "clickedNext: Already in last question"); }
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedNext: Already in last question"); }
             return;
         }
 
         currentQuestionIndex++;
         if (currentQuestionIndex >= numQuestions) {  // this should never happpen
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(TAG, "clickedNext: ERR: currentQuestionIndex > numQuestions"); }
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedNext: ERR: currentQuestionIndex > numQuestions"); }
             currentQuestionIndex = numQuestions - 1;
         }
 
