@@ -69,7 +69,6 @@ public class LearnActivity extends AppCompatActivity {
         // show activity start data
         if (CONSTANTS.ALLOW_DEBUG) {
             Log.i(TAG, String.format("onCreate: subject_index: %d", subject_index));
-            Log.i(TAG, String.format("onCreate: numQuestions: %d", numQuestions));
         }
 
         findViewById(R.id.lean_button_previous).setOnClickListener(this::clickedPrev);
