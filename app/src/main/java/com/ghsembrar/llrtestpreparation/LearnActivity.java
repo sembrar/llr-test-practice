@@ -34,6 +34,9 @@ public class LearnActivity extends AppCompatActivity {
     private int currentCorrectAnswer = -1;  // this is updated whenever a question is loaded
     private int numQuestions = 0;  // this is updated in onResume
 
+    // the following are saved to files as there are many values
+    private int[] practiceAnswers;
+
     // keys for the variables to be saved in shared prefs
     private static final String SHARED_PREF_KEY_IS_READ_MODE = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "is_read_mode";
     private static final String SHARED_PREF_KEY_SUBJECT_INDEX = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "subject_index";
@@ -255,6 +258,10 @@ public class LearnActivity extends AppCompatActivity {
             // todo should(also will) never happen, so handle it properly
             currentCorrectAnswer = -1;
         }
+
+        if (is_read_mode) {
+            checkResponse();  // this is to put background color on the correct option, in future, can be overridden with a Setting(no-background-color-in-read-mode)
+        }
     }
 
     public void clickedPrev(View view) {
@@ -308,5 +315,42 @@ public class LearnActivity extends AppCompatActivity {
         }
 
         setCurrentQuestion();  // so that if read, it will mark the answer, else, clears response
+    }
+
+    private void checkResponse() {
+        // assumes userResponse is stored in practiceAnswers array in practiceMode
+        // uses currentCorrectAnswer in readMode
+
+        int userResponse;
+
+        if (is_read_mode) {
+            userResponse = currentCorrectAnswer;
+            // todo settings-> show backgroundColor in readMode -> if not, return from this function here
+
+        } else {
+            try {
+                userResponse = practiceAnswers[currentQuestionIndex];
+                // todo if userResponse is notCheckedYet(i.e. -1 in future), should this function return with a display toast
+            } catch (Exception exception) {
+                // either practiceAnswers is null or the length doesn't fit index -> both shouldn't happen fixme
+                userResponse = -1;
+            }
+        }
+
+        final int colorCorrectChoice = R.color.color_correct_choice;
+        final int colorWrongChoice = R.color.color_wrong_choice;
+        final int colorAlphaOnly = R.color.color_alpha_only;  // for resetting back to no color background
+
+        for (int i = 0; i < radioButtonIDs.length; i++) {
+            int color;
+            if (i == currentCorrectAnswer) {
+                color = colorCorrectChoice;
+            } else if (i == userResponse) {
+                color = colorWrongChoice;
+            } else {
+                color = colorAlphaOnly;
+            }
+            ((RadioButton) findViewById(radioButtonIDs[i])).setBackgroundColor(resources.getColor(color));
+        }
     }
 }
