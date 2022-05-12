@@ -242,8 +242,8 @@ public class LearnActivity extends AppCompatActivity {
             imageView.setImageResource(imageResID);
         }
 
-        // clear existing response
-        ((RadioGroup) findViewById(R.id.learn_RadioGroup_choices)).clearCheck();
+        // clear existing response, also clear any background colors
+        clearResponse();
 
         // get answer, mark it in read mode
         int ansResId = resources.getIdentifier(String.format("a%d_%d", subject_index, currentQuestionIndex), "integer", packageName);
@@ -317,6 +317,16 @@ public class LearnActivity extends AppCompatActivity {
         setCurrentQuestion();  // so that if read, it will mark the answer, else, clears response
     }
 
+    private void clearResponse() {
+        // clear selection
+        ((RadioGroup) findViewById(R.id.learn_RadioGroup_choices)).clearCheck();
+        // clear background colors
+        final int color_alpha_only = resources.getColor(R.color.color_alpha_only);
+        for (int radioButtonID : radioButtonIDs) {
+            findViewById(radioButtonID).setBackgroundColor(color_alpha_only);
+        }
+    }
+
     private void checkResponse() {
         // assumes userResponse is stored in practiceAnswers array in practiceMode
         // uses currentCorrectAnswer in readMode
@@ -337,9 +347,8 @@ public class LearnActivity extends AppCompatActivity {
             }
         }
 
-        final int colorCorrectChoice = R.color.color_correct_choice;
-        final int colorWrongChoice = R.color.color_wrong_choice;
-        final int colorAlphaOnly = R.color.color_alpha_only;  // for resetting back to no color background
+        final int colorCorrectChoice = resources.getColor(R.color.color_correct_choice);
+        final int colorWrongChoice = resources.getColor(R.color.color_wrong_choice);
 
         for (int i = 0; i < radioButtonIDs.length; i++) {
             int color;
@@ -348,9 +357,9 @@ public class LearnActivity extends AppCompatActivity {
             } else if (i == userResponse) {
                 color = colorWrongChoice;
             } else {
-                color = colorAlphaOnly;
+                continue;
             }
-            ((RadioButton) findViewById(radioButtonIDs[i])).setBackgroundColor(resources.getColor(color));
+            findViewById(radioButtonIDs[i]).setBackgroundColor(color);
         }
     }
 }
