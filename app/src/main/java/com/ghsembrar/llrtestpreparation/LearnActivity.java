@@ -99,7 +99,7 @@ public class LearnActivity extends AppCompatActivity {
 
         numQuestions = resources.getIntArray(R.array.num_questions)[subject_index];
 
-        setCurrentQuestion();
+        setActivityAccordingToMode();  // readMode => choices not clickable etc.  // also sets current question
     }
 
     @Override
@@ -167,9 +167,21 @@ public class LearnActivity extends AppCompatActivity {
                 // startAboutActivity();  // todo
                 return true;
             case R.id.learnAct_menu_item_read_mode:
-                return true;  // todo
+                if (!is_read_mode) {
+                    is_read_mode = true;
+                    setActivityAccordingToMode();
+                } else {
+                    if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "onOptionsItemSelected: Already in readMode"); }
+                }
+                return true;
             case R.id.learnAct_menu_item_practice_mode:
-                return true;  // todo
+                if (is_read_mode) {
+                    is_read_mode = false;
+                    setActivityAccordingToMode();
+                } else {
+                    if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "onOptionsItemSelected: Already in practiceMode"); }
+                }
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -273,5 +285,28 @@ public class LearnActivity extends AppCompatActivity {
         }
 
         setCurrentQuestion();
+    }
+
+    private void setActivityAccordingToMode() {
+        if (is_read_mode) {
+            // radio buttons should not be clickable
+            // don't show check button
+
+            for (int radioButtonID : radioButtonIDs) {
+                findViewById(radioButtonID).setClickable(false);
+            }
+            findViewById(R.id.learn_button_check).setVisibility(View.GONE);
+
+        } else {  // practice mode
+            // radio buttons are clickable
+            // show check button
+
+            for (int radioButtonID : radioButtonIDs) {
+                findViewById(radioButtonID).setClickable(true);
+            }
+            findViewById(R.id.learn_button_check).setVisibility(View.VISIBLE);
+        }
+
+        setCurrentQuestion();  // so that if read, it will mark the answer, else, clears response
     }
 }
