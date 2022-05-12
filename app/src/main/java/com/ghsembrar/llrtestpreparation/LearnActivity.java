@@ -23,6 +23,7 @@ import java.util.Locale;
 
 public class LearnActivity extends AppCompatActivity {
 
+
     private static final int[] radioButtonIDs = {
             R.id.learn_radioButton_choice1, R.id.learn_radioButton_choice2,
             R.id.learn_radioButton_choice3, R.id.learn_radioButton_choice4
@@ -35,6 +36,10 @@ public class LearnActivity extends AppCompatActivity {
     private int currentCorrectAnswer = -1;
     private boolean is_read_mode = true;  // if false, it's practice mode
 
+    private static final String SHARED_PREF_KEY_IS_READ_MODE = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "is_read_mode";
+    private static final String SHARED_PREF_KEY_SUBJECT_INDEX = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "subject_index";
+    private static final String SHARED_PREF_KEY_CURRENT_QUESTION_INDEX_PREFIX = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "current_question_index_";  // add subject index to this
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,11 +51,13 @@ public class LearnActivity extends AppCompatActivity {
 
         // if data set by intent is wrong, read it from shared prefs
         // this can happen if android force re-started this activity
+
+        SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);  // declaring outside of the following if-block for use later on
+
         if (is_activity_start_data_not_valid()) {
             if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "onCreate: Activity start data from intent is bad. Reading from prefs."); }
 
-            SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
-            subject_index = sharedPreferences.getInt(MainActivity.INTENT_EXTRA_KEY_SUBJECT_INDEX, -1);
+            subject_index = sharedPreferences.getInt(SHARED_PREF_KEY_SUBJECT_INDEX, -1);
         }
 
         if (is_activity_start_data_not_valid()) {
@@ -62,6 +69,14 @@ public class LearnActivity extends AppCompatActivity {
 
         // show activity start data
         if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("onCreate: subject_index: %d", subject_index)); }
+
+        // load data of this particular activity that is saved in its SharedPrefs
+        is_read_mode = sharedPreferences.getBoolean(SHARED_PREF_KEY_IS_READ_MODE, true);
+        currentQuestionIndex = sharedPreferences.getInt(SHARED_PREF_KEY_CURRENT_QUESTION_INDEX_PREFIX + subject_index, 0);
+        if (CONSTANTS.ALLOW_DEBUG) {
+            Log.i(CONSTANTS.LOG_TAG, "onCreate: is_read_mode: " + is_read_mode);
+            Log.i(CONSTANTS.LOG_TAG, "onCreate: currentQuestionIndex: " + currentQuestionIndex);
+        }
 
         findViewById(R.id.lean_button_previous).setOnClickListener(this::clickedPrev);
         findViewById(R.id.learn_button_next).setOnClickListener(this::clickedNext);
@@ -75,6 +90,21 @@ public class LearnActivity extends AppCompatActivity {
         numQuestions = resources.getIntArray(R.array.num_questions)[subject_index];
 
         setCurrentQuestion();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        // save data to shared prefs
+        SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.putBoolean(SHARED_PREF_KEY_IS_READ_MODE, is_read_mode);
+        editor.putInt(SHARED_PREF_KEY_SUBJECT_INDEX, subject_index);
+        editor.putInt(SHARED_PREF_KEY_CURRENT_QUESTION_INDEX_PREFIX + subject_index, currentQuestionIndex);
+
+        editor.apply();
     }
 
     private boolean is_activity_start_data_not_valid() {
