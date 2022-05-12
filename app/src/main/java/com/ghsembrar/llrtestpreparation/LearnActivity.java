@@ -253,11 +253,6 @@ public class LearnActivity extends AppCompatActivity {
         int ansResId = resources.getIdentifier(String.format("a%d_%d", subject_index, currentQuestionIndex), "integer", packageName);
         if (ansResId != 0) {
             currentCorrectAnswer = resources.getInteger(ansResId);
-            if (is_read_mode) {
-                ((RadioButton) findViewById(radioButtonIDs[currentCorrectAnswer])).setChecked(true);
-            } else {
-
-            }
         } else {
             // todo should(also will) never happen, so handle it properly
             currentCorrectAnswer = -1;
@@ -351,6 +346,7 @@ public class LearnActivity extends AppCompatActivity {
 
         if (userResponse != -1) {  // will never be -1 in readMode, so will always be non-clickable in readMode
             setOptionsRadioButtonsInteractivity(false);  // an answer exists, so make the options non-clickable
+            ((RadioButton) findViewById(radioButtonIDs[userResponse])).setChecked(true);
         }
 
         if (is_read_mode) {
