@@ -301,21 +301,11 @@ public class LearnActivity extends AppCompatActivity {
 
     private void setActivityAccordingToMode() {
         if (is_read_mode) {
-            // radio buttons should not be clickable
             // don't show check button
-
-            for (int radioButtonID : radioButtonIDs) {
-                findViewById(radioButtonID).setClickable(false);
-            }
             findViewById(R.id.learn_button_check).setVisibility(View.GONE);
 
         } else {  // practice mode
-            // radio buttons are clickable
             // show check button
-
-            for (int radioButtonID : radioButtonIDs) {
-                findViewById(radioButtonID).setClickable(true);
-            }
             findViewById(R.id.learn_button_check).setVisibility(View.VISIBLE);
         }
 
@@ -330,6 +320,13 @@ public class LearnActivity extends AppCompatActivity {
         for (int radioButtonID : radioButtonIDs) {
             findViewById(radioButtonID).setBackgroundColor(color_alpha_only);
         }
+        
+        if (!(is_read_mode || practiceAnswers[currentQuestionIndex] != -1)) {
+            // practice mode and not-answered
+            // only then make the options clickable
+            // because, for readMode and answeredPracticeMode, checkResponse is called which makes them non-clickable anyway
+            setOptionsRadioButtonsInteractivity(true);
+        }
     }
 
     private void checkResponse() {
@@ -340,16 +337,24 @@ public class LearnActivity extends AppCompatActivity {
 
         if (is_read_mode) {
             userResponse = currentCorrectAnswer;
-            // todo settings-> show backgroundColor in readMode -> if not, return from this function here
 
         } else {
             try {
                 userResponse = practiceAnswers[currentQuestionIndex];
                 // todo if userResponse is notCheckedYet(i.e. -1 in future), should this function return with a display toast
+                // note: currently the function won't do anything in the following if it userResponse is -1
             } catch (Exception exception) {
-                // either practiceAnswers is null or the length doesn't fit index -> both shouldn't happen fixme
+                // either practiceAnswers is null or the length doesn't fit index -> both shouldn't happen // fixed in commit d0ea
                 userResponse = -1;
             }
+        }
+
+        if (userResponse != -1) {  // will never be -1 in readMode, so will always be non-clickable in readMode
+            setOptionsRadioButtonsInteractivity(false);  // an answer exists, so make the options non-clickable
+        }
+
+        if (is_read_mode) {
+            // todo settings-> show backgroundColor in readMode -> if not, return from this function here
         }
 
         final int colorCorrectChoice = resources.getColor(R.color.color_correct_choice);
@@ -378,5 +383,11 @@ public class LearnActivity extends AppCompatActivity {
             }
         }
         checkResponse();
+    }
+
+    private void setOptionsRadioButtonsInteractivity(boolean clickable) {
+        for (int radioButtonID : radioButtonIDs) {
+            findViewById(radioButtonID).setClickable(clickable);
+        }
     }
 }
