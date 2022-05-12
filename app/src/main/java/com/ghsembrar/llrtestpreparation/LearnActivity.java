@@ -23,22 +23,28 @@ import java.util.Locale;
 
 public class LearnActivity extends AppCompatActivity {
 
+    private Resources resources;  // this is updated in onResume with required language resources
 
+    // the following are saved to shared prefs
+    private boolean is_read_mode = true;  // if false, it's practice mode
+    private int subject_index = -1;  // 0 based subject index (this is used to access questions, images and answers)
+    private int currentQuestionIndex = 0;
+
+    // the following are not saved to shared prefs
+    private int currentCorrectAnswer = -1;  // this is updated whenever a question is loaded
+    private int numQuestions = 0;  // this is updated in onResume
+
+    // keys for the variables to be saved in shared prefs
+    private static final String SHARED_PREF_KEY_IS_READ_MODE = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "is_read_mode";
+    private static final String SHARED_PREF_KEY_SUBJECT_INDEX = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "subject_index";
+    private static final String SHARED_PREF_KEY_CURRENT_QUESTION_INDEX_PREFIX = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "current_question_index_";  // add subject index to this
+
+    // some utility variables for easier access
     private static final int[] radioButtonIDs = {
             R.id.learn_radioButton_choice1, R.id.learn_radioButton_choice2,
             R.id.learn_radioButton_choice3, R.id.learn_radioButton_choice4
     };
     private static final String[] radioButtonOptionSuffixes = {"a", "b", "c", "d"};
-    private Resources resources;
-    private int subject_index = -1;
-    private int numQuestions = 0;
-    private int currentQuestionIndex = 0;
-    private int currentCorrectAnswer = -1;
-    private boolean is_read_mode = true;  // if false, it's practice mode
-
-    private static final String SHARED_PREF_KEY_IS_READ_MODE = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "is_read_mode";
-    private static final String SHARED_PREF_KEY_SUBJECT_INDEX = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "subject_index";
-    private static final String SHARED_PREF_KEY_CURRENT_QUESTION_INDEX_PREFIX = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "current_question_index_";  // add subject index to this
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,12 +78,15 @@ public class LearnActivity extends AppCompatActivity {
 
         // load data of this particular activity that is saved in its SharedPrefs
         is_read_mode = sharedPreferences.getBoolean(SHARED_PREF_KEY_IS_READ_MODE, true);
+        // note subject index is already read above either from intent or from sharedPrefs
         currentQuestionIndex = sharedPreferences.getInt(SHARED_PREF_KEY_CURRENT_QUESTION_INDEX_PREFIX + subject_index, 0);
+
         if (CONSTANTS.ALLOW_DEBUG) {
             Log.i(CONSTANTS.LOG_TAG, "onCreate: is_read_mode: " + is_read_mode);
             Log.i(CONSTANTS.LOG_TAG, "onCreate: currentQuestionIndex: " + currentQuestionIndex);
         }
 
+        // set onClickListeners for buttons
         findViewById(R.id.lean_button_previous).setOnClickListener(this::clickedPrev);
         findViewById(R.id.learn_button_next).setOnClickListener(this::clickedNext);
     }
@@ -87,6 +96,7 @@ public class LearnActivity extends AppCompatActivity {
         super.onResume();
 
         updateResourcesVariable();  // this helps load resources of different language than system's
+
         numQuestions = resources.getIntArray(R.array.num_questions)[subject_index];
 
         setCurrentQuestion();
