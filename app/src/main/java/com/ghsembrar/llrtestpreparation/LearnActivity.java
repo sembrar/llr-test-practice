@@ -19,6 +19,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Locale;
 
@@ -49,6 +55,9 @@ public class LearnActivity extends AppCompatActivity {
             R.id.learn_radioButton_choice3, R.id.learn_radioButton_choice4
     };
     private static final String[] radioButtonOptionSuffixes = {"a", "b", "c", "d"};
+
+    // file name to save practiceAnswers
+    private static final String FILENAME_SAVE_PRACTICE_ANSWERS_PREFIX = "practice_answers_";  // add subjectIndex to it
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,6 +114,7 @@ public class LearnActivity extends AppCompatActivity {
         numQuestions = resources.getIntArray(R.array.num_questions)[subject_index];
         practiceAnswers = new int[numQuestions];
         Arrays.fill(practiceAnswers, -1);
+        loadPracticeAnswers();
 
         setActivityAccordingToMode();  // readMode => choices not clickable etc.  // also sets current question
     }
@@ -122,6 +132,8 @@ public class LearnActivity extends AppCompatActivity {
         editor.putInt(SHARED_PREF_KEY_CURRENT_QUESTION_INDEX_PREFIX + subject_index, currentQuestionIndex);
 
         editor.apply();
+
+        savePracticeAnswers();  // as read and practice mode can be switched anytime, saving is needed regardless of current mode
     }
 
     private boolean is_activity_start_data_not_valid() {
@@ -385,5 +397,92 @@ public class LearnActivity extends AppCompatActivity {
         for (int radioButtonID : radioButtonIDs) {
             findViewById(radioButtonID).setClickable(clickable);
         }
+    }
+
+    private void savePracticeAnswers() {
+        FileOutputStream fos = null;
+        DataOutputStream dos = null;
+
+        try {
+            fos = getApplicationContext().openFileOutput(FILENAME_SAVE_PRACTICE_ANSWERS_PREFIX + subject_index, Context.MODE_PRIVATE);
+            dos = new DataOutputStream(fos);
+
+            dos.writeInt(practiceAnswers.length);  // this is used while loading if the number of data saved matches with required length
+            for (int practiceAns : practiceAnswers) {
+                dos.writeInt(practiceAns);
+            }
+
+
+        } catch (FileNotFoundException ignored) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "savePracticeAnswers: Datafile not found to write");
+        } catch (IOException ignored) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "savePracticeAnswers: Write failed due to IOException");
+        } finally {
+
+            if (dos != null) {
+                try {
+                    dos.close();
+                } catch (IOException ignored) {
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "savePracticeAnswers: DOS close failed");
+                }
+            }
+
+            if (fos != null) {
+                try {
+                    fos.close();
+                } catch (IOException ignored) {
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "savePracticeAnswers: FOS close failed");
+                }
+            }
+        }
+    }
+
+    private void loadPracticeAnswers() {
+        FileInputStream fis = null;
+        DataInputStream dis = null;
+
+        try {
+            fis = getApplicationContext().openFileInput(FILENAME_SAVE_PRACTICE_ANSWERS_PREFIX + subject_index);
+            dis = new DataInputStream(fis);
+
+            int numData = dis.readInt();
+            if (numData == practiceAnswers.length) {  // otherwise don't load, may be it is a new file, or not saved properly
+                for (int i = 0; i < numData; i++) {
+                    practiceAnswers[i] = dis.readInt();
+                }
+            }
+
+            dis.close();
+            fis.close();
+
+        } catch (FileNotFoundException ignored) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadPracticeAnswers: Datafile not found to read");
+
+        } catch (IOException ignored) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadPracticeAnswers: Read failed due to IOException");
+
+        } finally {
+
+            if (dis != null) {
+                try {
+                    dis.close();
+                } catch (IOException ignored) {
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadPracticeAnswers: DIS close failed");
+                }
+            }
+
+            if (fis != null) {
+                try {
+                    fis.close();
+                } catch (IOException ignored) {
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadPracticeAnswers: FIS close failed");
+                }
+            }
+        }
+    }
+
+    private void clearPracticeAnswers() {
+        Arrays.fill(practiceAnswers, -1);
+        // todo give a options menu - menu item for clearing answers with a safety confirm dialog
     }
 }
