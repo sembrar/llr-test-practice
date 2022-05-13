@@ -12,6 +12,8 @@
         <item>159</item>
         <item>159</item>
     </integer-array>
+
+    <integer name="num_total_questions">412</integer>
     
     <string name="no_string">No string found!</string>
 </resources>
