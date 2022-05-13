@@ -1,17 +1,26 @@
 package com.ghsembrar.llrtestpreparation;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Locale;
 
 public class TestActivity extends AppCompatActivity {
 
@@ -122,8 +131,121 @@ public class TestActivity extends AppCompatActivity {
         }
     }
 
-    private void setCurrentQuestion() {
+    @Override
+    protected void onResume() {
+        super.onResume();
 
+        updateResourcesVariable();  // this helps load resources of different language than system's
+
+        setActivityAccordingToTestStatus();  // shows/hides finish button etc.  // also sets current question
+    }
+
+    private void updateResourcesVariable() {
+        SharedPreferences sharedPreferences = getSharedPreferences(SettingsActivity.SHARED_PREFS_FILE_SETTINGS, Context.MODE_PRIVATE);
+
+        boolean use_system_language = sharedPreferences.getBoolean(SettingsActivity.SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, true);
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("updateResourcesVariable: Use system language: %b", use_system_language)); }
+
+        if (use_system_language) {
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "updateResourcesVariable: Using default resources"); }
+            resources = getResources();
+            return;
+        }
+
+        // not use system language => use chosen language
+        String chosen_language = sharedPreferences.getString(SettingsActivity.SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, null);
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("updateResourcesVariable: Chosen language: %s", chosen_language)); }
+
+        if (chosen_language == null) {  // this shouldn't happen
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "updateResourcesVariable: Using default resources"); }
+            resources = getResources();
+            return;
+        }
+
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "updateResourcesVariable: Using chosen language resources"); }
+        Locale chosenLocale = new Locale(chosen_language);
+        resources = getLocalizedResources(this, chosenLocale);
+    }
+
+    @NonNull
+    private Resources getLocalizedResources(Context context, Locale desiredLocale) {
+        Configuration configuration = context.getResources().getConfiguration();
+        configuration = new Configuration(configuration);
+        configuration.setLocale(desiredLocale);
+        Context localizedContext = context.createConfigurationContext(configuration);
+        return localizedContext.getResources();
+    }
+
+    private void setActivityAccordingToTestStatus() {
+        if (testInProgress) {
+            // show finish button
+            findViewById(R.id.test_button_finish).setVisibility(View.VISIBLE);
+
+        } else {  // test finished
+            // don't show finish button
+            findViewById(R.id.test_button_finish).setVisibility(View.GONE);
+        }
+
+        setCurrentQuestion();
+    }
+
+    private void setCurrentQuestion() {
+        // displays current question in activity
+        TestQuestionAndUserAnswer testQuestionAndUserAnswer = test_questions_and_user_answers.get(currentQuestionIndex);
+        int subject_index = testQuestionAndUserAnswer.subject_index;
+        int question_index = testQuestionAndUserAnswer.question_index;
+        int user_answer = testQuestionAndUserAnswer.user_answer;
+
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("setCurrentQuestion: SubjectIndex,QuestionIndex: %d,%d", subject_index, question_index)); }
+
+        final String packageName = getPackageName();
+
+        // set question
+        int quesResID = resources.getIdentifier("s" + subject_index + "_" + question_index + "q", "string", packageName);
+        ((TextView) findViewById(R.id.test_textView_question)).setText(
+                quesResID == 0 ?
+                        resources.getString(R.string.no_string) :
+                        resources.getString(quesResID, currentQuestionIndex + 1)
+        );
+
+        // set options
+        for (int i = 0; i < radioButtonIDs.length; i++) {
+            int resID = resources.getIdentifier("s" + subject_index + "_" + question_index + radioButtonOptionSuffixes[i], "string", packageName);
+            if (resID == 0) resID = R.string.no_string;
+            ((RadioButton) findViewById(radioButtonIDs[i])).setText(resID);
+        }
+
+        // set image if exists else hide image view
+        String imageName = "i" + subject_index + "_" + question_index;  // note: don't add extension (.jpg) in name, may not be found
+        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("setCurrentQuestion: ImageName = %s", imageName)); }
+        int imageResID = resources.getIdentifier(imageName, "drawable", packageName);
+        if (imageResID == 0) {
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "setCurrentQuestion: Image doesn't exist"); }
+            findViewById(R.id.test_imageView_accompanyingImage).setVisibility(View.GONE);
+        }
+        else {
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "setCurrentQuestion: Image exists"); }
+            ImageView imageView = findViewById(R.id.test_imageView_accompanyingImage);
+            imageView.setVisibility(View.VISIBLE);
+            imageView.setImageResource(imageResID);
+        }
+
+        // clear existing response, also clear any background colors
+        clearResponse();
+
+        // get answer, mark it in read mode
+        int ansResId = resources.getIdentifier("a" + subject_index + "_" + question_index, "integer", packageName);
+        int currentCorrectAnswer;
+        if (ansResId != 0) {
+            currentCorrectAnswer = resources.getInteger(ansResId);
+        } else {
+            // todo should(also will) never happen, so handle it properly
+            currentCorrectAnswer = -1;
+        }
+
+        if (!testInProgress) {
+            checkResponse(currentCorrectAnswer);
+        }
     }
 
     public void clickedPrev(View view) {
@@ -157,6 +279,49 @@ public class TestActivity extends AppCompatActivity {
     }
 
     public void clickedFinish(View view) {
+        testInProgress = false;
+        setCurrentQuestion();
+    }
 
+    private void clearResponse() {
+        // clear selection
+        ((RadioGroup) findViewById(R.id.test_RadioGroup_choices)).clearCheck();
+        // clear background colors
+        final int color_alpha_only = resources.getColor(R.color.color_alpha_only);
+        for (int radioButtonID : radioButtonIDs) {
+            findViewById(radioButtonID).setBackgroundColor(color_alpha_only);
+        }
+
+        if (testInProgress) {
+            setOptionsRadioButtonsInteractivity(true);
+        }  // else checkResponse will make them not-clickable
+    }
+
+    private void setOptionsRadioButtonsInteractivity(boolean clickable) {
+        for (int radioButtonID : radioButtonIDs) {
+            findViewById(radioButtonID).setClickable(clickable);
+        }
+    }
+
+    private void checkResponse(int currentCorrectAnswer) {
+        if (testInProgress) return;
+
+        setOptionsRadioButtonsInteractivity(false);
+
+        final int colorCorrectChoice = resources.getColor(R.color.color_correct_choice);
+        final int colorWrongChoice = resources.getColor(R.color.color_wrong_choice);
+        TestQuestionAndUserAnswer testQuestionAndUserAnswer = test_questions_and_user_answers.get(currentQuestionIndex);
+
+        for (int i = 0; i < radioButtonIDs.length; i++) {
+            int color;
+            if (i == currentCorrectAnswer) {
+                color = colorCorrectChoice;
+            } else if (i == testQuestionAndUserAnswer.user_answer) {
+                color = colorWrongChoice;
+            } else {
+                continue;
+            }
+            findViewById(radioButtonIDs[i]).setBackgroundColor(color);
+        }
     }
 }
