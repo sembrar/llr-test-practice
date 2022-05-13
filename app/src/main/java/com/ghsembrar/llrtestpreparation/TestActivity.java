@@ -7,6 +7,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -47,6 +48,10 @@ public class TestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
+
+        findViewById(R.id.test_button_previous).setOnClickListener(this::clickedPrev);
+        findViewById(R.id.test_button_next).setOnClickListener(this::clickedNext);
+        findViewById(R.id.test_button_finish).setOnClickListener(this::clickedFinish);
 
         Intent intent = getIntent();
         int testType = intent.getIntExtra(MainActivity.INTENT_EXTRA_KEY_TEST_OLD_OR_NEW, MainActivity.TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST);
@@ -115,5 +120,43 @@ public class TestActivity extends AppCompatActivity {
                 Log.i(CONSTANTS.LOG_TAG, String.format("setUpNewTest: [%d] %d.%d", i+1, testQuestionAndUserAnswer.subject_index, testQuestionAndUserAnswer.question_index));
             }
         }
+    }
+
+    private void setCurrentQuestion() {
+
+    }
+
+    public void clickedPrev(View view) {
+        if (currentQuestionIndex == 0) {
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedPrev: Already in first question"); }
+            return;
+        }
+
+        currentQuestionIndex--;
+        if (currentQuestionIndex < 0) {  // this should never happen
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedPrev: ERR: currentQuestionIndex < 0"); }
+            currentQuestionIndex = 0;
+        }
+
+        setCurrentQuestion();
+    }
+
+    public void clickedNext(View view) {
+        if (currentQuestionIndex == (NUM_QUESTIONS - 1)) {
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedNext: Already in last question"); }
+            return;
+        }
+
+        currentQuestionIndex++;
+        if (currentQuestionIndex >= NUM_QUESTIONS) {  // this should never happpen
+            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedNext: ERR: currentQuestionIndex > numQuestions"); }
+            currentQuestionIndex = NUM_QUESTIONS - 1;
+        }
+
+        setCurrentQuestion();
+    }
+
+    public void clickedFinish(View view) {
+
     }
 }
