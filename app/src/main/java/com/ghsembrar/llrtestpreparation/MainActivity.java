@@ -12,6 +12,9 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity {
 
     public static final String INTENT_EXTRA_KEY_SUBJECT_INDEX = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "subject_index";
+    public static final String INTENT_EXTRA_KEY_TEST_OLD_OR_NEW = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "test_type";
+    public static final int TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST = 0;
+    public static final int TEST_TYPE_NEW_TEST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.main_button_learn_subject0).setOnClickListener(v -> startLearnActivity(0));
         findViewById(R.id.main_button_learn_subject1).setOnClickListener(v -> startLearnActivity(1));
         findViewById(R.id.main_button_learn_subject2).setOnClickListener(v -> startLearnActivity(2));
+
+        findViewById(R.id.main_button_test_old).setOnClickListener(v -> startTestActivity(TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST));
+        findViewById(R.id.main_button_test_new).setOnClickListener(v -> startTestActivity(TEST_TYPE_NEW_TEST));
     }
 
     @Override
@@ -55,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void startSettingsActivity() {
         Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
+    private void startTestActivity(int test_type) {
+        Intent intent = new Intent(this, TestActivity.class);
+        intent.putExtra(INTENT_EXTRA_KEY_TEST_OLD_OR_NEW, test_type);
         startActivity(intent);
     }
 }
