@@ -3,7 +3,9 @@ package com.ghsembrar.llrtestpreparation;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -19,7 +21,27 @@ public class TestActivity extends AppCompatActivity {
     }
 
     private static final int NUM_QUESTIONS = 20;
+    private static final int PASS_SCORE = 12;
+    private static final int NUM_MAX_SECONDS_PER_TEST = 600;  // 10 minutes
+
+    private Resources resources;
+    private CountDownTimer countDownTimer;
+
+    // the following are saved in SharedPrefs
+    private boolean testInProgress = false;
+
+    // the following are saved in a file
     private ArrayList<TestQuestionAndUserAnswer> test_questions_and_user_answers = new ArrayList<>(NUM_QUESTIONS);
+    private int currentQuestionIndex = 0;
+    private int numSecondsRemaining = NUM_MAX_SECONDS_PER_TEST;
+    private int score = 0;
+
+    // the following are for easier access
+    private static final int[] radioButtonIDs = {
+            R.id.test_radioButton_choice1, R.id.test_radioButton_choice2,
+            R.id.test_radioButton_choice3, R.id.test_radioButton_choice4
+    };
+    private static final String[] radioButtonOptionSuffixes = {"a", "b", "c", "d"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +58,8 @@ public class TestActivity extends AppCompatActivity {
 
         switch (testType) {
             case MainActivity.TEST_TYPE_NEW_TEST:
+                // todo if a previous test in progress, ask if user wants to continue instead,
+                //  this behavior should be allowed to be disabled in Settings
                 setUpNewTest();
                 break;
             case MainActivity.TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST:
@@ -78,6 +102,12 @@ public class TestActivity extends AppCompatActivity {
                 }
             }
         }
+
+        // set all the variables
+        testInProgress = true;
+        currentQuestionIndex = 0;
+        numSecondsRemaining = NUM_MAX_SECONDS_PER_TEST;
+        score = 0;
 
         if (CONSTANTS.ALLOW_DEBUG) {
             for (int i = 0; i < NUM_QUESTIONS; i++) {
