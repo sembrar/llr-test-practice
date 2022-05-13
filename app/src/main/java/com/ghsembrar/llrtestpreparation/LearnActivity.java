@@ -229,7 +229,7 @@ public class LearnActivity extends AppCompatActivity {
         final String packageName = getPackageName();
 
         // set question
-        int quesResID = resources.getIdentifier(String.format("s%d_%dq", subject_index, currentQuestionIndex), "string", packageName);
+        int quesResID = resources.getIdentifier("s" + subject_index + "_" + currentQuestionIndex + "q", "string", packageName);
         ((TextView) findViewById(R.id.learn_textView_question)).setText(
                 quesResID == 0 ?
                         resources.getString(R.string.no_string) :
@@ -238,13 +238,13 @@ public class LearnActivity extends AppCompatActivity {
 
         // set options
         for (int i = 0; i < radioButtonIDs.length; i++) {
-            int resID = resources.getIdentifier(String.format("s%d_%d%s", subject_index, currentQuestionIndex, radioButtonOptionSuffixes[i]), "string", packageName);
+            int resID = resources.getIdentifier("s" + subject_index + "_" + currentQuestionIndex + radioButtonOptionSuffixes[i], "string", packageName);
             if (resID == 0) resID = R.string.no_string;
             ((RadioButton) findViewById(radioButtonIDs[i])).setText(resID);
         }
 
         // set image if exists else hide image view
-        String imageName = String.format("i%d_%d", subject_index, currentQuestionIndex);  // note: don't add extension (.jpg) in name, may not be found
+        String imageName = "i" + subject_index + "_" + currentQuestionIndex;  // note: don't add extension (.jpg) in name, may not be found
         if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("setCurrentQuestion: ImageName = %s", imageName)); }
         int imageResID = resources.getIdentifier(imageName, "drawable", packageName);
         if (imageResID == 0) {
@@ -262,7 +262,7 @@ public class LearnActivity extends AppCompatActivity {
         clearResponse();
 
         // get answer, mark it in read mode
-        int ansResId = resources.getIdentifier(String.format("a%d_%d", subject_index, currentQuestionIndex), "integer", packageName);
+        int ansResId = resources.getIdentifier("a" + subject_index + "_" + currentQuestionIndex, "integer", packageName);
         if (ansResId != 0) {
             currentCorrectAnswer = resources.getInteger(ansResId);
         } else {
