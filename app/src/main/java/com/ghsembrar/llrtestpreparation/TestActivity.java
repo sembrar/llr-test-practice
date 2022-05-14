@@ -18,11 +18,20 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Locale;
 
 public class TestActivity extends AppCompatActivity {
+
+    private static final String FILENAME_TEST_DATA = "test_data";
+    private static final String SHARED_PREF_KEY_TEST_IN_PROGRESS = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "test_in_progress";
 
     private class TestQuestionAndUserAnswer {
         int subject_index = -1;
@@ -37,14 +46,12 @@ public class TestActivity extends AppCompatActivity {
     private Resources resources;
     private CountDownTimer countDownTimer;
 
-    // the following are saved in SharedPrefs
-    private boolean testInProgress = false;
-
     // the following are saved in a file
     private ArrayList<TestQuestionAndUserAnswer> test_questions_and_user_answers = new ArrayList<>(NUM_QUESTIONS);
     private int currentQuestionIndex = 0;
     private int numSecondsRemaining = NUM_MAX_SECONDS_PER_TEST;
     private int score = 0;
+    private boolean testInProgress = false;  // this is also saved in SharedPref for quicker access
 
     // the following are for easier access
     private static final int[] radioButtonIDs = {
@@ -83,9 +90,10 @@ public class TestActivity extends AppCompatActivity {
                 break;
             case MainActivity.TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST:
             default:
-                // todo try to load the previous test if it exists
-                Toast.makeText(this, "No old test", Toast.LENGTH_SHORT).show();
-                finish();
+                if (!loadTestData()) {
+                    Toast.makeText(this, "No old test", Toast.LENGTH_SHORT).show();
+                    finish();
+                }
                 break;
         }
     }
@@ -143,6 +151,18 @@ public class TestActivity extends AppCompatActivity {
         updateResourcesVariable();  // this helps load resources of different language than system's
 
         setActivityAccordingToTestStatus();  // shows/hides finish button etc.  // also sets current question
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean(SHARED_PREF_KEY_TEST_IN_PROGRESS, testInProgress);
+        editor.apply();
+
+        saveTestData();
     }
 
     private void updateResourcesVariable() {
@@ -329,5 +349,107 @@ public class TestActivity extends AppCompatActivity {
     private void clickedRadioButton(int choiceIndex) {
         if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, String.format("clickedRadioButton: Clicked RadioButton %d", choiceIndex));
         test_questions_and_user_answers.get(currentQuestionIndex).user_answer = choiceIndex;
+    }
+
+    private void saveTestData() {
+        FileOutputStream fos = null;
+        DataOutputStream dos = null;
+
+        try {
+            fos = getApplicationContext().openFileOutput(FILENAME_TEST_DATA, Context.MODE_PRIVATE);
+            dos = new DataOutputStream(fos);
+
+            dos.writeInt(test_questions_and_user_answers.size());  // this is used while loading if the number of data saved matches with required length
+            for (TestQuestionAndUserAnswer testQuestionAndUserAnswer : test_questions_and_user_answers) {
+                dos.writeInt(testQuestionAndUserAnswer.subject_index);
+                dos.writeInt(testQuestionAndUserAnswer.question_index);
+                dos.writeInt(testQuestionAndUserAnswer.user_answer);
+            }
+            dos.writeInt(currentQuestionIndex);
+            dos.writeInt(numSecondsRemaining);
+            dos.writeInt(score);
+            dos.writeBoolean(testInProgress);
+
+        } catch (FileNotFoundException ignored) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "saveTestData: Datafile not found to write");
+        } catch (IOException ignored) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "saveTestData: Write failed due to IOException");
+        } finally {
+
+            if (dos != null) {
+                try {
+                    dos.close();
+                } catch (IOException ignored) {
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "saveTestData: DOS close failed");
+                }
+            }
+
+            if (fos != null) {
+                try {
+                    fos.close();
+                } catch (IOException ignored) {
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "saveTestData: FOS close failed");
+                }
+            }
+        }
+    }
+
+    private boolean loadTestData() {
+        boolean load_is_successful = false;
+
+        FileInputStream fis = null;
+        DataInputStream dis = null;
+
+        try {
+            fis = getApplicationContext().openFileInput(FILENAME_TEST_DATA);
+            dis = new DataInputStream(fis);
+
+            int numData = dis.readInt();
+            if (numData == NUM_QUESTIONS) {  // otherwise don't load, may be it is a new file, or not saved properly
+
+                for (int i = 0; i < numData; i++) {
+                    TestQuestionAndUserAnswer testQuestionAndUserAnswer = test_questions_and_user_answers.get(i);
+                    testQuestionAndUserAnswer.subject_index = dis.readInt();
+                    testQuestionAndUserAnswer.question_index = dis.readInt();
+                    testQuestionAndUserAnswer.user_answer = dis.readInt();
+                }
+
+                currentQuestionIndex = dis.readInt();
+                numSecondsRemaining = dis.readInt();
+                score = dis.readInt();
+                testInProgress = dis.readBoolean();
+
+                load_is_successful = true;
+            }
+
+            dis.close();
+            fis.close();
+
+        } catch (FileNotFoundException ignored) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadTestData: Datafile not found to read");
+
+        } catch (IOException ignored) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadTestData: Read failed due to IOException");
+
+        } finally {
+
+            if (dis != null) {
+                try {
+                    dis.close();
+                } catch (IOException ignored) {
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadTestData: DIS close failed");
+                }
+            }
+
+            if (fis != null) {
+                try {
+                    fis.close();
+                } catch (IOException ignored) {
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadTestData: FIS close failed");
+                }
+            }
+        }
+
+        return load_is_successful;
     }
 }
