@@ -62,6 +62,11 @@ public class TestActivity extends AppCompatActivity {
         findViewById(R.id.test_button_next).setOnClickListener(this::clickedNext);
         findViewById(R.id.test_button_finish).setOnClickListener(this::clickedFinish);
 
+        findViewById(R.id.test_radioButton_choice1).setOnClickListener(v -> clickedRadioButton(0));
+        findViewById(R.id.test_radioButton_choice2).setOnClickListener(v -> clickedRadioButton(1));
+        findViewById(R.id.test_radioButton_choice3).setOnClickListener(v -> clickedRadioButton(2));
+        findViewById(R.id.test_radioButton_choice4).setOnClickListener(v -> clickedRadioButton(3));
+
         Intent intent = getIntent();
         int testType = intent.getIntExtra(MainActivity.INTENT_EXTRA_KEY_TEST_OLD_OR_NEW, MainActivity.TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST);
 
@@ -231,20 +236,52 @@ public class TestActivity extends AppCompatActivity {
         }
 
         // clear existing response, also clear any background colors
-        clearResponse();
-
-        // get answer, mark it in read mode
-        int ansResId = resources.getIdentifier("a" + subject_index + "_" + question_index, "integer", packageName);
-        int currentCorrectAnswer;
-        if (ansResId != 0) {
-            currentCorrectAnswer = resources.getInteger(ansResId);
-        } else {
-            // todo should(also will) never happen, so handle it properly
-            currentCorrectAnswer = -1;
+        // clear selection
+        ((RadioGroup) findViewById(R.id.test_RadioGroup_choices)).clearCheck();
+        // clear background colors
+        final int color_alpha_only = resources.getColor(R.color.color_alpha_only);
+        for (int radioButtonID : radioButtonIDs) {
+            findViewById(radioButtonID).setBackgroundColor(color_alpha_only);
         }
 
-        if (!testInProgress) {
-            checkResponse(currentCorrectAnswer);
+        // mark the existing user answer if any
+        if (testQuestionAndUserAnswer.user_answer != -1) {
+            ((RadioButton) findViewById(radioButtonIDs[testQuestionAndUserAnswer.user_answer])).setChecked(true);
+            // todo may be in future, if the color of the radiobutton selection (green dot) needs also be set according to
+            //  right/wrong, then this code block may need to be moved into the following testInProgress or Not code block
+        }
+
+        if (testInProgress) {
+            setOptionsRadioButtonsInteractivity(true);
+
+        } else {
+            // test finished
+            setOptionsRadioButtonsInteractivity(false);
+
+            // get correct answer
+            int ansResId = resources.getIdentifier("a" + subject_index + "_" + question_index, "integer", packageName);
+            int currentCorrectAnswer;
+            if (ansResId != 0) {
+                currentCorrectAnswer = resources.getInteger(ansResId);
+            } else {
+                // todo should(also will) never happen, so handle it properly
+                currentCorrectAnswer = -1;
+            }
+
+            final int colorCorrectChoice = resources.getColor(R.color.color_correct_choice);
+            final int colorWrongChoice = resources.getColor(R.color.color_wrong_choice);
+
+            for (int i = 0; i < radioButtonIDs.length; i++) {
+                int color;
+                if (i == currentCorrectAnswer) {
+                    color = colorCorrectChoice;
+                } else if (i == testQuestionAndUserAnswer.user_answer) {
+                    color = colorWrongChoice;
+                } else {
+                    continue;
+                }
+                findViewById(radioButtonIDs[i]).setBackgroundColor(color);
+            }
         }
     }
 
@@ -283,45 +320,14 @@ public class TestActivity extends AppCompatActivity {
         setCurrentQuestion();
     }
 
-    private void clearResponse() {
-        // clear selection
-        ((RadioGroup) findViewById(R.id.test_RadioGroup_choices)).clearCheck();
-        // clear background colors
-        final int color_alpha_only = resources.getColor(R.color.color_alpha_only);
-        for (int radioButtonID : radioButtonIDs) {
-            findViewById(radioButtonID).setBackgroundColor(color_alpha_only);
-        }
-
-        if (testInProgress) {
-            setOptionsRadioButtonsInteractivity(true);
-        }  // else checkResponse will make them not-clickable
-    }
-
     private void setOptionsRadioButtonsInteractivity(boolean clickable) {
         for (int radioButtonID : radioButtonIDs) {
             findViewById(radioButtonID).setClickable(clickable);
         }
     }
 
-    private void checkResponse(int currentCorrectAnswer) {
-        if (testInProgress) return;
-
-        setOptionsRadioButtonsInteractivity(false);
-
-        final int colorCorrectChoice = resources.getColor(R.color.color_correct_choice);
-        final int colorWrongChoice = resources.getColor(R.color.color_wrong_choice);
-        TestQuestionAndUserAnswer testQuestionAndUserAnswer = test_questions_and_user_answers.get(currentQuestionIndex);
-
-        for (int i = 0; i < radioButtonIDs.length; i++) {
-            int color;
-            if (i == currentCorrectAnswer) {
-                color = colorCorrectChoice;
-            } else if (i == testQuestionAndUserAnswer.user_answer) {
-                color = colorWrongChoice;
-            } else {
-                continue;
-            }
-            findViewById(radioButtonIDs[i]).setBackgroundColor(color);
-        }
+    private void clickedRadioButton(int choiceIndex) {
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, String.format("clickedRadioButton: Clicked RadioButton %d", choiceIndex));
+        test_questions_and_user_answers.get(currentQuestionIndex).user_answer = choiceIndex;
     }
 }
