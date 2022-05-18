@@ -29,6 +29,8 @@ import java.util.Arrays;
 import java.util.Locale;
 
 public class LearnActivity extends AppCompatActivity {
+    
+    private static final String TAG = CONSTANTS.LOG_TAG_PREFIX + "Learn";
 
     private Resources resources;  // this is updated in onResume with required language resources
 
@@ -74,20 +76,20 @@ public class LearnActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);  // declaring outside of the following if-block for use later on
 
         if (is_activity_start_data_not_valid()) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "onCreate: Activity start data from intent is bad. Reading from prefs."); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onCreate: Activity start data from intent is bad. Reading from prefs.");
 
             subject_index = sharedPreferences.getInt(SHARED_PREF_KEY_SUBJECT_INDEX, -1);
         }
 
         if (is_activity_start_data_not_valid()) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "onCreate: Activity start data from prefs is bad. Stopping activity."); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onCreate: Activity start data from prefs is bad. Stopping activity.");
 
             finish();  // todo may be show a Toast for the user that an error occurred
             return;
         }
 
         // show activity start data
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("onCreate: subject_index: %d", subject_index)); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("onCreate: subject_index: %d", subject_index));
 
         // load data of this particular activity that is saved in its SharedPrefs
         is_read_mode = sharedPreferences.getBoolean(SHARED_PREF_KEY_IS_READ_MODE, true);
@@ -95,8 +97,8 @@ public class LearnActivity extends AppCompatActivity {
         currentQuestionIndex = sharedPreferences.getInt(SHARED_PREF_KEY_CURRENT_QUESTION_INDEX_PREFIX + subject_index, 0);
 
         if (CONSTANTS.ALLOW_DEBUG) {
-            Log.i(CONSTANTS.LOG_TAG, "onCreate: is_read_mode: " + is_read_mode);
-            Log.i(CONSTANTS.LOG_TAG, "onCreate: currentQuestionIndex: " + currentQuestionIndex);
+            Log.i(TAG, "onCreate: is_read_mode: " + is_read_mode);
+            Log.i(TAG, "onCreate: currentQuestionIndex: " + currentQuestionIndex);
         }
 
         // set onClickListeners for buttons
@@ -145,25 +147,28 @@ public class LearnActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(SettingsActivity.SHARED_PREFS_FILE_SETTINGS, Context.MODE_PRIVATE);
 
         boolean use_system_language = sharedPreferences.getBoolean(SettingsActivity.SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, true);
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("updateResourcesVariable: Use system language: %b", use_system_language)); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("updateResourcesVariable: Use system language: %b", use_system_language));
 
         if (use_system_language) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "updateResourcesVariable: Using default resources"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "updateResourcesVariable: Using default resources");
+
             resources = getResources();
             return;
         }
 
         // not use system language => use chosen language
         String chosen_language = sharedPreferences.getString(SettingsActivity.SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, null);
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("updateResourcesVariable: Chosen language: %s", chosen_language)); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("updateResourcesVariable: Chosen language: %s", chosen_language));
 
         if (chosen_language == null) {  // this shouldn't happen
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "updateResourcesVariable: Using default resources"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "updateResourcesVariable: Using default resources");
+
             resources = getResources();
             return;
         }
 
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "updateResourcesVariable: Using chosen language resources"); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "updateResourcesVariable: Using chosen language resources");
+
         Locale chosenLocale = new Locale(chosen_language);
         resources = getLocalizedResources(this, chosenLocale);
     }
@@ -190,7 +195,7 @@ public class LearnActivity extends AppCompatActivity {
                     is_read_mode = true;
                     setActivityAccordingToMode();
                 } else {
-                    if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "onOptionsItemSelected: Already in readMode"); }
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onOptionsItemSelected: Already in readMode");
                 }
                 return true;
             case R.id.learnAct_menu_item_practice_mode:
@@ -198,7 +203,7 @@ public class LearnActivity extends AppCompatActivity {
                     is_read_mode = false;
                     setActivityAccordingToMode();
                 } else {
-                    if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "onOptionsItemSelected: Already in practiceMode"); }
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onOptionsItemSelected: Already in practiceMode");
                 }
                 return true;
             default:
@@ -224,7 +229,7 @@ public class LearnActivity extends AppCompatActivity {
 
     private void setCurrentQuestion() {
         // displays current question in activity
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("setCurrentQuestion: SubjectIndex,QuestionIndex: %d,%d", subject_index, currentQuestionIndex)); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("setCurrentQuestion: SubjectIndex,QuestionIndex: %d,%d", subject_index, currentQuestionIndex));
 
         final String packageName = getPackageName();
 
@@ -245,14 +250,17 @@ public class LearnActivity extends AppCompatActivity {
 
         // set image if exists else hide image view
         String imageName = "i" + subject_index + "_" + currentQuestionIndex;  // note: don't add extension (.jpg) in name, may not be found
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("setCurrentQuestion: ImageName = %s", imageName)); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("setCurrentQuestion: ImageName = %s", imageName));
+
         int imageResID = resources.getIdentifier(imageName, "drawable", packageName);
         if (imageResID == 0) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "setCurrentQuestion: Image doesn't exist"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "setCurrentQuestion: Image doesn't exist");
+
             findViewById(R.id.learn_imageView_accompanyingImage).setVisibility(View.GONE);
         }
         else {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "setCurrentQuestion: Image exists"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "setCurrentQuestion: Image exists");
+
             ImageView imageView = findViewById(R.id.learn_imageView_accompanyingImage);
             imageView.setVisibility(View.VISIBLE);
             imageView.setImageResource(imageResID);
@@ -278,13 +286,15 @@ public class LearnActivity extends AppCompatActivity {
 
     public void clickedPrev(View view) {
         if (currentQuestionIndex == 0) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedPrev: Already in first question"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clickedPrev: Already in first question");
+
             return;
         }
 
         currentQuestionIndex--;
         if (currentQuestionIndex < 0) {  // this should never happen
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedPrev: ERR: currentQuestionIndex < 0"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clickedPrev: ERR: currentQuestionIndex < 0");
+
             currentQuestionIndex = 0;
         }
 
@@ -293,13 +303,15 @@ public class LearnActivity extends AppCompatActivity {
 
     public void clickedNext(View view) {
         if (currentQuestionIndex == (numQuestions - 1)) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedNext: Already in last question"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clickedNext: Already in last question");
+
             return;
         }
 
         currentQuestionIndex++;
         if (currentQuestionIndex >= numQuestions) {  // this should never happpen
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedNext: ERR: currentQuestionIndex > numQuestions"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clickedNext: ERR: currentQuestionIndex > numQuestions");
+
             currentQuestionIndex = numQuestions - 1;
         }
 
@@ -414,16 +426,18 @@ public class LearnActivity extends AppCompatActivity {
 
 
         } catch (FileNotFoundException ignored) {
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "savePracticeAnswers: Datafile not found to write");
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "savePracticeAnswers: Datafile not found to write");
+
         } catch (IOException ignored) {
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "savePracticeAnswers: Write failed due to IOException");
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "savePracticeAnswers: IOException");
+
         } finally {
 
             if (dos != null) {
                 try {
                     dos.close();
                 } catch (IOException ignored) {
-                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "savePracticeAnswers: DOS close failed");
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "savePracticeAnswers: DOS close failed");
                 }
             }
 
@@ -431,7 +445,7 @@ public class LearnActivity extends AppCompatActivity {
                 try {
                     fos.close();
                 } catch (IOException ignored) {
-                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "savePracticeAnswers: FOS close failed");
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "savePracticeAnswers: FOS close failed");
                 }
             }
         }
@@ -456,10 +470,10 @@ public class LearnActivity extends AppCompatActivity {
             fis.close();
 
         } catch (FileNotFoundException ignored) {
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadPracticeAnswers: Datafile not found to read");
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "loadPracticeAnswers: Datafile not found to read");
 
         } catch (IOException ignored) {
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadPracticeAnswers: Read failed due to IOException");
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "loadPracticeAnswers: Read failed due to IOException");
 
         } finally {
 
@@ -467,7 +481,7 @@ public class LearnActivity extends AppCompatActivity {
                 try {
                     dis.close();
                 } catch (IOException ignored) {
-                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadPracticeAnswers: DIS close failed");
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "loadPracticeAnswers: DIS close failed");
                 }
             }
 
@@ -475,7 +489,7 @@ public class LearnActivity extends AppCompatActivity {
                 try {
                     fis.close();
                 } catch (IOException ignored) {
-                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadPracticeAnswers: FIS close failed");
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "loadPracticeAnswers: FIS close failed");
                 }
             }
         }

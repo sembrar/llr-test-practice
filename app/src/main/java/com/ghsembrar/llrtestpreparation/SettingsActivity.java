@@ -13,6 +13,8 @@ import android.widget.Spinner;
 import android.widget.Switch;
 
 public class SettingsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+    
+    private static final String TAG = CONSTANTS.LOG_TAG_PREFIX + "Settings";
 
     public static final String SHARED_PREFS_FILE_SETTINGS = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "SettingsPrefs";
     public static final String SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "use_system_language";
@@ -63,12 +65,12 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String new_choice = getResources().getStringArray(R.array.available_languages_as_codes)[position];
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("onItemSelected: selected:%s", new_choice)); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("onItemSelected: selected:%s", new_choice));
 
         if (code_of_language_choice_if_not_use_system_lang.equals(new_choice)) return;
 
         code_of_language_choice_if_not_use_system_lang = new_choice;
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "onItemSelected: Changing to new language"); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onItemSelected: Changing to new language");
 
         // todo update settings activity too
     }
@@ -79,16 +81,18 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
     private void clicked_use_system_language_switch(View view) {
         use_system_language = ((Switch) findViewById(R.id.settings_switch_use_system_language)).isChecked();
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("clicked_use_system_language_switch: status: %b", use_system_language)); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("clicked_use_system_language_switch: status: %b", use_system_language));
 
         if (use_system_language) {
             // hide language choice spinner
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clicked_use_system_language_switch: Hiding choice spinner"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clicked_use_system_language_switch: Hiding choice spinner");
+
             findViewById(R.id.settings_textView_choose_language).setVisibility(View.GONE);
             findViewById(R.id.settings_spinner_language).setVisibility(View.GONE);
         } else {
             // show language choice spinner
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clicked_use_system_language_switch: Showing choice spinner"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clicked_use_system_language_switch: Showing choice spinner");
+
             findViewById(R.id.settings_textView_choose_language).setVisibility(View.VISIBLE);
             findViewById(R.id.settings_spinner_language).setVisibility(View.VISIBLE);
         }

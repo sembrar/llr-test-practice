@@ -29,6 +29,8 @@ import java.util.Collections;
 import java.util.Locale;
 
 public class TestActivity extends AppCompatActivity {
+    
+    private static final String TAG = CONSTANTS.LOG_TAG_PREFIX + "Test";
 
     private static final String FILENAME_TEST_DATA = "test_data";
     private static final String SHARED_PREF_KEY_TEST_IN_PROGRESS = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "test_in_progress";
@@ -157,7 +159,7 @@ public class TestActivity extends AppCompatActivity {
         if (CONSTANTS.ALLOW_DEBUG) {
             for (int i = 0; i < NUM_QUESTIONS; i++) {
                 TestQuestionAndUserAnswer testQuestionAndUserAnswer = test_questions_and_user_answers.get(i);
-                Log.i(CONSTANTS.LOG_TAG, String.format("setUpNewTest: [%d] %d.%d", i+1, testQuestionAndUserAnswer.subject_index, testQuestionAndUserAnswer.question_index));
+                Log.i(TAG, String.format("setUpNewTest: [%d] %d.%d", i+1, testQuestionAndUserAnswer.subject_index, testQuestionAndUserAnswer.question_index));
             }
         }
     }
@@ -189,25 +191,27 @@ public class TestActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(SettingsActivity.SHARED_PREFS_FILE_SETTINGS, Context.MODE_PRIVATE);
 
         boolean use_system_language = sharedPreferences.getBoolean(SettingsActivity.SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, true);
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("updateResourcesVariable: Use system language: %b", use_system_language)); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("updateResourcesVariable: Use system language: %b", use_system_language));
 
         if (use_system_language) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "updateResourcesVariable: Using default resources"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "updateResourcesVariable: Using default resources");
             resources = getResources();
             return;
         }
 
         // not use system language => use chosen language
         String chosen_language = sharedPreferences.getString(SettingsActivity.SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, null);
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("updateResourcesVariable: Chosen language: %s", chosen_language)); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("updateResourcesVariable: Chosen language: %s", chosen_language));
 
         if (chosen_language == null) {  // this shouldn't happen
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "updateResourcesVariable: Using default resources"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "updateResourcesVariable: Using default resources");
+
             resources = getResources();
             return;
         }
 
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "updateResourcesVariable: Using chosen language resources"); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "updateResourcesVariable: Using chosen language resources");
+
         Locale chosenLocale = new Locale(chosen_language);
         resources = getLocalizedResources(this, chosenLocale);
     }
@@ -240,7 +244,7 @@ public class TestActivity extends AppCompatActivity {
         int subject_index = testQuestionAndUserAnswer.subject_index;
         int question_index = testQuestionAndUserAnswer.question_index;
 
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("setCurrentQuestion: SubjectIndex,QuestionIndex: %d,%d", subject_index, question_index)); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("setCurrentQuestion: SubjectIndex,QuestionIndex: %d,%d", subject_index, question_index));
 
         final String packageName = getPackageName();
 
@@ -261,14 +265,17 @@ public class TestActivity extends AppCompatActivity {
 
         // set image if exists else hide image view
         String imageName = "i" + subject_index + "_" + question_index;  // note: don't add extension (.jpg) in name, may not be found
-        if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("setCurrentQuestion: ImageName = %s", imageName)); }
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("setCurrentQuestion: ImageName = %s", imageName));
+
         int imageResID = resources.getIdentifier(imageName, "drawable", packageName);
         if (imageResID == 0) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "setCurrentQuestion: Image doesn't exist"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "setCurrentQuestion: Image doesn't exist");
+
             findViewById(R.id.test_imageView_accompanyingImage).setVisibility(View.GONE);
         }
         else {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "setCurrentQuestion: Image exists"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "setCurrentQuestion: Image exists");
+
             ImageView imageView = findViewById(R.id.test_imageView_accompanyingImage);
             imageView.setVisibility(View.VISIBLE);
             imageView.setImageResource(imageResID);
@@ -326,13 +333,15 @@ public class TestActivity extends AppCompatActivity {
 
     public void clickedPrev(View view) {
         if (currentQuestionIndex == 0) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedPrev: Already in first question"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clickedPrev: Already in first question");
+
             return;
         }
 
         currentQuestionIndex--;
         if (currentQuestionIndex < 0) {  // this should never happen
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedPrev: ERR: currentQuestionIndex < 0"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clickedPrev: ERR: currentQuestionIndex < 0");
+
             currentQuestionIndex = 0;
         }
 
@@ -341,13 +350,15 @@ public class TestActivity extends AppCompatActivity {
 
     public void clickedNext(View view) {
         if (currentQuestionIndex == (NUM_QUESTIONS - 1)) {
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedNext: Already in last question"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clickedNext: Already in last question");
+
             return;
         }
 
         currentQuestionIndex++;
         if (currentQuestionIndex >= NUM_QUESTIONS) {  // this should never happpen
-            if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, "clickedNext: ERR: currentQuestionIndex > numQuestions"); }
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clickedNext: ERR: currentQuestionIndex > numQuestions");
+
             currentQuestionIndex = NUM_QUESTIONS - 1;
         }
 
@@ -368,7 +379,8 @@ public class TestActivity extends AppCompatActivity {
     }
 
     private void clickedRadioButton(int choiceIndex) {
-        if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, String.format("clickedRadioButton: Clicked RadioButton %d", choiceIndex));
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("clickedRadioButton: Clicked RadioButton %d", choiceIndex));
+
         test_questions_and_user_answers.get(currentQuestionIndex).user_answer = choiceIndex;
     }
 
@@ -392,16 +404,16 @@ public class TestActivity extends AppCompatActivity {
             dos.writeBoolean(testInProgress);
 
         } catch (FileNotFoundException ignored) {
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "saveTestData: Datafile not found to write");
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "saveTestData: Datafile not found to write");
         } catch (IOException ignored) {
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "saveTestData: Write failed due to IOException");
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "saveTestData: Write failed due to IOException");
         } finally {
 
             if (dos != null) {
                 try {
                     dos.close();
                 } catch (IOException ignored) {
-                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "saveTestData: DOS close failed");
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "saveTestData: DOS close failed");
                 }
             }
 
@@ -409,7 +421,7 @@ public class TestActivity extends AppCompatActivity {
                 try {
                     fos.close();
                 } catch (IOException ignored) {
-                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "saveTestData: FOS close failed");
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "saveTestData: FOS close failed");
                 }
             }
         }
@@ -447,10 +459,10 @@ public class TestActivity extends AppCompatActivity {
             fis.close();
 
         } catch (FileNotFoundException ignored) {
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadTestData: Datafile not found to read");
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "loadTestData: Datafile not found to read");
 
         } catch (IOException ignored) {
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadTestData: Read failed due to IOException");
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "loadTestData: Read failed due to IOException");
 
         } finally {
 
@@ -458,7 +470,7 @@ public class TestActivity extends AppCompatActivity {
                 try {
                     dis.close();
                 } catch (IOException ignored) {
-                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadTestData: DIS close failed");
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "loadTestData: DIS close failed");
                 }
             }
 
@@ -466,7 +478,7 @@ public class TestActivity extends AppCompatActivity {
                 try {
                     fis.close();
                 } catch (IOException ignored) {
-                    if (CONSTANTS.ALLOW_DEBUG) Log.i(CONSTANTS.LOG_TAG, "loadTestData: FIS close failed");
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "loadTestData: FIS close failed");
                 }
             }
         }
