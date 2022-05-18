@@ -96,6 +96,24 @@ public class TestActivity extends AppCompatActivity {
                 }
                 break;
         }
+
+        if (testInProgress) {
+            countDownTimer = new CountDownTimer(numSecondsRemaining * 1000L, 1000) {
+                @Override
+                public void onTick(long millisUntilFinished) {
+                    numSecondsRemaining = (int) (millisUntilFinished / 1000);
+                    int minutes_to_show = numSecondsRemaining / 60;
+                    int seconds_to_show = numSecondsRemaining - minutes_to_show * 60;
+                    ((TextView) findViewById(R.id.test_textView_time)).setText(String.format("%d:%02d", minutes_to_show, seconds_to_show));
+                }
+
+                @Override
+                public void onFinish() {
+                    clickedFinish(null);
+                }
+            };
+            countDownTimer.start();
+        }
     }
 
     private void setUpNewTest() {
@@ -156,6 +174,8 @@ public class TestActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+
+        if (countDownTimer != null) countDownTimer.cancel();  // can be null when a finished old test is being displayed
 
         SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -336,6 +356,8 @@ public class TestActivity extends AppCompatActivity {
     }
 
     public void clickedFinish(View view) {
+        if (countDownTimer != null) countDownTimer.cancel();  // can be null when a finished old test is being displayed
+        numSecondsRemaining = 0;
         testInProgress = false;
         setCurrentQuestion();
     }
