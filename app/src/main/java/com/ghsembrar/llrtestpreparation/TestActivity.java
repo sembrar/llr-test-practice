@@ -171,6 +171,8 @@ public class TestActivity extends AppCompatActivity {
         updateResourcesVariable();  // this helps load resources of different language than system's
 
         setActivityAccordingToTestStatus();  // shows/hides finish button etc.  // also sets current question
+
+        set_test_status_string_and_score();
     }
 
     @Override
@@ -367,9 +369,13 @@ public class TestActivity extends AppCompatActivity {
 
     public void clickedFinish(View view) {
         if (countDownTimer != null) countDownTimer.cancel();  // can be null when a finished old test is being displayed
+        if (!testInProgress) return;  // clicked finish when the test is already finished
+
         numSecondsRemaining = 0;
         testInProgress = false;
+
         setCurrentQuestion();
+        set_test_status_string_and_score();
     }
 
     private void setOptionsRadioButtonsInteractivity(boolean clickable) {
@@ -484,5 +490,23 @@ public class TestActivity extends AppCompatActivity {
         }
 
         return load_is_successful;
+    }
+
+    private void set_test_status_string_and_score() {
+        // set test status string score
+        if (testInProgress) {
+            ((TextView) findViewById(R.id.test_textView_status)).setText(resources.getString(R.string.heading_test_in_progress));
+            ((TextView) findViewById(R.id.test_textView_score)).setText("");
+        } else {
+            ((TextView) findViewById(R.id.test_textView_status)).setText(resources.getString(R.string.heading_test_finished));
+            ((TextView) findViewById(R.id.test_textView_score)).setText(String.format("(%d/%d)", score, NUM_QUESTIONS));
+            int color;
+            if (score < PASS_SCORE) {
+                color = resources.getColor(R.color.color_wrong_choice);
+            } else {
+                color = resources.getColor(R.color.color_correct_choice);
+            }
+            ((TextView) findViewById(R.id.test_textView_score)).setTextColor(color);
+        }
     }
 }

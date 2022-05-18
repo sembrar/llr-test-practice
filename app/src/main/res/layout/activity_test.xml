@@ -17,6 +17,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/test_textView_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/test_textView_status"
+        app:layout_constraintStart_toEndOf="@+id/test_textView_status" />
+
+    <TextView
         android:id="@+id/test_textView_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -112,4 +120,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/test_button_next"
         app:layout_constraintStart_toEndOf="@+id/test_button_previous" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

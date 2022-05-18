@@ -40,4 +40,7 @@
         <item>hi</item>
         <item>te</item>
     </string-array>
+
+    <string name="heading_test_in_progress">Test in progress</string>
+    <string name="heading_test_finished">Test finished</string>
 </resources>
