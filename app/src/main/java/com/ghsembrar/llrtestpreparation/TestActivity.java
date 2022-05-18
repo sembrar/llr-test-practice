@@ -33,7 +33,7 @@ public class TestActivity extends AppCompatActivity {
     private static final String FILENAME_TEST_DATA = "test_data";
     private static final String SHARED_PREF_KEY_TEST_IN_PROGRESS = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "test_in_progress";
 
-    private class TestQuestionAndUserAnswer {
+    private static class TestQuestionAndUserAnswer {
         int subject_index = -1;
         int question_index = -1;
         int user_answer = -1;
@@ -47,7 +47,7 @@ public class TestActivity extends AppCompatActivity {
     private CountDownTimer countDownTimer;
 
     // the following are saved in a file
-    private ArrayList<TestQuestionAndUserAnswer> test_questions_and_user_answers = new ArrayList<>(NUM_QUESTIONS);
+    private final ArrayList<TestQuestionAndUserAnswer> test_questions_and_user_answers = new ArrayList<>(NUM_QUESTIONS);
     private int currentQuestionIndex = 0;
     private int numSecondsRemaining = NUM_MAX_SECONDS_PER_TEST;
     private int score = 0;
@@ -239,7 +239,6 @@ public class TestActivity extends AppCompatActivity {
         TestQuestionAndUserAnswer testQuestionAndUserAnswer = test_questions_and_user_answers.get(currentQuestionIndex);
         int subject_index = testQuestionAndUserAnswer.subject_index;
         int question_index = testQuestionAndUserAnswer.question_index;
-        int user_answer = testQuestionAndUserAnswer.user_answer;
 
         if (CONSTANTS.ALLOW_DEBUG) { Log.i(CONSTANTS.LOG_TAG, String.format("setCurrentQuestion: SubjectIndex,QuestionIndex: %d,%d", subject_index, question_index)); }
 
