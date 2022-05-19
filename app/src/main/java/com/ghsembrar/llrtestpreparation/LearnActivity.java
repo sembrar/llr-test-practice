@@ -118,7 +118,8 @@ public class LearnActivity extends AppCompatActivity {
         Arrays.fill(practiceAnswers, -1);
         loadPracticeAnswers();
 
-        setActivityAccordingToMode();  // readMode => choices not clickable etc.  // also sets current question
+        hide_or_show_views_based_on_mode();
+        setCurrentQuestion();
     }
 
     @Override
@@ -193,7 +194,8 @@ public class LearnActivity extends AppCompatActivity {
             case R.id.learnAct_menu_item_read_mode:
                 if (!is_read_mode) {
                     is_read_mode = true;
-                    setActivityAccordingToMode();
+                    hide_or_show_views_based_on_mode();
+                    setCurrentQuestion();
                 } else {
                     if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onOptionsItemSelected: Already in readMode");
                 }
@@ -201,7 +203,8 @@ public class LearnActivity extends AppCompatActivity {
             case R.id.learnAct_menu_item_practice_mode:
                 if (is_read_mode) {
                     is_read_mode = false;
-                    setActivityAccordingToMode();
+                    hide_or_show_views_based_on_mode();
+                    setCurrentQuestion();
                 } else {
                     if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onOptionsItemSelected: Already in practiceMode");
                 }
@@ -318,7 +321,7 @@ public class LearnActivity extends AppCompatActivity {
         setCurrentQuestion();
     }
 
-    private void setActivityAccordingToMode() {
+    private void hide_or_show_views_based_on_mode() {
         if (is_read_mode) {
             // don't show check button
             findViewById(R.id.learn_button_check).setVisibility(View.GONE);
@@ -327,8 +330,6 @@ public class LearnActivity extends AppCompatActivity {
             // show check button
             findViewById(R.id.learn_button_check).setVisibility(View.VISIBLE);
         }
-
-        setCurrentQuestion();  // so that if read, it will mark the answer, else, clears response
     }
 
     private void clearResponse() {
