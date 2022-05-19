@@ -170,7 +170,9 @@ public class TestActivity extends AppCompatActivity {
 
         updateResourcesVariable();  // this helps load resources of different language than system's
 
-        setActivityAccordingToTestStatus();  // shows/hides finish button etc.  // also sets current question
+        hide_or_show_views_based_on_test_status();  // shows/hides finish button etc.
+
+        setCurrentQuestion();
 
         set_test_status_string_and_score();
     }
@@ -227,7 +229,7 @@ public class TestActivity extends AppCompatActivity {
         return localizedContext.getResources();
     }
 
-    private void setActivityAccordingToTestStatus() {
+    private void hide_or_show_views_based_on_test_status() {
         if (testInProgress) {
             // show finish button
             findViewById(R.id.test_button_finish).setVisibility(View.VISIBLE);
@@ -236,8 +238,6 @@ public class TestActivity extends AppCompatActivity {
             // don't show finish button
             findViewById(R.id.test_button_finish).setVisibility(View.GONE);
         }
-
-        setCurrentQuestion();
     }
 
     private void setCurrentQuestion() {
@@ -393,7 +393,8 @@ public class TestActivity extends AppCompatActivity {
             }
         }
 
-        setActivityAccordingToTestStatus();
+        hide_or_show_views_based_on_test_status();
+        setCurrentQuestion();
         set_test_status_string_and_score();
     }
 
