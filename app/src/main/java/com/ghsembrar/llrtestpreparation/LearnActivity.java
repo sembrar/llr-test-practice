@@ -1,5 +1,7 @@
 package com.ghsembrar.llrtestpreparation;
 
+import static java.lang.Math.abs;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GestureDetectorCompat;
@@ -526,7 +528,18 @@ public class LearnActivity extends AppCompatActivity {
 
         @Override
         public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onFling: " + e1.toString() + e2.toString());
+            // if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onFling: " + e1.toString() + e2.toString());
+            float deltaX = e1.getX() - e2.getX();
+            float deltaY = e1.getY() - e2.getY();
+            float biggerDelta = (abs(deltaX) > abs(deltaY)) ? deltaX : deltaY;
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onFling: DeltaX:" + deltaX + " DeltaY:" + deltaY + " Bigger:" + biggerDelta);
+
+            if (biggerDelta > 0) {
+                clickedNext(null);
+            } else {
+                clickedPrev(null);
+            }
+            
             return true;
         }
     }
