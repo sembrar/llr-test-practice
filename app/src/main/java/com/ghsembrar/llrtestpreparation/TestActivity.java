@@ -374,7 +374,26 @@ public class TestActivity extends AppCompatActivity {
         numSecondsRemaining = 0;
         testInProgress = false;
 
-        setCurrentQuestion();
+        // calculate score
+        final String packageName = getPackageName();
+        score = 0;
+        for (TestQuestionAndUserAnswer testQuestionAndUserAnswer : test_questions_and_user_answers) {
+            int ansResId = resources.getIdentifier("a" + testQuestionAndUserAnswer.subject_index + "_" + testQuestionAndUserAnswer.question_index, "integer", packageName);
+            if (ansResId != 0) {
+                int correctAnswer = resources.getInteger(ansResId);
+                if (testQuestionAndUserAnswer.user_answer == correctAnswer) score++;
+
+            } else {
+                // will never happen
+
+                if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clickedFinish: Couldn't find answer resource");
+
+                Toast.makeText(this, "Error: Couldn't find answer resource", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        }
+
+        setActivityAccordingToTestStatus();
         set_test_status_string_and_score();
     }
 
