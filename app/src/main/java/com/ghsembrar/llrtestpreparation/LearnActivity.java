@@ -120,6 +120,9 @@ public class LearnActivity extends AppCompatActivity {
 
         hide_or_show_views_based_on_mode();
         setCurrentQuestion();
+
+        // set subject name as title
+        ((TextView) findViewById(R.id.learn_textView_subjectTitle)).setText(resources.getStringArray(R.array.subject_names)[subject_index]);
     }
 
     @Override
