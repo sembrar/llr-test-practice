@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // AndroidStudio says onClick in xml is broken in older versions
-        findViewById(R.id.main_button_learn_subject0).setOnClickListener(v -> startLearnActivity(0));
-        findViewById(R.id.main_button_learn_subject1).setOnClickListener(v -> startLearnActivity(1));
-        findViewById(R.id.main_button_learn_subject2).setOnClickListener(v -> startLearnActivity(2));
+        findViewById(R.id.main_button_learn_subject0).setOnClickListener(v -> startLearnAndTestActivityForLearn(0));
+        findViewById(R.id.main_button_learn_subject1).setOnClickListener(v -> startLearnAndTestActivityForLearn(1));
+        findViewById(R.id.main_button_learn_subject2).setOnClickListener(v -> startLearnAndTestActivityForLearn(2));
 
-        findViewById(R.id.main_button_test_old).setOnClickListener(v -> startTestActivity(TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST));
-        findViewById(R.id.main_button_test_new).setOnClickListener(v -> startTestActivity(TEST_TYPE_NEW_TEST));
+        findViewById(R.id.main_button_test_old).setOnClickListener(v -> startLearnAndTestActivityForTest(TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST));
+        findViewById(R.id.main_button_test_new).setOnClickListener(v -> startLearnAndTestActivityForTest(TEST_TYPE_NEW_TEST));
     }
 
     @Override
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void startLearnActivity(int subjectIndex) {
+    private void startLearnAndTestActivityForLearn(int subjectIndex) {
         Intent intent = new Intent(this, LearnAndTestActivity.class);
         intent.putExtra(INTENT_EXTRA_KEY_SUBJECT_INDEX, subjectIndex);
         startActivity(intent);
@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void startTestActivity(int test_type) {
-        Intent intent = new Intent(this, TestActivity.class);
+    private void startLearnAndTestActivityForTest(int test_type) {
+        Intent intent = new Intent(this, LearnAndTestActivity.class);
         intent.putExtra(INTENT_EXTRA_KEY_TEST_OLD_OR_NEW, test_type);
         startActivity(intent);
     }
