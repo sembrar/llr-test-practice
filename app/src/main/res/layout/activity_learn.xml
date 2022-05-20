@@ -38,45 +38,55 @@
         app:layout_constraintTop_toBottomOf="@+id/learn_textView_question"
         app:srcCompat="@drawable/ic_launcher_background" />
 
-    <ScrollView
-        android:id="@+id/learn_ScrollView_choices"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/learn_ConstraintLayout_choices"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/learn_button_check"
+        app:layout_constraintBottom_toTopOf="@+id/lean_button_previous"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/learn_imageView_accompanyingImage">
 
-        <RadioGroup
-            android:id="@+id/learn_RadioGroup_choices"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/learn_NestedScrollView_choices"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
 
-            <RadioButton
-                android:id="@+id/learn_radioButton_choice1"
+            <RadioGroup
+                android:id="@+id/learn_RadioGroup_choices"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/learn_radioButton_choice2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/learn_radioButton_choice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/learn_radioButton_choice3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/learn_radioButton_choice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/learn_radioButton_choice4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </RadioGroup>
-    </ScrollView>
+                <RadioButton
+                    android:id="@+id/learn_radioButton_choice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/learn_radioButton_choice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
         android:id="@+id/lean_button_previous"

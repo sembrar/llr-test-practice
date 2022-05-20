@@ -1,7 +1,10 @@
 package com.ghsembrar.llrtestpreparation;
 
+import static java.lang.Math.abs;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GestureDetectorCompat;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,9 +13,11 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -61,6 +66,8 @@ public class LearnActivity extends AppCompatActivity {
     // file name to save practiceAnswers
     private static final String FILENAME_SAVE_PRACTICE_ANSWERS_PREFIX = "practice_answers_";  // add subjectIndex to it
 
+    private GestureDetectorCompat mDetector;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,6 +94,8 @@ public class LearnActivity extends AppCompatActivity {
             finish();  // todo may be show a Toast for the user that an error occurred
             return;
         }
+
+        mDetector = new GestureDetectorCompat(this, new MyGestureListener());
 
         // show activity start data
         if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("onCreate: subject_index: %d", subject_index));
@@ -502,5 +511,36 @@ public class LearnActivity extends AppCompatActivity {
     private void clearPracticeAnswers() {
         Arrays.fill(practiceAnswers, -1);
         // todo give a options menu - menu item for clearing answers with a safety confirm dialog
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        this.mDetector.onTouchEvent(event);
+        return super.onTouchEvent(event);
+    }
+
+    class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
+        @Override
+        public boolean onDown(MotionEvent e) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onDown: " + e.toString());
+            return true;
+        }
+
+        @Override
+        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+            // if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onFling: " + e1.toString() + e2.toString());
+            float deltaX = e1.getX() - e2.getX();
+            float deltaY = e1.getY() - e2.getY();
+            float biggerDelta = (abs(deltaX) > abs(deltaY)) ? deltaX : deltaY;
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onFling: DeltaX:" + deltaX + " DeltaY:" + deltaY + " Bigger:" + biggerDelta);
+
+            if (biggerDelta > 0) {
+                clickedNext(null);
+            } else {
+                clickedPrev(null);
+            }
+            
+            return true;
+        }
     }
 }
