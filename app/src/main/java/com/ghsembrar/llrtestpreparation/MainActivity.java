@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startLearnActivity(int subjectIndex) {
-        Intent intent = new Intent(this, LearnActivity.class);
+        Intent intent = new Intent(this, LearnAndTestActivity.class);
         intent.putExtra(INTENT_EXTRA_KEY_SUBJECT_INDEX, subjectIndex);
         startActivity(intent);
     }

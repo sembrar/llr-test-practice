@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LLRTestPreparation">
         <activity
+            android:name=".LearnAndTestActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".TestActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
@@ -19,7 +23,7 @@
         <activity
             android:name=".LearnActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
