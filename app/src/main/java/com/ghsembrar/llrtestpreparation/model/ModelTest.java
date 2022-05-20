@@ -42,6 +42,10 @@ public class ModelTest extends ModelBase {
         user_answers = new int[num_questions];
 
         clear_all_user_answers();  // fills all answers with -1 (the default for no selection)
+        // populate test_questions
+        for (int i = 0; i < num_questions; i++) {
+            test_questions.add(new TestQuestion());
+        }
     }
 
     public int get_score() {
