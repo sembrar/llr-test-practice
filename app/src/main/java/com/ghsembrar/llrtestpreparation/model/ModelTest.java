@@ -44,6 +44,18 @@ public class ModelTest extends ModelBase {
         clear_all_user_answers();  // fills all answers with -1 (the default for no selection)
     }
 
+    public int get_score() {
+        return score;
+    }
+
+    public boolean is_test_in_progress() {
+        return test_in_progress;
+    }
+
+    public int get_num_seconds_remaining() {
+        return num_seconds_remaining;
+    }
+
     @Override
     String get_question_res_identifier_name() {
         TestQuestion testQuestion = test_questions.get(current_question_index);
@@ -173,5 +185,9 @@ public class ModelTest extends ModelBase {
         }
 
         return load_is_successful;
+    }
+
+    public void set_up_new_test() {
+        // todo
     }
 }

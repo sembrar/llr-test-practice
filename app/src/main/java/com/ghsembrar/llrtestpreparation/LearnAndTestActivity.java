@@ -20,6 +20,14 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
     private GestureDetectorCompat gestureDetectorCompat;
 
+    enum MODE {
+        READ,
+        PRACTICE,
+        TEST_IN_PROGRESS,
+        TEST_FINISHED
+    }
+
+    MODE mode;
     ModelBase ltModel = null;
 
     @Override
@@ -31,10 +39,50 @@ public class LearnAndTestActivity extends AppCompatActivity {
         Intent intent = getIntent();
         if (intent.hasExtra(MainActivity.INTENT_EXTRA_KEY_SUBJECT_INDEX)) {
             int subject_index = intent.getIntExtra(MainActivity.INTENT_EXTRA_KEY_SUBJECT_INDEX, 0);
+
             ltModel = new ModelLearn(this, subject_index);
+            mode = MODE.READ;  // todo get mode (read/practice) from sharedPrefs
+
         } else  if (intent.hasExtra(MainActivity.INTENT_EXTRA_KEY_TEST_OLD_OR_NEW)) {
             int test_type = intent.getIntExtra(MainActivity.INTENT_EXTRA_KEY_TEST_OLD_OR_NEW, MainActivity.TEST_TYPE_NEW_TEST);
+
             ltModel = new ModelTest(this);
+            boolean is_load_old_test_successful = ((ModelTest) ltModel).load_test_data();
+              // loading old test is required for both show old test and set-up new test
+              // in set-up new test, if old unfinished test exists, user should be asked if they
+              // want to continue that instead, todo this behavior should be allowed to be disabled in Settings
+
+            if (test_type == MainActivity.TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST) {
+
+                if (!is_load_old_test_successful) {  // old test is clicked, but it couldn't be read from memory
+                    Toast.makeText(this, "No old test exists", Toast.LENGTH_LONG).show();
+                    finish();
+
+                } else {  // old test is clicked, and it is successfully read from memory
+                    if (((ModelTest) ltModel).is_test_in_progress()) {
+                        mode = MODE.TEST_IN_PROGRESS;
+                    } else {
+                        mode = MODE.TEST_FINISHED;
+                    }
+                }
+
+            } else {  // new test is clicked
+
+                boolean an_old_unfinished_test_exists_and_user_wants_to_continue = false;
+
+                if (is_load_old_test_successful && ((ModelTest) ltModel).is_test_in_progress()) {
+                    // new test is clicked, but an old test is in progress
+                    // todo ask if the user wants to continue
+                }
+
+                if (!an_old_unfinished_test_exists_and_user_wants_to_continue) {
+                    ((ModelTest) ltModel).set_up_new_test();
+                }
+                // note that for the other case (when above if condition fails), the data is already loaded
+
+                mode = MODE.TEST_IN_PROGRESS;
+            }
+
         } else {
             // no intent data
             // this can happen if the activity is restarted
