@@ -58,6 +58,11 @@ public class LearnAndTestActivity extends AppCompatActivity {
             }
         }
 
+        // bind buttons to functions
+        findViewById(R.id.lt_button_previous).setOnClickListener(v -> clicked_button_previous());
+        findViewById(R.id.lt_button_next).setOnClickListener(v -> clicked_button_next());
+        findViewById(R.id.lt_button_check_or_finish).setOnClickListener(v -> clicked_button_check_or_finish());
+
         show_or_hide_views_based_on_mode_and_settings();
 
         // create gesture detector compat
@@ -133,6 +138,18 @@ public class LearnAndTestActivity extends AppCompatActivity {
                 ((TextView) findViewById(R.id.lt_button_check_or_finish)).setText(R.string.button_finish);
                 break;
         }
+    }
+
+    void clicked_button_previous() {
+        // todo
+    }
+
+    void clicked_button_next() {
+        // todo
+    }
+
+    void clicked_button_check_or_finish() {
+        // todo
     }
 
     // the following function needs to be overridden for the gesture detector to work
