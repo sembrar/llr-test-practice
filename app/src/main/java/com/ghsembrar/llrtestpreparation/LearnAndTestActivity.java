@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ghsembrar.llrtestpreparation.model.ModelBase;
@@ -94,8 +96,32 @@ public class LearnAndTestActivity extends AppCompatActivity {
             }
         }
 
+        show_or_hide_views_based_on_mode_and_settings();
+
         // create gesture detector compat
         gestureDetectorCompat = new GestureDetectorCompat(this, new MyGestureListener());
+    }
+
+    void show_or_hide_views_based_on_mode_and_settings() {
+        // todo changes based on settings
+        switch (mode) {
+
+            case READ:
+            case TEST_FINISHED:
+                findViewById(R.id.lt_textView_timer).setVisibility(View.GONE);
+                findViewById(R.id.lt_button_check_or_finish).setVisibility(View.GONE);
+                break;
+            case PRACTICE:
+                findViewById(R.id.lt_textView_timer).setVisibility(View.GONE);
+                findViewById(R.id.lt_button_check_or_finish).setVisibility(View.VISIBLE);
+                ((TextView) findViewById(R.id.lt_button_check_or_finish)).setText(R.string.button_check);
+                break;
+            case TEST_IN_PROGRESS:
+                findViewById(R.id.lt_textView_timer).setVisibility(View.VISIBLE);
+                findViewById(R.id.lt_button_check_or_finish).setVisibility(View.VISIBLE);
+                ((TextView) findViewById(R.id.lt_button_check_or_finish)).setText(R.string.button_finish);
+                break;
+        }
     }
 
     // the following function needs to be overridden for the gesture detector to work
