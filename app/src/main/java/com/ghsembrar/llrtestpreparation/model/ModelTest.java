@@ -21,6 +21,8 @@ public class ModelTest extends ModelBase {
         num_questions = NUM_QUESTIONS;
         test_questions = new ArrayList<>(num_questions);
         user_answers = new int[num_questions];
+
+        clear_all_user_answers();  // fills all answers with -1 (the default for no selection)
     }
 
     @Override
