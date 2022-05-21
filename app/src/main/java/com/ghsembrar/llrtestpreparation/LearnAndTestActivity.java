@@ -5,6 +5,7 @@ import androidx.core.view.GestureDetectorCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -34,6 +35,8 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
     MODE mode;
     ModelBase ltModel = null;
+
+    CountDownTimer countDownTimer;
 
     // for easier access
     private static final int[] radioButtonIDs = {
@@ -390,6 +393,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
                 break;
 
             case TEST_IN_PROGRESS:
+                if (countDownTimer != null) countDownTimer.cancel();
                 ((ModelTest) ltModel).finish_test();
                 mode = MODE.TEST_FINISHED;
                 show_or_hide_views_based_on_mode_and_settings();
@@ -397,6 +401,55 @@ public class LearnAndTestActivity extends AppCompatActivity {
         }
 
         set_current_question();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (mode == MODE.TEST_IN_PROGRESS) {
+            countDownTimer = new CountDownTimer(((ModelTest) ltModel).get_num_seconds_remaining() * 1000L, 1000) {
+                @Override
+                public void onTick(long millisUntilFinished) {
+                    ModelTest modelTest = (ModelTest) ltModel;
+
+                    int num_seconds_remaining = modelTest.get_num_seconds_remaining();
+                    modelTest.decrement_num_seconds_remaining();
+                    // decrement after reading, otherwise, it starts at one less, and at the end, 0 is shown for 1 second
+
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onTick: " + num_seconds_remaining);
+
+                    int minutes = num_seconds_remaining / 60;
+                    int seconds = num_seconds_remaining - minutes * 60;
+                    ((TextView) findViewById(R.id.lt_textView_timer)).setText(getResources().getString(R.string.time_remaining, minutes, seconds));
+                }
+
+                @Override
+                public void onFinish() {
+                    clicked_button_check_or_finish();
+                }
+            };
+            countDownTimer.start();
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        if (countDownTimer != null) countDownTimer.cancel();
+
+        switch (mode) {
+
+            case READ:
+            case PRACTICE:
+                ((ModelLearn) ltModel).save_practice_answers();
+                break;
+            case TEST_IN_PROGRESS:
+            case TEST_FINISHED:
+                ((ModelTest) ltModel).save_test_data();
+                break;
+        }
     }
 
     // the following function needs to be overridden for the gesture detector to work

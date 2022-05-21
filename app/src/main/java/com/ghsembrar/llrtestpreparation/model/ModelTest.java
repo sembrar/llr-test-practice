@@ -192,7 +192,8 @@ public class ModelTest extends ModelBase {
     }
 
     public void set_up_new_test() {
-        // todo
+        test_in_progress = true;
+        num_seconds_remaining = NUM_MAX_SECONDS;
     }
 
     public void finish_test() {
@@ -202,5 +203,10 @@ public class ModelTest extends ModelBase {
 
     private void calculate_score() {
         // todo
+    }
+
+    public void decrement_num_seconds_remaining() {
+        num_seconds_remaining--;
+        if (num_seconds_remaining < 0) num_seconds_remaining = 0;
     }
 }
