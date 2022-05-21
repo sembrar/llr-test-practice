@@ -63,7 +63,9 @@ public class LearnAndTestActivity extends AppCompatActivity {
         findViewById(R.id.lt_button_next).setOnClickListener(v -> clicked_button_next());
         findViewById(R.id.lt_button_check_or_finish).setOnClickListener(v -> clicked_button_check_or_finish());
 
+        // set views (one time settings / texts)
         show_or_hide_views_based_on_mode_and_settings();
+        set_title_and_detail_according_to_mode_and_model();
 
         // create gesture detector compat
         gestureDetectorCompat = new GestureDetectorCompat(this, new MyGestureListener());
@@ -136,6 +138,37 @@ public class LearnAndTestActivity extends AppCompatActivity {
                 findViewById(R.id.lt_textView_timer).setVisibility(View.VISIBLE);
                 findViewById(R.id.lt_button_check_or_finish).setVisibility(View.VISIBLE);
                 ((TextView) findViewById(R.id.lt_button_check_or_finish)).setText(R.string.button_finish);
+                break;
+        }
+    }
+
+    void set_title_and_detail_according_to_mode_and_model() {
+        TextView textViewTitle = findViewById(R.id.lt_textView_title);
+        TextView textViewDetail = findViewById(R.id.lt_textView_detail);
+
+        switch (mode) {
+
+            case READ:
+            case PRACTICE:
+                ModelLearn modelLearn = (ModelLearn) ltModel;
+                String subject_name;
+                try {
+                    subject_name = getResources().getStringArray(R.array.subject_names)[modelLearn.get_subject_index()];
+                } catch (Exception ignored) {  // this won't happen
+                    subject_name = getResources().getString(R.string.no_string);
+                }
+                textViewTitle.setText(subject_name);
+                textViewDetail.setText(getResources().getString(R.string.heading_num_questions, modelLearn.get_num_questions()));
+                break;
+            case TEST_IN_PROGRESS:
+                textViewTitle.setText(R.string.heading_test_in_progress);
+                textViewDetail.setText("");  // nothing to show here
+                break;
+            case TEST_FINISHED:
+                ModelTest modelTest = (ModelTest) ltModel;
+                textViewTitle.setText(R.string.heading_test_finished);
+                textViewDetail.setText(getResources().getString(R.string.heading_score, modelTest.get_score(), modelTest.get_num_questions()));
+                // todo set color based on pass score which means remove color for other times
                 break;
         }
     }
