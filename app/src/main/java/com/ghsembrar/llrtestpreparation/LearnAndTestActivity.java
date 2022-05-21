@@ -391,6 +391,8 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
             case TEST_IN_PROGRESS:
                 ((ModelTest) ltModel).finish_test();
+                mode = MODE.TEST_FINISHED;
+                show_or_hide_views_based_on_mode_and_settings();
                 break;
         }
 
