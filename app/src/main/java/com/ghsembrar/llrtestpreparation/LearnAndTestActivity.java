@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -69,6 +71,9 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         // create gesture detector compat
         gestureDetectorCompat = new GestureDetectorCompat(this, new MyGestureListener());
+
+        // set current question for the first time
+        set_current_question();
     }
 
     void set_model_and_mode_for_learn(int subject_index) {
@@ -170,6 +175,30 @@ public class LearnAndTestActivity extends AppCompatActivity {
                 textViewDetail.setText(getResources().getString(R.string.heading_score, modelTest.get_score(), modelTest.get_num_questions()));
                 // todo set color based on pass score which means remove color for other times
                 break;
+        }
+    }
+
+    void set_current_question() {
+        // set question
+        ((TextView) findViewById(R.id.lt_textView_question)).setText(ltModel.get_question_string());
+
+        // set image if it exists, else hide image view
+        int img_res_id = ltModel.get_accompanying_image_res_id();
+        ImageView img_view = findViewById(R.id.lt_imageView_accompanying_image);
+        if (img_res_id == 0) {
+            img_view.setVisibility(View.GONE);
+        } else {
+            img_view.setVisibility(View.VISIBLE);
+            img_view.setImageResource(img_res_id);
+        }
+
+        // set choices
+        final int[] radioButtonIDs = {
+                R.id.lt_radioButton_option0, R.id.lt_radioButton_option1,
+                R.id.lt_radioButton_option2, R.id.lt_radioButton_option3
+        };
+        for (int i = 0; i < 4; i++) {
+            ((RadioButton) findViewById(radioButtonIDs[i])).setText(ltModel.get_option_string_res_id(i));
         }
     }
 

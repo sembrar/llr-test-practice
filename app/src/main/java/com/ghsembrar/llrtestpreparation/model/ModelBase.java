@@ -52,14 +52,14 @@ abstract public class ModelBase {
     abstract String get_correct_answer_res_identifier_name();
 
     // calls get_question_res_identifier_name
-    // if the name exists, returns the corresponding string resource id
-    // else returns the resource id of no_string
-    public int get_question_string_res_id() {
+    // if the name exists, returns the corresponding string with question number formatted into it
+    // else returns no_string
+    public String get_question_string() {
         Resources resources = context.getResources();
         int res_id = resources.getIdentifier(get_question_res_identifier_name(),
                 "string", context.getPackageName());
-        if (res_id == 0) res_id = R.string.no_string;
-        return res_id;
+        if (res_id == 0) return resources.getString(R.string.no_string);
+        return resources.getString(res_id, get_current_question_index() + 1);
     }
 
     // calls get_accompanying_image_res_identifier_name
