@@ -230,7 +230,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
                 clickable = false;
                 break;
             case PRACTICE:  // not clickable if answer is checked
-                clickable = ltModel.get_user_answer() == -1;  // if user answer is -1, answer needs yet to be set, so clickable
+                clickable = ltModel.get_user_answer() == ModelBase.NO_ANSWER_CHOSEN_YET;  // answer needs yet to be set, so clickable
                 break;
             case TEST_IN_PROGRESS:  // clickable
                 clickable = true;
@@ -264,7 +264,9 @@ public class LearnAndTestActivity extends AppCompatActivity {
                 if (user_answer >= 0 && user_answer < radioButtonIDs.length) {
                     ((RadioButton) findViewById(radioButtonIDs[user_answer])).setChecked(true);
                 } else {
-                    user_answer = -1;  // this is redundant, as if it's not above, it will already be this
+                    // user answer is NO_ANSWER_CHOSEN_YET for finished test or
+                    // one of NO_ANSWER_CHOSEN_YET or EMPTY_ANSWER_CHOSEN for practice
+                    // in all of those cases, no radio button should be in checked state
                     ((RadioGroup) findViewById(R.id.lt_radioGroup_choices)).clearCheck();
                 }
                 break;
@@ -286,9 +288,10 @@ public class LearnAndTestActivity extends AppCompatActivity {
                 break;
 
             case PRACTICE:
-                // if answer is not checked, i.e. user answer is -1, no color
-                if (user_answer == -1) correct_answer = -1;  // no color
+                // if answer is not chosen yet, no color
+                if (user_answer == ModelBase.NO_ANSWER_CHOSEN_YET) correct_answer = -1;  // no color
                 // else they will be colored as usual
+                // note that if the user answer is empty answer chosen, correct answer will be colored
                 break;
 
             case TEST_IN_PROGRESS:
@@ -362,7 +365,36 @@ public class LearnAndTestActivity extends AppCompatActivity {
     }
 
     void clicked_button_check_or_finish() {
-        // todo
+        switch (mode) {
+
+            case READ:
+            case TEST_FINISHED:
+                if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clicked_button_check_or_finish: in mode read/test_finished");
+                return;
+
+            case PRACTICE:
+                if (ltModel.get_user_answer() != ModelBase.NO_ANSWER_CHOSEN_YET) {
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clicked_button_check_or_finish: for already checked question");
+                    return;
+                }
+
+                // save the user answer
+                ltModel.set_user_answer(ModelBase.EMPTY_ANSWER_CHOSEN);  // if user selected a radio button it will be updated below
+                for (int i = 0; i < radioButtonIDs.length; i++) {
+                    if (((RadioButton) findViewById(radioButtonIDs[i])).isChecked()) {
+                        ltModel.set_user_answer(i);
+                        break;
+                    }
+                }
+
+                break;
+
+            case TEST_IN_PROGRESS:
+                ((ModelTest) ltModel).finish_test();
+                break;
+        }
+
+        set_current_question();
     }
 
     // the following function needs to be overridden for the gesture detector to work

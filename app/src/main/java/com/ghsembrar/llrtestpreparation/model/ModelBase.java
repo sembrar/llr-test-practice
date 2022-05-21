@@ -2,17 +2,27 @@ package com.ghsembrar.llrtestpreparation.model;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.util.Log;
 
+import com.ghsembrar.llrtestpreparation.CONSTANTS;
 import com.ghsembrar.llrtestpreparation.R;
 
 import java.util.Arrays;
 
 abstract public class ModelBase {
 
+    private static final String TAG = CONSTANTS.LOG_TAG_PREFIX + "ModelBase";
+
     Context context;
     int num_questions = 0;
     int current_question_index = 0;
     int[] user_answers;
+
+    public static final int NO_ANSWER_CHOSEN_YET = -1;
+    // the following is used when user clicks check in practice mode without selecting a choice
+    public static final int EMPTY_ANSWER_CHOSEN = -2;
+    private static final int USER_ANSWER_MIN = EMPTY_ANSWER_CHOSEN;
+    private static final int USER_ANSWER_MAX = 3;  // as there are 4 choices [0, 3]
 
     // sets the data member: context
     ModelBase(Context context) {
@@ -96,10 +106,15 @@ abstract public class ModelBase {
     }
 
     public void set_user_answer(int new_user_answer) {
+        if (new_user_answer < USER_ANSWER_MIN || new_user_answer > USER_ANSWER_MAX) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "set_user_answer: answer out of bounds: " + new_user_answer);
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "set_user_answer: defaults to no answer chosen yet");
+            new_user_answer = NO_ANSWER_CHOSEN_YET;
+        }
         user_answers[current_question_index] = new_user_answer;
     }
 
     public void clear_all_user_answers() {
-        Arrays.fill(user_answers, -1);
+        Arrays.fill(user_answers, NO_ANSWER_CHOSEN_YET);
     }
 }

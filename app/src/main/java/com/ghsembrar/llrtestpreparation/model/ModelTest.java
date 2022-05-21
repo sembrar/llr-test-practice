@@ -41,7 +41,7 @@ public class ModelTest extends ModelBase {
         test_questions = new ArrayList<>(num_questions);
         user_answers = new int[num_questions];
 
-        clear_all_user_answers();  // fills all answers with -1 (the default for no selection)
+        clear_all_user_answers();  // fills all answers with no_answer_chosen_yet
         // populate test_questions
         for (int i = 0; i < num_questions; i++) {
             test_questions.add(new TestQuestion());
@@ -192,6 +192,15 @@ public class ModelTest extends ModelBase {
     }
 
     public void set_up_new_test() {
+        // todo
+    }
+
+    public void finish_test() {
+        test_in_progress = false;
+        calculate_score();
+    }
+
+    private void calculate_score() {
         // todo
     }
 }

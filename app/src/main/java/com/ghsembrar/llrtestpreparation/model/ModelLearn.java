@@ -37,7 +37,7 @@ public class ModelLearn extends ModelBase {
         num_questions = num_questions_in_subjects[subject_index];
         user_answers = new int[num_questions];
 
-        clear_all_user_answers();  // fills all user answers with -1 (the default for no answer chosen)
+        clear_all_user_answers();  // fills all user answers with NO_ANSWER_CHOSEN_YET
         load_practice_answers();  // load any previously saved answers
     }
 
