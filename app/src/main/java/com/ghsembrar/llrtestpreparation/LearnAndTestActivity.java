@@ -40,6 +40,8 @@ public class LearnAndTestActivity extends AppCompatActivity {
             R.id.lt_radioButton_option2, R.id.lt_radioButton_option3
     };
 
+    private boolean use_check_button_in_practice = true;  // todo read from settings/prefs
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,9 +69,15 @@ public class LearnAndTestActivity extends AppCompatActivity {
         }
 
         // bind buttons to functions
+        // navigation buttons
         findViewById(R.id.lt_button_previous).setOnClickListener(v -> clicked_button_previous());
         findViewById(R.id.lt_button_next).setOnClickListener(v -> clicked_button_next());
         findViewById(R.id.lt_button_check_or_finish).setOnClickListener(v -> clicked_button_check_or_finish());
+        // radio buttons
+        findViewById(R.id.lt_radioButton_option0).setOnClickListener(v -> clicked_radio_button(0));
+        findViewById(R.id.lt_radioButton_option1).setOnClickListener(v -> clicked_radio_button(1));
+        findViewById(R.id.lt_radioButton_option2).setOnClickListener(v -> clicked_radio_button(2));
+        findViewById(R.id.lt_radioButton_option3).setOnClickListener(v -> clicked_radio_button(3));
 
         // set views (one time settings / texts)
         show_or_hide_views_based_on_mode_and_settings();
@@ -230,6 +238,36 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         for (int radio_button_id : radioButtonIDs) {
             findViewById(radio_button_id).setClickable(clickable);
+        }
+    }
+
+    void clicked_radio_button(int option_index) {
+        // this function is called when an option is chosen, i.e. one of the radio buttons is clicked
+        // this can happen in practice mode (when answer is not checked yet) and test_in_progress mode
+
+        switch (mode) {
+
+            case PRACTICE:
+                if (use_check_button_in_practice) {
+                    // do nothing, as scrolling to next question, need not save this answer
+                } else {
+                    // check the answer and re-set the question
+                    ltModel.set_user_answer(option_index);
+                    set_current_question();  // this will also make the buttons not-clickable
+                }
+                break;
+            case TEST_IN_PROGRESS:
+                ltModel.set_user_answer(option_index);  // the answer is saved in a test
+                break;
+            case TEST_FINISHED:
+            case READ:
+                // should not reach here
+                if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clicked_radio_button: In mode:" + mode);
+                return;
+        }
+
+        if (use_check_button_in_practice) {
+            // don't
         }
     }
 
