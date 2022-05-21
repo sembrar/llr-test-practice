@@ -11,6 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -213,6 +214,9 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         // set click-ability of option buttons
         set_click_ability_of_option_buttons_based_on_mode_and_model();
+
+        // mark user choice and/or correct choice based on mode and model
+        mark_user_and_or_correct_answer_option_based_on_mode_and_model();
     }
 
     void set_click_ability_of_option_buttons_based_on_mode_and_model() {
@@ -238,6 +242,74 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         for (int radio_button_id : radioButtonIDs) {
             findViewById(radio_button_id).setClickable(clickable);
+        }
+    }
+
+    void mark_user_and_or_correct_answer_option_based_on_mode_and_model() {
+        int user_answer = ltModel.get_user_answer();
+        int correct_answer = ltModel.get_correct_answer_option_index();
+
+
+        // radio button selection:
+
+        switch (mode) {
+
+            case READ:  // mark the correct answer
+                ((RadioButton) findViewById(radioButtonIDs[correct_answer])).setChecked(true);
+                break;
+
+            case PRACTICE:  // mark if user has previously selected an answer, else clear response
+            case TEST_IN_PROGRESS:
+            case TEST_FINISHED:
+                if (user_answer >= 0 && user_answer < radioButtonIDs.length) {
+                    ((RadioButton) findViewById(radioButtonIDs[user_answer])).setChecked(true);
+                } else {
+                    user_answer = -1;  // this is redundant, as if it's not above, it will already be this
+                    ((RadioGroup) findViewById(R.id.lt_radioGroup_choices)).clearCheck();
+                }
+                break;
+
+        }  //  todo can the color of the circle in radiobutton be changed
+
+
+        // color:
+
+        final int bg_color_correct_option = getResources().getColor(R.color.color_correct_choice);
+        final int bg_color_wrong_option = getResources().getColor(R.color.color_wrong_choice);
+        final int bg_color_alpha_only = getResources().getColor(R.color.color_alpha_only);
+
+        switch (mode) {
+
+            case READ:
+                // only correct answer is colored
+                user_answer = correct_answer;  // so it will be the only colored option
+                break;
+
+            case PRACTICE:
+                // if answer is not checked, i.e. user answer is -1, no color
+                if (user_answer == -1) correct_answer = -1;  // no color
+                // else they will be colored as usual
+                break;
+
+            case TEST_IN_PROGRESS:
+                user_answer = -1;  // for just alpha background color
+                correct_answer = -1;  // same reason as above
+                break;
+
+            case TEST_FINISHED:
+                // same as practice, but correct answer needs to be colored regardless of user answer
+                break;
+        }
+
+        // correct option gets correct option background color
+        // any other user option gets wrong option background color
+        // all other options get alpha background color
+        for (int i = 0; i < radioButtonIDs.length; i++) {
+            int color;
+            if (i == correct_answer) color = bg_color_correct_option;
+            else if (i == user_answer) color = bg_color_wrong_option;
+            else color = bg_color_alpha_only;
+            findViewById(radioButtonIDs[i]).setBackgroundColor(color);
         }
     }
 
