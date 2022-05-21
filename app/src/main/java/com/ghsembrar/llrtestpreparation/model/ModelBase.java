@@ -19,7 +19,15 @@ abstract public class ModelBase {
         this.context = context;
     }
 
-    boolean set_to_previous_question() {
+    public int get_num_questions() {
+        return num_questions;
+    }
+
+    public int get_current_question_index() {
+        return current_question_index;
+    }
+
+    public boolean set_to_previous_question() {
         if (current_question_index == 0) return false;
 
         current_question_index--;
@@ -27,7 +35,7 @@ abstract public class ModelBase {
         return true;
     }
 
-    boolean set_to_next_question() {
+    public boolean set_to_next_question() {
         if (current_question_index == num_questions - 1) return false;
 
         current_question_index++;
@@ -46,7 +54,7 @@ abstract public class ModelBase {
     // calls get_question_res_identifier_name
     // if the name exists, returns the corresponding string resource id
     // else returns the resource id of no_string
-    int get_question_string_res_id() {
+    public int get_question_string_res_id() {
         Resources resources = context.getResources();
         int res_id = resources.getIdentifier(get_question_res_identifier_name(),
                 "string", context.getPackageName());
@@ -57,7 +65,7 @@ abstract public class ModelBase {
     // calls get_accompanying_image_res_identifier_name
     // if the name exists, returns the corresponding resource id
     // else returns 0
-    int get_accompanying_image_res_id() {
+    public int get_accompanying_image_res_id() {
         return context.getResources().getIdentifier(get_accompanying_image_res_identifier_name(),
                 "drawable", context.getPackageName());
     }
@@ -65,7 +73,7 @@ abstract public class ModelBase {
     // calls get_option_res_identifier_name
     // if the name exists, returns the corresponding string resource id
     // else returns resource id of no_string
-    int get_option_string_res_id(int option_index) {
+    public int get_option_string_res_id(int option_index) {
         int res_id = context.getResources().getIdentifier(get_option_res_identifier_name(option_index),
                 "string", context.getPackageName());
         if (res_id == 0) res_id = R.string.no_string;
@@ -75,7 +83,7 @@ abstract public class ModelBase {
     // calls get_correct_answer_red_identifier_name
     // if the name exists, returns the corresponding integer
     // else returns -1  // as correct answer will always be in [0, 4)
-    int get_correct_answer_option_index() {
+    public int get_correct_answer_option_index() {
         Resources resources = context.getResources();
         int res_id = resources.getIdentifier(get_correct_answer_res_identifier_name(),
                 "integer", context.getPackageName());
@@ -83,15 +91,15 @@ abstract public class ModelBase {
         return resources.getInteger(res_id);
     }
 
-    int get_user_answer() {
+    public int get_user_answer() {
         return user_answers[current_question_index];
     }
 
-    void set_user_answer(int new_user_answer) {
+    public void set_user_answer(int new_user_answer) {
         user_answers[current_question_index] = new_user_answer;
     }
 
-    void clear_all_user_answers() {
+    public void clear_all_user_answers() {
         Arrays.fill(user_answers, -1);
     }
 }
