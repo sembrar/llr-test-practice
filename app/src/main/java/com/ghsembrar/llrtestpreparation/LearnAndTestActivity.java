@@ -34,6 +34,12 @@ public class LearnAndTestActivity extends AppCompatActivity {
     MODE mode;
     ModelBase ltModel = null;
 
+    // for easier access
+    private static final int[] radioButtonIDs = {
+            R.id.lt_radioButton_option0, R.id.lt_radioButton_option1,
+            R.id.lt_radioButton_option2, R.id.lt_radioButton_option3
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -193,12 +199,37 @@ public class LearnAndTestActivity extends AppCompatActivity {
         }
 
         // set choices
-        final int[] radioButtonIDs = {
-                R.id.lt_radioButton_option0, R.id.lt_radioButton_option1,
-                R.id.lt_radioButton_option2, R.id.lt_radioButton_option3
-        };
         for (int i = 0; i < 4; i++) {
             ((RadioButton) findViewById(radioButtonIDs[i])).setText(ltModel.get_option_string_res_id(i));
+        }
+
+        // set click-ability of option buttons
+        set_click_ability_of_option_buttons_based_on_mode_and_model();
+    }
+
+    void set_click_ability_of_option_buttons_based_on_mode_and_model() {
+
+        boolean clickable = false;
+
+        switch (mode) {
+
+            case READ:  // not clickable
+            case TEST_FINISHED:  // not clickable
+                clickable = false;
+                break;
+            case PRACTICE:  // not clickable if answer is checked
+                clickable = ltModel.get_user_answer() == -1;  // if user answer is -1, answer needs yet to be set, so clickable
+                break;
+            case TEST_IN_PROGRESS:  // clickable
+                clickable = true;
+                break;
+        }
+
+        if (CONSTANTS.ALLOW_DEBUG)
+            Log.i(TAG, "set_click_ability_of_option_buttons_based_on_mode_and_model: Clickable:" + clickable);
+
+        for (int radio_button_id : radioButtonIDs) {
+            findViewById(radio_button_id).setClickable(clickable);
         }
     }
 
