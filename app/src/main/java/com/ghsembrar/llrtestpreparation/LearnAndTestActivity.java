@@ -344,11 +344,21 @@ public class LearnAndTestActivity extends AppCompatActivity {
     }
 
     void clicked_button_previous() {
-        // todo
+        boolean prev_question_exists = ltModel.set_to_previous_question();
+        if (!prev_question_exists) {
+            Toast.makeText(this, "Already in first question", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        set_current_question();
     }
 
     void clicked_button_next() {
-        // todo
+        boolean next_question_exists = ltModel.set_to_next_question();
+        if (!next_question_exists) {
+            Toast.makeText(this, "Already in last question", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        set_current_question();
     }
 
     void clicked_button_check_or_finish() {
