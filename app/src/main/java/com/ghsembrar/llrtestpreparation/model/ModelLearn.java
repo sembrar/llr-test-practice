@@ -62,6 +62,10 @@ public class ModelLearn extends ModelBase {
         return "a" + subject_index + "_" + current_question_index;
     }
 
+    public int get_subject_index() {
+        return subject_index;
+    }
+
     public void save_practice_answers() {
         FileOutputStream fos = null;
         DataOutputStream dos = null;
