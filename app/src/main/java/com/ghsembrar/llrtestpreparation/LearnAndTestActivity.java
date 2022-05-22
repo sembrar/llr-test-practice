@@ -499,8 +499,8 @@ public class LearnAndTestActivity extends AppCompatActivity {
             case READ:
             case PRACTICE:
                 inflater.inflate(R.menu.lt_app_bar_options_menu_during_learn, menu);
-                menu_item_l_read_mode = menu.findItem(R.id.lt_learn_menu_radioButtonItem_read_mode);
-                menu_item_l_practice_mode = menu.findItem(R.id.lt_learn_menu_radioButtonItem_practice_mode);
+                menu_item_l_read_mode = menu.findItem(R.id.lt_learn_menu_item_read_mode);
+                menu_item_l_practice_mode = menu.findItem(R.id.lt_learn_menu_item_practice_mode);
                 // set their checked status initially
                 menu_item_l_read_mode.setChecked(mode == MODE.READ);
                 menu_item_l_practice_mode.setChecked(mode == MODE.PRACTICE);
@@ -536,7 +536,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
             case READ:
             case PRACTICE:
-                if (item_id == R.id.lt_learn_menu_radioButtonItem_read_mode) {
+                if (item_id == R.id.lt_learn_menu_item_read_mode) {
                     if (mode != MODE.READ) {
                         mode = MODE.READ;
                         show_or_hide_views_based_on_mode_and_settings();
@@ -544,7 +544,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
                         menu_item_l_read_mode.setChecked(mode == MODE.READ);
                         menu_item_l_practice_mode.setChecked(mode == MODE.PRACTICE);
                     }
-                } else if (item_id == R.id.lt_learn_menu_radioButtonItem_practice_mode) {
+                } else if (item_id == R.id.lt_learn_menu_item_practice_mode) {
                     if (mode != MODE.PRACTICE) {
                         mode = MODE.PRACTICE;
                         show_or_hide_views_based_on_mode_and_settings();

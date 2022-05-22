@@ -3,13 +3,13 @@
 
 
     <item
-        android:id="@+id/lt_learn_menu_radioButtonItem_read_mode"
+        android:id="@+id/lt_learn_menu_item_read_mode"
         android:title="@string/menu_item_read_mode"
         android:checkable="true"
         />
 
     <item
-        android:id="@+id/lt_learn_menu_radioButtonItem_practice_mode"
+        android:id="@+id/lt_learn_menu_item_practice_mode"
         android:title="@string/menu_item_practice_mode"
         android:checkable="true"
         />
