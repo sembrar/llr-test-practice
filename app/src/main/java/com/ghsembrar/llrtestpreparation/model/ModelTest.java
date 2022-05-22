@@ -243,7 +243,17 @@ public class ModelTest extends ModelBase {
     }
 
     private void calculate_score() {
-        // todo
+
+        // store current value to set it back at the end (as it is modified in the function)
+        int temp_store_current_question_index = current_question_index;
+
+        score = 0;
+        for (current_question_index = 0; current_question_index < num_questions; current_question_index++) {
+            if (get_user_answer() == get_correct_answer_option_index()) score++;
+        }
+
+        // reset to initial value
+        current_question_index = temp_store_current_question_index;
     }
 
     public void decrement_num_seconds_remaining() {
