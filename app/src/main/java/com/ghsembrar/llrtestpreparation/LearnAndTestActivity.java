@@ -6,9 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GestureDetectorCompat;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
@@ -31,10 +29,6 @@ import com.ghsembrar.llrtestpreparation.model.ModelTest;
 public class LearnAndTestActivity extends AppCompatActivity {
 
     private static final String TAG = CONSTANTS.LOG_TAG_PREFIX + "L&T";
-
-    // the following are saved so that they can be used when android restarts this activity (as there won't be intent extras)
-    private static final String KEY_SHARED_PREF_MODE = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "mode";
-    private static final String KEY_SHARED_PREF_SUBJECT_INDEX = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "subject_index";
 
     private GestureDetectorCompat gestureDetectorCompat;
 
@@ -82,10 +76,6 @@ public class LearnAndTestActivity extends AppCompatActivity {
             // no intent data
             // this can happen if the activity is restarted
             if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onCreate: No intent data");
-
-            // try to set from shared prefs
-            set_model_and_mode_from_shared_prefs();
-
             if (ltModel == null) {
                 if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onCreate: model is null");
                 Toast.makeText(this, "Err: Please reopen", Toast.LENGTH_LONG).show();
@@ -161,36 +151,6 @@ public class LearnAndTestActivity extends AppCompatActivity {
             // note that for the other case (when above if condition fails), the data is already loaded
 
             mode = MODE.TEST_IN_PROGRESS;
-        }
-    }
-
-    void set_model_and_mode_from_shared_prefs() {
-        SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
-
-        int stored_mode_as_int = sharedPreferences.getInt(KEY_SHARED_PREF_MODE, -1);
-        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "set_model_and_mode_from_shared_prefs: stored_mode_as_int:" + stored_mode_as_int);
-
-        if (stored_mode_as_int < 0) {  // default value is returned above, exit activity, as mode not stored previously
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "set_model_and_mode_from_shared_prefs: No previously saved mode");
-            Toast.makeText(this, "Err: Please reopen", Toast.LENGTH_SHORT).show();
-            finish();
-
-        } else {
-            mode = convert_int_to_mode(stored_mode_as_int);
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "set_model_and_mode_from_shared_prefs: mode:" + mode);
-
-            switch (mode) {
-
-                case READ:
-                case PRACTICE:
-                    int subject_index = sharedPreferences.getInt(KEY_SHARED_PREF_SUBJECT_INDEX, 0);
-                    set_model_and_mode_for_learn(subject_index);
-                    break;
-                case TEST_IN_PROGRESS:
-                case TEST_FINISHED:
-                    set_model_and_mode_for_test(MainActivity.TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST);
-                    break;
-            }
         }
     }
 
@@ -491,25 +451,17 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         if (countDownTimer != null) countDownTimer.cancel();
 
-        SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-
-        editor.putInt(KEY_SHARED_PREF_MODE, convert_mode_to_int(mode));
-
         switch (mode) {
 
             case READ:
             case PRACTICE:
                 ((ModelLearn) ltModel).save_practice_answers();
-                editor.putInt(KEY_SHARED_PREF_SUBJECT_INDEX, ((ModelLearn) ltModel).get_subject_index());
                 break;
             case TEST_IN_PROGRESS:
             case TEST_FINISHED:
                 ((ModelTest) ltModel).save_test_data();
                 break;
         }
-
-        editor.apply();
     }
 
     // the following function needs to be overridden for the gesture detector to work
@@ -649,34 +601,5 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
     private void start_about_activity() {
         // todo
-    }
-
-    private int convert_mode_to_int(MODE a_mode) {
-        switch (a_mode) {
-            case READ:
-                return 0;
-            case PRACTICE:
-                return 1;
-            case TEST_IN_PROGRESS:
-                return 2;
-            case TEST_FINISHED:
-                return 3;
-        }
-
-        return 0;
-    }
-
-    private MODE convert_int_to_mode(int a_mode_as_int) {
-        switch (a_mode_as_int) {
-            case 1:
-                return MODE.PRACTICE;
-            case 2:
-                return MODE.TEST_IN_PROGRESS;
-            case 3:
-                return MODE.TEST_FINISHED;
-            case 0:
-            default:
-                return MODE.READ;
-        }
     }
 }
