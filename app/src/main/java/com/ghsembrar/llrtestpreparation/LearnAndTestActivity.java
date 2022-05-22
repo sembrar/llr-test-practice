@@ -408,6 +408,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
                 ((ModelTest) ltModel).finish_test();
                 mode = MODE.TEST_FINISHED;
                 show_or_hide_views_based_on_mode_and_settings();
+                set_title_and_detail_according_to_mode_and_model();
                 break;
         }
 
