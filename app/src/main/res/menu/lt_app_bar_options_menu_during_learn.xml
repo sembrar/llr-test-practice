@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/lt_learn_menu_radioButtonItem_read_mode"
+        android:title="@string/menu_item_read_mode"
+        />
+
+    <item
+        android:id="@+id/lt_learn_menu_radioButtonItem_practice_mode"
+        android:title="@string/menu_item_practice_mode"
+        />
+
+    <item
+        android:id="@+id/lt_learn_menu_item_settings"
+        android:title="@string/menu_item_settings"
+        />
+
+    <item
+        android:id="@+id/lt_learn_menu_item_about"
+        android:title="@string/menu_item_about" />
+
+</menu>

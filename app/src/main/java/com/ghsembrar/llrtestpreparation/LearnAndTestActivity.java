@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.GestureDetector;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -476,4 +478,37 @@ public class LearnAndTestActivity extends AppCompatActivity {
             return true;
         }
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onCreateOptionsMenu: mode:" + mode);
+
+        MenuInflater inflater = getMenuInflater();
+
+        switch (mode) {
+
+            case READ:
+            case PRACTICE:
+                inflater.inflate(R.menu.lt_app_bar_options_menu_during_learn, menu);
+                break;
+            case TEST_IN_PROGRESS:
+            case TEST_FINISHED:
+                inflater.inflate(R.menu.lt_app_bar_options_menu_during_test, menu);
+                break;
+        }
+
+        return true;
+    }
+
+    // note related to the function onPrepareOptionsMenu which can be overridden to update menu at run time:
+    /*
+    * On Android 2.3.x and lower, the system calls onPrepareOptionsMenu() each time the user opens
+    *  the options menu (presses the Menu button).
+    * On Android 3.0 and higher, the options menu is considered to always be open when
+    *  menu items are presented in the app bar. When an event occurs and you want to perform a
+    *  menu update, you must call invalidateOptionsMenu() to request that the system call onPrepareOptionsMenu()
+    * */
+
 }
