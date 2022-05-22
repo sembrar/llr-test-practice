@@ -43,4 +43,7 @@
 
     <string name="heading_test_in_progress">Test in progress</string>
     <string name="heading_test_finished">Test finished</string>
+    <string name="heading_num_questions">(%1$d questions)</string>
+    <string name="heading_score">(Score: %1$d/%2$d)</string>
+    <string name="time_remaining">%1$d:%2$02d</string>
 </resources>
