@@ -1,5 +1,6 @@
 package com.ghsembrar.llrtestpreparation;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GestureDetectorCompat;
 
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -511,4 +513,53 @@ public class LearnAndTestActivity extends AppCompatActivity {
     *  menu update, you must call invalidateOptionsMenu() to request that the system call onPrepareOptionsMenu()
     * */
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        super.onOptionsItemSelected(item);
+
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onOptionsItemSelected: mode:" + mode);
+
+        int item_id = item.getItemId();
+
+        switch (mode) {
+
+            case READ:
+            case PRACTICE:
+                if (item_id == R.id.lt_learn_menu_radioButtonItem_read_mode) {
+                    if (mode != MODE.READ) {
+                        mode = MODE.READ;
+                        show_or_hide_views_based_on_mode_and_settings();
+                        set_current_question();
+                    }
+                } else if (item_id == R.id.lt_learn_menu_radioButtonItem_practice_mode) {
+                    if (mode != MODE.PRACTICE) {
+                        mode = MODE.PRACTICE;
+                        show_or_hide_views_based_on_mode_and_settings();
+                        set_current_question();
+                    }
+                } else if (item_id == R.id.lt_learn_menu_item_settings) {
+                    // todo start settings activity
+                } else if (item_id == R.id.lt_learn_menu_item_about) {
+                    // todo start about activity
+                } else {
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onOptionsItemSelected: Unknown menu item id:" + item_id);
+                }
+
+                break;
+
+            case TEST_IN_PROGRESS:
+            case TEST_FINISHED:
+
+                if (item_id == R.id.lt_test_menu_item_settings) {
+                    // todo
+                } else if (item_id == R.id.lt_test_menu_item_about) {
+                    // todo
+                } else {
+                    if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onOptionsItemSelected: Unknown menu item if:" + item_id);
+                }
+                break;
+        }
+
+        return true;
+    }
 }
