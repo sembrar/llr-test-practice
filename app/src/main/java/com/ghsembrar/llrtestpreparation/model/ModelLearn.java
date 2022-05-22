@@ -78,6 +78,7 @@ public class ModelLearn extends ModelBase {
             for (int practiceAns : user_answers) {
                 dos.writeInt(practiceAns);
             }
+            dos.writeInt(current_question_index);
 
 
         } catch (FileNotFoundException ignored) {
@@ -120,6 +121,7 @@ public class ModelLearn extends ModelBase {
                     user_answers[i] = dis.readInt();
                 }
             }
+            current_question_index = dis.readInt();
 
             dis.close();
             fis.close();
