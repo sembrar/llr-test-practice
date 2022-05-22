@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.ghsembrar.llrtestpreparation.CONSTANTS;
-import com.ghsembrar.llrtestpreparation.TestActivity;
+import com.ghsembrar.llrtestpreparation.R;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -13,6 +13,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ModelTest extends ModelBase {
 
@@ -192,8 +193,48 @@ public class ModelTest extends ModelBase {
     }
 
     public void set_up_new_test() {
+        // make an integer-range array of total number of questions
+        // shuffle it to take the first NUM_QUESTIONS as unique testQuestions
+        int num_total_questions = context.getResources().getInteger(R.integer.num_total_questions);
+        ArrayList<Integer> allIndices = new ArrayList<>(num_total_questions);
+        for (int i = 0; i < num_total_questions; i++) {
+            allIndices.add(i);
+        }
+        Collections.shuffle(allIndices);
+
+        // convert the first NUM_QUESTIONS integers in the above list to TestQuestion
+
+        final int[] numQuestionsInSubjects = context.getResources().getIntArray(R.array.num_questions);
+
+        for (int i = 0; i < NUM_QUESTIONS; i++) {
+            int questionIndexAsInt = allIndices.get(i);
+
+            for (int subject_index = 0; subject_index < numQuestionsInSubjects.length; subject_index++) {
+
+                if (questionIndexAsInt < numQuestionsInSubjects[subject_index]) {
+                    TestQuestion testQuestion = test_questions.get(i);
+                    testQuestion.subject_index = subject_index;
+                    testQuestion.question_index = questionIndexAsInt;
+                    break;
+                } else {
+                    questionIndexAsInt -= numQuestionsInSubjects[subject_index];
+                }
+            }
+        }
+
+        // set all the variables
+        clear_all_user_answers();
         test_in_progress = true;
+        current_question_index = 0;
         num_seconds_remaining = NUM_MAX_SECONDS;
+        score = 0;
+
+        if (CONSTANTS.ALLOW_DEBUG) {
+            for (int i = 0; i < NUM_QUESTIONS; i++) {
+                TestQuestion testQuestion = test_questions.get(i);
+                Log.i(TAG, String.format("setUpNewTest: [%d] %d.%d", i+1, testQuestion.subject_index, testQuestion.question_index));
+            }
+        }
     }
 
     public void finish_test() {
