@@ -553,9 +553,9 @@ public class LearnAndTestActivity extends AppCompatActivity {
                         menu_item_l_practice_mode.setChecked(mode == MODE.PRACTICE);
                     }
                 } else if (item_id == R.id.lt_learn_menu_item_settings) {
-                    // todo start settings activity
+                    start_settings_activity();
                 } else if (item_id == R.id.lt_learn_menu_item_about) {
-                    // todo start about activity
+                    start_about_activity();
                 } else {
                     if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onOptionsItemSelected: Unknown menu item id:" + item_id);
                 }
@@ -566,9 +566,9 @@ public class LearnAndTestActivity extends AppCompatActivity {
             case TEST_FINISHED:
 
                 if (item_id == R.id.lt_test_menu_item_settings) {
-                    // todo
+                    start_settings_activity();
                 } else if (item_id == R.id.lt_test_menu_item_about) {
-                    // todo
+                    start_about_activity();
                 } else {
                     if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onOptionsItemSelected: Unknown menu item if:" + item_id);
                 }
@@ -576,5 +576,14 @@ public class LearnAndTestActivity extends AppCompatActivity {
         }
 
         return true;
+    }
+
+    private void start_settings_activity() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
+    private void start_about_activity() {
+        // todo
     }
 }
