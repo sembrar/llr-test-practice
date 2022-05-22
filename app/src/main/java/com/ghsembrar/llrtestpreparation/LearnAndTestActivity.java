@@ -50,6 +50,11 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
     private boolean use_check_button_in_practice = true;  // todo read from settings/prefs
 
+    // the following are used to set checked status of those option menu items
+    // the 'l' in the name stands for 'learn' which means that they appear when the mode is either read/practice
+    MenuItem menu_item_l_read_mode;
+    MenuItem menu_item_l_practice_mode;  // this and the above are updated in onCreateOptionsMenu
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -494,10 +499,16 @@ public class LearnAndTestActivity extends AppCompatActivity {
             case READ:
             case PRACTICE:
                 inflater.inflate(R.menu.lt_app_bar_options_menu_during_learn, menu);
+                menu_item_l_read_mode = menu.findItem(R.id.lt_learn_menu_radioButtonItem_read_mode);
+                menu_item_l_practice_mode = menu.findItem(R.id.lt_learn_menu_radioButtonItem_practice_mode);
+                // set their checked status initially
+                menu_item_l_read_mode.setChecked(mode == MODE.READ);
+                menu_item_l_practice_mode.setChecked(mode == MODE.PRACTICE);
                 break;
             case TEST_IN_PROGRESS:
             case TEST_FINISHED:
                 inflater.inflate(R.menu.lt_app_bar_options_menu_during_test, menu);
+                menu_item_l_read_mode = menu_item_l_practice_mode = null;
                 break;
         }
 
@@ -530,12 +541,16 @@ public class LearnAndTestActivity extends AppCompatActivity {
                         mode = MODE.READ;
                         show_or_hide_views_based_on_mode_and_settings();
                         set_current_question();
+                        menu_item_l_read_mode.setChecked(mode == MODE.READ);
+                        menu_item_l_practice_mode.setChecked(mode == MODE.PRACTICE);
                     }
                 } else if (item_id == R.id.lt_learn_menu_radioButtonItem_practice_mode) {
                     if (mode != MODE.PRACTICE) {
                         mode = MODE.PRACTICE;
                         show_or_hide_views_based_on_mode_and_settings();
                         set_current_question();
+                        menu_item_l_read_mode.setChecked(mode == MODE.READ);
+                        menu_item_l_practice_mode.setChecked(mode == MODE.PRACTICE);
                     }
                 } else if (item_id == R.id.lt_learn_menu_item_settings) {
                     // todo start settings activity
