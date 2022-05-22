@@ -6,7 +6,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GestureDetectorCompat;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
@@ -29,6 +31,9 @@ import com.ghsembrar.llrtestpreparation.model.ModelTest;
 public class LearnAndTestActivity extends AppCompatActivity {
 
     private static final String TAG = CONSTANTS.LOG_TAG_PREFIX + "L&T";
+
+    private static final String KEY_SHARED_PREF_LEARN_MODE_IS_READ = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "read_mode";
+    // true/false is saved in SharedPrefs with above key; true meaning read mode, and false meaning practice mode
 
     private GestureDetectorCompat gestureDetectorCompat;
 
@@ -107,7 +112,12 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
     void set_model_and_mode_for_learn(int subject_index) {
         ltModel = new ModelLearn(this, subject_index);
-        mode = MODE.READ;  // todo get mode (read/practice) from sharedPrefs
+
+        // get mode (read/practice) from sharedPrefs
+        SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
+        boolean is_read_mode = sharedPreferences.getBoolean(KEY_SHARED_PREF_LEARN_MODE_IS_READ, true);
+        if (is_read_mode) mode = MODE.READ;
+        else mode = MODE.PRACTICE;
     }
 
     void set_model_and_mode_for_test(int test_type) {
@@ -451,17 +461,23 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         if (countDownTimer != null) countDownTimer.cancel();
 
+        SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
         switch (mode) {
 
             case READ:
             case PRACTICE:
                 ((ModelLearn) ltModel).save_practice_answers();
+                editor.putBoolean(KEY_SHARED_PREF_LEARN_MODE_IS_READ, mode == MODE.READ);
                 break;
             case TEST_IN_PROGRESS:
             case TEST_FINISHED:
                 ((ModelTest) ltModel).save_test_data();
                 break;
         }
+
+        editor.apply();
     }
 
     // the following function needs to be overridden for the gesture detector to work
