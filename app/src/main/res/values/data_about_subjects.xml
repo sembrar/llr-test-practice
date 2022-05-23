@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="subject_0_name">Road Signs</string>
+    <string name="subject_1_name">Road rules and regulations</string>
+    <string name="subject_2_name">General driving principles</string>
+
     <string-array name="subject_names">
-        <item>Road Signs</item>
-        <item>Road rules and regulations</item>
-        <item>General driving principles</item>
+        <item>@string/subject_0_name</item>
+        <item>@string/subject_1_name</item>
+        <item>@string/subject_2_name</item>
     </string-array>
-    
+
     <integer-array name="num_questions">
         <item>94</item>
         <item>159</item>

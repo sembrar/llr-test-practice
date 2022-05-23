@@ -25,6 +25,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="@string/learn_details"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/main_textView_learnHeading"
         app:layout_constraintTop_toBottomOf="@+id/main_textView_learnHeading" />
@@ -33,9 +34,10 @@
         android:id="@+id/main_button_learn_subject0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:text="@string/learn_subject0_name"
-        app:layout_constraintStart_toStartOf="@+id/main_textView_learnDetails"
+        android:text="@string/subject_0_name"
+        app:layout_constraintStart_toStartOf="@+id/main_textView_learnHeading"
         app:layout_constraintTop_toBottomOf="@+id/main_textView_learnDetails" />
 
     <TextView
@@ -44,7 +46,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/learn_subject0_details"
         app:layout_constraintBaseline_toBaselineOf="@+id/main_button_learn_subject0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/main_button_learn_subject0" />
@@ -54,8 +55,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/learn_subject1_name"
-        app:layout_constraintStart_toStartOf="@+id/main_textView_learnDetails"
+        android:text="@string/subject_1_name"
+        app:layout_constraintStart_toStartOf="@+id/main_button_learn_subject0"
         app:layout_constraintTop_toBottomOf="@+id/main_button_learn_subject0" />
 
     <TextView
@@ -64,7 +65,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/learn_subject1_details"
         app:layout_constraintBaseline_toBaselineOf="@+id/main_button_learn_subject1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/main_button_learn_subject1" />
@@ -74,8 +74,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/learn_subject2_name"
-        app:layout_constraintStart_toStartOf="@+id/main_textView_learnDetails"
+        android:text="@string/subject_2_name"
+        app:layout_constraintStart_toStartOf="@+id/main_button_learn_subject0"
         app:layout_constraintTop_toBottomOf="@+id/main_button_learn_subject1" />
 
     <TextView
@@ -84,7 +84,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/learn_subject2_details"
         app:layout_constraintBaseline_toBaselineOf="@+id/main_button_learn_subject2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/main_button_learn_subject2" />
@@ -114,9 +113,10 @@
         android:id="@+id/main_textView_testDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/test_details"
-        app:layout_constraintStart_toStartOf="@+id/main_textView_learnDetails"
+        app:layout_constraintStart_toStartOf="@+id/main_textView_testHeading"
         app:layout_constraintTop_toBottomOf="@+id/main_textView_testHeading" />
 
     <Button
@@ -125,7 +125,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/test_old"
-        app:layout_constraintStart_toStartOf="@+id/main_textView_learnDetails"
+        app:layout_constraintStart_toStartOf="@+id/main_button_learn_subject0"
         app:layout_constraintTop_toBottomOf="@+id/main_textView_testDetails" />
 
     <TextView
@@ -144,7 +144,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/test_new"
-        app:layout_constraintStart_toStartOf="@+id/main_textView_learnDetails"
+        app:layout_constraintStart_toStartOf="@+id/main_button_learn_subject0"
         app:layout_constraintTop_toBottomOf="@+id/main_button_test_old" />
 
     <TextView
