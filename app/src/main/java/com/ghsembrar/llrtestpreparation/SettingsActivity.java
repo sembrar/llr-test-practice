@@ -18,31 +18,6 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     
     private static final String TAG = CONSTANTS.LOG_TAG_PREFIX + "Settings";
 
-    // all required settings
-    // language
-    private boolean use_system_language;
-    private String code_of_language_choice_if_not_use_system_lang;
-    // theme
-    private int theme;
-    // question traversal (at least one of the following must be true)
-    private boolean use_buttons_for_traversal;
-    private boolean use_swipe_for_traversal;
-    // practice mode user choice validation event
-    private boolean use_check_button_in_practice_mode;
-    // new test when an unfinished old test exists (todo feature)
-    // private static final int START_A_NEW_TEST = 0;
-    // private static final int CONTINUE_WITH_THE_UNFINISHED_TEST = 1;
-    // private static final int ASK_USER = 2;
-    // private int new_test_when_an_unfinished_old_test_exists;
-
-    // default settings for above
-    private static final boolean default_val_use_system_language = true;
-    private static final String default_val_code_of_language_choice_if_not_use_system_lang = "en";
-    private static final int default_val_theme = 0;  // dark theme fixme magic number
-    private static final boolean default_val_use_buttons_for_traversal = true;
-    private static final boolean default_val_use_swipe_for_traversal = true;
-    private static final boolean default_val_use_check_button_in_practice_mode = false;
-
     public static final String SHARED_PREFS_FILE_SETTINGS = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "SettingsPrefs";
     public static final String SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "use_system_language";
     public static final String SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "chosen_lang_if_not_use_system_lang";
@@ -78,7 +53,6 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
         // ----
         load_settings_from_shared_prefs();
-        fill_gui_with_existing_settings();
     }
 
     private static SharedPreferences get_application_context_shared_prefs(Context context) {
@@ -87,80 +61,89 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
     public static boolean get_setting_use_system_language(Context context) {
         return get_application_context_shared_prefs(context)
-                .getBoolean(SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, default_val_use_buttons_for_traversal);
+                .getBoolean(SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, true);
     }
 
     public static String get_setting_code_of_language_choice(Context context) {
         return get_application_context_shared_prefs(context)
-                .getString(SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, default_val_code_of_language_choice_if_not_use_system_lang);
+                .getString(SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, "en");
     }
 
     public static int get_setting_theme(Context context) {
         return get_application_context_shared_prefs(context)
-                .getInt(SHARED_PREFS_KEY_THEME, default_val_theme);
+                .getInt(SHARED_PREFS_KEY_THEME, 0);
     }
 
     public static boolean get_setting_use_buttons_for_traversal(Context context) {
         return get_application_context_shared_prefs(context)
-                .getBoolean(SHARED_PREFS_KEY_USE_BUTTONS_FOR_TRAVERSAL, default_val_use_buttons_for_traversal);
+                .getBoolean(SHARED_PREFS_KEY_USE_BUTTONS_FOR_TRAVERSAL, true);
     }
 
     public static boolean get_setting_use_swipe_for_traversal(Context context) {
         return get_application_context_shared_prefs(context)
-                .getBoolean(SHARED_PREFS_KEY_USE_SWIPE_FOR_TRAVERSAL, default_val_use_swipe_for_traversal);
+                .getBoolean(SHARED_PREFS_KEY_USE_SWIPE_FOR_TRAVERSAL, true);
     }
 
     public static boolean get_setting_use_check_button_in_practice_mode(Context context) {
         return get_application_context_shared_prefs(context)
-                .getBoolean(SHARED_PREFS_KEY_USE_CHECK_BUTTON_IN_PRACTICE_MODE, default_val_use_check_button_in_practice_mode);
-    }
-
-    private void load_settings_from_shared_prefs() {
-        use_system_language = get_setting_use_system_language(this);
-        code_of_language_choice_if_not_use_system_lang = get_setting_code_of_language_choice(this);
-        theme = get_setting_theme(this);
-        use_buttons_for_traversal = get_setting_use_buttons_for_traversal(this);
-        use_swipe_for_traversal = get_setting_use_swipe_for_traversal(this);
-        use_check_button_in_practice_mode = get_setting_use_check_button_in_practice_mode(this);
+                .getBoolean(SHARED_PREFS_KEY_USE_CHECK_BUTTON_IN_PRACTICE_MODE, false);
     }
 
     private void save_settings_to_shared_prefs() {
         SharedPreferences sharedPreferences = get_application_context_shared_prefs(this);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        editor.putBoolean(SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, use_system_language);
-        editor.putString(SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, code_of_language_choice_if_not_use_system_lang);
-        editor.putInt(SHARED_PREFS_KEY_THEME, theme);
-        editor.putBoolean(SHARED_PREFS_KEY_USE_BUTTONS_FOR_TRAVERSAL, use_buttons_for_traversal);
-        editor.putBoolean(SHARED_PREFS_KEY_USE_SWIPE_FOR_TRAVERSAL, use_swipe_for_traversal);
-        editor.putBoolean(SHARED_PREFS_KEY_USE_CHECK_BUTTON_IN_PRACTICE_MODE, use_check_button_in_practice_mode);
+        editor.putBoolean(
+                SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE,
+                ((Switch) findViewById(R.id.settings_switch_use_system_language)).isChecked());
+
+        int language_choice_position = ((Spinner) findViewById(R.id.settings_spinner_language)).getSelectedItemPosition();
+        editor.putString(
+                SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG,
+                getResources().getStringArray(R.array.available_languages_as_codes)[language_choice_position]);
+
+        editor.putInt(
+                SHARED_PREFS_KEY_THEME,
+                ((Spinner) findViewById(R.id.settings_spinner_theme)).getSelectedItemPosition());
+
+        editor.putBoolean(
+                SHARED_PREFS_KEY_USE_BUTTONS_FOR_TRAVERSAL,
+                ((CheckBox) findViewById(R.id.settings_checkBox_question_traversal_buttons)).isChecked());
+
+        editor.putBoolean(
+                SHARED_PREFS_KEY_USE_SWIPE_FOR_TRAVERSAL,
+                ((CheckBox) findViewById(R.id.settings_checkBox_question_traversal_swipe)).isChecked());
+
+        editor.putBoolean(
+                SHARED_PREFS_KEY_USE_CHECK_BUTTON_IN_PRACTICE_MODE,
+                ((RadioButton) findViewById(R.id.settings_radioButton_use_Check_button_in_practice)).isChecked());
 
         editor.apply();
     }
 
-    private void fill_gui_with_existing_settings() {
+    private void load_settings_from_shared_prefs() {
         // set use system language switch
         Switch switch_use_system_language = findViewById(R.id.settings_switch_use_system_language);
-        switch_use_system_language.setChecked(use_system_language);
+        switch_use_system_language.setChecked(get_setting_use_system_language(this));
         clicked_use_system_language_switch();  // to hide/show language choice spinner
 
         // set spinner choice
         Spinner spinnerLanguage = findViewById(R.id.settings_spinner_language);
         String[] language_codes_array = getResources().getStringArray(R.array.available_languages_as_codes);
         for (int i = 0; i < language_codes_array.length; i++) {
-            if (language_codes_array[i].equals(code_of_language_choice_if_not_use_system_lang)) {
+            if (language_codes_array[i].equals(get_setting_code_of_language_choice(this))) {
                 spinnerLanguage.setSelection(i);
                 break;
             }
         }
 
         // set spinner theme
-        ((Spinner) findViewById(R.id.settings_spinner_theme)).setSelection(theme);
+        ((Spinner) findViewById(R.id.settings_spinner_theme)).setSelection(get_setting_theme(this));
 
-        ((CheckBox) findViewById(R.id.settings_checkBox_question_traversal_buttons)).setChecked(use_buttons_for_traversal);
-        ((CheckBox) findViewById(R.id.settings_checkBox_question_traversal_swipe)).setChecked(use_swipe_for_traversal);
+        ((CheckBox) findViewById(R.id.settings_checkBox_question_traversal_buttons)).setChecked(get_setting_use_buttons_for_traversal(this));
+        ((CheckBox) findViewById(R.id.settings_checkBox_question_traversal_swipe)).setChecked(get_setting_use_swipe_for_traversal(this));
 
-        if (use_check_button_in_practice_mode) {
+        if (get_setting_use_check_button_in_practice_mode(this)) {
             ((RadioButton) findViewById(R.id.settings_radioButton_use_Check_button_in_practice)).setChecked(true);
         } else {
             ((RadioButton) findViewById(R.id.settings_radioButton_auto_validation_in_practice)).setChecked(true);
@@ -171,6 +154,8 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String new_choice = getResources().getStringArray(R.array.available_languages_as_codes)[position];
         if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("onItemSelected: selected:%s", new_choice));
+
+        String code_of_language_choice_if_not_use_system_lang = get_setting_code_of_language_choice(this);
 
         if (code_of_language_choice_if_not_use_system_lang.equals(new_choice)) return;
 
@@ -185,7 +170,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     }
 
     private void clicked_use_system_language_switch() {
-        use_system_language = ((Switch) findViewById(R.id.settings_switch_use_system_language)).isChecked();
+        boolean use_system_language = ((Switch) findViewById(R.id.settings_switch_use_system_language)).isChecked();
         if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("clicked_use_system_language_switch: status: %b", use_system_language));
 
         if (use_system_language) {
