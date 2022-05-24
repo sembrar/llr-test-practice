@@ -74,25 +74,9 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         spinnerTheme.setAdapter(themeAdapter);
         spinnerTheme.setOnItemSelectedListener(this);
 
-        // read existing settings from SharedPrefs
-        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS_FILE_SETTINGS, Context.MODE_PRIVATE);
-        use_system_language = sharedPreferences.getBoolean(SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, true);
-        code_of_language_choice_if_not_use_system_lang = sharedPreferences.getString(SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, "en");
-
-        // fill the GUI with loaded settings
-
-        // set use system language switch
-        switch_use_system_language.setChecked(use_system_language);
-        clicked_use_system_language_switch(null);  // to hide/show language choice spinner
-
-        // set spinner choice
-        String[] language_codes_array = getResources().getStringArray(R.array.available_languages_as_codes);
-        for (int i = 0; i < language_codes_array.length; i++) {
-            if (language_codes_array[i].equals(code_of_language_choice_if_not_use_system_lang)) {
-                spinnerLanguage.setSelection(i);
-                break;
-            }
-        }
+        // ----
+        load_settings_from_shared_prefs();
+        fill_gui_with_existing_settings();
     }
 
     private static SharedPreferences get_application_context_shared_prefs(Context context) {
@@ -127,6 +111,18 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     public static boolean get_setting_use_check_button_in_practice_mode(Context context) {
         return get_application_context_shared_prefs(context)
                 .getBoolean(SHARED_PREFS_KEY_USE_CHECK_BUTTON_IN_PRACTICE_MODE, default_val_use_check_button_in_practice_mode);
+    }
+
+    private void load_settings_from_shared_prefs() {
+        
+    }
+
+    private void save_settings_to_shared_prefs() {
+
+    }
+
+    private void fill_gui_with_existing_settings() {
+
     }
 
     @Override
@@ -170,10 +166,6 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         super.onPause();
 
         // save settings
-        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS_FILE_SETTINGS, Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putBoolean(SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, use_system_language);
-        editor.putString(SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, code_of_language_choice_if_not_use_system_lang);
-        editor.apply();
+        save_settings_to_shared_prefs();
     }
 }
