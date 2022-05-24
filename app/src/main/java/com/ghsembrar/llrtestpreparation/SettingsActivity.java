@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Switch;
 
@@ -65,7 +67,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         spinnerLanguage.setOnItemSelectedListener(this);
 
         Switch switch_use_system_language = findViewById(R.id.settings_switch_use_system_language);
-        switch_use_system_language.setOnClickListener(this::clicked_use_system_language_switch);
+        switch_use_system_language.setOnClickListener(v -> clicked_use_system_language_switch());
 
         // fill in the choices for theme
         Spinner spinnerTheme = findViewById(R.id.settings_spinner_theme);
@@ -114,15 +116,55 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     }
 
     private void load_settings_from_shared_prefs() {
-        
+        use_system_language = get_setting_use_system_language(this);
+        code_of_language_choice_if_not_use_system_lang = get_setting_code_of_language_choice(this);
+        theme = get_setting_theme(this);
+        use_buttons_for_traversal = get_setting_use_buttons_for_traversal(this);
+        use_swipe_for_traversal = get_setting_use_swipe_for_traversal(this);
+        use_check_button_in_practice_mode = get_setting_use_check_button_in_practice_mode(this);
     }
 
     private void save_settings_to_shared_prefs() {
+        SharedPreferences sharedPreferences = get_application_context_shared_prefs(this);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
 
+        editor.putBoolean(SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, use_system_language);
+        editor.putString(SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, code_of_language_choice_if_not_use_system_lang);
+        editor.putInt(SHARED_PREFS_KEY_THEME, theme);
+        editor.putBoolean(SHARED_PREFS_KEY_USE_BUTTONS_FOR_TRAVERSAL, use_buttons_for_traversal);
+        editor.putBoolean(SHARED_PREFS_KEY_USE_SWIPE_FOR_TRAVERSAL, use_swipe_for_traversal);
+        editor.putBoolean(SHARED_PREFS_KEY_USE_CHECK_BUTTON_IN_PRACTICE_MODE, use_check_button_in_practice_mode);
+
+        editor.apply();
     }
 
     private void fill_gui_with_existing_settings() {
+        // set use system language switch
+        Switch switch_use_system_language = findViewById(R.id.settings_switch_use_system_language);
+        switch_use_system_language.setChecked(use_system_language);
+        clicked_use_system_language_switch();  // to hide/show language choice spinner
 
+        // set spinner choice
+        Spinner spinnerLanguage = findViewById(R.id.settings_spinner_language);
+        String[] language_codes_array = getResources().getStringArray(R.array.available_languages_as_codes);
+        for (int i = 0; i < language_codes_array.length; i++) {
+            if (language_codes_array[i].equals(code_of_language_choice_if_not_use_system_lang)) {
+                spinnerLanguage.setSelection(i);
+                break;
+            }
+        }
+
+        // set spinner theme
+        ((Spinner) findViewById(R.id.settings_spinner_theme)).setSelection(theme);
+
+        ((CheckBox) findViewById(R.id.settings_checkBox_question_traversal_buttons)).setChecked(use_buttons_for_traversal);
+        ((CheckBox) findViewById(R.id.settings_checkBox_question_traversal_swipe)).setChecked(use_swipe_for_traversal);
+
+        if (use_check_button_in_practice_mode) {
+            ((RadioButton) findViewById(R.id.settings_radioButton_use_Check_button_in_practice)).setChecked(true);
+        } else {
+            ((RadioButton) findViewById(R.id.settings_radioButton_auto_validation_in_practice)).setChecked(true);
+        }
     }
 
     @Override
@@ -142,7 +184,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     public void onNothingSelected(AdapterView<?> parent) {
     }
 
-    private void clicked_use_system_language_switch(View view) {
+    private void clicked_use_system_language_switch() {
         use_system_language = ((Switch) findViewById(R.id.settings_switch_use_system_language)).isChecked();
         if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("clicked_use_system_language_switch: status: %b", use_system_language));
 
