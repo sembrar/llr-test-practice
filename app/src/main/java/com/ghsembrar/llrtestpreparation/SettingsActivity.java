@@ -25,9 +25,8 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     // question traversal (at least one of the following must be true)
     private boolean use_buttons_for_traversal;
     private boolean use_swipe_for_traversal;
-    // practice mode user choice validation event (at least one of the following must be true)
+    // practice mode user choice validation event
     private boolean use_check_button_in_practice_mode;
-    private boolean auto_validation_on_choice_selection;
     // new test when an unfinished old test exists (todo feature)
     // private static final int START_A_NEW_TEST = 0;
     // private static final int CONTINUE_WITH_THE_UNFINISHED_TEST = 1;
@@ -41,7 +40,6 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     private static final boolean default_val_use_buttons_for_traversal = true;
     private static final boolean default_val_use_swipe_for_traversal = true;
     private static final boolean default_val_use_check_button_in_practice_mode = false;
-    private static final boolean default_val_auto_validation_on_choice_selection = true;
 
     public static final String SHARED_PREFS_FILE_SETTINGS = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "SettingsPrefs";
     public static final String SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "use_system_language";
@@ -50,7 +48,6 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     public static final String SHARED_PREFS_KEY_USE_BUTTONS_FOR_TRAVERSAL = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "use_buttons_for_traversal";
     public static final String SHARED_PREFS_KEY_USE_SWIPE_FOR_TRAVERSAL = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "use_swipe_for_traversal";
     public static final String SHARED_PREFS_KEY_USE_CHECK_BUTTON_IN_PRACTICE_MODE = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "use_check_button_in_practice";
-    public static final String SHARED_PREFS_KEY_AUTO_VALIDATION_ON_CHOICE_SELECTION = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "auto_validation_in_practice";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,11 +127,6 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     public static boolean get_setting_use_check_button_in_practice_mode(Context context) {
         return get_application_context_shared_prefs(context)
                 .getBoolean(SHARED_PREFS_KEY_USE_CHECK_BUTTON_IN_PRACTICE_MODE, default_val_use_check_button_in_practice_mode);
-    }
-
-    public static boolean get_setting_auto_validation_on_choice_selection(Context context) {
-        return get_application_context_shared_prefs(context)
-                .getBoolean(SHARED_PREFS_KEY_AUTO_VALIDATION_ON_CHOICE_SELECTION, default_val_auto_validation_on_choice_selection);
     }
 
     @Override

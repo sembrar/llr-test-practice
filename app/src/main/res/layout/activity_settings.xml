@@ -91,24 +91,27 @@
         app:layout_constraintStart_toStartOf="@+id/settings_switch_use_system_language"
         app:layout_constraintTop_toBottomOf="@+id/settings_checkBox_question_traversal_swipe" />
 
-    <CheckBox
-        android:id="@+id/settings_checkBox_practice_mode_validation_use_Check_button"
+    <RadioGroup
+        android:id="@+id/settings_radioGroup_check_button_in_practice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/setting_practice_mode_validation_trigger_use_check_button"
         app:layout_constraintStart_toStartOf="@+id/settings_textView_practice_mode_validation"
-        app:layout_constraintTop_toBottomOf="@+id/settings_textView_practice_mode_validation" />
+        app:layout_constraintTop_toBottomOf="@+id/settings_textView_practice_mode_validation">
 
-    <CheckBox
-        android:id="@+id/settings_checkBox_practice_mode_validation_choice_selection"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/setting_practice_mode_validation_trigger_choosing_an_option"
-        app:layout_constraintStart_toStartOf="@+id/settings_checkBox_practice_mode_validation_use_Check_button"
-        app:layout_constraintTop_toBottomOf="@+id/settings_checkBox_practice_mode_validation_use_Check_button" />
+        <RadioButton
+            android:id="@+id/settings_radioButton_use_Check_button_in_practice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_practice_mode_validation_trigger_use_check_button" />
+
+        <RadioButton
+            android:id="@+id/settings_radioButton_auto_validation_in_practice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_practice_mode_validation_trigger_choosing_an_option" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/settings_button_restore_defaults"
