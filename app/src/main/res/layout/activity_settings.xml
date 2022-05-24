@@ -10,51 +10,19 @@
         android:id="@+id/settings_textView_theme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:text="@string/setting_theme"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/settings_spinner_theme"
+        app:layout_constraintStart_toStartOf="@+id/settings_switch_use_system_language"
+        app:layout_constraintTop_toTopOf="@+id/settings_spinner_theme" />
 
-    <RadioGroup
-        android:id="@+id/settings_RadioGroup_theme"
-        android:layout_width="wrap_content"
+    <Spinner
+        android:id="@+id/settings_spinner_theme"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@+id/settings_textView_theme"
-        app:layout_constraintTop_toBottomOf="@+id/settings_textView_theme">
-
-        <RadioButton
-            android:id="@+id/settings_radioButton_theme_light"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RadioButton" />
-
-        <RadioButton
-            android:id="@+id/settings_radioButton_theme_dark"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RadioButton" />
-
-        <RadioButton
-            android:id="@+id/settings_radioButton_theme_follow_system"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RadioButton" />
-    </RadioGroup>
-
-    <View
-        android:id="@+id/settings_divider_1"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settings_RadioGroup_theme" />
+        app:layout_constraintStart_toEndOf="@+id/settings_textView_theme"
+        app:layout_constraintTop_toBottomOf="@+id/settings_spinner_language" />
 
     <Switch
         android:id="@+id/settings_switch_use_system_language"
@@ -65,7 +33,7 @@
         android:minHeight="48dp"
         android:text="@string/setting_use_system_language"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settings_divider_1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/settings_textView_choose_language"
@@ -83,9 +51,73 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/settings_textView_choose_language"
         app:layout_constraintTop_toBottomOf="@+id/settings_switch_use_system_language" />
+
+    <TextView
+        android:id="@+id/settings_textView_question_traversal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/setting_question_traversal_heading"
+        app:layout_constraintStart_toStartOf="@+id/settings_switch_use_system_language"
+        app:layout_constraintTop_toBottomOf="@+id/settings_spinner_theme" />
+
+    <CheckBox
+        android:id="@+id/settings_checkBox_question_traversal_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/setting_question_traversal_use_buttons"
+        app:layout_constraintStart_toStartOf="@+id/settings_textView_question_traversal"
+        app:layout_constraintTop_toBottomOf="@+id/settings_textView_question_traversal" />
+
+    <CheckBox
+        android:id="@+id/settings_checkBox_question_traversal_swipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/setting_question_traversal_use_swipe"
+        app:layout_constraintStart_toStartOf="@+id/settings_checkBox_question_traversal_buttons"
+        app:layout_constraintTop_toBottomOf="@+id/settings_checkBox_question_traversal_buttons" />
+
+    <TextView
+        android:id="@+id/settings_textView_practice_mode_validation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/setting_practice_mode_validation_trigger_heading"
+        app:layout_constraintStart_toStartOf="@+id/settings_switch_use_system_language"
+        app:layout_constraintTop_toBottomOf="@+id/settings_checkBox_question_traversal_swipe" />
+
+    <CheckBox
+        android:id="@+id/settings_checkBox_practice_mode_validation_use_Check_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/setting_practice_mode_validation_trigger_use_check_button"
+        app:layout_constraintStart_toStartOf="@+id/settings_textView_practice_mode_validation"
+        app:layout_constraintTop_toBottomOf="@+id/settings_textView_practice_mode_validation" />
+
+    <CheckBox
+        android:id="@+id/settings_checkBox_practice_mode_validation_choice_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/setting_practice_mode_validation_trigger_choosing_an_option"
+        app:layout_constraintStart_toStartOf="@+id/settings_checkBox_practice_mode_validation_use_Check_button"
+        app:layout_constraintTop_toBottomOf="@+id/settings_checkBox_practice_mode_validation_use_Check_button" />
+
+    <Button
+        android:id="@+id/settings_button_restore_defaults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/button_restore_defaults"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

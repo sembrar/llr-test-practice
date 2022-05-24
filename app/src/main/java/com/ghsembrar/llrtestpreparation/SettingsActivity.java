@@ -20,8 +20,23 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     public static final String SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "use_system_language";
     public static final String SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "chosen_lang_if_not_use_system_lang";
 
+    // all required settings
+    // language
     private boolean use_system_language;
     private String code_of_language_choice_if_not_use_system_lang;
+    // theme
+    private int theme;
+    // question traversal (at least one of the following must be true)
+    private boolean use_buttons_for_traversal;
+    private boolean use_swipe_for_traversal;
+    // practice mode user choice validation event (at least one of the following must be true)
+    private boolean use_check_button_in_practice_mode;
+    private boolean auto_validation_on_choice_selection;
+    // new test when an unfinished old test exists (todo feature)
+    // private static final int START_A_NEW_TEST = 0;
+    // private static final int CONTINUE_WITH_THE_UNFINISHED_TEST = 1;
+    // private static final int ASK_USER = 2;
+    // private int new_test_when_an_unfinished_old_test_exists;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +55,13 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
         Switch switch_use_system_language = findViewById(R.id.settings_switch_use_system_language);
         switch_use_system_language.setOnClickListener(this::clicked_use_system_language_switch);
+
+        // fill in the choices for theme
+        Spinner spinnerTheme = findViewById(R.id.settings_spinner_theme);
+        ArrayAdapter<CharSequence> themeAdapter = ArrayAdapter.createFromResource(this,
+                R.array.available_themes, android.R.layout.simple_spinner_dropdown_item);
+        spinnerTheme.setAdapter(themeAdapter);
+        spinnerTheme.setOnItemSelectedListener(this);
 
         // read existing settings from SharedPrefs
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS_FILE_SETTINGS, Context.MODE_PRIVATE);
