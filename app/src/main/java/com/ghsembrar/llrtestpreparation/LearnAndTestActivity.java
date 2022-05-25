@@ -55,7 +55,10 @@ public class LearnAndTestActivity extends AppCompatActivity {
             R.id.lt_radioButton_option2, R.id.lt_radioButton_option3
     };
 
-    private boolean use_check_button_in_practice = true;  // todo read from settings/prefs
+    // even though settings can be read anywhere, the following data members save from multiple calls
+    // they are set in onResume
+    private boolean use_check_button_in_practice;
+    private boolean use_swipe_for_traversal;
 
     // the following are used to set checked status of those option menu items
     // the 'l' in the name stands for 'learn' which means that they appear when the mode is either read/practice
@@ -66,6 +69,8 @@ public class LearnAndTestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn_and_test);
+
+        Log.i(TAG, "onCreate");
 
         // read intent data
         Intent intent = getIntent();
@@ -165,7 +170,6 @@ public class LearnAndTestActivity extends AppCompatActivity {
     }
 
     void show_or_hide_views_based_on_mode_and_settings() {
-        // todo changes based on settings
         switch (mode) {
 
             case READ:
@@ -177,6 +181,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
                 findViewById(R.id.lt_textView_timer).setVisibility(View.GONE);
                 findViewById(R.id.lt_button_check_or_finish).setVisibility(View.VISIBLE);
                 ((TextView) findViewById(R.id.lt_button_check_or_finish)).setText(R.string.button_check);
+                findViewById(R.id.lt_button_check_or_finish).setVisibility(use_check_button_in_practice ? View.VISIBLE: View.GONE);
                 break;
             case TEST_IN_PROGRESS:
                 findViewById(R.id.lt_textView_timer).setVisibility(View.VISIBLE);
@@ -184,6 +189,11 @@ public class LearnAndTestActivity extends AppCompatActivity {
                 ((TextView) findViewById(R.id.lt_button_check_or_finish)).setText(R.string.button_finish);
                 break;
         }
+
+        findViewById(R.id.lt_button_previous).setVisibility(
+                SettingsActivity.get_setting_use_buttons_for_traversal(this) ? View.VISIBLE : View.GONE);
+        findViewById(R.id.lt_button_next).setVisibility(
+                SettingsActivity.get_setting_use_buttons_for_traversal(this) ? View.VISIBLE : View.GONE);
     }
 
     void set_title_and_detail_according_to_mode_and_model() {
@@ -428,6 +438,11 @@ public class LearnAndTestActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        Log.i(TAG, "onResume");
+
+        use_check_button_in_practice = SettingsActivity.get_setting_use_check_button_in_practice_mode(this);
+        use_swipe_for_traversal = SettingsActivity.get_setting_use_swipe_for_traversal(this);
+        show_or_hide_views_based_on_mode_and_settings();
 
         if (mode == MODE.TEST_IN_PROGRESS) {
             countDownTimer = new CountDownTimer(((ModelTest) ltModel).get_num_seconds_remaining() * 1000L, 1000) {
@@ -499,7 +514,10 @@ public class LearnAndTestActivity extends AppCompatActivity {
         }
 
         @Override
-        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {  // todo check setting before flinging
+        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+            // check setting before flinging
+            if (!use_swipe_for_traversal) return true;
+
             // if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onFling: " + e1.toString() + e2.toString());
             float deltaX = e1.getX() - e2.getX();
             float deltaY = e1.getY() - e2.getY();
