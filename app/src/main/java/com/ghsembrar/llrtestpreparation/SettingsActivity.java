@@ -51,6 +51,8 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         spinnerTheme.setAdapter(themeAdapter);
         spinnerTheme.setOnItemSelectedListener(this);
 
+        findViewById(R.id.settings_button_restore_defaults).setOnClickListener(v -> reset_to_defaults());
+
         // ----
         load_settings_from_shared_prefs();
     }
@@ -148,6 +150,15 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         } else {
             ((RadioButton) findViewById(R.id.settings_radioButton_auto_validation_in_practice)).setChecked(true);
         }
+    }
+
+    private void reset_to_defaults() {
+        // todo ask for confirmation
+        SharedPreferences sharedPreferences = get_application_context_shared_prefs(this);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.clear();
+        editor.apply();
+        load_settings_from_shared_prefs();
     }
 
     @Override
