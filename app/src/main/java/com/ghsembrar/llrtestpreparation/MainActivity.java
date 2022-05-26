@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.main_button_test_old).setOnClickListener(v -> startLearnAndTestActivityForTest(TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST));
         findViewById(R.id.main_button_test_new).setOnClickListener(v -> startLearnAndTestActivityForTest(TEST_TYPE_NEW_TEST));
+
+        SettingsActivity.set_theme(this);
     }
 
     @Override

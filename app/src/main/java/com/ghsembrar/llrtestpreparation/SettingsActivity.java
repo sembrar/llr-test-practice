@@ -72,9 +72,32 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
                 .getString(SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, "en");
     }
 
-    public static int get_setting_theme(Context context) {
+    private static int get_setting_theme(Context context) {
         return get_application_context_shared_prefs(context)
                 .getInt(SHARED_PREFS_KEY_THEME, 0);
+    }
+
+    public static void set_theme(Context context) {
+        set_theme(get_setting_theme(context));
+    }
+
+    private static void set_theme(int theme_index) {
+        int theme_to_be_set;
+
+        // the order of names in themes array in resources: dark, light, follow system
+        switch (theme_index) {
+            case 0:
+                theme_to_be_set = AppCompatDelegate.MODE_NIGHT_YES;
+                break;
+            case 1:
+                theme_to_be_set = AppCompatDelegate.MODE_NIGHT_NO;
+                break;
+            default:
+                theme_to_be_set = AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM;
+                break;
+        }
+
+        AppCompatDelegate.setDefaultNightMode(theme_to_be_set);
     }
 
     public static boolean get_setting_use_buttons_for_traversal(Context context) {
@@ -171,22 +194,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         } else if (parent.getId() == R.id.settings_spinner_theme) {
             if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onItemSelected: SpinnerTheme:" + position);
 
-            int theme_to_be_set;
-
-            // the order of names in themes array in resources: dark, light, follow system
-            switch (position) {
-                case 0:
-                    theme_to_be_set = AppCompatDelegate.MODE_NIGHT_YES;
-                    break;
-                case 1:
-                    theme_to_be_set = AppCompatDelegate.MODE_NIGHT_NO;
-                    break;
-                default:
-                    theme_to_be_set = AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM;
-                    break;
-            }
-
-            AppCompatDelegate.setDefaultNightMode(theme_to_be_set);
+            set_theme(position);
 
         } else {
             if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onItemSelected: onItemSelected with unknown view");
