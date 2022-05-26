@@ -1,6 +1,7 @@
 package com.ghsembrar.llrtestpreparation;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -163,17 +164,33 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String new_choice = getResources().getStringArray(R.array.available_languages_as_codes)[position];
-        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("onItemSelected: selected:%s", new_choice));
+        if (parent.getId() == R.id.settings_spinner_language) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onItemSelected: SpinnerLanguage:" + position);
+            // todo update settings activity too
 
-        String code_of_language_choice_if_not_use_system_lang = get_setting_code_of_language_choice(this);
+        } else if (parent.getId() == R.id.settings_spinner_theme) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onItemSelected: SpinnerTheme:" + position);
 
-        if (code_of_language_choice_if_not_use_system_lang.equals(new_choice)) return;
+            int theme_to_be_set;
 
-        code_of_language_choice_if_not_use_system_lang = new_choice;
-        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onItemSelected: Changing to new language");
+            // the order of names in themes array in resources: dark, light, follow system
+            switch (position) {
+                case 0:
+                    theme_to_be_set = AppCompatDelegate.MODE_NIGHT_YES;
+                    break;
+                case 1:
+                    theme_to_be_set = AppCompatDelegate.MODE_NIGHT_NO;
+                    break;
+                default:
+                    theme_to_be_set = AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM;
+                    break;
+            }
 
-        // todo update settings activity too
+            AppCompatDelegate.setDefaultNightMode(theme_to_be_set);
+
+        } else {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onItemSelected: onItemSelected with unknown view");
+        }
     }
 
     @Override
