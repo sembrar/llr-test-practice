@@ -27,6 +27,12 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     public static final String SHARED_PREFS_KEY_USE_SWIPE_FOR_TRAVERSAL = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "use_swipe_for_traversal";
     public static final String SHARED_PREFS_KEY_USE_CHECK_BUTTON_IN_PRACTICE_MODE = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "use_check_button_in_practice";
 
+    private static final int[] themeRadioButtonIDS = {
+            R.id.settings_radioButton_themeDark,
+            R.id.settings_radioButton_themeLight,
+            R.id.settings_radioButton_themeFollowSystem
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,13 +51,9 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         Switch switch_use_system_language = findViewById(R.id.settings_switch_use_system_language);
         switch_use_system_language.setOnClickListener(v -> clicked_use_system_language_switch());
 
-        // fill in the choices for theme
-        Spinner spinnerTheme = findViewById(R.id.settings_spinner_theme);
-        ArrayAdapter<CharSequence> themeAdapter = ArrayAdapter.createFromResource(this,
-                R.array.available_themes, android.R.layout.simple_spinner_dropdown_item);
-        spinnerTheme.setAdapter(themeAdapter);
-        spinnerTheme.setOnItemSelectedListener(this);
-
+        findViewById(R.id.settings_radioButton_themeDark).setOnClickListener(v -> set_theme(0));
+        findViewById(R.id.settings_radioButton_themeLight).setOnClickListener(v -> set_theme(1));
+        findViewById(R.id.settings_radioButton_themeFollowSystem).setOnClickListener(v -> set_theme(2));
         findViewById(R.id.settings_button_restore_defaults).setOnClickListener(v -> reset_to_defaults());
 
         // ----
@@ -128,9 +130,14 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
                 SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG,
                 getResources().getStringArray(R.array.available_languages_as_codes)[language_choice_position]);
 
-        editor.putInt(
-                SHARED_PREFS_KEY_THEME,
-                ((Spinner) findViewById(R.id.settings_spinner_theme)).getSelectedItemPosition());
+        int theme_index = 2;  // 0: dark, 1: light, 2: follow system
+        for (int i = 0; i < themeRadioButtonIDS.length; i++) {
+            if (((RadioButton) findViewById(themeRadioButtonIDS[i])).isChecked()) {
+                theme_index = i;
+                break;
+            }
+        }
+        editor.putInt(SHARED_PREFS_KEY_THEME, theme_index);
 
         editor.putBoolean(
                 SHARED_PREFS_KEY_USE_BUTTONS_FOR_TRAVERSAL,
@@ -163,8 +170,10 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
             }
         }
 
-        // set spinner theme
-        ((Spinner) findViewById(R.id.settings_spinner_theme)).setSelection(get_setting_theme(this));
+        // set theme radioButtons
+        int theme_index = get_setting_theme(this);
+        if (theme_index < 0 || theme_index >= themeRadioButtonIDS.length) theme_index = 2;  // 0: dark, 1: light, 2: follow system
+        ((RadioButton) findViewById(themeRadioButtonIDS[theme_index])).setChecked(true);
 
         ((CheckBox) findViewById(R.id.settings_checkBox_question_traversal_buttons)).setChecked(get_setting_use_buttons_for_traversal(this));
         ((CheckBox) findViewById(R.id.settings_checkBox_question_traversal_swipe)).setChecked(get_setting_use_swipe_for_traversal(this));
@@ -190,11 +199,6 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         if (parent.getId() == R.id.settings_spinner_language) {
             if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onItemSelected: SpinnerLanguage:" + position);
             // todo update settings activity too
-
-        } else if (parent.getId() == R.id.settings_spinner_theme) {
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onItemSelected: SpinnerTheme:" + position);
-
-            set_theme(position);
 
         } else {
             if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onItemSelected: onItemSelected with unknown view");

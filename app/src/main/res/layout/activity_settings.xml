@@ -10,19 +10,38 @@
         android:id="@+id/settings_textView_theme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/setting_theme"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_spinner_theme"
         app:layout_constraintStart_toStartOf="@+id/settings_switch_use_system_language"
-        app:layout_constraintTop_toTopOf="@+id/settings_spinner_theme" />
+        app:layout_constraintTop_toBottomOf="@+id/settings_spinner_language" />
 
-    <Spinner
-        android:id="@+id/settings_spinner_theme"
-        android:layout_width="0dp"
+    <RadioGroup
+        android:id="@+id/settings_radioGroup_theme"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/settings_textView_theme"
-        app:layout_constraintTop_toBottomOf="@+id/settings_spinner_language" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/settings_textView_theme"
+        app:layout_constraintTop_toBottomOf="@+id/settings_textView_theme">
+
+        <RadioButton
+            android:id="@+id/settings_radioButton_themeDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_dark" />
+
+        <RadioButton
+            android:id="@+id/settings_radioButton_themeLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_light" />
+
+        <RadioButton
+            android:id="@+id/settings_radioButton_themeFollowSystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_follow_system" />
+    </RadioGroup>
 
     <Switch
         android:id="@+id/settings_switch_use_system_language"
@@ -61,7 +80,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/setting_question_traversal_heading"
         app:layout_constraintStart_toStartOf="@+id/settings_switch_use_system_language"
-        app:layout_constraintTop_toBottomOf="@+id/settings_spinner_theme" />
+        app:layout_constraintTop_toBottomOf="@+id/settings_radioGroup_theme" />
 
     <CheckBox
         android:id="@+id/settings_checkBox_question_traversal_buttons"

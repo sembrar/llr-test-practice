@@ -45,11 +45,6 @@
     <string name="theme_dark">Dark</string>
     <string name="theme_light">Light</string>
     <string name="theme_follow_system">Follow system</string>
-    <string-array name="available_themes">
-        <item>@string/theme_dark</item>
-        <item>@string/theme_light</item>
-        <item>@string/theme_follow_system</item>
-    </string-array>
 
     <string name="setting_question_traversal_heading">Question traversal:</string>
     <string name="setting_question_traversal_use_buttons">Use buttons Previous &amp; Next</string>
