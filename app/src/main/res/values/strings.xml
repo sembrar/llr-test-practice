@@ -27,8 +27,7 @@
     <string name="heading_score">(Score: %1$d/%2$d)</string>
     <string name="time_remaining">%1$d:%2$02d</string>
 
-    <string name="setting_use_system_language">Use System Language</string>
-    <string name="setting_choose_language">Choose language:</string>
+    <string name="setting_language_for_questions">Language for questions:</string>
 
     <string-array name="available_languages">
         <item>English</item>

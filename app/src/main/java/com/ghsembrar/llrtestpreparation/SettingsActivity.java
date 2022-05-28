@@ -13,14 +13,13 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.Spinner;
-import android.widget.Switch;
+
 
 public class SettingsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     
     private static final String TAG = CONSTANTS.LOG_TAG_PREFIX + "Settings";
 
     public static final String SHARED_PREFS_FILE_SETTINGS = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "SettingsPrefs";
-    public static final String SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "use_system_language";
     public static final String SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "chosen_lang_if_not_use_system_lang";
     public static final String SHARED_PREFS_KEY_THEME = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "theme";
     public static final String SHARED_PREFS_KEY_USE_BUTTONS_FOR_TRAVERSAL = CONSTANTS.PACKAGE_NAME_FOR_PREFIX + "use_buttons_for_traversal";
@@ -39,7 +38,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         setContentView(R.layout.activity_settings);
 
         // fill in the choices for language spinner
-        Spinner spinnerLanguage = findViewById(R.id.settings_spinner_language);
+        Spinner spinnerLanguage = findViewById(R.id.settings_spinner_language_for_questions);
         // create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> languagesAdapter = ArrayAdapter.createFromResource(this,
                 R.array.available_languages, android.R.layout.simple_spinner_dropdown_item);
@@ -47,9 +46,6 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         spinnerLanguage.setAdapter(languagesAdapter);
         // set the item selected listener
         spinnerLanguage.setOnItemSelectedListener(this);
-
-        Switch switch_use_system_language = findViewById(R.id.settings_switch_use_system_language);
-        switch_use_system_language.setOnClickListener(v -> clicked_use_system_language_switch());
 
         findViewById(R.id.settings_radioButton_themeDark).setOnClickListener(v -> set_theme(0));
         findViewById(R.id.settings_radioButton_themeLight).setOnClickListener(v -> set_theme(1));
@@ -62,11 +58,6 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
     private static SharedPreferences get_application_context_shared_prefs(Context context) {
         return context.getApplicationContext().getSharedPreferences(SHARED_PREFS_FILE_SETTINGS, Context.MODE_PRIVATE);
-    }
-
-    public static boolean get_setting_use_system_language(Context context) {
-        return get_application_context_shared_prefs(context)
-                .getBoolean(SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE, true);
     }
 
     public static String get_setting_code_of_language_choice(Context context) {
@@ -121,11 +112,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         SharedPreferences sharedPreferences = get_application_context_shared_prefs(this);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        editor.putBoolean(
-                SHARED_PREFS_KEY_USE_SYSTEM_LANGUAGE,
-                ((Switch) findViewById(R.id.settings_switch_use_system_language)).isChecked());
-
-        int language_choice_position = ((Spinner) findViewById(R.id.settings_spinner_language)).getSelectedItemPosition();
+        int language_choice_position = ((Spinner) findViewById(R.id.settings_spinner_language_for_questions)).getSelectedItemPosition();
         editor.putString(
                 SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG,
                 getResources().getStringArray(R.array.available_languages_as_codes)[language_choice_position]);
@@ -155,13 +142,8 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     }
 
     private void load_settings_from_shared_prefs() {
-        // set use system language switch
-        Switch switch_use_system_language = findViewById(R.id.settings_switch_use_system_language);
-        switch_use_system_language.setChecked(get_setting_use_system_language(this));
-        clicked_use_system_language_switch();  // to hide/show language choice spinner
-
         // set spinner choice
-        Spinner spinnerLanguage = findViewById(R.id.settings_spinner_language);
+        Spinner spinnerLanguage = findViewById(R.id.settings_spinner_language_for_questions);
         String[] language_codes_array = getResources().getStringArray(R.array.available_languages_as_codes);
         for (int i = 0; i < language_codes_array.length; i++) {
             if (language_codes_array[i].equals(get_setting_code_of_language_choice(this))) {
@@ -196,9 +178,8 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        if (parent.getId() == R.id.settings_spinner_language) {
+        if (parent.getId() == R.id.settings_spinner_language_for_questions) {
             if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onItemSelected: SpinnerLanguage:" + position);
-            // todo update settings activity too
 
         } else {
             if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onItemSelected: onItemSelected with unknown view");
@@ -207,25 +188,6 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
-    }
-
-    private void clicked_use_system_language_switch() {
-        boolean use_system_language = ((Switch) findViewById(R.id.settings_switch_use_system_language)).isChecked();
-        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, String.format("clicked_use_system_language_switch: status: %b", use_system_language));
-
-        if (use_system_language) {
-            // hide language choice spinner
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clicked_use_system_language_switch: Hiding choice spinner");
-
-            findViewById(R.id.settings_textView_choose_language).setVisibility(View.GONE);
-            findViewById(R.id.settings_spinner_language).setVisibility(View.GONE);
-        } else {
-            // show language choice spinner
-            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clicked_use_system_language_switch: Showing choice spinner");
-
-            findViewById(R.id.settings_textView_choose_language).setVisibility(View.VISIBLE);
-            findViewById(R.id.settings_spinner_language).setVisibility(View.VISIBLE);
-        }
     }
 
     @Override
