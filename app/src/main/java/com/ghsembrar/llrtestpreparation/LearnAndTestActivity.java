@@ -357,13 +357,11 @@ public class LearnAndTestActivity extends AppCompatActivity {
         switch (mode) {
 
             case PRACTICE:
-                if (use_check_button_in_practice) {
-                    // do nothing, as scrolling to next question, need not save this answer
-                } else {
+                if (!use_check_button_in_practice) {
                     // check the answer and re-set the question
                     ltModel.set_user_answer(option_index);
                     set_current_question();  // this will also make the buttons not-clickable
-                }
+                } // else  // do nothing, as scrolling to next question, need not save this answer
                 break;
             case TEST_IN_PROGRESS:
                 ltModel.set_user_answer(option_index);  // the answer is saved in a test
@@ -372,11 +370,6 @@ public class LearnAndTestActivity extends AppCompatActivity {
             case READ:
                 // should not reach here
                 if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clicked_radio_button: In mode:" + mode);
-                return;
-        }
-
-        if (use_check_button_in_practice) {
-            // don't
         }
     }
 
