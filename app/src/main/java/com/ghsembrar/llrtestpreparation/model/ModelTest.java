@@ -260,4 +260,19 @@ public class ModelTest extends ModelBase {
         num_seconds_remaining--;
         if (num_seconds_remaining < 0) num_seconds_remaining = 0;
     }
+
+    public int get_num_attempted_questions() {
+        // store current value to set it back at the end (as it is modified in the function)
+        int temp_store_current_question_index = current_question_index;
+
+        int num_attempted_questions = 0;
+        for (current_question_index = 0; current_question_index < num_questions; current_question_index++) {
+            if (get_user_answer() != NO_ANSWER_CHOSEN_YET) num_attempted_questions++;
+        }
+
+        // reset to initial value
+        current_question_index = temp_store_current_question_index;
+
+        return num_attempted_questions;
+    }
 }

@@ -99,11 +99,12 @@ public class MainActivity extends AppCompatActivity {
         } else {
             textView.setVisibility(View.VISIBLE);
 
-            int num_questions_attempted = 0;  // fixme
+            int num_questions_attempted = modelTest.get_num_attempted_questions();
 
             int num_total_seconds_remaining = modelTest.get_num_seconds_remaining();
             int num_minutes = num_total_seconds_remaining / 60;
             int num_seconds = num_total_seconds_remaining - num_minutes * 60;
+
             textView.setText(getString(
                     R.string.test_old_unfinished_details,
                     num_questions_attempted, num_minutes, num_seconds
