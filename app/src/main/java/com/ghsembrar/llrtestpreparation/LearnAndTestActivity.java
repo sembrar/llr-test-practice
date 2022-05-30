@@ -130,14 +130,9 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         ltModel = new ModelTest(this);
 
-        boolean is_load_old_test_successful = ((ModelTest) ltModel).load_test_data();
-        // loading old test is required for both show old test and set-up new test
-        // in set-up new test, if old unfinished test exists, user should be asked if they
-        // want to continue that instead, todo this behavior should be allowed to be disabled in Settings
-
-        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "set_model_and_mode_for_test: old_test_load_successful:" + is_load_old_test_successful);
-
         if (test_type == MainActivity.TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST) {
+
+            boolean is_load_old_test_successful = ((ModelTest) ltModel).load_test_data();
 
             if (!is_load_old_test_successful) {  // old test is clicked, but it couldn't be read from memory
                 Toast.makeText(this, "No old test exists", Toast.LENGTH_LONG).show();
@@ -153,18 +148,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         } else {  // new test is clicked
 
-            boolean an_old_unfinished_test_exists_and_user_wants_to_continue = false;
-
-            if (is_load_old_test_successful && ((ModelTest) ltModel).is_test_in_progress()) {
-                // new test is clicked, but an old test is in progress
-                // todo ask if the user wants to continue
-            }
-
-            if (!an_old_unfinished_test_exists_and_user_wants_to_continue) {
-                ((ModelTest) ltModel).set_up_new_test();
-            }
-            // note that for the other case (when above if condition fails), the data is already loaded
-
+            ((ModelTest) ltModel).set_up_new_test();
             mode = MODE.TEST_IN_PROGRESS;
         }
     }
