@@ -110,9 +110,6 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         // create gesture detector compat
         gestureDetectorCompat = new GestureDetectorCompat(this, new MyGestureListener());
-
-        // set current question for the first time
-        set_current_question();
     }
 
     void set_model_and_mode_for_learn(int subject_index) {
@@ -227,7 +224,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         // set choices
         for (int i = 0; i < 4; i++) {
-            ((RadioButton) findViewById(radioButtonIDs[i])).setText(ltModel.get_option_string_res_id(i));
+            ((RadioButton) findViewById(radioButtonIDs[i])).setText(ltModel.get_option_string(i));
         }
 
         // set click-ability of option buttons
@@ -445,6 +442,10 @@ public class LearnAndTestActivity extends AppCompatActivity {
             };
             countDownTimer.start();
         }
+
+        ltModel.set_language(SettingsActivity.get_setting_code_of_language_choice(this));
+
+        set_current_question();
     }
 
     @Override
