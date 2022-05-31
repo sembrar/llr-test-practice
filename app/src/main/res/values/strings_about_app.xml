@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_app"><html><body><p>Hello World!</p></body></html></string>
+    <string name="base_url">https://llr-test-practice.com/</string>
+</resources>

@@ -612,6 +612,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
     }
 
     private void start_about_activity() {
-        // todo
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
     }
 }

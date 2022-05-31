@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 startSettingsActivity();
                 return true;
             case R.id.mainAct_menu_item_about:
-                // startAboutActivity();  // todo
+                startAboutActivity();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -70,6 +70,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void startSettingsActivity() {
         Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
+    private void startAboutActivity() {
+        Intent intent = new Intent(this, AboutActivity.class);
         startActivity(intent);
     }
 
