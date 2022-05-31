@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="s0_0q">%1$d. यातायात की लालबत्ती का मतलब</string>
+    <string name="s0_0a">सफेद स्टॉप लाइन के पीछे रुकना चाहिए</string>
+    <string name="s0_0b">ट्रैफिक न होने पर आप सीधे जा सकते हैं</string>
+    <string name="s0_0c">यदि ऐसा करना सुरक्षित है तो आप बाएं मुड़ सकते हैं</string>
+    <string name="s0_0d">यदि यातायात आरंभ हो गया है, तो आप वाहन की गति धीमी करें और रोकने केलिए तैयार हुएं</string>
+
+    <string name="s0_1q">%1$d. एक चमकती पीली रोशनी इंगित करती है</string>
+    <string name="s0_1a">गति धीमी करें और सावधानी से आगे बढ़ें</string>
+    <string name="s0_1b">प्रवेश निषेध</string>
+    <string name="s0_1c">यहाँ रुकें</string>
+    <string name="s0_1d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_2q">%1$d. एक चमकती लाल बत्ती इंगित करती है</string>
+    <string name="s0_2a">रुकें</string>
+    <string name="s0_2b">चमकता सूर्य</string>
+    <string name="s0_2c">रुकें, देखें और सावधानी से आगे बढ़ें</string>
+    <string name="s0_2d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_3q">%1$d. इस वृत्ताकार में चिह्नित चिह्न हैं ..</string>
+    <string name="s0_3a">आवश्यक</string>
+    <string name="s0_3b">सावधानी</string>
+    <string name="s0_3c">सूचक</string>
+    <string name="s0_3d">ये सभी</string>
+
+    <string name="s0_4q">%1$d. इस त्रिकोण में चिन्हित संकेत हैं ..</string>
+    <string name="s0_4a">आवश्यक</string>
+    <string name="s0_4b">सावधानी</string>
+    <string name="s0_4c">सूचक</string>
+    <string name="s0_4d">ये सभी</string>
+
+    <string name="s0_5q">%1$d. इस वर्गाकार में चिह्नित चिह्न हैं ..</string>
+    <string name="s0_5a">आवश्यक</string>
+    <string name="s0_5b">सावधानी</string>
+    <string name="s0_5c">सूचक</string>
+    <string name="s0_5d">ये सभी</string>
+
+    <string name="s0_6q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_6a">रुकें</string>
+    <string name="s0_6b">एक दिशा में जाने का चिन्ह</string>
+    <string name="s0_6c">पार्किंग नहीं</string>
+    <string name="s0_6d">रुकें नहीं</string>
+
+    <string name="s0_7q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_7a">बायां हाथ वक्र</string>
+    <string name="s0_7b">सूचक</string>
+    <string name="s0_7c">सावधान का चिन्ह</string>
+    <string name="s0_7d">जाने केलिए मार्ग दें</string>
+
+    <string name="s0_8q">%1$d. आप अपने रास्ते से चूक गए और पाते हैं कि आप वन-वे सड़क पर हैं। तो आप ये करेंगे</string>
+    <string name="s0_8a">वाहन पीछे लेकर मार्ग से हटेंगे</string>
+    <string name="s0_8b">हॉर्न बजाते हुए चलाएंगे</string>
+    <string name="s0_8c">सड़क के अंत तक चलते रहेंगे</string>
+    <string name="s0_8d">पीछे लेकर चलते रहेंगे</string>
+
+    <string name="s0_9q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_9a">एक तरफा मार्ग</string>
+    <string name="s0_9b">दोनों ओर जाना निषेध</string>
+    <string name="s0_9c">दाएं हाथ मुड़ना निषेध</string>
+    <string name="s0_9d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_10q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_10a">प्रवेश निषेध</string>
+    <string name="s0_10b">एक दिशा में जाने का चिन्ह</string>
+    <string name="s0_10c">सीधा जाना आवश्यक</string>
+    <string name="s0_10d">बाएं हाथ मुड़ना निषेध</string>
+
+    <string name="s0_11q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_11a">वाहन दोनों ओर से निषेध</string>
+    <string name="s0_11b">बाएं हाथ मुड़ना निषेध</string>
+    <string name="s0_11c">ओवरटेक करना प्रतिबंधित है</string>
+    <string name="s0_11d">दाएं हाथ मुड़ना निषेध</string>
+
+    <string name="s0_12q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_12a">साइकिल प्रतिबंधित</string>
+    <string name="s0_12b">ट्रक प्रतिबंधित</string>
+    <string name="s0_12c">दाएं हाथ मुड़ना निषेध</string>
+    <string name="s0_12d">बाएं हाथ मुड़ना निषेध</string>
+
+    <string name="s0_13q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_13a">बाएं हाथ मुड़ना निषेध</string>
+    <string name="s0_13b">दाएं हाथ मुड़ना निषेध</string>
+    <string name="s0_13c">यू-टर्न प्रतिबंधित</string>
+    <string name="s0_13d">ओवरटेक करना प्रतिबंधित है</string>
+
+    <string name="s0_14q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_14a">ट्रक प्रतिबंधित</string>
+    <string name="s0_14b">सभी मोटर वाहन निषेध</string>
+    <string name="s0_14c">बैलगाड़ी निषेध</string>
+    <string name="s0_14d">साइकिल प्रतिबंधित</string>
+
+    <string name="s0_15q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_15a">ओवरटेक करना प्रतिबंधित है</string>
+    <string name="s0_15b">बाएं हाथ मुड़ना निषेध</string>
+    <string name="s0_15c">दाएं हाथ मुड़ना निषेध</string>
+    <string name="s0_15d">वाहन दोनों ओर से निषेध</string>
+
+    <string name="s0_16q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_16a">धूम्रपान निषेध</string>
+    <string name="s0_16b">दाएं हाथ मुड़ना निषेध</string>
+    <string name="s0_16c">साइकिल प्रतिबंधित</string>
+    <string name="s0_16d">हॉर्न निषेध</string>
+
+    <string name="s0_17q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_17a">पैदल चलने वालों को प्रतिबंधित कर दिया गया</string>
+    <string name="s0_17b">स्कूली क्षेत्र</string>
+    <string name="s0_17c">खेलने का क्षेत्र</string>
+    <string name="s0_17d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_18q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_18a">साइकिल ट्रैक</string>
+    <string name="s0_18b">साइकिल निषेध</string>
+    <string name="s0_18c">साइकिल पार्किंग</string>
+    <string name="s0_18d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_19q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_19a">सभी वाहनों को प्रतिबंधित कर दिया</string>
+    <string name="s0_19b">ट्रकों की पार्किंग</string>
+    <string name="s0_19c">घाट रोड</string>
+    <string name="s0_19d">ट्रकों को प्रतिबंधित कर दिया</string>
+
+    <string name="s0_20q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_20a">रुकें नहीं</string>
+    <string name="s0_20b">प्रतिबंध समाप्त</string>
+    <string name="s0_20c">पार्किंग नहीं</string>
+    <string name="s0_20d">गति सीमा</string>
+
+    <string name="s0_21q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_21a">पार्किंग नहीं</string>
+    <string name="s0_21b">रुकना या खड़े होना निषेध</string>
+    <string name="s0_21c">लम्बाई की सीमा</string>
+    <string name="s0_21d">गति सीमा</string>
+
+    <string name="s0_22q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_22a">रुकें</string>
+    <string name="s0_22b">प्रतिबंध समाप्त</string>
+    <string name="s0_22c">प्रवेश निषेध</string>
+    <string name="s0_22d">पार्किंग नहीं</string>
+
+    <string name="s0_23q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_23a">लम्बाई की सीमा</string>
+    <string name="s0_23b">गति सीमा</string>
+    <string name="s0_23c">वजन की सीमा</string>
+    <string name="s0_23d">ऊँचाई की सीमा</string>
+
+    <string name="s0_24q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_24a">वजन की सीमा</string>
+    <string name="s0_24b">गति सीमा</string>
+    <string name="s0_24c">चौड़ाई की सीमा</string>
+    <string name="s0_24d">ऊँचाई की सीमा</string>
+
+    <string name="s0_25q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_25a">छड़ भार की सीमा</string>
+    <string name="s0_25b">ऊँचाई की सीमा</string>
+    <string name="s0_25c">चौड़ाई की सीमा</string>
+    <string name="s0_25d">वजन की सीमा</string>
+
+    <string name="s0_26q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_26a">लम्बाई की सीमा</string>
+    <string name="s0_26b">गति सीमा</string>
+    <string name="s0_26c">वजन की सीमा</string>
+    <string name="s0_26d">ऊँचाई की सीमा</string>
+
+    <string name="s0_27q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_27a">ऊँचाई की सीमा</string>
+    <string name="s0_27b">गति सीमा</string>
+    <string name="s0_27c">चौड़ाई की सीमा</string>
+    <string name="s0_27d">लम्बाई की सीमा</string>
+
+    <string name="s0_28q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_28a">छड़ भार की सीमा</string>
+    <string name="s0_28b">चौड़ाई की सीमा</string>
+    <string name="s0_28c">वजन की सीमा</string>
+    <string name="s0_28d">ऊँचाई की सीमा</string>
+
+    <string name="s0_29q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_29a">एक तरफा मार्ग</string>
+    <string name="s0_29b">बाएं हाथ मुड़ना निषेध</string>
+    <string name="s0_29c">केवल बाएं हाथ चलें</string>
+    <string name="s0_29d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_30q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_30a">केवल बाएं हाथ चलें</string>
+    <string name="s0_30b">केवल आगे चलना जरुरी है</string>
+    <string name="s0_30c">बाएं मुड़ना जरुरी</string>
+    <string name="s0_30d">दाएं हाथ चलना जरुरी</string>
+
+    <string name="s0_31q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_31a">केवल आगे चलना जरुरी है</string>
+    <string name="s0_31b">आगे बाएं मुड़ना जरुरी</string>
+    <string name="s0_31c">आगे दाएं मुड़ना जरुरी</string>
+    <string name="s0_31d">सीधे जाना या बाएं ओर मुड़ना जरुरी</string>
+
+    <string name="s0_32q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_32a">दाहिना हाथ वक्र</string>
+    <string name="s0_32b">दाएं मुड़ना जरुरी</string>
+    <string name="s0_32c">आगे बाएं मुड़ना जरुरी</string>
+    <string name="s0_32d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_33q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_33a">बाएं मुड़ना जरुरी</string>
+    <string name="s0_33b">दाएं हाथ चलना जरुरी</string>
+    <string name="s0_33c">सीधे जाना या बाएं ओर मुड़ना जरुरी</string>
+    <string name="s0_33d">सीधे जाना या दाएं ओर मुड़ना जरुरी</string>
+
+    <string name="s0_34q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_34a">दाहिना हाथ वक्र</string>
+    <string name="s0_34b">दाएं मुड़ना जरुरी</string>
+    <string name="s0_34c">बाएं मुड़ना जरुरी</string>
+    <string name="s0_34d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_35q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_35a">सीधे जाना या बाएं ओर मुड़ना जरुरी</string>
+    <string name="s0_35b">सीधे जाना या दाएं ओर मुड़ना जरुरी</string>
+    <string name="s0_35c">दाएं मुड़ना जरुरी</string>
+    <string name="s0_35d">बाएं मुड़ना जरुरी</string>
+
+    <string name="s0_36q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_36a">बाएं मुड़ना जरुरी</string>
+    <string name="s0_36b">दाएं मुड़ना जरुरी</string>
+    <string name="s0_36c">सीधे जाना या बाएं ओर मुड़ना जरुरी</string>
+    <string name="s0_36d">सीधे जाना या दाएं ओर मुड़ना जरुरी</string>
+
+    <string name="s0_37q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_37a">हॉर्न जरुर बजाएं</string>
+    <string name="s0_37b">हॉर्न निषेध</string>
+    <string name="s0_37c">धूम्रपान निषेध</string>
+    <string name="s0_37d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_38q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_38a">साइकिल ट्रैक जरुरी</string>
+    <string name="s0_38b">स्कूल क्षेत्र</string>
+    <string name="s0_38c">साइकिल प्रतिबंधित</string>
+    <string name="s0_38d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_39q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_39a">साइकिल ट्रैक जरुरी</string>
+    <string name="s0_39b">साइकिल प्रतिबंधित</string>
+    <string name="s0_39c">साइकिल ट्रैक</string>
+    <string name="s0_39d">साइकिल क्रासिंग</string>
+
+    <string name="s0_40q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_40a">दाहिना हाथ वक्र</string>
+    <string name="s0_40b">बायां हाथ वक्र</string>
+    <string name="s0_40c">हेयर पिन दायां मोड़ ( पतला दायां मोड़ )</string>
+    <string name="s0_40d">हेयर पिन बायां मोड़ ( पतला बायां मोड़ )</string>
+
+    <string name="s0_41q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_41a">दाहिना हाथ वक्र</string>
+    <string name="s0_41b">बायां हाथ वक्र</string>
+    <string name="s0_41c">उल्टा दायां मोड़</string>
+    <string name="s0_41d">उल्टा बायां मोड़</string>
+
+    <string name="s0_42q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_42a">हेयर पिन दायां मोड़ ( पतला दायां मोड़ )</string>
+    <string name="s0_42b">हेयर पिन बायां मोड़ ( पतला बायां मोड़ )</string>
+    <string name="s0_42c">उल्टा दायां मोड़</string>
+    <string name="s0_42d">उल्टा बायां मोड़</string>
+
+    <string name="s0_43q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_43a">हेयर पिन बायां मोड़ ( पतला बायां मोड़ )</string>
+    <string name="s0_43b">हेयर पिन दायां मोड़ ( पतला दायां मोड़ )</string>
+    <string name="s0_43c">बायां हाथ वक्र</string>
+    <string name="s0_43d">दाहिना हाथ वक्र</string>
+
+    <string name="s0_44q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_44a">दाहिना हाथ वक्र</string>
+    <string name="s0_44b">उल्टा बायां मोड़</string>
+    <string name="s0_44c">उल्टा दायां मोड़</string>
+    <string name="s0_44d">हेयर पिन दायां मोड़ ( पतला दायां मोड़ )</string>
+
+    <string name="s0_45q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_45a">गहरा उतार</string>
+    <string name="s0_45b">गहरा चढ़ाव</string>
+    <string name="s0_45c">फिसलन सड़क</string>
+    <string name="s0_45d">ऊबड़-खाबड़ या उबड़-खाबड़ सड़क</string>
+
+    <string name="s0_46q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_46a">गहरा चढ़ाव</string>
+    <string name="s0_46b">गहरा उतार</string>
+    <string name="s0_46c">आगे सकरी सड़क</string>
+    <string name="s0_46d">सकरा पुल</string>
+
+    <string name="s0_47q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_47a">आगे सकरी सड़क</string>
+    <string name="s0_47b">आगे चौड़ी सड़क</string>
+    <string name="s0_47c">सकरा पुल</string>
+    <string name="s0_47d">फिसलन सड़क</string>
+
+    <string name="s0_48q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_48a">आगे सकरी सड़क</string>
+    <string name="s0_48b">आगे चौड़ी सड़क</string>
+    <string name="s0_48c">सकरा पुल</string>
+    <string name="s0_48d">फिसलन सड़क</string>
+
+    <string name="s0_49q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_49a">आगे सकरी सड़क</string>
+    <string name="s0_49b">आगे चौड़ी सड़क</string>
+    <string name="s0_49c">सकरा पुल</string>
+    <string name="s0_49d">फिसलन सड़क</string>
+
+    <string name="s0_50q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_50a">फिसलन सड़क</string>
+    <string name="s0_50b">खुली बजरी ( या खुले पत्थर )</string>
+    <string name="s0_50c">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+    <string name="s0_50d">ऊबड़-खाबड़ या उबड़-खाबड़ सड़क</string>
+
+    <string name="s0_51q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_51a">सकरा पुल</string>
+    <string name="s0_51b">फिसलन सड़क</string>
+    <string name="s0_51c">खुली बजरी ( या खुले पत्थर )</string>
+    <string name="s0_51d">गहरा उतार</string>
+
+    <string name="s0_52q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_52a">स्कूली क्षेत्र</string>
+    <string name="s0_52b">कार्य प्रगति पर</string>
+    <string name="s0_52c">साइकिल क्रासिंग</string>
+    <string name="s0_52d">पदचालन क्रासिंग ( पैदल चलने वालों का मार्ग )</string>
+
+    <string name="s0_53q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_53a">साइकिल क्रासिंग</string>
+    <string name="s0_53b">स्कूली क्षेत्र</string>
+    <string name="s0_53c">खुली बजरी ( या खुले पत्थर )</string>
+    <string name="s0_53d">पदचालन क्रासिंग ( पैदल चलने वालों का मार्ग )</string>
+
+    <string name="s0_54q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_54a">आगे आड़</string>
+    <string name="s0_54b">खतरनाक डुबकी (  या खतरनाक गड्ढे )</string>
+    <string name="s0_54c">कार्य प्रगति पर</string>
+    <string name="s0_54d">आगे बड़ी सड़क</string>
+
+    <string name="s0_55q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_55a">चट्टानें गिरती हैं</string>
+    <string name="s0_55b">गहरा चढ़ाव</string>
+    <string name="s0_55c">ऊबड़-खाबड़ या उबड़-खाबड़ सड़क</string>
+    <string name="s0_55d">खुली बजरी ( या खुले पत्थर )</string>
+
+    <string name="s0_56q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_56a">आगे आड़</string>
+    <string name="s0_56b">गोल चक्कर</string>
+    <string name="s0_56c">क्रॉस रोड ( या चौराहा )</string>
+    <string name="s0_56d">आगे रेलवे क्रॉसिंग</string>
+
+    <string name="s0_57q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_57a">मंझले में गैप ( या बीच में फासला है )</string>
+    <string name="s0_57b">दायीं ओर सड़क</string>
+    <string name="s0_57c">बायीं ओर सड़क</string>
+    <string name="s0_57d">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+
+    <string name="s0_58q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_58a">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+    <string name="s0_58b">गोल चक्कर</string>
+    <string name="s0_58c">क्रॉस रोड ( या चौराहा )</string>
+    <string name="s0_58d">बायीं ओर सड़क</string>
+
+    <string name="s0_59q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_59a">खतरनाक डुबकी (  या खतरनाक गड्ढे )</string>
+    <string name="s0_59b">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+    <string name="s0_59c">y-चौराहा ( वाई-चौराहा )</string>
+    <string name="s0_59d">आगे बड़ी सड़क</string>
+
+    <string name="s0_60q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_60a">खतरनाक डुबकी (  या खतरनाक गड्ढे )</string>
+    <string name="s0_60b">आगे बड़ी सड़क</string>
+    <string name="s0_60c">y-चौराहा ( वाई-चौराहा )</string>
+    <string name="s0_60d">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+
+    <string name="s0_61q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_61a">आगे आड़</string>
+    <string name="s0_61b">ऊबड़-खाबड़ या उबड़-खाबड़ सड़क</string>
+    <string name="s0_61c">आगे बड़ी सड़क</string>
+    <string name="s0_61d">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+
+    <string name="s0_62q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_62a">रेलवे क्रॉसिंग</string>
+    <string name="s0_62b">आगे आड़</string>
+    <string name="s0_62c">कार्य प्रगति पर</string>
+    <string name="s0_62d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_63q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_63a">दाहिना हाथ वक्र</string>
+    <string name="s0_63b">बायां हाथ वक्र</string>
+    <string name="s0_63c">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+    <string name="s0_63d">जिग झग दायां मोड़</string>
+
+    <string name="s0_64q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_64a">गोल चक्कर</string>
+    <string name="s0_64b">चौराहा</string>
+    <string name="s0_64c">खुली सड़क</string>
+    <string name="s0_64d">y-चौराहा ( वाई-चौराहा )</string>
+
+    <string name="s0_65q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_65a">गोल चक्कर</string>
+    <string name="s0_65b">चौराहा</string>
+    <string name="s0_65c">y-चौराहा ( वाई-चौराहा )</string>
+    <string name="s0_65d">खुली सड़क</string>
+
+    <string name="s0_66q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_66a">बायीं ओर सड़क</string>
+    <string name="s0_66b">एक दिशा में जाने का चिन्ह</string>
+    <string name="s0_66c">t-सड़क ( टी-सड़क )</string>
+    <string name="s0_66d">चौड़ी सड़क</string>
+
+    <string name="s0_67q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_67a">ज़िग ज़ग रोड</string>
+    <string name="s0_67b">नौका</string>
+    <string name="s0_67c">ऊबड़-खाबड़ या उबड़-खाबड़ सड़क</string>
+    <string name="s0_67d">सीधे सड़क</string>
+
+    <string name="s0_68q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_68a">पशु</string>
+    <string name="s0_68b">बैलगाड़ी</string>
+    <string name="s0_68c">टोंगा</string>
+    <string name="s0_68d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_69q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_69a">संरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="s0_69b">असंरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="s0_69c">असंरक्षित क्रॉसिंग 200 मीटर</string>
+    <string name="s0_69d">संरक्षित क्रॉसिंग 200 मीटर</string>
+
+    <string name="s0_70q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_70a">संरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="s0_70b">असंरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="s0_70c">असंरक्षित क्रॉसिंग 200 मीटर</string>
+    <string name="s0_70d">संरक्षित क्रॉसिंग 200 मीटर</string>
+
+    <string name="s0_71q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_71a">संरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="s0_71b">असंरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="s0_71c">असंरक्षित क्रॉसिंग 200 मीटर</string>
+    <string name="s0_71d">संरक्षित क्रॉसिंग 200 मीटर</string>
+
+    <string name="s0_72q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_72a">संरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="s0_72b">असंरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="s0_72c">असंरक्षित क्रॉसिंग 200 मीटर</string>
+    <string name="s0_72d">संरक्षित क्रॉसिंग 200 मीटर</string>
+
+    <string name="s0_73q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_73a">atm ( एटीएम )</string>
+    <string name="s0_73b">होटल</string>
+    <string name="s0_73c">पेट्रोल पंप</string>
+    <string name="s0_73d">हवा भरने का स्थान</string>
+
+    <string name="s0_74q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_74a">खाने की जगह</string>
+    <string name="s0_74b">अल्पाहार</string>
+    <string name="s0_74c">आराम करने का क्षेत्र</string>
+    <string name="s0_74d">ये सभी</string>
+
+    <string name="s0_75q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_75a">अस्पताल</string>
+    <string name="s0_75b">आराम करने का क्षेत्र</string>
+    <string name="s0_75c">अल्पाहार</string>
+    <string name="s0_75d">ये सभी</string>
+
+    <string name="s0_76q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_76a">आराम करने का क्षेत्र</string>
+    <string name="s0_76b">अस्पताल</string>
+    <string name="s0_76c">प्राथमिक चिकित्सा पोस्ट</string>
+    <string name="s0_76d">ये सभी</string>
+
+    <string name="s0_77q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_77a">अस्पताल</string>
+    <string name="s0_77b">चौराहा</string>
+    <string name="s0_77c">प्राथमिक चिकित्सा पोस्ट</string>
+    <string name="s0_77d">पार्किंग नहीं</string>
+
+    <string name="s0_78q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_78a">प्राथमिक चिकित्सा पोस्ट</string>
+    <string name="s0_78b">छोटी सड़क नहीं है</string>
+    <string name="s0_78c">आगे बड़ी सड़क</string>
+    <string name="s0_78d">आगे सड़क नहीं है</string>
+
+    <string name="s0_79q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_79a">h-चौराहा ( एच-चौराहा )</string>
+    <string name="s0_79b">आगे सड़क नहीं है</string>
+    <string name="s0_79c">समानांतर सड़क</string>
+    <string name="s0_79d">छोटी सड़क नहीं है</string>
+
+    <string name="s0_80q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_80a">डाक घर</string>
+    <string name="s0_80b">पार्किंग नहीं</string>
+    <string name="s0_80c">यहाँ पार्क करें</string>
+    <string name="s0_80d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_81q">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="s0_81a">डाक घर</string>
+    <string name="s0_81b">पार्किंग नहीं</string>
+    <string name="s0_81c">यहाँ पार्क करें</string>
+    <string name="s0_81d">स्कूटर और मोटर साइकिल के लिए पार्किंग</string>
+
+    <string name="s0_82q">%1$d. आने वाले ट्रैफ़िक को एक पुलिस अधिकारी के इस संकेत का मतलब क्या है ?</string>
+    <string name="s0_82a">आगे बढ़ें</string>
+    <string name="s0_82b">रुकें</string>
+    <string name="s0_82c">बाएं मुड़ें</string>
+    <string name="s0_82d">दायें मुड़ें</string>
+
+    <string name="s0_83q">%1$d. आप एक जंक्शन पर पहुंचें। ट्रैफिक लाइट काम नहीं कर रही हैं। एक पुलिस अधिकारी यह संकेत देता है। आपको यह करना चाहिए।</string>
+    <string name="s0_83a">केवल बायें मुड़ें</string>
+    <string name="s0_83b">केवल दाएं मुड़ें</string>
+    <string name="s0_83c">अधिकारी के बताये हाथ के सामने रुकें</string>
+    <string name="s0_83d">स्टॉप लाइन से पहले रुकें</string>
+
+    <string name="s0_84q">%1$d. वाहन चलते समय दायीं ओर मुड़ना है, तो आप हाथ का संकेत ऐसे देंगे</string>
+    <string name="s0_84a">दाहिना हाथ सीधे बाहर निकाल कर हथेली को आगे की तरफ रखेंगे</string>
+    <string name="s0_84b">दाहिने हाथ निकाल कर वामावर्त (यानी विपरीत दिशा) में घुमाएंगे</string>
+    <string name="s0_84c">दाहिने हाथ निकाल कर हथेली को नीचे की ओर रखेंगे, और उस हाथ को कई बार ऊपर-नीचे करेंगे</string>
+    <string name="s0_84d">बार-बार अपने हॉर्न बजायेंगे</string>
+
+    <string name="s0_85q">%1$d. यदि ड्राइवर इस हाथ संकेत दे रहा है, तो उसका क्या मतलब है?</string>
+    <string name="s0_85a">वह बाईं ओर जाना या बाईं ओर मुड़ना चाहता है</string>
+    <string name="s0_85b">वह दाईं ओर जाना चाहता है या दाईं ओर मुड़ना चाहता है</string>
+    <string name="s0_85c">वह रुकने चाहता है</string>
+    <string name="s0_85d">वह वाहन को धीमा करना चाहता है</string>
+
+    <string name="s0_86q">%1$d. यदि ड्राइवर इस हाथ संकेत दे रहा है, तो उसका क्या मतलब है?</string>
+    <string name="s0_86a">वह बाईं ओर जाना या बाईं ओर मुड़ना चाहता है</string>
+    <string name="s0_86b">वह दाईं ओर जाना चाहता है या दाईं ओर मुड़ना चाहता है</string>
+    <string name="s0_86c">वह रुकने चाहता है</string>
+    <string name="s0_86d">वह वाहन को धीमा करना चाहता है</string>
+
+    <string name="s0_87q">%1$d. यदि ड्राइवर इस हाथ संकेत दे रहा है, तो उसका क्या मतलब है?</string>
+    <string name="s0_87a">वह बाईं ओर जाना या बाईं ओर मुड़ना चाहता है</string>
+    <string name="s0_87b">वह दाईं ओर जाना चाहता है या दाईं ओर मुड़ना चाहता है</string>
+    <string name="s0_87c">वह रुकने चाहता है</string>
+    <string name="s0_87d">वह वाहन को धीमा करना चाहता है</string>
+
+    <string name="s0_88q">%1$d. यदि ड्राइवर इस हाथ संकेत दे रहा है, तो उसका क्या मतलब है?</string>
+    <string name="s0_88a">वह बाईं ओर जाना या बाईं ओर मुड़ना चाहता है</string>
+    <string name="s0_88b">वह दाईं ओर जाना चाहता है या दाईं ओर मुड़ना चाहता है</string>
+    <string name="s0_88c">वह रुकने चाहता है</string>
+    <string name="s0_88d">वह वाहन को धीमा करना चाहता है</string>
+
+    <string name="s0_89q">%1$d. यदि ड्राइवर इस हाथ संकेत दे रहा है, तो उसका क्या मतलब है?</string>
+    <string name="s0_89a">वह बाईं ओर जाना या बाईं ओर मुड़ना चाहता है</string>
+    <string name="s0_89b">वह दाईं ओर जाना चाहता है या दाईं ओर मुड़ना चाहता है</string>
+    <string name="s0_89c">वह रुकने चाहता है</string>
+    <string name="s0_89d">वह ओवरटेक होजाने केलिए आपको रास्ता देना चाहता है</string>
+
+    <string name="s0_90q">%1$d. टूटी हुई सफेद रेखा इंगित करती है …</string>
+    <string name="s0_90a">लेन को सावधानी से बदल सकते हैं</string>
+    <string name="s0_90b">ओवरटेक करना प्रतिबंधित है</string>
+    <string name="s0_90c">लेन बदलना निषेध</string>
+    <string name="s0_90d">इनमे से कोई भी नहीं</string>
+
+    <string name="s0_91q">%1$d. लगातार सफेद या पीले रंग की रेखा इंगित करती है</string>
+    <string name="s0_91a">लेन को सावधानी से बदल सकते हैं</string>
+    <string name="s0_91b">सावधानी से बायीं तरफ वाले वाहन लेन बदल सकते हैं</string>
+    <string name="s0_91c">लेन बदलना निषेध</string>
+    <string name="s0_91d">ये सभी</string>
+
+    <string name="s0_92q">%1$d. बाएं तरफ की टूटी लाइन और आसन्न ठोस लाइन का मतलब है</string>
+    <string name="s0_92a">सावधानी के साथ ठोस लाइन की बगल का यातायात को ओवरटेकिंग की अनुमति है, लेकिन टूटी हुई लाइन की बगल का यातायात को ओवरटेकिंग निषेध है</string>
+    <string name="s0_92b">सावधानी के साथ टूटी हुई लाइन की बगल का यातायात को ओवरटेकिंग की अनुमति है, लेकिन ठोस लाइन की बगल का यातायात को ओवरटेकिंग निषेध है</string>
+    <string name="s0_92c">लेन बदलना निषेध</string>
+    <string name="s0_92d">ये सभी</string>
+
+    <string name="s0_93q">%1$d. दो ठोस पीली रेखाओं का अर्थ है</string>
+    <string name="s0_93a">ओवरटेक करने या यू टर्न लेने के लिए आपको इन लाइनों को पार नहीं करना चाहिए</string>
+    <string name="s0_93b">एकतरफा सड़क</string>
+    <string name="s0_93c">लेन को सावधानी से बदल सकते हैं</string>
+    <string name="s0_93d">इनमे से कोई भी नहीं</string>
+
+</resources>

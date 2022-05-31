@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="s0_0q">%1$d. ఎరుపు రంగు (రెడ్) సిగ్నల్ పడిందంటే ఏమని అర్థం?</string>
+    <string name="s0_0a">తెల్లటి స్టా ర్టైన్ దాటకుండా ఆగాలని అర్థం</string>
+    <string name="s0_0b">ఇతర వాహనాలు ఏవీ లేనప్పుడు ముందుకు వెళ్లమని అర్థం</string>
+    <string name="s0_0c">ఏ ప్రమాదమూ ఎదురవ్వదనిపిస్తే ఎడమ పక్కకు తిరగమని అర్థం</string>
+    <string name="s0_0d">మీ వ్యతిరేక దిశలో ట్రాఫిక్ మొదలైతే వెంటనే ఆగేందుకు వీలుగా మీరు వేగాన్ని తగ్గించాలని అర్థం</string>
+
+    <string name="s0_1q">%1$d. పసుపు రంగు లైటు ఫ్లాష్ అవుతున్న ఒక జంక్షన్ ఎదురైనప్పుడు ఏంచేయాలి ?</string>
+    <string name="s0_1a">వేగాన్ని తగ్గించి జాగ్రత్తగా ముందుకెళ్లాలి</string>
+    <string name="s0_1b">ప్రవేశం లేదు</string>
+    <string name="s0_1c">ఆగిపోవాలి</string>
+    <string name="s0_1d">పైవి ఏవి కాదు</string>
+
+    <string name="s0_2q">%1$d. ఎరుపు రంగు లైట్ ఫ్లాష్ అవుతున్న ఒక జంక్షన్ ఎదురైనప్పుడు ఏం చేయాలి?</string>
+    <string name="s0_2a">ఆగడానికి</string>
+    <string name="s0_2b">ఎర్రటి సూర్యుడు</string>
+    <string name="s0_2c">ఆగి చుట్టుప్రక్కల చూసి జాగ్రత్తగా వెళ్ళాలి</string>
+    <string name="s0_2d">పైవి ఏవి కాదు</string>
+
+    <string name="s0_3q">%1$d. ఈ ఆకారంలో ఉండే గుర్తు దేనిని సూచిస్తుంది</string>
+    <string name="s0_3a">తప్పనిసరి ఆదేశాలను</string>
+    <string name="s0_3b">జాగ్రత్త పరిచేవి</string>
+    <string name="s0_3c">సమాచారం కోసం</string>
+    <string name="s0_3d">పైవి అన్ని</string>
+
+    <string name="s0_4q">%1$d. త్రికోణంలో ఇచ్చిన గుర్తులు దేనికి సంకేతం</string>
+    <string name="s0_4a">ఖచ్చితంగా పాటించాలి</string>
+    <string name="s0_4b">జాగ్రత్త పరిచేవి</string>
+    <string name="s0_4c">సమాచారం కోసం</string>
+    <string name="s0_4d">పైవి అన్ని</string>
+
+    <string name="s0_5q">%1$d. ఈ ఆకారంలో ఉండే గుర్తు దేనిని సూచిస్తుంది</string>
+    <string name="s0_5a">తప్పనిసరి ఆదేశాలను</string>
+    <string name="s0_5b">హెచ్చరికలు</string>
+    <string name="s0_5c">సమాచారం కోసం</string>
+    <string name="s0_5d">పైవి అన్ని</string>
+
+    <string name="s0_6q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_6a">ఆగండి</string>
+    <string name="s0_6b">ఒక ప్రక్క మాత్రమే వెళ్ళాలి</string>
+    <string name="s0_6c">వాహనాలు నిలుపరాదు</string>
+    <string name="s0_6d">ఇక్కడ ఆగరాదు</string>
+
+    <string name="s0_7q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_7a">ఎడమ చేతి మలుపు</string>
+    <string name="s0_7b">సమాచారం కోసం</string>
+    <string name="s0_7c">హెచ్చరిక గుర్తు</string>
+    <string name="s0_7d">దారి ఇవ్వాలి</string>
+
+    <string name="s0_8q">%1$d. నువ్వు రోడ్డు మద్యలోకి వెళ్ళాక నువ్వు ఒక వైపు మాత్రమే ప్రవేశం ఉన్న రోడ్డులో ఉన్నావని తెలుసుకున్నావు. అప్పుడు నువ్వు ఏమిచేస్తావు</string>
+    <string name="s0_8a">ఆ రోడ్డు నుంచి వెనుకకు తిరిగి వస్తావు</string>
+    <string name="s0_8b">హారన్ కొట్టుకొంటూ ముందుకు వెళ్తావు</string>
+    <string name="s0_8c">రోడ్డు చివరకు వెళ్తావు</string>
+    <string name="s0_8d">అనుమతించిన రోడ్డులోకి మారతావు</string>
+
+    <string name="s0_9q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_9a">ఒక వైపు ప్రవేశం మాత్రమే</string>
+    <string name="s0_9b">రెండు వైపులా ఎటువంటి వాహనాలకు ప్రవేశం లేదు</string>
+    <string name="s0_9c">కుడి మలుపు నిషేదం</string>
+    <string name="s0_9d">పైవి ఏవి కాదు</string>
+
+    <string name="s0_10q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_10a">ప్రవేశం లేదు</string>
+    <string name="s0_10b">ఒక వైపు ప్రవేశం మాత్రమే</string>
+    <string name="s0_10c">ఖచ్చితంగా ముందుకు వెళ్ళా లి</string>
+    <string name="s0_10d">ఎడమవైపునకు తిరగరాదు</string>
+
+    <string name="s0_11q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_11a">రెండు వైపులా ఎటువంటి వాహనాలకు ప్రవేశం లేదు</string>
+    <string name="s0_11b">ఎడమవైపునకు తిరగరాదు</string>
+    <string name="s0_11c">ఓవర్ టేకింగ్ చెయ్యరాదు</string>
+    <string name="s0_11d">కుడి వైపునకు తిరగరాదు</string>
+
+    <string name="s0_12q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_12a">సైకిల్స్ కి ప్రవేశం లేదు</string>
+    <string name="s0_12b">ట్రక్స్ కు ప్రవేశం లేదు</string>
+    <string name="s0_12c">కుడి వైపునకు తిరుగుట నిషేధం</string>
+    <string name="s0_12d">ఎడమవైపునకు తిరగరాదు</string>
+
+    <string name="s0_13q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_13a">ఎడమవైపునకు తిరగరాదు</string>
+    <string name="s0_13b">కుడి వైపునకు తిరగరాదు</string>
+    <string name="s0_13c">యు టర్న్ తిరగరాదు</string>
+    <string name="s0_13d">ఓవర్ టేకింగ్ చెయ్యరాదు</string>
+
+    <string name="s0_14q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_14a">ట్రక్స్ కు ప్రవేశం లేదు</string>
+    <string name="s0_14b">అన్ని రకముల మోటారు వాహనాలకు ప్రవేశం లేదు</string>
+    <string name="s0_14c">ఎద్దుల బండ్లకు ప్రవేశం లేదు</string>
+    <string name="s0_14d">సైకిల్స్ కి ప్రవేశం లేదు</string>
+
+    <string name="s0_15q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_15a">ముందు వెళ్ళు వాహనములను దాటుట నిషేధం</string>
+    <string name="s0_15b">ఎడమవైపునకు తిరగరాదు</string>
+    <string name="s0_15c">కుడి వైపునకు తిరగరాదు</string>
+    <string name="s0_15d">రెండు వైపుల ఎటువంటి వాహనములకు ప్రవేశం లేదు</string>
+
+    <string name="s0_16q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_16a">పొగత్రాగరాదు</string>
+    <string name="s0_16b">కుడి వైపునకు తిరగరాదు</string>
+    <string name="s0_16c">సైకిల్స్ కి ప్రవేశం లేదు</string>
+    <string name="s0_16d">హారన్ మ్రోగించరాదు</string>
+
+    <string name="s0_17q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_17a">పాదచారులకు ప్రవేశం లేదు</string>
+    <string name="s0_17b">స్కూల్ జోన్</string>
+    <string name="s0_17c">ఆటల జోన్</string>
+    <string name="s0_17d">పైవి ఏవి కాదు</string>
+
+    <string name="s0_18q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_18a">సైకిల్స్ రహదారి</string>
+    <string name="s0_18b">సైకిల్స్ కి ప్రవేశం లేదు</string>
+    <string name="s0_18c">సైకిల్స్ నిలుపు ప్రదేశం</string>
+    <string name="s0_18d">పైవి ఏవి కాదు</string>
+
+    <string name="s0_19q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_19a">వాహనములకు ప్రవేశం లేదు</string>
+    <string name="s0_19b">బ్రిక్స్ పార్కింగ్</string>
+    <string name="s0_19c">కొండ మార్గము</string>
+    <string name="s0_19d">ట్రక్స్ కు ప్రవేశం లేదు</string>
+
+    <string name="s0_20q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_20a">ఆగరాదు</string>
+    <string name="s0_20b">నిబంధనలు ముగింపు</string>
+    <string name="s0_20c">వాహనములు నిలుపరాదు</string>
+    <string name="s0_20d">వేగ నియంత్రణ</string>
+
+    <string name="s0_21q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_21a">నోపార్కింగ్</string>
+    <string name="s0_21b">వాహనములు నిలుపరాదు మరియు ఆపరాదు</string>
+    <string name="s0_21c">పొడవు యొక్క పరిమితి</string>
+    <string name="s0_21d">వేగ నియంత్రణ</string>
+
+    <string name="s0_22q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_22a">ఆగుము</string>
+    <string name="s0_22b">నిబంధనలు ముగింపు</string>
+    <string name="s0_22c">ప్రవేశం లేదు</string>
+    <string name="s0_22d">నోపార్కింగ్</string>
+
+    <string name="s0_23q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_23a">పొడవు యొక్క పరిమితి</string>
+    <string name="s0_23b">వేగ నియంత్రణ</string>
+    <string name="s0_23c">లోడ్ పరిమితము</string>
+    <string name="s0_23d">ఎత్తు యొక్క పరిమితి</string>
+
+    <string name="s0_24q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_24a">బరువు నియంత్రణ</string>
+    <string name="s0_24b">వేగ నియంత్రణ</string>
+    <string name="s0_24c">వాహనాల పొడవు నియంత్రణ</string>
+    <string name="s0_24d">ఎత్తు యొక్క పరిమితి</string>
+
+    <string name="s0_25q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_25a">ఇరుసు బరువు పరిమితి</string>
+    <string name="s0_25b">ఎత్తు పరిమితి</string>
+    <string name="s0_25c">వెడల్పు పరిమితి</string>
+    <string name="s0_25d">బరువు పరిమితి</string>
+
+    <string name="s0_26q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_26a">వాహనాల పొడవు పరిమితి</string>
+    <string name="s0_26b">వేగ పరిమితి</string>
+    <string name="s0_26c">బరువు పరిమితి</string>
+    <string name="s0_26d">ఎత్తు పరిమితి</string>
+
+    <string name="s0_27q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_27a">ఎత్తు పరిమితి</string>
+    <string name="s0_27b">వేగ పరిమితి</string>
+    <string name="s0_27c">వెడల్పు పరిమితి</string>
+    <string name="s0_27d">ఎత్తు పరిమితి</string>
+
+    <string name="s0_28q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_28a">ఇరుసు బరువు పరిమితి</string>
+    <string name="s0_28b">వెడల్పు పరిమితి</string>
+    <string name="s0_28c">బరువు పరిమితి</string>
+    <string name="s0_28d">ఎత్తు పరిమితి</string>
+
+    <string name="s0_29q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_29a">ఒక వైపు ప్రవేశం మాత్రమే</string>
+    <string name="s0_29b">ఎడమ వైపుకు తిరగరాదు</string>
+    <string name="s0_29c">ఖచ్చితంగా ఎడమవైపు నుండి వెళ్ళాలి</string>
+    <string name="s0_29d">ముందుకు మాత్రమే వెళ్ళాలి</string>
+
+    <string name="s0_30q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_30a">ఖచ్చితంగా ఎడమవైపు నుండి వెళ్ళాలి</string>
+    <string name="s0_30b">తిన్నగా ముందుకు మాత్రమే వెళ్ళాలి</string>
+    <string name="s0_30c">ఎడమ వైపుకు తిరగాలి</string>
+    <string name="s0_30d">కుడివైపునకు తిరగాలి</string>
+
+    <string name="s0_31q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_31a">ముందుకు మాత్రమే వెళ్ళాలి</string>
+    <string name="s0_31b">ఎడమ వైపునకు తిరిగి ముందుకు వెళ్ళాలి</string>
+    <string name="s0_31c">తప్పని సరిగా ముందు కుడి వైపునకు తిరగాలి</string>
+    <string name="s0_31d">ముందుకు వెళ్ళాలి లేదా ఎడమ వైపునకు తిరగాలి</string>
+
+    <string name="s0_32q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_32a">కుడి వైపు మలుపు</string>
+    <string name="s0_32b">కుడివైపునకు తిరగాలి</string>
+    <string name="s0_32c">తప్పని సరిగా ముందు ఎడమ వైపునకు తిరగాలి</string>
+    <string name="s0_32d">పైవి ఏవి కాదు</string>
+
+    <string name="s0_33q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_33a">తప్పని సరిగా ఎడమ వైపునకు తిరగాలి</string>
+    <string name="s0_33b">కుడివైపునకు తిరగాలి</string>
+    <string name="s0_33c">ముందుకు వెళ్ళాలి లేదా ఎడమ వైపునకు తిరగాలి</string>
+    <string name="s0_33d">ముందుకు వెళ్ళాలి లేదా కుడి వైపునకు తిరగాలి</string>
+
+    <string name="s0_34q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_34a">కుడి వైపు మలుపు</string>
+    <string name="s0_34b">తప్పని సరిగా కుడి వైపునకు తిరగాలి</string>
+    <string name="s0_34c">ఎడమ వైపునకు తిరగాలి</string>
+    <string name="s0_34d">పైవి ఏవి కాదు</string>
+
+    <string name="s0_35q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_35a">తప్పని సరిగా ముందుకు వెళ్ళాలి లేదా ఎడమ వైపునకు వెళ్ళా లి</string>
+    <string name="s0_35b">ముందుకు వెళ్ళాలి లేదా కుడివైపునకు తిరగాలి</string>
+    <string name="s0_35c">కుడి వైపునకు తిరగరాదు</string>
+    <string name="s0_35d">ఎడమ వైపునకు తిరగాలి</string>
+
+    <string name="s0_36q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_36a">ఎడమ వైపునకు తిరగాలి</string>
+    <string name="s0_36b">కుడివైపునకు తిరగాలి</string>
+    <string name="s0_36c">ముందుకు వెళ్ళాలి లేదా ఎడమ వైపునకు వెళ్ళాలి</string>
+    <string name="s0_36d">తప్పని సరిగా ముందుకు వెళ్ళాలి లేదా కుడివైపునకు తిరగాలి</string>
+
+    <string name="s0_37q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_37a">తప్పని సరిగా హారను మ్రోగించాలి</string>
+    <string name="s0_37b">హారన్ మ్రోగించరాదు</string>
+    <string name="s0_37c">పొగత్రాగరాదు</string>
+    <string name="s0_37d">పైవి ఏవి కాదు</string>
+
+    <string name="s0_38q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_38a">సైకిల్స్ మార్గము</string>
+    <string name="s0_38b">స్కూలు జోన్</string>
+    <string name="s0_38c">సైకిల్స్ కి ప్రవేశం లేదు</string>
+    <string name="s0_38d">పైవి ఏవి కాదు</string>
+
+    <string name="s0_39q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_39a">సైకిల్స్ కు మాత్రమే ప్రవేశం</string>
+    <string name="s0_39b">సైకిల్స్ కు ప్రవేశం లేదు</string>
+    <string name="s0_39c">సైకిల్స్ ట్రాక్</string>
+    <string name="s0_39d">సైకిళ్లు దాటి ప్రదేశం</string>
+
+    <string name="s0_40q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_40a">కుడివైపునకు వంగినమార్గం</string>
+    <string name="s0_40b">ఎడమవైపునకు వంగిన మార్గం</string>
+    <string name="s0_40c">కుడివైపు హెయిర్ పిన్ వంటి వంపు</string>
+    <string name="s0_40d">ఎడమవైపు హెయిర్ పిన్ వంటి వంపు</string>
+
+    <string name="s0_41q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_41a">కుడివైపునకు వంగినమార్గం</string>
+    <string name="s0_41b">ఎడమవైపునకు వంగినమార్గం</string>
+    <string name="s0_41c">కుడివైపున వెనుకకు తిరిగిన మలుపు</string>
+    <string name="s0_41d">ఎడమవైపున వెనకకు తిరిగిన మలుపు</string>
+
+    <string name="s0_42q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_42a">కుడివైపు హెయిర్ పిన్ వంటి వంపు</string>
+    <string name="s0_42b">ఎడమవైపు హెయిర్‌ పిన్ వంటి వంపు</string>
+    <string name="s0_42c">కుడివైపున వెనుకకు తిరిగిన మలుపు</string>
+    <string name="s0_42d">ఎడమవైపున వెనకకు తిరిగిన మలుపు</string>
+
+    <string name="s0_43q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_43a">ఎడమవైపు హెయిర్‌ పిన్ వంటి వంపు</string>
+    <string name="s0_43b">కుడివైపు హెయిర్ పిన్ వంటి వంపు</string>
+    <string name="s0_43c">ఎడమవైపునకు వంగినమార్గం</string>
+    <string name="s0_43d">కుడివైపునకు వంగిన మార్గం</string>
+
+    <string name="s0_44q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_44a">కుడివైపునకు వంగినమార్గం</string>
+    <string name="s0_44b">ఎడమవైపునకు వంగినమార్గం</string>
+    <string name="s0_44c">ముందు కుడి మెలిక రోడ్డు ఉన్నది</string>
+    <string name="s0_44d">కుడివైపు హెయిర్ పిన్ వంటి వంపు</string>
+
+    <string name="s0_45q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_45a">ఎక్కువ వాలుగా కిందకు దిగడం</string>
+    <string name="s0_45b">పైకి నిట్టనిలువుగా ఉన్న దారి</string>
+    <string name="s0_45c">జారుడు రోడ్డు</string>
+    <string name="s0_45d">ఎత్తుగా లేదా గతుకులుగా ఉన్న రోడ్డు</string>
+
+    <string name="s0_46q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_46a">ఎక్కువ వాలుగా పైకి ఎక్కడం</string>
+    <string name="s0_46b">కిందకి నిట్టనిలువుగా ఉన్న దారి</string>
+    <string name="s0_46c">ఇరుకు రోడ్డు ముందుంది</string>
+    <string name="s0_46d">ఇరుకు వంతెన</string>
+
+    <string name="s0_47q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_47a">ఇరుకు రోడ్డు ముందుంది.</string>
+    <string name="s0_47b">వెడల్పు రోడ్డు ముందుంది</string>
+    <string name="s0_47c">ఇరుకు వంతెన</string>
+    <string name="s0_47d">జారుడు రోడ్డు</string>
+
+    <string name="s0_48q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_48a">ఇరుకు రోడ్డు ముందుంది.</string>
+    <string name="s0_48b">వెడల్పు రోడ్డు ముందుంది</string>
+    <string name="s0_48c">ఇరుకు వంతెన</string>
+    <string name="s0_48d">జారుడు రోడ్డు</string>
+
+    <string name="s0_49q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_49a">ఇరుకు రోడ్డు ముందుంది</string>
+    <string name="s0_49b">వెడల్పు రోడ్డు ముందుంది</string>
+    <string name="s0_49c">ఇరుకు వంతెన</string>
+    <string name="s0_49d">జారుడు రోడ్డు</string>
+
+    <string name="s0_50q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_50a">జారుడు రోడ్డు</string>
+    <string name="s0_50b">వదులైన మట్టి రోడ్డు</string>
+    <string name="s0_50c">రెండు మూడు మార్గాలు కలిసిన ప్రదేశం</string>
+    <string name="s0_50d">ఎత్తుగా లేదా గతుకులుగా ఉన్న రోడ్డు</string>
+
+    <string name="s0_51q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_51a">ఇరుకు వంతెన</string>
+    <string name="s0_51b">జారుడు రోడ్డు</string>
+    <string name="s0_51c">వదులైన మట్టి రోడ్డు</string>
+    <string name="s0_51d">ఎక్కువ వాలుగా కిందకు దిగడం</string>
+
+    <string name="s0_52q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_52a">స్కూలు ముందుంది</string>
+    <string name="s0_52b">మనుషులు పని చేయుచున్నారు</string>
+    <string name="s0_52c">సైకిళ్లు దాటి ప్రదేశం</string>
+    <string name="s0_52d">పాదచారులు దాటే ప్రదేశం</string>
+
+    <string name="s0_53q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_53a">సైకిళ్లు దాటే ప్రదేశం</string>
+    <string name="s0_53b">స్కూలు ముందుంది</string>
+    <string name="s0_53c">మనుషులు పని చేయుచున్నారు</string>
+    <string name="s0_53d">పాదచారులు దాటి ప్రదేశం</string>
+
+    <string name="s0_54q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_54a">మార్గం మూసుకుపోయింది</string>
+    <string name="s0_54b">ప్రమాదకరంగా కిందికి దిగిన రోడ్డు</string>
+    <string name="s0_54c">మనుషులు పని చేయుచున్నారు</string>
+    <string name="s0_54d">ప్రధాన మార్గం ముందుంది</string>
+
+    <string name="s0_55q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_55a">పైనుండి రాళ్లుపడే ప్రదేశం</string>
+    <string name="s0_55b">ఎక్కువ వాలుగా పైకి ఎక్కడం</string>
+    <string name="s0_55c">ఎత్తుగా లేదా గతుకులుగా ఉన్న రోడ్డు</string>
+    <string name="s0_55d">వదులైన మట్టి రోడ్డు</string>
+
+    <string name="s0_56q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_56a">ఆటంకం ముందుంది</string>
+    <string name="s0_56b">ముందుకు మార్గం నిషేధం</string>
+    <string name="s0_56c">నాలుగు రోడ్ల కూడలి</string>
+    <string name="s0_56d">రైల్వే క్రాసింగ్ ముందువున్నది</string>
+
+    <string name="s0_57q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_57a">మధ్యలో ఖాళీ ఉంది.</string>
+    <string name="s0_57b">కుడి ప్రక్కన రోడ్డు ఉంది</string>
+    <string name="s0_57c">ఎడమ పక్కరోడ్డు ఉన్నది</string>
+    <string name="s0_57d">రెండు మూడు మార్గాలు కలిసే ప్రదేశం</string>
+
+    <string name="s0_58q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_58a">రెండు మూడు మార్గాలు కలిసే ప్రదేశం</string>
+    <string name="s0_58b">చుట్టూ తిరిగి వెళ్లండి</string>
+    <string name="s0_58c">క్రాస్ రోడ్డు ముందువున్నది</string>
+    <string name="s0_58d">ఎడమ పక్కరోడ్డు ఉన్నది</string>
+
+    <string name="s0_59q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_59a">ప్రమాదకరమైన గొయ్యి</string>
+    <string name="s0_59b">రెండు మూడు మార్గాలు కలిసే ప్రదేశం</string>
+    <string name="s0_59c">వై ఆకారపు కూడలి</string>
+    <string name="s0_59d">ప్రధాన మార్గం ముందుంది</string>
+
+    <string name="s0_60q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_60a">ప్రమాదకరమైన గొయ్యి ఉన్నది</string>
+    <string name="s0_60b">ప్రధాన మార్గం ముందుంది</string>
+    <string name="s0_60c">వై ఆకారపు కూడలి</string>
+    <string name="s0_60d">రెండు మూడు మార్గాలు కలిసే ప్రదేశం</string>
+
+    <string name="s0_61q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_61a">మార్గం మూసుకుపోయింది</string>
+    <string name="s0_61b">వేగం నియంత్రించు గతుకుల రోడ్డు</string>
+    <string name="s0_61c">ప్రధాన మార్గం ముందుంది</string>
+    <string name="s0_61d">రెండు మూడు మార్గాలు కలిసే ప్రదేశం</string>
+
+    <string name="s0_62q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_62a">రైల్వే క్రాసింగ్</string>
+    <string name="s0_62b">టోల్ గేట్</string>
+    <string name="s0_62c">మనుషులు పనిలో వున్నారు</string>
+    <string name="s0_62d">పైవి ఏవి కాదు</string>
+
+    <string name="s0_63q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_63a">కుడివైపు మలుపు</string>
+    <string name="s0_63b">ఎడమ వైపు మలుపు</string>
+    <string name="s0_63c">సంశయము కలుగజేయు రోడ్లు గల కూడలి</string>
+    <string name="s0_63d">వంకర టింకర రోడ్డు</string>
+
+    <string name="s0_64q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_64a">చుట్టూ తిరిగి వెళ్లండి</string>
+    <string name="s0_64b">క్రాస్ రోడ్డు ముందువున్నది</string>
+    <string name="s0_64c">ముందుకు మార్గం లేదు</string>
+    <string name="s0_64d">వై ఆకారపు కూడలి</string>
+
+    <string name="s0_65q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_65a">చుట్టూ తిరిగి వెళ్లండి</string>
+    <string name="s0_65b">క్రాస్ రోడ్డు ముందువున్నది</string>
+    <string name="s0_65c">వై ఆకారపు కూడలి</string>
+    <string name="s0_65d">ముందుకు మార్గం లేదు</string>
+
+    <string name="s0_66q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_66a">ఎడమ వైపునకు రోడ్డు ఉన్నది</string>
+    <string name="s0_66b">ఒక వైపు మాత్రమే ప్రవేశం</string>
+    <string name="s0_66c">టి-జంక్షన్</string>
+    <string name="s0_66d">వెడల్పు రోడ్డు ముందుంది</string>
+
+    <string name="s0_67q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_67a">వంకర టింకర రోడ్డు</string>
+    <string name="s0_67b">పడవల రేవు</string>
+    <string name="s0_67c">ఎత్తుగా లేదా గతుకులుగా ఉన్న రోడ్డు</string>
+    <string name="s0_67d">తిన్నని రోడ్డు ముందు ఉన్నది</string>
+
+    <string name="s0_68q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_68a">ఆవులు సంచరించు ప్రదేశం</string>
+    <string name="s0_68b">ఎద్దుల బండి</string>
+    <string name="s0_68c">గుర్రపు బండి</string>
+    <string name="s0_68d">పైవి ఏవి కాదు</string>
+
+    <string name="s0_69q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_69a">కాపలా ఉన్న రైల్వేక్రాసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="s0_69b">కాపలా లేని రైల్వే క్రాసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="s0_69c">కాపలాలేని రైల్వే క్రాసింగ్ మీటర్స్)ముందువున్నది (200</string>
+    <string name="s0_69d">కాపలా ఉన్న రైల్వేక్రాసింగ్ (200 మీటర్స్)ముందువున్నది</string>
+
+    <string name="s0_70q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_70a">కాపలా ఉన్న రైల్వే క్రాసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="s0_70b">కాపలా లేని రైల్వేక్రాసింగ్ (50–100 ముందువున్నది మీటర్స్)</string>
+    <string name="s0_70c">కాపలాలేని రైల్వే క్రాసింగ్ (200 మీటర్స్)ముందువున్నది</string>
+    <string name="s0_70d">కాపలా ఉన్న రైల్వేక్రాసింగ్ (200 మీటర్స్)ముందువున్నది</string>
+
+    <string name="s0_71q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_71a">కాపలా ఉన్న రైల్వేక్రాసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="s0_71b">కాపలా లేని రైల్వేసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="s0_71c">కాపలా లేని రైల్వేక్రాసింగ్ (200 మీటర్స్)ముందువున్నది</string>
+    <string name="s0_71d">కాపలా ఉన్న రైల్వే క్రాసింగ్ (200 మీటర్)ముందువున్నది</string>
+
+    <string name="s0_72q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_72a">కాపలా ఉన్న రైల్వేక్రాసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="s0_72b">కాపలా లేని రైల్వే క్రాసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="s0_72c">కాపలా లేని రైల్వేక్రాసింగ్ (200 మీటర్స్)ముందువున్నది</string>
+    <string name="s0_72d">కాపలా ఉన్న రైల్వే క్రాసింగ్ (200 మీటర్స్)ముందువున్నది</string>
+
+    <string name="s0_73q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_73a">ఏటియం ముందువున్నది</string>
+    <string name="s0_73b">హొటల్ ముందు ఉన్నది</string>
+    <string name="s0_73c">పెట్రోల్ పంపు ముందు వున్నది</string>
+    <string name="s0_73d">గాలి పట్టుకేంద్రం ముందు ఉన్నది</string>
+
+    <string name="s0_74q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_74a">హొటల్ ముందు ఉన్నది</string>
+    <string name="s0_74b">క్రాస్ రోడ్డు ముందువున్నది</string>
+    <string name="s0_74c">విశ్రాంతి తీసుకునే ప్రదేశం</string>
+    <string name="s0_74d">పైవి అన్ని</string>
+
+    <string name="s0_75q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_75a">ఆసుపత్రి</string>
+    <string name="s0_75b">విశ్రాంతి తీసుకునే ప్రదేశం</string>
+    <string name="s0_75c">తినుబండారాలు దొరికే ప్రదేశం</string>
+    <string name="s0_75d">పైవి అన్ని</string>
+
+    <string name="s0_76q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_76a">విశ్రాంతి తీసుకునే ప్రదేశం</string>
+    <string name="s0_76b">హాస్పటల్</string>
+    <string name="s0_76c">ప్రథమ చికిత్సా స్థలము</string>
+    <string name="s0_76d">పైవి అన్ని</string>
+
+    <string name="s0_77q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_77a">హాస్పటల్</string>
+    <string name="s0_77b">క్రాస్ రోడ్డు ముందువున్నది</string>
+    <string name="s0_77c">ప్రథమ చికిత్సా స్థలము</string>
+    <string name="s0_77d">వాహనాలను నిలుపరాదు</string>
+
+    <string name="s0_78q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_78a">ప్రథమ చికిత్సాస్థలము</string>
+    <string name="s0_78b">పక్క రోడ్డులోకి ప్రవేశం లేదు</string>
+    <string name="s0_78c">ప్రధాన మార్గం ముందుంది</string>
+    <string name="s0_78d">ముందుకు వెళ్లే మార్గం లేదు</string>
+
+    <string name="s0_79q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_79a">ముందుకు వెళ్లే మార్గం లేదు</string>
+    <string name="s0_79b">రెండు రోడ్డుల మార్గం</string>
+    <string name="s0_79c">సమాంతర రోడ్డు</string>
+    <string name="s0_79d">ఎడమ పక్క రోడ్డులోకి ప్రవేశం లేదు</string>
+
+    <string name="s0_80q">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="s0_80a">పోస్ట్ ఆఫీస్</string>
+    <string name="s0_80b">వాహనాలను నిలుపరాదు</string>
+    <string name="s0_80c">కుడివైపు వాహనములు నిలుపు ప్రదేశం</string>
+    <string name="s0_80d">పైవి ఏవి కావు</string>
+
+    <string name="s0_81q">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="s0_81a">పోస్ట్ ఆఫీస్</string>
+    <string name="s0_81b">వాహనాలను నిలుపరాదు</string>
+    <string name="s0_81c">పార్కింగ్ చేయు స్థలం</string>
+    <string name="s0_81d">మోటారు సైకిళ్ళు నిలుపు ప్రదేశం</string>
+
+    <string name="s0_82q">%1$d. ఎదురుగా వస్తున్న వాహనాలకు పోలీస్ అధికారి ఇచ్చిన ఈ సిగ్నల్ కు అర్థమేమిటి?</string>
+    <string name="s0_82a">ముందుకు వెళ్లండి</string>
+    <string name="s0_82b">ఆగండి</string>
+    <string name="s0_82c">ఎడమకు తిరగండి</string>
+    <string name="s0_82d">కుడికి తిరగండి</string>
+
+    <string name="s0_83q">%1$d. మీరు ఒక జంక్షన్ కు చేరుకున్న సమయానికి ట్రాఫిక్ లైట్లు పనిచేయట్లేదు. పోలీస్ అధికారి ట్రాఫిక్ సూచనలిస్తున్నారు. అలాంటి సమయంలో మీరేం చేయాలి ?</string>
+    <string name="s0_83a">ఎడమవైపుకు మాత్రమే తిరగాలి</string>
+    <string name="s0_83b">కుడివైపుకు మాత్రమే తిరగాలి</string>
+    <string name="s0_83c">పోలీస్ అధికారి చేతికి దగ్గరగా ఆగాలి</string>
+    <string name="s0_83d">స్టాన్ కు ముందే ఆగాలి</string>
+
+    <string name="s0_84q">%1$d. వాహనం నడుపుతున్న సమయంలో కుడి వైపునకు మలుపు తిరుగుటకు ఇవ్వవలసిన సరైన సిగ్నల్ ఏది.</string>
+    <string name="s0_84a">సమాంతరంగా కుడి చేతిని వాహనం బయటకు చాపి అరచేతిని ముందుకు చూపుతు సిగ్నల్ ఇవ్వాలి</string>
+    <string name="s0_84b">కుడి చేతిని వాహనపు బయటకు చాపి గడియారపు వ్యతిరేక దిశలో తిప్పుతూ సిగ్నల్ ఇవ్వా లి</string>
+    <string name="s0_84c">కుడి చేతిని వాహనపు బయటకి చాపి అరచేతిని కిందకి పైకి ఉపుతూ సిగ్నల్ ఇవ్వాలి</string>
+    <string name="s0_84d">హారన్ మోగిస్తూ ఉండాలి</string>
+
+    <string name="s0_85q">%1$d. డైవర్ బొమ్మలో చూపిన విదంగా సిగ్నల్ ఇస్తే అర్థం ఏమిటి?</string>
+    <string name="s0_85a">అతను ఎడమవైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_85b">అతను కుడి వైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_85c">అతను ఆగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_85d">నెమ్మదిగా వెళ్ళడానికి సూచిస్తున్నాడు</string>
+
+    <string name="s0_86q">%1$d. డ్రైవర్ బొమ్మలో చూపిన విధంగా సిగ్నల్ ఇస్తే అర్థం ఏమిటి?</string>
+    <string name="s0_86a">అతను ఎడమవైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_86b">అతను కుడి వైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_86c">అతను ఆగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_86d">నెమ్మదిగా వెళ్ళడానికి సూచిస్తున్నాడు</string>
+
+    <string name="s0_87q">%1$d. డైవర్ బొమ్మలో చూపిన విధంగా సిగ్నల్ ఇస్తే అర్థం ఏమిటి?</string>
+    <string name="s0_87a">అతను ఎడమవైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_87b">అతను కుడి వైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_87c">అతను ఆగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_87d">నెమ్మదిగా వెళ్ళడానికి సూచిస్తున్నాడు</string>
+
+    <string name="s0_88q">%1$d. డ్రైవర్ బొమ్మలో చూపిన విదంగా సిగ్నల్ ఇస్తే అర్థం ఏమిటి?</string>
+    <string name="s0_88a">అతను ఎడమవైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_88b">అతను కుడి వైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_88c">అతను ఆగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_88d">నెమ్మదిగా వెళ్ళడానికి సూచిస్తున్నాడు</string>
+
+    <string name="s0_89q">%1$d. డ్రైవర్ దొమ్మలో చూపిన విధంగా సిగ్నల్ ఇస్తే అర్థం ఏమిటి?</string>
+    <string name="s0_89a">అతను ఎడమవైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_89b">అతను కుడి వైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_89c">అతను ఆగడానికి సూచిస్తున్నాడు</string>
+    <string name="s0_89d">వెనుక వాహనమునకు ముందుకు వెళ్ళడానికి సూచిస్తున్నాడు</string>
+
+    <string name="s0_90q">%1$d. రోడ్డు మద్యలో విరిగిన తెల్లని గీత దేనిని సూచిస్తుంది</string>
+    <string name="s0_90a">ఎప్పుడు దాటాలనిపిస్తే అప్పుడు సిగ్నల్ ఇచ్చి ఆ గీతను దాటవచ్చు</string>
+    <string name="s0_90b">ఓవర్ టేకింగ్ నిషిద్ధం</string>
+    <string name="s0_90c">ఎటువంటి పరిస్థితులలోను గీత దాటి వెళ్లకూడదు</string>
+    <string name="s0_90d">పైవి ఏవి కావు</string>
+
+    <string name="s0_91q">%1$d. రోడ్డు మధ్యలో పొడవుగా గీసిన గీత దేనిని సూచిస్తుంది</string>
+    <string name="s0_91a">క్రాస్ చేయడం సురక్షితం అని మీరు బావించినప్పుడు</string>
+    <string name="s0_91b">ఎడమ ప్రక్క వాహనాలు జాగ్రత్తగా గీత దాటవచ్చును</string>
+    <string name="s0_91c">ఎట్టి పరిస్థితులలోను దాటకూడదు</string>
+    <string name="s0_91d">పైవి అన్నీ</string>
+
+    <string name="s0_92q">%1$d. రోడ్డు మద్యలో సమాంతరంగా ఉన్న గీతకు ఎడమ వైపు ఉన్న విరిగిన గీతకు అర్థం ఏమిటి</string>
+    <string name="s0_92a">సమాంతర రేఖకు ప్రక్కన ఉన్న వాహనములను ఓవర్ టేక్ చేయుటకు అనుమతించబడినది,</string>
+    <string name="s0_92b">విరిగిన గీతకు ప్రక్కన వున్న వాహనాలను ఓవర్ టేక్ చేయటకు అనుమతించబడినది</string>
+    <string name="s0_92c">ఓవర్ టేక్ రెండు వైపుల చేయవచ్చును</string>
+    <string name="s0_92d">పైవి అన్నీ</string>
+
+    <string name="s0_93q">%1$d. రోడ్డు మద్యలో నిరంతరంగా ఉండే రెండు పసుపు గీతలు దేనిని సూచిస్తాయి</string>
+    <string name="s0_93a">ఎట్టిపరిస్థితులలోను ఈ గీతల వెంబడి ఓవర్ టేక్ చేయడం యూ టర్న్ తీసుకోవడం అనుమతించరు</string>
+    <string name="s0_93b">వన్ వే రోడ్</string>
+    <string name="s0_93c">క్రాస్ చేయడం సురక్షితం అని మీరు బావించినప్పుడు</string>
+    <string name="s0_93d">పైవి ఏవి కావు</string>
+
+</resources>
