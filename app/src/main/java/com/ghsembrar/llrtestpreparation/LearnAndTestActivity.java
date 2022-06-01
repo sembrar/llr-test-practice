@@ -80,7 +80,11 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         } else  if (intent.hasExtra(MainActivity.INTENT_EXTRA_KEY_TEST_OLD_OR_NEW)) {
             int test_type = intent.getIntExtra(MainActivity.INTENT_EXTRA_KEY_TEST_OLD_OR_NEW, MainActivity.TEST_TYPE_NEW_TEST);
-            set_model_and_mode_for_test(test_type);
+            boolean set_test_successful = set_model_and_mode_for_test(test_type);
+            if (!set_test_successful) {
+                finish();
+                return;
+            }
 
         } else {
             // no intent data
@@ -90,6 +94,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
                 if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onCreate: model is null");
                 Toast.makeText(this, "Err: Please reopen", Toast.LENGTH_LONG).show();
                 finish();
+                return;
             }
         }
 
@@ -122,7 +127,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
         else mode = MODE.PRACTICE;
     }
 
-    void set_model_and_mode_for_test(int test_type) {
+    boolean set_model_and_mode_for_test(int test_type) {
         if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "set_model_and_mode_for_test: test_type " + test_type);
 
         ltModel = new ModelTest(this);
@@ -133,7 +138,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
             if (!is_load_old_test_successful) {  // old test is clicked, but it couldn't be read from memory
                 Toast.makeText(this, "No old test exists", Toast.LENGTH_LONG).show();
-                finish();
+                return false;
 
             } else {  // old test is clicked, and it is successfully read from memory
                 if (((ModelTest) ltModel).is_test_in_progress()) {
@@ -148,6 +153,8 @@ public class LearnAndTestActivity extends AppCompatActivity {
             ((ModelTest) ltModel).set_up_new_test();
             mode = MODE.TEST_IN_PROGRESS;
         }
+
+        return true;
     }
 
     void show_or_hide_views_based_on_mode_and_settings() {
