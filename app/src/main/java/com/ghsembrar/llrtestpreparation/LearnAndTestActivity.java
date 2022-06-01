@@ -103,6 +103,15 @@ public class LearnAndTestActivity extends AppCompatActivity {
         findViewById(R.id.lt_radioButton_option1).setOnClickListener(v -> clicked_radio_button(1));
         findViewById(R.id.lt_radioButton_option2).setOnClickListener(v -> clicked_radio_button(2));
         findViewById(R.id.lt_radioButton_option3).setOnClickListener(v -> clicked_radio_button(3));
+        // title textView to a tip in long-press
+        findViewById(R.id.lt_textView_title).setOnLongClickListener(v -> {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onCreate: onLongClickLTTitle");
+            if (mode == MODE.TEST_IN_PROGRESS || mode == MODE.TEST_FINISHED) {
+                Toast.makeText(this, R.string.tip_not_shown_during_test, Toast.LENGTH_LONG).show();
+            } else {
+                TipsUtility.show_tip(this, R.string.tip_lt_title, R.string.tip_lt_message);
+            }
+            return true; });
 
         // set views (one time settings / texts)
         show_or_hide_views_based_on_mode_and_settings();

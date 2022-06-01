@@ -36,6 +36,16 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.main_button_test_old).setOnClickListener(v -> startLearnAndTestActivityForTest(TEST_TYPE_VIEW_OR_CONTINUE_OLD_TEST));
         findViewById(R.id.main_button_test_new).setOnClickListener(v -> startLearnAndTestActivityForTest(TEST_TYPE_NEW_TEST));
 
+        findViewById(R.id.main_textView_learnHeading).setOnLongClickListener(v -> {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onCreate: onLongClickLearnHeading");
+            TipsUtility.show_tip(this, R.string.tip_main_learn_title, R.string.tip_main_learn_message);
+            return true;
+        });
+        findViewById(R.id.main_textView_testHeading).setOnLongClickListener(v -> {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onCreate: onLongClickTestHeading");
+            TipsUtility.show_tip(this, R.string.tip_main_test_title, R.string.tip_main_test_message);
+            return true; });
+
         SettingsActivity.set_theme(this);
     }
 
