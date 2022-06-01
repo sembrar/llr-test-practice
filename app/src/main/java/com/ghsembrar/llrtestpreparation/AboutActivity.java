@@ -3,7 +3,9 @@ package com.ghsembrar.llrtestpreparation;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.webkit.WebView;
+import android.widget.TextView;
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -12,9 +14,6 @@ public class AboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
-        WebView webView = findViewById(R.id.about_webView);
-        String html = getString(R.string.about_app);
-        String base_url = getString(R.string.base_url);
-        webView.loadDataWithBaseURL(base_url, html, "text/html", null, base_url);
+        ((TextView) findViewById(R.id.about_textView_source_code_text)).setMovementMethod(LinkMovementMethod.getInstance());
     }
 }
