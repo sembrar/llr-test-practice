@@ -54,6 +54,34 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
         // ----
         load_settings_from_shared_prefs();
+
+        final int[] tips_textViews = {
+                R.id.settings_textView_language_for_questions,
+                R.id.settings_textView_theme,
+                R.id.settings_textView_question_traversal,
+                R.id.settings_textView_practice_mode_validation
+        };
+        final int[] tips_titles = {
+                R.string.tip_setting_language_for_questions_title,
+                R.string.tip_setting_theme_title,
+                R.string.tip_setting_question_traversal_title,
+                R.string.tip_setting_choice_validation_title
+        };
+        final int[] tips_messages = {
+                R.string.tip_setting_language_for_questions_message,
+                R.string.tip_setting_theme_message,
+                R.string.tip_setting_question_traversal_message,
+                R.string.tip_setting_choice_validation_message
+        };
+        for (int i = 0; i < tips_textViews.length; i++) {
+            int tip_tView = tips_textViews[i];
+            int tip_title = tips_titles[i];
+            int tip_message = tips_messages[i];
+            findViewById(tip_tView).setOnLongClickListener(v -> {
+                TipsUtility.show_tip(this, tip_title, tip_message);
+                return true;
+            });
+        }
     }
 
     private static SharedPreferences get_application_context_shared_prefs(Context context) {

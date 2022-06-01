@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/setting_language_for_questions"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/settings_spinner_language_for_questions"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/settings_spinner_language_for_questions" />
@@ -33,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/setting_theme"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/settings_textView_language_for_questions"
         app:layout_constraintTop_toBottomOf="@+id/settings_spinner_language_for_questions" />
 
@@ -70,6 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/setting_question_traversal_heading"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/settings_textView_language_for_questions"
         app:layout_constraintTop_toBottomOf="@+id/settings_radioGroup_theme" />
 
@@ -98,6 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/setting_practice_mode_validation_trigger_heading"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/settings_textView_language_for_questions"
         app:layout_constraintTop_toBottomOf="@+id/settings_checkBox_question_traversal_swipe" />
 
