@@ -11,22 +11,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="@string/setting_language_for_questions"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_spinner_language_for_questions"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/settings_spinner_language_for_questions" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settings_textView_info_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/info_textView"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_textView_language_for_questions"
+        app:layout_constraintStart_toEndOf="@+id/settings_textView_language_for_questions" />
 
     <Spinner
         android:id="@+id/settings_spinner_language_for_questions"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/settings_textView_language_for_questions"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/settings_textView_language_for_questions"
+        app:layout_constraintTop_toBottomOf="@+id/settings_textView_language_for_questions" />
 
     <TextView
         android:id="@+id/settings_textView_theme"
@@ -37,6 +44,15 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/settings_textView_language_for_questions"
         app:layout_constraintTop_toBottomOf="@+id/settings_spinner_language_for_questions" />
+
+    <TextView
+        android:id="@+id/settings_textView_info_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/info_textView"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_textView_theme"
+        app:layout_constraintStart_toEndOf="@+id/settings_textView_theme" />
 
     <RadioGroup
         android:id="@+id/settings_radioGroup_theme"
@@ -76,6 +92,15 @@
         app:layout_constraintStart_toStartOf="@+id/settings_textView_language_for_questions"
         app:layout_constraintTop_toBottomOf="@+id/settings_radioGroup_theme" />
 
+    <TextView
+        android:id="@+id/settings_textView_info_question_traversal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/info_textView"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_textView_question_traversal"
+        app:layout_constraintStart_toEndOf="@+id/settings_textView_question_traversal" />
+
     <CheckBox
         android:id="@+id/settings_checkBox_question_traversal_buttons"
         android:layout_width="wrap_content"
@@ -104,6 +129,15 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/settings_textView_language_for_questions"
         app:layout_constraintTop_toBottomOf="@+id/settings_checkBox_question_traversal_swipe" />
+
+    <TextView
+        android:id="@+id/settings_textView_info_practice_mode_validation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/info_textView"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_textView_practice_mode_validation"
+        app:layout_constraintStart_toEndOf="@+id/settings_textView_practice_mode_validation" />
 
     <RadioGroup
         android:id="@+id/settings_radioGroup_check_button_in_practice"

@@ -18,6 +18,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/main_textView_info_learn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/info_textView"
+        app:layout_constraintBottom_toBottomOf="@+id/main_textView_learnHeading"
+        app:layout_constraintStart_toEndOf="@+id/main_textView_learnHeading" />
+
     <Button
         android:id="@+id/main_button_learn_subject0"
         android:layout_width="wrap_content"
@@ -69,6 +78,15 @@
         app:layout_constraintTop_toBottomOf="@+id/main_divider_learn_and_test" />
 
     <TextView
+        android:id="@+id/main_textView_info_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/info_textView"
+        app:layout_constraintBottom_toBottomOf="@+id/main_textView_testHeading"
+        app:layout_constraintStart_toEndOf="@+id/main_textView_testHeading" />
+
+    <TextView
         android:id="@+id/main_textView_testDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -105,29 +123,5 @@
         android:text="@string/test_new"
         app:layout_constraintStart_toStartOf="@+id/main_button_learn_subject0"
         app:layout_constraintTop_toBottomOf="@+id/main_textView_test_old_unfinished" />
-
-    <View
-        android:id="@+id/main_divider_test_and_tip"
-        android:layout_width="0dp"
-        android:layout_height="4dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_button_test_new" />
-
-    <TextView
-        android:id="@+id/main_textView_tip"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/tip_main_activity_long_press_to_show_tip"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_divider_test_and_tip" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
