@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="subject_0_name">रोड और ट्रैफिक चिह्न</string>
+    <string name="subject_1_name">रोड के नियम और कानून</string>
+    <string name="subject_2_name">वाहन चलाते समय पालन किये जाने वाले सिद्धान्त</string>
+
+    <string name="no_string">कोई वाक्य नहीं मिला!</string>
+</resources>

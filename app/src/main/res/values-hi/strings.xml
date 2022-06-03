@@ -1,2 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="learn_heading">पढ़/अभ्यास:</string>
+    <string name="test_heading">परीक्षा:</string>
+    <string name="test_old">पिछला परीक्षा में आगे बढें या देखें</string>
+    <string name="test_new">नया परीक्षा</string>
+    <string name="heading_num_questions">(%1$d प्रश्न)</string>
+    <string name="heading_score">(अंक: %1$d/%2$d)</string>
+    <string name="test_details">20 सवाल 10 मिनट में।\\nउत्तीर्ण होने केलिए: 12/20</string>
+    <string name="button_restore_defaults">निर्णीत मूल्यों की पुनर्स्थापना</string>
+    <string name="setting_theme">थीम:</string>
+    <string name="theme_light">प्रकाश</string>
+    <string name="theme_dark">अँधेरा</string>
+    <string name="theme_follow_system">सिस्टम का पालन</string>
+    <string name="tip_main_learn_title">\@string/learn_heading</string>
+    <string name="tip_main_test_title">\@string/test_heading</string>
+    <string name="tip_lt_title">\@string/learn_heading</string>
+    <string name="tip_setting_language_for_questions_title">\@string/setting_language_for_questions</string>
+    <string name="tip_setting_theme_title">\@string/setting_theme</string>
+    <string name="tip_setting_question_traversal_title">\@string/setting_question_traversal_heading</string>
+    <string name="tip_setting_choice_validation_title">\@string/setting_practice_mode_validation_trigger_heading</string>
+    <string name="learn_details">विवरण</string>
+    <string name="button_previous">पिछला</string>
+    <string name="button_next">अगला</string>
+    <string name="button_check">जांच</string>
+    <string name="button_finish">समाप्त</string>
+    <string name="menu_item_settings">सेट्टिंग्स</string>
+    <string name="menu_item_about">ऐप के बारे में</string>
+    <string name="menu_item_read_mode">पढ़ना</string>
+    <string name="menu_item_practice_mode">अभ्यास</string>
+    <string name="heading_test_in_progress">परीक्षा चल रही है</string>
+    <string name="heading_test_finished">परीक्षण समाप्त हो गया है</string>
+    <string name="setting_language_for_questions">प्रश्नों को दिखाने के लिए भाषा:</string>
+    <string name="setting_question_traversal_heading">एक प्रश्न से दूसरे प्रश्न पर जाने का तरीका:</string>
+    <string name="setting_question_traversal_use_buttons">\\\'पिछला\\\' और \\\'अगला\\\' बटन का प्रयोग करें</string>
+    <string name="setting_question_traversal_use_swipe">उंगली से स्वैप करें</string>
+    <string name="setting_practice_mode_validation_trigger_use_check_button">\\\'जांच\\\' बटन का प्रयोग करें</string>
+    <string name="setting_practice_mode_validation_trigger_choosing_an_option">ज़वाब चुनने के ठीक बाद</string>
+    <string name="setting_practice_mode_validation_trigger_heading">अभ्यास करते समय सही जवाब कब दिखाना:</string>
+    <string name="app_name">एल.एल.आर टेस्ट प्रैक्टिस</string>
+    <string name="test_old_unfinished_details">अधूरा परीक्षण:\nजवाब चुना: %1$d\nशेष समय: %2$d:%3$02d</string>
+</resources>
