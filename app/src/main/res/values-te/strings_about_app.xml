@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_heading">About the app:</string>
+    <string name="about_text">This app provides an interactive way to study for the LLR Test. The questions in the app are taken from the open-access pdf documents, provided for general public use, by Andhra Pradesh State Road Transport Authority.</string>
+
+    <string name="source_code_heading">Source code of the app:</string>
+    <string name="source_code_text">The source code of the app is available on <a href="https://www.github.com">github</a></string>
+
+    <string name="imp_note_heading">Important note:</string>
+    <string name="imp_note_text">The road signs, rules, principles shown in this app are applicable to India. Other countries may have some differences, for example, in India, vehicles go on the left, which is different in some countries.</string>
+</resources>

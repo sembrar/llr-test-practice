@@ -1,2 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="learn_heading">చదువు/అభ్యసించు:</string>
+    <string name="test_heading">పరీక్ష:</string>
+    <string name="test_old">మునుపటి పరీక్షను కొనసాగించడం/చూడడం</string>
+    <string name="test_new">కొత్త పరీక్ష</string>
+    <string name="heading_num_questions">(%1$d ప్రశ్నలు)</string>
+    <string name="heading_score">(మార్కులు: %1$d/%2$d)</string>
+    <string name="test_details">20 ప్రశ్నలు 10 నిమిషాల్లో.\\nఉత్తీర్ణులవ్వుటకు: 12/20</string>
+    <string name="button_restore_defaults">నిర్ణీత విలువలకు మార్చు</string>
+    <string name="theme_dark">చీకటి</string>
+    <string name="theme_light">కాంతి</string>
+    <string name="setting_theme">థీమ్:</string>
+    <string name="theme_follow_system">సిస్టం ను అనుసరించు</string>
+    <string name="button_previous">మునుపటి</string>
+    <string name="tip_main_learn_title">\@string/learn_heading</string>
+    <string name="tip_main_test_title">\@string/test_heading</string>
+    <string name="tip_lt_title">\@string/learn_heading</string>
+    <string name="tip_setting_language_for_questions_title">\@string/setting_language_for_questions</string>
+    <string name="tip_setting_theme_title">\@string/setting_theme</string>
+    <string name="tip_setting_question_traversal_title">\@string/setting_question_traversal_heading</string>
+    <string name="tip_setting_choice_validation_title">\@string/setting_practice_mode_validation_trigger_heading</string>
+    <string name="button_next">తరువాతి</string>
+    <string name="button_check">తనిఖీ</string>
+    <string name="button_finish">ముగించు</string>
+    <string name="menu_item_settings">సెట్టింగ్స్</string>
+    <string name="menu_item_about">యాప్ గురించి</string>
+    <string name="menu_item_read_mode">చదువు</string>
+    <string name="menu_item_practice_mode">అభ్యసించు</string>
+    <string name="heading_test_in_progress">పరీక్ష జరుగుతోంది</string>
+    <string name="heading_test_finished">పరీక్ష ముగిసింది</string>
+    <string name="setting_language_for_questions">ప్రశ్నలను చూపవలసిన భాష:</string>
+    <string name="setting_question_traversal_heading">ఒక ప్రశ్న నుండి మరో ప్రశ్నకు వెళ్లే పద్దతి:</string>
+    <string name="setting_question_traversal_use_buttons">\\\'మునుపటి\\\' మరియు \\\'తరువాతి\\\' బటన్స్ వాడు</string>
+    <string name="setting_question_traversal_use_swipe">వేలితో స్వైప్ చేయు</string>
+    <string name="setting_practice_mode_validation_trigger_use_check_button">\\\'తనిఖీ\\\' బటన్ వాడు</string>
+    <string name="setting_practice_mode_validation_trigger_choosing_an_option">ఎంపికను ఎంచుకున్న వెంటనే</string>
+    <string name="setting_practice_mode_validation_trigger_heading">అభ్యసించునపుడు సరైన సమాధానం చూపడం:</string>
+    <string name="test_old_unfinished_details">పూర్తవని పరీక్ష:\\జవాబు చేసినవి: %1$d\\nమిగిలిన సమయం: %2$d:%3$02d</string>
+    <string name="learn_details">వివరాలు</string>
+    <string name="app_name">ఎల్.ఎల్.ఆర్ టెస్ట్ ప్రాక్టీస్</string>
+</resources>

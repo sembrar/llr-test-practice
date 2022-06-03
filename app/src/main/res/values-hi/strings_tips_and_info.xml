@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="tip_main_activity_long_press_to_show_tip">Tip: ऐप में किसी भी अनुभाग के बारे में अधिक जानने के लिए उस उपशीर्षक पर देर तक दबाएं। \'पढ़/अभ्यास\' या \'परीक्षा\' के साथ प्रयास करें।</string>
 
-    <string name="tip_main_activity_long_press_to_show_tip">Tip: Long press on any subheading in the app (bold text) to know more about that section. Try with \'Read/Practice\' or \'Test\'</string>
+    <string name="tip_dialog_button_dismiss">ठीक</string>
 
-    <string name="tip_dialog_button_dismiss">Dismiss</string>
-
-    <string name="tip_main_learn_title">@string/learn_heading</string>
     <string name="tip_main_learn_message">
-        \n* The three buttons correspond to three different subjects, each with their own questions.\n
-        \n* After opening a subject, Read mode and Practice mode can be switched using top-right menu button.\n
+        \n* तीन बटन तीन अलग-अलग विषयों के हैं, प्रत्येक के अपने प्रश्न हैं.\n
+        \n* किसी विषय को खोलने के बाद, टॉप-राइट मेनू बटन का उपयोग करके रीड मोड और प्रैक्टिस मोड को स्विच किया जा सकता है.\n
         \n* The language of the questions can be changed in Settings accessible using top-right menu button.
     </string>
 
-    <string name="tip_main_test_title">@string/test_heading</string>
     <string name="tip_main_test_message">
         * A test with 20 randomly selected questions from the 3 subjects.
     </string>
 
-    <string name="tip_lt_title">@string/learn_heading</string>
     <string name="tip_lt_message">
         \n* Read mode and Practice mode can be switched using top-right menu button.\n
         \n* In Read mode, correct answers are marked.\n
@@ -27,16 +23,13 @@
     </string>
     <string name="tip_not_shown_during_test">Info dialog not shown during test</string>
 
-    <string name="tip_setting_language_for_questions_title">@string/setting_language_for_questions</string>
     <string name="tip_setting_language_for_questions_message">
         \n* The language for questions and their choices.\n
         \n* This setting is not applicable to remaining GUI components like buttons etc.
     </string>
 
-    <string name="tip_setting_theme_title">@string/setting_theme</string>
     <string name="tip_setting_theme_message">The theme of the app</string>
 
-    <string name="tip_setting_question_traversal_title">@string/setting_question_traversal_heading</string>
     <string name="tip_setting_question_traversal_message">
         \n* This is used to set how to navigate from one question to another.\n
         \n* Using buttons Previous and Next: Shows two buttons, one each at the two bottom corners.\n
@@ -44,11 +37,9 @@
         \n* One of them must be checked, and the app forces at least one to be checked.
     </string>
 
-    <string name="tip_setting_choice_validation_title">@string/setting_practice_mode_validation_trigger_heading</string>
     <string name="tip_setting_choice_validation_message">
         \n* This is used to set when to validate the user choice in practice mode.\n
         \n* Use Check Button: Provides a button at the bottom which needs to be clicked after selecting a choice to show if it is correct or not.\n
         \n* Auto validate on choice selection: As soon as the user selects a choice, it is shown to be correct or not.
     </string>
-
 </resources>

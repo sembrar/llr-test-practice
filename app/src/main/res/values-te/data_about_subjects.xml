@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="subject_0_name">రోడ్డు మరియు ట్రాఫిక్ చిహ్నాలు</string>
+    <string name="subject_1_name">రోడ్డు నియమాలు మరియు నిబంధనలు</string>
+    <string name="subject_2_name">వాహనము నడుపు సమయంలో పాటించవలసిన సాధారణ సూత్రాలు</string>
+
+    <string name="no_string">వాక్యం దొరకలేదు!</string>
+</resources>
