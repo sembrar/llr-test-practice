@@ -1,45 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="tip_main_activity_long_press_to_show_tip">చిట్కా: యాప్‌లోని ఏదైనా విభాగం గురించి మరింత తెలుసుకోవడానికి ఆ ఉపశీర్షికపై ఎక్కువసేపు నొక్కండి. \'చదువు/అభ్యసించు\' లేదా \'పరీక్ష\' తో ప్రయత్నించండి</string>
-
     <string name="tip_dialog_button_dismiss">సరే</string>
 
     <string name="tip_main_learn_message">
         \n* మూడు బటన్లు మూడు వేర్వేరు సబ్జెక్ట్‌లకు ఉన్నాయి, ఒక్కొక్కటి వాటి స్వంత ప్రశ్నలతో .\n
-        \n* సబ్జెక్ట్‌ను తెరిచిన తర్వాత, ఎగువ-కుడి మెను బటన్‌ను ఉపయోగించి రీడ్ మోడ్ మరియు ప్రాక్టీస్ మోడ్ మారవచ్చు.\n
+        \n* సబ్జెక్ట్‌ను తెరిచిన తర్వాత, ఎగువ-కుడి మెను బటన్‌ను ఉపయోగించి \'చదవడం\'కు లేదా \'అభ్యసించడం\'కు మారవచ్చు.\n
+        \n* \'చదవడం\'లో, ప్రశ్నలతో పాటు సరైన సమాధానాలు చూపబడతాయి.\n
+        \n* \'అభ్యసించడం\'లో సరైన సమాధానం చూసే ముందు ప్రశ్నను జవాబు చేసేందుకు ప్రయత్నించవచ్చు.\n
         \n* ఎగువ-కుడి మెను బటన్‌ను ఉపయోగించి, సెట్టింగ్స్ లోకి వెళ్లి, ప్రశ్నల భాషను మార్చవచ్చు.
     </string>
 
     <string name="tip_main_test_message">
-        * A test with 20 randomly selected questions from the 3 subjects.
+        * ఆ 3 సబ్జెక్టుల నుంచి యాదృచ్ఛికంగా ఎంపిక చేసిన 20 ప్రశ్నలతో ఓ పరీక్ష.
     </string>
 
-    <string name="tip_lt_message">
-        \n* Read mode and Practice mode can be switched using top-right menu button.\n
-        \n* In Read mode, correct answers are marked.\n
-        \n* In Practice mode, users can attempt before seeing the correct answer.\n
-        \n* The language of the questions can be changed in Settings accessible using top-right menu button.\n
-        \n* Go to Settings page (accessible via top-right menu button) for more Settings.
+    <string name="tip_lt_message_read">
+        \n* ఇప్పుడు \'చదవడం\'లో ఉన్నాము
+        \n* ఎగువ-కుడి మెను బటన్‌ను ఉపయోగించి \'చదవడం\'కు లేదా \'అభ్యసించడం\'కు మారవచ్చు.\n
+        \n* \'చదవడం\'లో, ప్రశ్నలతో పాటు సరైన సమాధానాలు చూపబడతాయి.\n
+        \n* \'అభ్యసించడం\'లో సరైన సమాధానం చూసే ముందు ప్రశ్నను జవాబు చేసేందుకు ప్రయత్నించవచ్చు.\n
+        \n* ఎగువ-కుడి మెను బటన్‌ను ఉపయోగించి, సెట్టింగ్స్ లోకి వెళ్లి, ప్రశ్నల భాషను మార్చవచ్చు.
+        \n* మరిన్ని సెట్టింగ్‌ల కోసం పైన వివరించబడిన సెట్టింగ్‌ల పేజీకి వెళ్లండి.
     </string>
-    <string name="tip_not_shown_during_test">Info dialog not shown during test</string>
+
+    <string name="tip_lt_message_practice">
+        \n* ఇప్పుడు \'అభ్యసించడం\'లో ఉన్నాము
+        \n* ఎగువ-కుడి మెను బటన్‌ను ఉపయోగించి \'చదవడం\'కు లేదా \'అభ్యసించడం\'కు మారవచ్చు.\n
+        \n* \'చదవడం\'లో, ప్రశ్నలతో పాటు సరైన సమాధానాలు చూపబడతాయి.\n
+        \n* \'అభ్యసించడం\'లో సరైన సమాధానం చూసే ముందు ప్రశ్నను జవాబు చేసేందుకు ప్రయత్నించవచ్చు.\n
+        \n* ఎగువ-కుడి మెను బటన్‌ను ఉపయోగించి, సెట్టింగ్స్ లోకి వెళ్లి, ప్రశ్నల భాషను మార్చవచ్చు.
+        \n* మరిన్ని సెట్టింగ్‌ల కోసం పైన వివరించబడిన సెట్టింగ్‌ల పేజీకి వెళ్లండి.
+    </string>
 
     <string name="tip_setting_language_for_questions_message">
-        \n* The language for questions and their choices.\n
-        \n* This setting is not applicable to remaining GUI components like buttons etc.
+        \n* ప్రశ్నలు మరియు వాటి ఎంపికల కోసం భాష.\n
+        \n* బటన్లు మొదలగు GUI భాగాలకు ఈ సెట్టింగ్ వర్తించదు.
     </string>
 
-    <string name="tip_setting_theme_message">The theme of the app</string>
+    <string name="tip_setting_theme_message">అప్ యొక్క థీమ్</string>
 
     <string name="tip_setting_question_traversal_message">
-        \n* This is used to set how to navigate from one question to another.\n
-        \n* Using buttons Previous and Next: Shows two buttons, one each at the two bottom corners.\n
-        \n* Using swipe: Swipe on the screen to navigate between questions.\n
-        \n* One of them must be checked, and the app forces at least one to be checked.
+        \n* ఇది ఒక ప్రశ్న నుండి మరొక ప్రశ్నకు ఎలా నావిగేట్ చేయాలో సెట్ చేయడానికి ఉపయోగించబడుతుంది.\n
+        \n* మునుపటి మరియు తదుపరి బటన్‌లను ఉపయోగించడం: రెండు దిగువ మూలల్లో ఒక్కొక్కటిగా రెండు బటన్‌లను చూపబడతాయి.\n
+        \n* స్వైప్‌‌ని ఉపయోగించడం: స్క్రీన్‌పై స్వైప్‌తో ప్రశ్నల మధ్య నావిగేట్ చేయండి.\n
+        \n* వాటిలో కనీసం ఒకటి తప్పనిసరిగా చెక్ చేయబడి ఉండాలి.
     </string>
 
     <string name="tip_setting_choice_validation_message">
-        \n* This is used to set when to validate the user choice in practice mode.\n
-        \n* Use Check Button: Provides a button at the bottom which needs to be clicked after selecting a choice to show if it is correct or not.\n
-        \n* Auto validate on choice selection: As soon as the user selects a choice, it is shown to be correct or not.
+        \n* అభ్యసించడం లో సరైన సమాధానం ఎప్పుడు చూపించాలో నిర్ధారించుటకు ఈ సెట్టింగ్ వాడబడుతుంది.\n
+        \n* చెక్ బటన్: ఓ సమాధానం ఎంచుకున్నాక సరైన సమాధానం చూసేందుకు ఈ బటన్ ను నొక్కాలి.\n
+        \n* సమాధానం ఎనుకున్న వెంటనే, సరైన సమాధానం చూపబడుతుంది.
     </string>
 </resources>

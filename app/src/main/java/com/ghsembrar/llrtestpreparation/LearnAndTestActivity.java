@@ -110,8 +110,10 @@ public class LearnAndTestActivity extends AppCompatActivity {
         findViewById(R.id.lt_radioButton_option3).setOnClickListener(v -> clicked_radio_button(3));
         // title textView to a tip in long-press
         findViewById(R.id.lt_textView_timer).setOnClickListener(v -> {
-            if (mode == MODE.PRACTICE || mode == MODE.READ) {
-                TipsUtility.show_tip(this, R.string.tip_lt_title, R.string.tip_lt_message);
+            if (mode == MODE.PRACTICE) {
+                TipsUtility.show_tip(this, R.string.tip_lt_title, R.string.tip_lt_message_practice);
+            } else if (mode == MODE.READ) {
+                TipsUtility.show_tip(this, R.string.tip_lt_title, R.string.tip_lt_message_read);
             }
         });
 

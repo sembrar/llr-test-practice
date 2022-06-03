@@ -1,45 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="tip_main_activity_long_press_to_show_tip">Tip: ऐप में किसी भी अनुभाग के बारे में अधिक जानने के लिए उस उपशीर्षक पर देर तक दबाएं। \'पढ़/अभ्यास\' या \'परीक्षा\' के साथ प्रयास करें।</string>
-
     <string name="tip_dialog_button_dismiss">ठीक</string>
 
     <string name="tip_main_learn_message">
-        \n* तीन बटन तीन अलग-अलग विषयों के हैं, प्रत्येक के अपने प्रश्न हैं.\n
-        \n* किसी विषय को खोलने के बाद, टॉप-राइट मेनू बटन का उपयोग करके रीड मोड और प्रैक्टिस मोड को स्विच किया जा सकता है.\n
-        \n* The language of the questions can be changed in Settings accessible using top-right menu button.
+        \n* तीन बटन तीन अलग-अलग विषयों के हैं, प्रत्येक के अपने प्रश्न हैं।\n
+        \n* किसी विषय को खोलने के बाद, ऊँचे-दाई ओर के मेनू बटन का उपयोग करके रीड मोड और प्रैक्टिस मोड को स्विच किया जा सकता है।\n
+        \n* पढ़ने के मोड में, प्रश्न के साथ सही उत्तर दिखाए जाते हैं।\n
+        \n* अभ्यास मोड में, सही उत्तर सामने आने से पहले प्रश्नों का प्रयास किया जा सकता है।\n
+        \n* सेटिंग्स में प्रश्नों की भाषा बदली जा सकती है। वहाँ पहुँचने केलिए ऊँचे-दाई ओर के मेनू बटन का इस्तमाल कीजिए।
     </string>
 
     <string name="tip_main_test_message">
-        * A test with 20 randomly selected questions from the 3 subjects.
+        * उन 3 विषयों में से 20 बेतरतीब ढंग से चयनित प्रश्नों के साथ एक परीक्षा।
     </string>
 
-    <string name="tip_lt_message">
-        \n* Read mode and Practice mode can be switched using top-right menu button.\n
-        \n* In Read mode, correct answers are marked.\n
-        \n* In Practice mode, users can attempt before seeing the correct answer.\n
-        \n* The language of the questions can be changed in Settings accessible using top-right menu button.\n
-        \n* Go to Settings page (accessible via top-right menu button) for more Settings.
+    <string name="tip_lt_message_read">
+        \n* अब पढ़ने के मोड में है।\n
+        \n* ऊँचे-दाई ओर के मेनू बटन इस्तमाल करके, पढ़ने के मोड और अभ्यास मोड के बीच में बदल सकते हैं।\n
+        \n* पढ़ने के मोड में, प्रश्न के साथ सही उत्तर दिखाए जाते हैं।\n
+        \n* अभ्यास मोड में, सही उत्तर सामने आने से पहले प्रश्नों का प्रयास किया जा सकता है।\n
+        \n* सेटिंग्स में प्रश्नों की भाषा बदली जा सकती है। वहाँ पहुँचने केलिए ऊँचे-दाई ओर के मेनू बटन का इस्तमाल कीजिए।\n
+        \n* अधिक सेटिंग्स के लिए सेटिंग पृष्ठ पर जाएं।
     </string>
-    <string name="tip_not_shown_during_test">Info dialog not shown during test</string>
+    <string name="tip_lt_message_practice">
+        \n* अब अभ्यास मोड में है।\n
+        \n* ऊँचे-दाई ओर के मेनू बटन इस्तमाल करके, पढ़ने के मोड और अभ्यास मोड के बीच में बदल सकते हैं।\n
+        \n* पढ़ने के मोड में, प्रश्न के साथ सही उत्तर दिखाए जाते हैं।\n
+        \n* अभ्यास मोड में, सही उत्तर सामने आने से पहले प्रश्नों का प्रयास किया जा सकता है।\n
+        \n* सेटिंग्स में प्रश्नों की भाषा बदली जा सकती है। वहाँ पहुँचने केलिए ऊँचे-दाई ओर के मेनू बटन का इस्तमाल कीजिए।\n
+        \n* अधिक सेटिंग्स के लिए सेटिंग पृष्ठ पर जाएं।
+    </string>
 
     <string name="tip_setting_language_for_questions_message">
-        \n* The language for questions and their choices.\n
-        \n* This setting is not applicable to remaining GUI components like buttons etc.
+        \n* प्रश्नों और उनके जवाब-विकल्प के भाषा\n
+        \n* यह सेटिंग शेष GUI घटकों जैसे बटन, मेनू आदि पर लागू नहीं होती है।
     </string>
 
-    <string name="tip_setting_theme_message">The theme of the app</string>
+    <string name="tip_setting_theme_message">ऐप की थीम</string>
 
     <string name="tip_setting_question_traversal_message">
-        \n* This is used to set how to navigate from one question to another.\n
-        \n* Using buttons Previous and Next: Shows two buttons, one each at the two bottom corners.\n
-        \n* Using swipe: Swipe on the screen to navigate between questions.\n
-        \n* One of them must be checked, and the app forces at least one to be checked.
+        \n* इसका उपयोग यह सेट करने के लिए किया जाता है कि एक प्रश्न से दूसरे प्रश्न पर कैसे नेविगेट किया जाए।\n
+        \n* पिछला और अगला बटन का उपयोग करना: दो बटन दिखा जाता है, प्रत्येक दो निचले कोनों पर।\n
+        \n* स्वाइप का उपयोग करना: प्रश्नों के बीच नेविगेट करने के लिए स्क्रीन पर स्वाइप करें।\n
+        \n* उनमें से एक को चेक किया जाना चाहिए, और ऐप कम से कम एक को चेक करने के लिए बाध्य करता है।
     </string>
 
     <string name="tip_setting_choice_validation_message">
-        \n* This is used to set when to validate the user choice in practice mode.\n
-        \n* Use Check Button: Provides a button at the bottom which needs to be clicked after selecting a choice to show if it is correct or not.\n
-        \n* Auto validate on choice selection: As soon as the user selects a choice, it is shown to be correct or not.
+        \n* यह सेट्टिंग इसलिए है कि, अभ्यास मोड में सही उत्तर कब दिखाना चाहिए।\n
+        \n* जाँच बटन का उपयोग करें: नीचे एक बटन दिखा जाता है। जवाब-विकल्पों में एक को चुनने के बाद सही उत्तर देखने केलिए इस जाँच बटन को दबाना है।\n
+        \n* ज़वाब चुनने के ठीक बाद:जवाब-विकल्पों में एक को चुनते ही, सही उत्तर दिखाया जाता है।
     </string>
 </resources>

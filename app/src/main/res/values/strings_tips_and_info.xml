@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="tip_main_activity_long_press_to_show_tip">Tip: Long press on any subheading in the app (bold text) to know more about that section. Try with \'Read/Practice\' or \'Test\'</string>
-
     <string name="tip_dialog_button_dismiss">Dismiss</string>
 
     <string name="tip_main_learn_title">@string/learn_heading</string>
     <string name="tip_main_learn_message">
         \n* The three buttons correspond to three different subjects, each with their own questions.\n
         \n* After opening a subject, Read mode and Practice mode can be switched using top-right menu button.\n
+        \n* In Read mode, correct answers are shown by default.\n
+        \n* In Practice mode, questions can be attempted before the correct answer is revealed.\n
         \n* The language of the questions can be changed in Settings accessible using top-right menu button.
     </string>
 
@@ -18,14 +18,22 @@
     </string>
 
     <string name="tip_lt_title">@string/learn_heading</string>
-    <string name="tip_lt_message">
+    <string name="tip_lt_message_read">
+        \n* Currently in Read mode.\n
         \n* Read mode and Practice mode can be switched using top-right menu button.\n
-        \n* In Read mode, correct answers are marked.\n
-        \n* In Practice mode, users can attempt before seeing the correct answer.\n
+        \n* In Read mode, correct answers are shown by default.\n
+        \n* In Practice mode, questions can be attempted before the correct answer is revealed.\n
         \n* The language of the questions can be changed in Settings accessible using top-right menu button.\n
         \n* Go to Settings page (accessible via top-right menu button) for more Settings.
     </string>
-    <string name="tip_not_shown_during_test">Info dialog not shown during test</string>
+    <string name="tip_lt_message_practice">
+        \n* Currently in Practice mode.\n
+        \n* Read mode and Practice mode can be switched using top-right menu button.\n
+        \n* In Read mode, correct answers are shown by default.\n
+        \n* In Practice mode, questions can be attempted before the correct answer is revealed.\n
+        \n* The language of the questions can be changed in Settings accessible using top-right menu button.\n
+        \n* Go to Settings page (accessible via top-right menu button) for more Settings.
+    </string>
 
     <string name="tip_setting_language_for_questions_title">@string/setting_language_for_questions</string>
     <string name="tip_setting_language_for_questions_message">
