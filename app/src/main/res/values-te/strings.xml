@@ -13,13 +13,6 @@
     <string name="setting_theme">థీమ్:</string>
     <string name="theme_follow_system">సిస్టం ను అనుసరించు</string>
     <string name="button_previous">మునుపటి</string>
-    <string name="tip_main_learn_title">\@string/learn_heading</string>
-    <string name="tip_main_test_title">\@string/test_heading</string>
-    <string name="tip_lt_title">\@string/learn_heading</string>
-    <string name="tip_setting_language_for_questions_title">\@string/setting_language_for_questions</string>
-    <string name="tip_setting_theme_title">\@string/setting_theme</string>
-    <string name="tip_setting_question_traversal_title">\@string/setting_question_traversal_heading</string>
-    <string name="tip_setting_choice_validation_title">\@string/setting_practice_mode_validation_trigger_heading</string>
     <string name="button_next">తరువాతి</string>
     <string name="button_check">తనిఖీ</string>
     <string name="button_finish">ముగించు</string>
