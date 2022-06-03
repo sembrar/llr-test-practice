@@ -59,4 +59,8 @@
 
     <string name="info_textView"><a href="">[info]</a></string>
 
+    <string name="alert_message_are_you_sure">Are you sure?</string>
+    <string name="alert_button_yes">Yes</string>
+    <string name="alert_button_no">No</string>
+
 </resources>

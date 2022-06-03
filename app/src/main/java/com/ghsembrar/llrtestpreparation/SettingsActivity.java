@@ -1,5 +1,6 @@
 package com.ghsembrar.llrtestpreparation;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
@@ -50,7 +51,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         findViewById(R.id.settings_radioButton_themeDark).setOnClickListener(v -> set_theme(0));
         findViewById(R.id.settings_radioButton_themeLight).setOnClickListener(v -> set_theme(1));
         findViewById(R.id.settings_radioButton_themeFollowSystem).setOnClickListener(v -> set_theme(2));
-        findViewById(R.id.settings_button_restore_defaults).setOnClickListener(v -> reset_to_defaults());
+        findViewById(R.id.settings_button_restore_defaults).setOnClickListener(v -> clicked_reset_to_defaults());
 
         // ----
         load_settings_from_shared_prefs();
@@ -193,12 +194,21 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     }
 
     private void reset_to_defaults() {
-        // todo ask for confirmation
         SharedPreferences sharedPreferences = get_application_context_shared_prefs(this);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.clear();
         editor.apply();
         load_settings_from_shared_prefs();
+        set_theme(this);
+    }
+
+    private void clicked_reset_to_defaults() {
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.button_restore_defaults)
+                .setMessage(R.string.alert_message_are_you_sure)
+                .setPositiveButton(R.string.alert_button_yes, (dialog, which) -> reset_to_defaults())
+                .setNegativeButton(R.string.alert_button_no, null)
+                .create().show();
     }
 
     @Override

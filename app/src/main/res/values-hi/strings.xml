@@ -32,4 +32,8 @@
     <string name="setting_practice_mode_validation_trigger_heading">अभ्यास करते समय सही जवाब कब दिखाना:</string>
     <string name="app_name">एल.एल.आर टेस्ट प्रैक्टिस</string>
     <string name="test_old_unfinished_details">अधूरा परीक्षण:\nजवाब चुना: %1$d\nशेष समय: %2$d:%3$02d</string>
+    <string name="alert_message_are_you_sure">आगे बढ़ना?</string>
+    <string name="alert_button_yes">हाँ</string>
+    <string name="alert_button_no">नहीं</string>
+    <string name="info_textView"><a href="">[जानकारी]</a></string>
 </resources>

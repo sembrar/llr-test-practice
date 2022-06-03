@@ -32,4 +32,8 @@
     <string name="test_old_unfinished_details">పూర్తవని పరీక్ష:\\జవాబు చేసినవి: %1$d\\nమిగిలిన సమయం: %2$d:%3$02d</string>
     <string name="learn_details">వివరాలు</string>
     <string name="app_name">ఎల్.ఎల్.ఆర్ టెస్ట్ ప్రాక్టీస్</string>
+    <string name="alert_message_are_you_sure">కొనసాగించాలా?</string>
+    <string name="alert_button_yes">అవును</string>
+    <string name="alert_button_no">ఒద్దు</string>
+    <string name="info_textView"><a href="">[సమాచారం]</a></string>
 </resources>
