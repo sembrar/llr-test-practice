@@ -6,7 +6,7 @@
     <string name="test_new">కొత్త పరీక్ష</string>
     <string name="heading_num_questions">(%1$d ప్రశ్నలు)</string>
     <string name="heading_score">(మార్కులు: %1$d/%2$d)</string>
-    <string name="test_details">20 ప్రశ్నలు 10 నిమిషాల్లో.\\nఉత్తీర్ణులవ్వుటకు: 12/20</string>
+    <string name="test_details">20 ప్రశ్నలు 10 నిమిషాల్లో.\nఉత్తీర్ణులవ్వుటకు: 12/20</string>
     <string name="button_restore_defaults">నిర్ణీత విలువలకు మార్చు</string>
     <string name="theme_dark">చీకటి</string>
     <string name="theme_light">కాంతి</string>
