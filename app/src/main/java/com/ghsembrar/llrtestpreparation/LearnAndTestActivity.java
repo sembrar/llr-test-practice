@@ -70,7 +70,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn_and_test);
 
-        Log.i(TAG, "onCreate");
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onCreate");
 
         // read intent data
         Intent intent = getIntent();
@@ -272,8 +272,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
                 break;
         }
 
-        if (CONSTANTS.ALLOW_DEBUG)
-            Log.i(TAG, "set_click_ability_of_option_buttons_based_on_mode_and_model: Clickable:" + clickable);
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "set_click_ability_of_option_buttons_based_on_mode_and_model: Clickable:" + clickable);
 
         for (int radio_button_id : radioButtonIDs) {
             findViewById(radio_button_id).setClickable(clickable);
@@ -432,7 +431,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i(TAG, "onResume");
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "onResume");
 
         use_check_button_in_practice = SettingsActivity.get_setting_use_check_button_in_practice_mode(this);
         use_swipe_for_traversal = SettingsActivity.get_setting_use_swipe_for_traversal(this);
