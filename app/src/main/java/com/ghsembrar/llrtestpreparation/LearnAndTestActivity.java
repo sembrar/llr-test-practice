@@ -130,7 +130,7 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         // get mode (read/practice) from sharedPrefs
         SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
-        boolean is_read_mode = sharedPreferences.getBoolean(KEY_SHARED_PREF_LEARN_MODE_IS_READ, true);
+        boolean is_read_mode = sharedPreferences.getBoolean(KEY_SHARED_PREF_LEARN_MODE_IS_READ, false);
         if (is_read_mode) mode = MODE.READ;
         else mode = MODE.PRACTICE;
     }
