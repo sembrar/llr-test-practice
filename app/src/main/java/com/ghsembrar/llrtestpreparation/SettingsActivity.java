@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 
 public class SettingsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
@@ -80,6 +81,9 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
             int tip_message = tips_messages[i];
             findViewById(tip_tView).setOnClickListener(v -> TipsUtility.show_tip(this, tip_title, tip_message));
         }
+
+        findViewById(R.id.settings_checkBox_question_traversal_buttons).setOnClickListener(this::clickedSettingForTraversal);
+        findViewById(R.id.settings_checkBox_question_traversal_swipe).setOnClickListener(this::clickedSettingForTraversal);
     }
 
     private static SharedPreferences get_application_context_shared_prefs(Context context) {
@@ -231,5 +235,26 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
         // save settings
         save_settings_to_shared_prefs();
+    }
+
+    private void clickedSettingForTraversal(View view) {
+        CheckBox checkBox_traversal_buttons = findViewById(R.id.settings_checkBox_question_traversal_buttons);
+        CheckBox checkBox_traversal_swipe = findViewById(R.id.settings_checkBox_question_traversal_swipe);
+
+        // don't do anything if one or both are checked
+        if (checkBox_traversal_buttons.isChecked() || checkBox_traversal_swipe.isChecked()) {
+            if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clickedSettingForTraversal: At least one of them is checked");
+            return;
+        }
+
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "clickedSettingForTraversal: Both are unChecked. Forcing the other to be checked");
+
+        if (view.getId() == checkBox_traversal_buttons.getId()) {
+            checkBox_traversal_swipe.setChecked(true);
+        } else {
+            checkBox_traversal_buttons.setChecked(true);
+        }
+
+        Toast.makeText(this, R.string.setting_toast_for_traversal_force_at_least_one, Toast.LENGTH_SHORT).show();
     }
 }

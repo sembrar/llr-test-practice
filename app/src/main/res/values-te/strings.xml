@@ -36,4 +36,5 @@
     <string name="alert_button_yes">అవును</string>
     <string name="alert_button_no">ఒద్దు</string>
     <string name="info_textView"><a href="">[సమాచారం]</a></string>
+    <string name="setting_toast_for_traversal_force_at_least_one">వీటిలో కనీసం ఒకటి సెట్ చేయాలి.\nకాబట్టి, మరొకటి సెట్ చేయబడింది.</string>
 </resources>

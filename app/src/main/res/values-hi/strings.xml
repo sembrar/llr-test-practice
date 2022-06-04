@@ -36,4 +36,5 @@
     <string name="alert_button_yes">हाँ</string>
     <string name="alert_button_no">नहीं</string>
     <string name="info_textView"><a href="">[जानकारी]</a></string>
+    <string name="setting_toast_for_traversal_force_at_least_one">इनमें से कम से कम एक को सेट करने की जरूरत है।\nतो, दूसरा सेट किया गया है।</string>
 </resources>

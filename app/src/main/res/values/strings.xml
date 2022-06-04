@@ -63,4 +63,6 @@
     <string name="alert_button_yes">Yes</string>
     <string name="alert_button_no">No</string>
 
+    <string name="setting_toast_for_traversal_force_at_least_one">At least one of these needs to be set.\nSo, the other is set.</string>
+
 </resources>
