@@ -16,6 +16,8 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 
 public class SettingsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     
@@ -91,8 +93,23 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
     }
 
     public static String get_setting_code_of_language_choice(Context context) {
+
+        final String[] available_languages_codes = context.getResources().getStringArray(R.array.available_languages_as_codes);
+
+        String cur_system_language_code = Locale.getDefault().getLanguage();
+        if (CONSTANTS.ALLOW_DEBUG) Log.i(TAG, "get_setting_code_of_language_choice: system:" + cur_system_language_code);
+
+        boolean system_language_code_in_available_lang_codes = false;
+        for (String available_languages_code : available_languages_codes) {
+            if (cur_system_language_code.equals(available_languages_code)) {
+                system_language_code_in_available_lang_codes = true;
+                break;
+            }
+        }
+
         return get_application_context_shared_prefs(context)
-                .getString(SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG, "en");
+                .getString(SHARED_PREFS_KEY_CHOSEN_LANGUAGE_IF_NOT_USE_SYSTEM_LANG,
+                        system_language_code_in_available_lang_codes ? cur_system_language_code : "en");
     }
 
     private static int get_setting_theme(Context context) {
