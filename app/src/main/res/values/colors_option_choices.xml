@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_correct_choice">#265A01</color>
+    <color name="color_wrong_choice">#972C2C</color>
+    <color name="color_alpha_only">#00000000</color>
+
+    <color name="color_option_text_with_no_custom_bg">@color/black</color>
+    <color name="color_option_text_with_custom_bg">@color/white</color>
+</resources>
