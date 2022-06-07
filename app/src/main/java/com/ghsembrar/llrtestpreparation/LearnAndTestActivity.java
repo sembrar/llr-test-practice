@@ -310,6 +310,13 @@ public class LearnAndTestActivity extends AppCompatActivity {
 
         // color:
 
+        final int text_color_with_no_custom_bg = getResources().getColor(R.color.color_option_text_with_no_custom_bg);
+        final int text_color_with_custom_bg = getResources().getColor(R.color.color_option_text_with_custom_bg);
+        if (CONSTANTS.ALLOW_DEBUG)
+            Log.i(TAG, "mark_user_and_or_correct_answer_option_based_on_mode_and_model: Without custom bg: " + text_color_with_no_custom_bg);
+        if (CONSTANTS.ALLOW_DEBUG)
+            Log.i(TAG, "mark_user_and_or_correct_answer_option_based_on_mode_and_model: With custom bg: " + text_color_with_custom_bg);
+
         final int bg_color_correct_option = getResources().getColor(R.color.color_correct_choice);
         final int bg_color_wrong_option = getResources().getColor(R.color.color_wrong_choice);
         final int bg_color_alpha_only = getResources().getColor(R.color.color_alpha_only);
@@ -342,11 +349,21 @@ public class LearnAndTestActivity extends AppCompatActivity {
         // any other user option gets wrong option background color
         // all other options get alpha background color
         for (int i = 0; i < radioButtonIDs.length; i++) {
-            int color;
-            if (i == correct_answer) color = bg_color_correct_option;
-            else if (i == user_answer) color = bg_color_wrong_option;
-            else color = bg_color_alpha_only;
+            int color, text_color;
+            if (i == correct_answer) {
+                color = bg_color_correct_option;
+                text_color = text_color_with_custom_bg;
+            }
+            else if (i == user_answer) {
+                color = bg_color_wrong_option;
+                text_color = text_color_with_custom_bg;
+            }
+            else {
+                color = bg_color_alpha_only;
+                text_color = text_color_with_no_custom_bg;
+            }
             findViewById(radioButtonIDs[i]).setBackgroundColor(color);
+            ((RadioButton) findViewById(radioButtonIDs[i])).setTextColor(text_color);
         }
     }
 
