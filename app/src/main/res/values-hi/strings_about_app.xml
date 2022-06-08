@@ -4,7 +4,7 @@
     <string name="about_text">यह ऐप एलएलआर टेस्ट के लिए अध्ययन करने का एक इंटरैक्टिव तरीका प्रदान करता है। ऐप में प्रश्न, आंध्र प्रदेश राज्य सड़क परिवहन प्राधिकरण द्वारा, आम जनता के उपयोग के लिए उपलब्ध कराए गए ओपन-एक्सेस पीडीएफ दस्तावेजों से लिए गए हैं।</string>
 
     <string name="source_code_heading">ऐप का सोर्स कोड:</string>
-    <string name="source_code_text">ऐप का सोर्स कोड <a href="https://www.github.com">गिटहब</a> पर उपलब्ध है। (ब्राउज़र में खुलता है)</string>
+    <string name="source_code_text">ऐप का सोर्स कोड <a href="https://github.com/sembrar/llr-test-practice">गिटहब</a> पर उपलब्ध है। (ब्राउज़र में खुलता है)</string>
 
     <string name="imp_note_heading">महत्वपूर्ण लेख:</string>
     <string name="imp_note_text">इस ऐप में दिखाए गए सड़क के संकेत, नियम, सिद्धांत भारत पर लागू होते हैं। अन्य देशों में कुछ भेद हो सकते हैं, उदाहरण के लिए, भारत में, वाहन बाईं ओर चलते हैं, जो कुछ देशों में अलग है।</string>
