@@ -1,3 +1,5 @@
+# LLR Test Practice App - Privacy policy
+
 This app does not collect/share any user data.
 
 The app is for learning road signs, rules, principles, through multiple choice questions.
