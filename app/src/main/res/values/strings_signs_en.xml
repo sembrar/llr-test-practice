@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="en00q" translatable="false">%1$d. A red traffic light means</string>
+    <string name="en00a" translatable="false">Must stop behind white stop line</string>
+    <string name="en00b" translatable="false">You may go straight if there is no other traffic</string>
+    <string name="en00c" translatable="false">You may turn left if it is safe to do so</string>
+    <string name="en00d" translatable="false">You must slow down and prepare to stop if traffic has started to cross.</string>
+
+    <string name="en01q" translatable="false">%1$d. A flashing yellow light indicates</string>
+    <string name="en01a" translatable="false">Slow down and proceed with caution</string>
+    <string name="en01b" translatable="false">No entry</string>
+    <string name="en01c" translatable="false">Stop here</string>
+    <string name="en01d" translatable="false">None of the above</string>
+
+    <string name="en02q" translatable="false">%1$d. A flashing red light indicates</string>
+    <string name="en02a" translatable="false">Stop</string>
+    <string name="en02b" translatable="false">Bright sun</string>
+    <string name="en02c" translatable="false">Stop, observe and proceed with caution</string>
+    <string name="en02d" translatable="false">None of the above</string>
+
+    <string name="en03q" translatable="false">%1$d. The signs marked in this circle are..</string>
+    <string name="en03a" translatable="false">Mandatory</string>
+    <string name="en03b" translatable="false">Cautionary</string>
+    <string name="en03c" translatable="false">Informatory</string>
+    <string name="en03d" translatable="false">All of the above</string>
+
+    <string name="en04q" translatable="false">%1$d. The signs marked in this triangle are..</string>
+    <string name="en04a" translatable="false">Mandatory</string>
+    <string name="en04b" translatable="false">Cautionary</string>
+    <string name="en04c" translatable="false">Informatory</string>
+    <string name="en04d" translatable="false">All of the above</string>
+
+    <string name="en05q" translatable="false">%1$d. The signs marked in this rectangle are..</string>
+    <string name="en05a" translatable="false">Mandatory</string>
+    <string name="en05b" translatable="false">Cautionary</string>
+    <string name="en05c" translatable="false">Informatory</string>
+    <string name="en05d" translatable="false">All of the above</string>
+
+    <string name="en06q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en06a" translatable="false">Stop</string>
+    <string name="en06b" translatable="false">One way sign</string>
+    <string name="en06c" translatable="false">No parking</string>
+    <string name="en06d" translatable="false">No stopping</string>
+
+    <string name="en07q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en07a" translatable="false">Left hand curve</string>
+    <string name="en07b" translatable="false">Informatory</string>
+    <string name="en07c" translatable="false">Warning sign</string>
+    <string name="en07d" translatable="false">Give way</string>
+
+    <string name="en08q" translatable="false">%1$d. You missed your way and find you are on a one-way street. You should</string>
+    <string name="en08a" translatable="false">Reverse out of the road</string>
+    <string name="en08b" translatable="false">Blow your horn and drive</string>
+    <string name="en08c" translatable="false">Continue to the end of the road</string>
+    <string name="en08d" translatable="false">Reverse into a driveway</string>
+
+    <string name="en09q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en09a" translatable="false">One way</string>
+    <string name="en09b" translatable="false">Both ways prohibited</string>
+    <string name="en09c" translatable="false">Right turn prohibited</string>
+    <string name="en09d" translatable="false">None of the above</string>
+
+    <string name="en010q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en010a" translatable="false">No entry</string>
+    <string name="en010b" translatable="false">One way sign</string>
+    <string name="en010c" translatable="false">Compulsory straight ahead</string>
+    <string name="en010d" translatable="false">Left turn prohibited</string>
+
+    <string name="en011q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en011a" translatable="false">Vehicle prohibited in both direction</string>
+    <string name="en011b" translatable="false">Left turn prohibited</string>
+    <string name="en011c" translatable="false">Overtaking prohibited</string>
+    <string name="en011d" translatable="false">Right turn prohibited</string>
+
+    <string name="en012q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en012a" translatable="false">Cycle prohibited</string>
+    <string name="en012b" translatable="false">Truck prohibited</string>
+    <string name="en012c" translatable="false">Right turn prohibited</string>
+    <string name="en012d" translatable="false">Left turn prohibited</string>
+
+    <string name="en013q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en013a" translatable="false">Left turn prohibited</string>
+    <string name="en013b" translatable="false">Right turn prohibited</string>
+    <string name="en013c" translatable="false">U-turn prohibited</string>
+    <string name="en013d" translatable="false">Overtaking prohibited</string>
+
+    <string name="en014q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en014a" translatable="false">Truck prohibited</string>
+    <string name="en014b" translatable="false">All motor vehicles prohibited</string>
+    <string name="en014c" translatable="false">Bullock cart prohibited</string>
+    <string name="en014d" translatable="false">Cycle prohibited</string>
+
+    <string name="en015q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en015a" translatable="false">Overtaking prohibited</string>
+    <string name="en015b" translatable="false">Left turn prohibited</string>
+    <string name="en015c" translatable="false">Right turn prohibited</string>
+    <string name="en015d" translatable="false">Vehicle prohibited in both direction</string>
+
+    <string name="en016q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en016a" translatable="false">No smoking</string>
+    <string name="en016b" translatable="false">Right turn prohibited</string>
+    <string name="en016c" translatable="false">Cycle prohibited</string>
+    <string name="en016d" translatable="false">Horn prohibited</string>
+
+    <string name="en017q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en017a" translatable="false">Pedestrians prohibited</string>
+    <string name="en017b" translatable="false">School zone</string>
+    <string name="en017c" translatable="false">Play zone</string>
+    <string name="en017d" translatable="false">None of the above</string>
+
+    <string name="en018q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en018a" translatable="false">Cycle track</string>
+    <string name="en018b" translatable="false">Cycles prohibited</string>
+    <string name="en018c" translatable="false">Cycle parking</string>
+    <string name="en018d" translatable="false">None of the above</string>
+
+    <string name="en019q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en019a" translatable="false">All vehicles prohibited</string>
+    <string name="en019b" translatable="false">Trucks parking</string>
+    <string name="en019c" translatable="false">Ghat road</string>
+    <string name="en019d" translatable="false">Trucks prohibited</string>
+
+    <string name="en020q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en020a" translatable="false">No stopping</string>
+    <string name="en020b" translatable="false">Restriction ends sign</string>
+    <string name="en020c" translatable="false">No parking</string>
+    <string name="en020d" translatable="false">Speed limit</string>
+
+    <string name="en021q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en021a" translatable="false">No parking</string>
+    <string name="en021b" translatable="false">No stopping or standing</string>
+    <string name="en021c" translatable="false">Length limit</string>
+    <string name="en021d" translatable="false">Speed limit</string>
+
+    <string name="en022q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en022a" translatable="false">Stop</string>
+    <string name="en022b" translatable="false">Restriction ends sign</string>
+    <string name="en022c" translatable="false">No entry</string>
+    <string name="en022d" translatable="false">No parking</string>
+
+    <string name="en023q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en023a" translatable="false">Length limit</string>
+    <string name="en023b" translatable="false">Speed limit</string>
+    <string name="en023c" translatable="false">Load limit</string>
+    <string name="en023d" translatable="false">Height limit</string>
+
+    <string name="en024q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en024a" translatable="false">Load limit</string>
+    <string name="en024b" translatable="false">Speed limit</string>
+    <string name="en024c" translatable="false">Width limit</string>
+    <string name="en024d" translatable="false">Height limit</string>
+
+    <string name="en025q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en025a" translatable="false">Axle load limit</string>
+    <string name="en025b" translatable="false">Height limit</string>
+    <string name="en025c" translatable="false">Width limit</string>
+    <string name="en025d" translatable="false">Load limit</string>
+
+    <string name="en026q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en026a" translatable="false">Length limit</string>
+    <string name="en026b" translatable="false">Speed limit</string>
+    <string name="en026c" translatable="false">Load limit</string>
+    <string name="en026d" translatable="false">Height limit</string>
+
+    <string name="en027q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en027a" translatable="false">Height limit</string>
+    <string name="en027b" translatable="false">Speed limit</string>
+    <string name="en027c" translatable="false">Width limit</string>
+    <string name="en027d" translatable="false">Length limit</string>
+
+    <string name="en028q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en028a" translatable="false">Axle load limit</string>
+    <string name="en028b" translatable="false">Width limit</string>
+    <string name="en028c" translatable="false">Load limit</string>
+    <string name="en028d" translatable="false">Height limit</string>
+
+    <string name="en029q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en029a" translatable="false">One way</string>
+    <string name="en029b" translatable="false">Left turn prohibited</string>
+    <string name="en029c" translatable="false">Compulsory keep left</string>
+    <string name="en029d" translatable="false">None of the above</string>
+
+    <string name="en030q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en030a" translatable="false">Compulsory keep left</string>
+    <string name="en030b" translatable="false">Compulsory ahead only</string>
+    <string name="en030c" translatable="false">Compulsory turn left</string>
+    <string name="en030d" translatable="false">Compulsory right</string>
+
+    <string name="en031q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en031a" translatable="false">Compulsory ahead only</string>
+    <string name="en031b" translatable="false">Compulsory turn left ahead</string>
+    <string name="en031c" translatable="false">Compulsory turn right ahead</string>
+    <string name="en031d" translatable="false">Compulsory ahead or turn left.</string>
+
+    <string name="en032q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en032a" translatable="false">Right hand curve</string>
+    <string name="en032b" translatable="false">Compulsory right turn</string>
+    <string name="en032c" translatable="false">Compulsory turn left ahead</string>
+    <string name="en032d" translatable="false">None of the above</string>
+
+    <string name="en033q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en033a" translatable="false">Compulsory turn left</string>
+    <string name="en033b" translatable="false">Compulsory right</string>
+    <string name="en033c" translatable="false">Compulsory ahead or turn left</string>
+    <string name="en033d" translatable="false">Compulsory a head or turn right</string>
+
+    <string name="en034q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en034a" translatable="false">Right hand curve</string>
+    <string name="en034b" translatable="false">Compulsory turn right</string>
+    <string name="en034c" translatable="false">Compulsory left turn</string>
+    <string name="en034d" translatable="false">None of the above</string>
+
+    <string name="en035q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en035a" translatable="false">Compulsory ahead or turn left</string>
+    <string name="en035b" translatable="false">Compulsory ahead or turn right</string>
+    <string name="en035c" translatable="false">Compulsory turn right</string>
+    <string name="en035d" translatable="false">Compulsory turn left.</string>
+
+    <string name="en036q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en036a" translatable="false">Compulsory turn left</string>
+    <string name="en036b" translatable="false">Compulsory turn right</string>
+    <string name="en036c" translatable="false">Compulsory ahead or turn left</string>
+    <string name="en036d" translatable="false">Compulsory ahead or turn right</string>
+
+    <string name="en037q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en037a" translatable="false">Compulsory sound horn</string>
+    <string name="en037b" translatable="false">Horn prohibited</string>
+    <string name="en037c" translatable="false">No smoking</string>
+    <string name="en037d" translatable="false">None of the above</string>
+
+    <string name="en038q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en038a" translatable="false">Compulsory cycle track</string>
+    <string name="en038b" translatable="false">School area</string>
+    <string name="en038c" translatable="false">Cycle prohibited</string>
+    <string name="en038d" translatable="false">None of the above</string>
+
+    <string name="en039q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en039a" translatable="false">Compulsory cycle track</string>
+    <string name="en039b" translatable="false">Cycle prohibited</string>
+    <string name="en039c" translatable="false">Cycle track</string>
+    <string name="en039d" translatable="false">Cycle crossing</string>
+
+    <string name="en040q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en040a" translatable="false">Right hand curve</string>
+    <string name="en040b" translatable="false">Left hand curve</string>
+    <string name="en040c" translatable="false">Hair pin bend right</string>
+    <string name="en040d" translatable="false">Hair pin bend left</string>
+
+    <string name="en041q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en041a" translatable="false">Right hand curve</string>
+    <string name="en041b" translatable="false">Left hand curve</string>
+    <string name="en041c" translatable="false">Right reverse bend</string>
+    <string name="en041d" translatable="false">Left reverse bend</string>
+
+    <string name="en042q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en042a" translatable="false">Right hair pin bend</string>
+    <string name="en042b" translatable="false">Hair pin bend left</string>
+    <string name="en042c" translatable="false">Right reverse bend</string>
+    <string name="en042d" translatable="false">Left reverse bend</string>
+
+    <string name="en043q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en043a" translatable="false">Left hair pin bend</string>
+    <string name="en043b" translatable="false">Hair pin bend right</string>
+    <string name="en043c" translatable="false">Left hand curve</string>
+    <string name="en043d" translatable="false">Right hand curve</string>
+
+    <string name="en044q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en044a" translatable="false">Right hand curve</string>
+    <string name="en044b" translatable="false">Left reverse bend</string>
+    <string name="en044c" translatable="false">Right reverse bend</string>
+    <string name="en044d" translatable="false">Hair pin bend right</string>
+
+    <string name="en045q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en045a" translatable="false">Steep descent</string>
+    <string name="en045b" translatable="false">Steep ascent</string>
+    <string name="en045c" translatable="false">Slippery road</string>
+    <string name="en045d" translatable="false">Hump or rough road</string>
+
+    <string name="en046q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en046a" translatable="false">Steep ascent</string>
+    <string name="en046b" translatable="false">Steep descent</string>
+    <string name="en046c" translatable="false">Narrow road ahead</string>
+    <string name="en046d" translatable="false">Narrow bridge</string>
+
+    <string name="en047q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en047a" translatable="false">Narrow road ahead</string>
+    <string name="en047b" translatable="false">Road widens ahead</string>
+    <string name="en047c" translatable="false">Narrow bridge</string>
+    <string name="en047d" translatable="false">Slippery road</string>
+
+    <string name="en048q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en048a" translatable="false">Narrow road ahead</string>
+    <string name="en048b" translatable="false">Road widens ahead</string>
+    <string name="en048c" translatable="false">Narrow bridge</string>
+    <string name="en048d" translatable="false">Slippery road</string>
+
+    <string name="en049q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en049a" translatable="false">Narrow road ahead</string>
+    <string name="en049b" translatable="false">Road widens ahead</string>
+    <string name="en049c" translatable="false">Narrow bridge</string>
+    <string name="en049d" translatable="false">Slippery road</string>
+
+    <string name="en050q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en050a" translatable="false">Slippery road</string>
+    <string name="en050b" translatable="false">Loose gravel</string>
+    <string name="en050c" translatable="false">Staggered intersection</string>
+    <string name="en050d" translatable="false">Hump or rough road</string>
+
+    <string name="en051q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en051a" translatable="false">Narrow bridge</string>
+    <string name="en051b" translatable="false">Slippery road</string>
+    <string name="en051c" translatable="false">Loose gravel</string>
+    <string name="en051d" translatable="false">Steep descent</string>
+
+    <string name="en052q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en052a" translatable="false">School ahead</string>
+    <string name="en052b" translatable="false">Men at work</string>
+    <string name="en052c" translatable="false">Cycle crossing</string>
+    <string name="en052d" translatable="false">Pedestrian crossing</string>
+
+    <string name="en053q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en053a" translatable="false">Cycle crossing</string>
+    <string name="en053b" translatable="false">School ahead</string>
+    <string name="en053c" translatable="false">Loose gravel</string>
+    <string name="en053d" translatable="false">Pedestrian crossing</string>
+
+    <string name="en054q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en054a" translatable="false">Barrier ahead</string>
+    <string name="en054b" translatable="false">Dangerous dip</string>
+    <string name="en054c" translatable="false">Men at work</string>
+    <string name="en054d" translatable="false">Major road ahead</string>
+
+    <string name="en055q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en055a" translatable="false">Falling rocks</string>
+    <string name="en055b" translatable="false">Steep ascent</string>
+    <string name="en055c" translatable="false">Hump or rough road</string>
+    <string name="en055d" translatable="false">Loose gravel</string>
+
+    <string name="en056q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en056a" translatable="false">Barrier ahead</string>
+    <string name="en056b" translatable="false">Round about</string>
+    <string name="en056c" translatable="false">Cross road</string>
+    <string name="en056d" translatable="false">Railway crossing ahead</string>
+
+    <string name="en057q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en057a" translatable="false">Gap in median</string>
+    <string name="en057b" translatable="false">Side road right</string>
+    <string name="en057c" translatable="false">Side road left</string>
+    <string name="en057d" translatable="false">Staggered intersection</string>
+
+    <string name="en058q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en058a" translatable="false">Staggered intersection</string>
+    <string name="en058b" translatable="false">Round about</string>
+    <string name="en058c" translatable="false">Cross road</string>
+    <string name="en058d" translatable="false">Side road left</string>
+
+    <string name="en059q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en059a" translatable="false">Dangerous dip</string>
+    <string name="en059b" translatable="false">Staggered intersection</string>
+    <string name="en059c" translatable="false">Y-intersection</string>
+    <string name="en059d" translatable="false">Major road ahead</string>
+
+    <string name="en060q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en060a" translatable="false">Dangerous dip</string>
+    <string name="en060b" translatable="false">Major road ahead</string>
+    <string name="en060c" translatable="false">Y-intersection</string>
+    <string name="en060d" translatable="false">Staggered intersection</string>
+
+    <string name="en061q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en061a" translatable="false">Barrier ahead</string>
+    <string name="en061b" translatable="false">Hump or rough road</string>
+    <string name="en061c" translatable="false">Major road ahead</string>
+    <string name="en061d" translatable="false">Staggered intersection</string>
+
+    <string name="en062q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en062a" translatable="false">Railway crossing</string>
+    <string name="en062b" translatable="false">Barrier ahead</string>
+    <string name="en062c" translatable="false">Men at work</string>
+    <string name="en062d" translatable="false">None of the above</string>
+
+    <string name="en063q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en063a" translatable="false">Right hand curve</string>
+    <string name="en063b" translatable="false">Left hand curve</string>
+    <string name="en063c" translatable="false">Staggered intersection</string>
+    <string name="en063d" translatable="false">Zig zag right</string>
+
+    <string name="en064q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en064a" translatable="false">Round about</string>
+    <string name="en064b" translatable="false">Cross roads</string>
+    <string name="en064c" translatable="false">Road open</string>
+    <string name="en064d" translatable="false">Y-intersection</string>
+
+    <string name="en065q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en065a" translatable="false">Round about</string>
+    <string name="en065b" translatable="false">Cross roads</string>
+    <string name="en065c" translatable="false">Y-intersection</string>
+    <string name="en065d" translatable="false">Road open</string>
+
+    <string name="en066q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en066a" translatable="false">Side road left</string>
+    <string name="en066b" translatable="false">One way sign</string>
+    <string name="en066c" translatable="false">T-road</string>
+    <string name="en066d" translatable="false">Wide road</string>
+
+    <string name="en067q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en067a" translatable="false">Zig zag road</string>
+    <string name="en067b" translatable="false">Ferry</string>
+    <string name="en067c" translatable="false">Hump or rough road</string>
+    <string name="en067d" translatable="false">Straight road</string>
+
+    <string name="en068q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en068a" translatable="false">Cattle</string>
+    <string name="en068b" translatable="false">Bullock cart</string>
+    <string name="en068c" translatable="false">Tonga</string>
+    <string name="en068d" translatable="false">None of the above</string>
+
+    <string name="en069q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en069a" translatable="false">Guarded level crossing (50–100 meters)</string>
+    <string name="en069b" translatable="false">Unguarded level crossing (50–100 meters)</string>
+    <string name="en069c" translatable="false">Unguarded level crossing (200 meters)</string>
+    <string name="en069d" translatable="false">Guarded level crossing (200 meters)</string>
+
+    <string name="en070q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en070a" translatable="false">Guarded level crossing (50–100 meters)</string>
+    <string name="en070b" translatable="false">Unguarded level crossing (50–100 meters)</string>
+    <string name="en070c" translatable="false">Unguarded level crossing (200 meters)</string>
+    <string name="en070d" translatable="false">Guarded level crossing (200 meters)</string>
+
+    <string name="en071q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en071a" translatable="false">Guarded level crossing (50–100 meters)</string>
+    <string name="en071b" translatable="false">Unguarded level crossing (50–100 meters)</string>
+    <string name="en071c" translatable="false">Unguarded level crossing (200 meters)</string>
+    <string name="en071d" translatable="false">Guarded level crossing (200 meters)</string>
+
+    <string name="en072q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en072a" translatable="false">Guarded level crossing (50–100 meters)</string>
+    <string name="en072b" translatable="false">Unguarded level crossing (50–100 meters)</string>
+    <string name="en072c" translatable="false">Unguarded level crossing (200 meters)</string>
+    <string name="en072d" translatable="false">Guarded level crossing (200 meters)</string>
+
+    <string name="en073q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en073a" translatable="false">Atm</string>
+    <string name="en073b" translatable="false">Hotel</string>
+    <string name="en073c" translatable="false">Petrol pump</string>
+    <string name="en073d" translatable="false">Air filling</string>
+
+    <string name="en074q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en074a" translatable="false">Eating place</string>
+    <string name="en074b" translatable="false">Light refreshment</string>
+    <string name="en074c" translatable="false">Resting place</string>
+    <string name="en074d" translatable="false">All of the above</string>
+
+    <string name="en075q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en075a" translatable="false">Hospital</string>
+    <string name="en075b" translatable="false">Resting place</string>
+    <string name="en075c" translatable="false">Light refreshment</string>
+    <string name="en075d" translatable="false">All of the above</string>
+
+    <string name="en076q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en076a" translatable="false">Resting place</string>
+    <string name="en076b" translatable="false">Hospital</string>
+    <string name="en076c" translatable="false">First aid post</string>
+    <string name="en076d" translatable="false">All of the above</string>
+
+    <string name="en077q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en077a" translatable="false">Hospital</string>
+    <string name="en077b" translatable="false">Cross roads</string>
+    <string name="en077c" translatable="false">First aid post</string>
+    <string name="en077d" translatable="false">No parking</string>
+
+    <string name="en078q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en078a" translatable="false">First aid post</string>
+    <string name="en078b" translatable="false">No through side road</string>
+    <string name="en078c" translatable="false">Major road ahead</string>
+    <string name="en078d" translatable="false">No through road</string>
+
+    <string name="en079q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en079a" translatable="false">H-intersection</string>
+    <string name="en079b" translatable="false">No through road</string>
+    <string name="en079c" translatable="false">Parallel road</string>
+    <string name="en079d" translatable="false">No through side road</string>
+
+    <string name="en080q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en080a" translatable="false">Post office</string>
+    <string name="en080b" translatable="false">No parking</string>
+    <string name="en080c" translatable="false">Park this side</string>
+    <string name="en080d" translatable="false">None of the above</string>
+
+    <string name="en081q" translatable="false">%1$d. What does this sign mean?</string>
+    <string name="en081a" translatable="false">Post office</string>
+    <string name="en081b" translatable="false">No parking</string>
+    <string name="en081c" translatable="false">Park this side</string>
+    <string name="en081d" translatable="false">Parking for scooters and motor cycles</string>
+
+    <string name="en082q" translatable="false">%1$d. What does this signal from a police officer mean to oncoming traffic?</string>
+    <string name="en082a" translatable="false">Go ahead</string>
+    <string name="en082b" translatable="false">Stop</string>
+    <string name="en082c" translatable="false">Turn left</string>
+    <string name="en082d" translatable="false">Turn right</string>
+
+    <string name="en083q" translatable="false">%1$d. You approach a junction. The traffic lights are not working. A police officer gives this signal. You should</string>
+    <string name="en083a" translatable="false">Turn left only</string>
+    <string name="en083b" translatable="false">Turn right only</string>
+    <string name="en083c" translatable="false">Stop level with the officer\'s arm</string>
+    <string name="en083d" translatable="false">Stop before the stop line</string>
+
+    <string name="en084q" translatable="false">%1$d. While driving to make a right turn, the proper hand signal is</string>
+    <string name="en084a" translatable="false">Extend right palm in a horizontal position outside to the right of vehicle with palm of the hand turned to the front.</string>
+    <string name="en084b" translatable="false">Extend right arm and rotate in ant- clockwise direction</string>
+    <string name="en084c" translatable="false">Extend right arm with palm downward and move up and down several times.</string>
+    <string name="en084d" translatable="false">Sound your horn repeatedly</string>
+
+    <string name="en085q" translatable="false">%1$d. If the driver is giving this hand signal, what does he mean?</string>
+    <string name="en085a" translatable="false">He intends to move to the left or to turn left</string>
+    <string name="en085b" translatable="false">He intends to move out to the right or turn right</string>
+    <string name="en085c" translatable="false">He intends to stop</string>
+    <string name="en085d" translatable="false">He intends to slow down</string>
+
+    <string name="en086q" translatable="false">%1$d. If the driver is giving this hand signal, what does he mean?</string>
+    <string name="en086a" translatable="false">He intends to move to the left or to turn left</string>
+    <string name="en086b" translatable="false">He intends to move out to the right or turn right</string>
+    <string name="en086c" translatable="false">He intends to stop</string>
+    <string name="en086d" translatable="false">He intends to slow down</string>
+
+    <string name="en087q" translatable="false">%1$d. If the driver is giving this hand signal, what does he mean?</string>
+    <string name="en087a" translatable="false">He intends to move to the left or to turn left</string>
+    <string name="en087b" translatable="false">He intends to move out to the right or turn right</string>
+    <string name="en087c" translatable="false">He intends to stop</string>
+    <string name="en087d" translatable="false">He intends to slow down</string>
+
+    <string name="en088q" translatable="false">%1$d. If the driver is giving this hand signal, what does he mean?</string>
+    <string name="en088a" translatable="false">He intends to move to the left or to turn left</string>
+    <string name="en088b" translatable="false">He intends to move out to the right or turn right</string>
+    <string name="en088c" translatable="false">He intends to stop</string>
+    <string name="en088d" translatable="false">He intends to slow down</string>
+
+    <string name="en089q" translatable="false">%1$d. If the driver is giving this hand signal, what does he mean?</string>
+    <string name="en089a" translatable="false">He intends to move to the left or to turn left</string>
+    <string name="en089b" translatable="false">He intends to move out to the right or turn right</string>
+    <string name="en089c" translatable="false">He intends to stop</string>
+    <string name="en089d" translatable="false">He intends to give way, to be overtaken</string>
+
+    <string name="en090q" translatable="false">%1$d. Broken white line indicates..</string>
+    <string name="en090a" translatable="false">Can change lane with caution</string>
+    <string name="en090b" translatable="false">Overtaking prohibited</string>
+    <string name="en090c" translatable="false">Changing of lane prohibited</string>
+    <string name="en090d" translatable="false">None of the above</string>
+
+    <string name="en091q" translatable="false">%1$d. Continues white or yellow line indicates</string>
+    <string name="en091a" translatable="false">Can change lane with caution</string>
+    <string name="en091b" translatable="false">Left side vehicles can change lane with caution</string>
+    <string name="en091c" translatable="false">Changing of lane prohibited</string>
+    <string name="en091d" translatable="false">All of the above</string>
+
+    <string name="en092q" translatable="false">%1$d. Left side broken line and adjacent solid line means</string>
+    <string name="en092a" translatable="false">Overtaking is permitted with care of traffic adjacent to the solid line, but prohibited for traffic adjacent to broken line</string>
+    <string name="en092b" translatable="false">Overtaking is permitted with care of traffic adjacent to the broken line, but prohibited for traffic adjacent to solid line</string>
+    <string name="en092c" translatable="false">Changing of lane prohibited</string>
+    <string name="en092d" translatable="false">All of the above</string>
+
+    <string name="en093q" translatable="false">%1$d. Two solid yellow lines means</string>
+    <string name="en093a" translatable="false">You must not cross these lines to overtake or make a u turn</string>
+    <string name="en093b" translatable="false">One way road</string>
+    <string name="en093c" translatable="false">Can change lane with caution</string>
+    <string name="en093d" translatable="false">None of the above</string>
+    
+</resources>

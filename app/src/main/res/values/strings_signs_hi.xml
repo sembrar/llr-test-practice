@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hi00q" translatable="false">%1$d. यातायात की लालबत्ती का मतलब</string>
+    <string name="hi00a" translatable="false">सफेद स्टॉप लाइन के पीछे रुकना चाहिए</string>
+    <string name="hi00b" translatable="false">ट्रैफिक न होने पर आप सीधे जा सकते हैं</string>
+    <string name="hi00c" translatable="false">यदि ऐसा करना सुरक्षित है तो आप बाएं मुड़ सकते हैं</string>
+    <string name="hi00d" translatable="false">यदि यातायात आरंभ हो गया है, तो आप वाहन की गति धीमी करें और रोकने केलिए तैयार हुएं</string>
+
+    <string name="hi01q" translatable="false">%1$d. एक चमकती पीली रोशनी इंगित करती है</string>
+    <string name="hi01a" translatable="false">गति धीमी करें और सावधानी से आगे बढ़ें</string>
+    <string name="hi01b" translatable="false">प्रवेश निषेध</string>
+    <string name="hi01c" translatable="false">यहाँ रुकें</string>
+    <string name="hi01d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi02q" translatable="false">%1$d. एक चमकती लाल बत्ती इंगित करती है</string>
+    <string name="hi02a" translatable="false">रुकें</string>
+    <string name="hi02b" translatable="false">चमकता सूर्य</string>
+    <string name="hi02c" translatable="false">रुकें, देखें और सावधानी से आगे बढ़ें</string>
+    <string name="hi02d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi03q" translatable="false">%1$d. इस वृत्ताकार में चिह्नित चिह्न हैं ..</string>
+    <string name="hi03a" translatable="false">आवश्यक</string>
+    <string name="hi03b" translatable="false">सावधानी</string>
+    <string name="hi03c" translatable="false">सूचक</string>
+    <string name="hi03d" translatable="false">ये सभी</string>
+
+    <string name="hi04q" translatable="false">%1$d. इस त्रिकोण में चिन्हित संकेत हैं ..</string>
+    <string name="hi04a" translatable="false">आवश्यक</string>
+    <string name="hi04b" translatable="false">सावधानी</string>
+    <string name="hi04c" translatable="false">सूचक</string>
+    <string name="hi04d" translatable="false">ये सभी</string>
+
+    <string name="hi05q" translatable="false">%1$d. इस वर्गाकार में चिह्नित चिह्न हैं ..</string>
+    <string name="hi05a" translatable="false">आवश्यक</string>
+    <string name="hi05b" translatable="false">सावधानी</string>
+    <string name="hi05c" translatable="false">सूचक</string>
+    <string name="hi05d" translatable="false">ये सभी</string>
+
+    <string name="hi06q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi06a" translatable="false">रुकें</string>
+    <string name="hi06b" translatable="false">एक दिशा में जाने का चिन्ह</string>
+    <string name="hi06c" translatable="false">पार्किंग नहीं</string>
+    <string name="hi06d" translatable="false">रुकें नहीं</string>
+
+    <string name="hi07q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi07a" translatable="false">बायां हाथ वक्र</string>
+    <string name="hi07b" translatable="false">सूचक</string>
+    <string name="hi07c" translatable="false">सावधान का चिन्ह</string>
+    <string name="hi07d" translatable="false">जाने केलिए मार्ग दें</string>
+
+    <string name="hi08q" translatable="false">%1$d. आप अपने रास्ते से चूक गए और पाते हैं कि आप वन-वे सड़क पर हैं। तो आप ये करेंगे</string>
+    <string name="hi08a" translatable="false">वाहन पीछे लेकर मार्ग से हटेंगे</string>
+    <string name="hi08b" translatable="false">हॉर्न बजाते हुए चलाएंगे</string>
+    <string name="hi08c" translatable="false">सड़क के अंत तक चलते रहेंगे</string>
+    <string name="hi08d" translatable="false">पीछे लेकर चलते रहेंगे</string>
+
+    <string name="hi09q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi09a" translatable="false">एक तरफा मार्ग</string>
+    <string name="hi09b" translatable="false">दोनों ओर जाना निषेध</string>
+    <string name="hi09c" translatable="false">दाएं हाथ मुड़ना निषेध</string>
+    <string name="hi09d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi010q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi010a" translatable="false">प्रवेश निषेध</string>
+    <string name="hi010b" translatable="false">एक दिशा में जाने का चिन्ह</string>
+    <string name="hi010c" translatable="false">सीधा जाना आवश्यक</string>
+    <string name="hi010d" translatable="false">बाएं हाथ मुड़ना निषेध</string>
+
+    <string name="hi011q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi011a" translatable="false">वाहन दोनों ओर से निषेध</string>
+    <string name="hi011b" translatable="false">बाएं हाथ मुड़ना निषेध</string>
+    <string name="hi011c" translatable="false">ओवरटेक करना प्रतिबंधित है</string>
+    <string name="hi011d" translatable="false">दाएं हाथ मुड़ना निषेध</string>
+
+    <string name="hi012q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi012a" translatable="false">साइकिल प्रतिबंधित</string>
+    <string name="hi012b" translatable="false">ट्रक प्रतिबंधित</string>
+    <string name="hi012c" translatable="false">दाएं हाथ मुड़ना निषेध</string>
+    <string name="hi012d" translatable="false">बाएं हाथ मुड़ना निषेध</string>
+
+    <string name="hi013q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi013a" translatable="false">बाएं हाथ मुड़ना निषेध</string>
+    <string name="hi013b" translatable="false">दाएं हाथ मुड़ना निषेध</string>
+    <string name="hi013c" translatable="false">यू-टर्न प्रतिबंधित</string>
+    <string name="hi013d" translatable="false">ओवरटेक करना प्रतिबंधित है</string>
+
+    <string name="hi014q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi014a" translatable="false">ट्रक प्रतिबंधित</string>
+    <string name="hi014b" translatable="false">सभी मोटर वाहन निषेध</string>
+    <string name="hi014c" translatable="false">बैलगाड़ी निषेध</string>
+    <string name="hi014d" translatable="false">साइकिल प्रतिबंधित</string>
+
+    <string name="hi015q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi015a" translatable="false">ओवरटेक करना प्रतिबंधित है</string>
+    <string name="hi015b" translatable="false">बाएं हाथ मुड़ना निषेध</string>
+    <string name="hi015c" translatable="false">दाएं हाथ मुड़ना निषेध</string>
+    <string name="hi015d" translatable="false">वाहन दोनों ओर से निषेध</string>
+
+    <string name="hi016q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi016a" translatable="false">धूम्रपान निषेध</string>
+    <string name="hi016b" translatable="false">दाएं हाथ मुड़ना निषेध</string>
+    <string name="hi016c" translatable="false">साइकिल प्रतिबंधित</string>
+    <string name="hi016d" translatable="false">हॉर्न निषेध</string>
+
+    <string name="hi017q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi017a" translatable="false">पैदल चलने वालों को प्रतिबंधित कर दिया गया</string>
+    <string name="hi017b" translatable="false">स्कूली क्षेत्र</string>
+    <string name="hi017c" translatable="false">खेलने का क्षेत्र</string>
+    <string name="hi017d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi018q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi018a" translatable="false">साइकिल ट्रैक</string>
+    <string name="hi018b" translatable="false">साइकिल निषेध</string>
+    <string name="hi018c" translatable="false">साइकिल पार्किंग</string>
+    <string name="hi018d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi019q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi019a" translatable="false">सभी वाहनों को प्रतिबंधित कर दिया</string>
+    <string name="hi019b" translatable="false">ट्रकों की पार्किंग</string>
+    <string name="hi019c" translatable="false">घाट रोड</string>
+    <string name="hi019d" translatable="false">ट्रकों को प्रतिबंधित कर दिया</string>
+
+    <string name="hi020q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi020a" translatable="false">रुकें नहीं</string>
+    <string name="hi020b" translatable="false">प्रतिबंध समाप्त</string>
+    <string name="hi020c" translatable="false">पार्किंग नहीं</string>
+    <string name="hi020d" translatable="false">गति सीमा</string>
+
+    <string name="hi021q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi021a" translatable="false">पार्किंग नहीं</string>
+    <string name="hi021b" translatable="false">रुकना या खड़े होना निषेध</string>
+    <string name="hi021c" translatable="false">लम्बाई की सीमा</string>
+    <string name="hi021d" translatable="false">गति सीमा</string>
+
+    <string name="hi022q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi022a" translatable="false">रुकें</string>
+    <string name="hi022b" translatable="false">प्रतिबंध समाप्त</string>
+    <string name="hi022c" translatable="false">प्रवेश निषेध</string>
+    <string name="hi022d" translatable="false">पार्किंग नहीं</string>
+
+    <string name="hi023q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi023a" translatable="false">लम्बाई की सीमा</string>
+    <string name="hi023b" translatable="false">गति सीमा</string>
+    <string name="hi023c" translatable="false">वजन की सीमा</string>
+    <string name="hi023d" translatable="false">ऊँचाई की सीमा</string>
+
+    <string name="hi024q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi024a" translatable="false">वजन की सीमा</string>
+    <string name="hi024b" translatable="false">गति सीमा</string>
+    <string name="hi024c" translatable="false">चौड़ाई की सीमा</string>
+    <string name="hi024d" translatable="false">ऊँचाई की सीमा</string>
+
+    <string name="hi025q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi025a" translatable="false">छड़ भार की सीमा</string>
+    <string name="hi025b" translatable="false">ऊँचाई की सीमा</string>
+    <string name="hi025c" translatable="false">चौड़ाई की सीमा</string>
+    <string name="hi025d" translatable="false">वजन की सीमा</string>
+
+    <string name="hi026q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi026a" translatable="false">लम्बाई की सीमा</string>
+    <string name="hi026b" translatable="false">गति सीमा</string>
+    <string name="hi026c" translatable="false">वजन की सीमा</string>
+    <string name="hi026d" translatable="false">ऊँचाई की सीमा</string>
+
+    <string name="hi027q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi027a" translatable="false">ऊँचाई की सीमा</string>
+    <string name="hi027b" translatable="false">गति सीमा</string>
+    <string name="hi027c" translatable="false">चौड़ाई की सीमा</string>
+    <string name="hi027d" translatable="false">लम्बाई की सीमा</string>
+
+    <string name="hi028q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi028a" translatable="false">छड़ भार की सीमा</string>
+    <string name="hi028b" translatable="false">चौड़ाई की सीमा</string>
+    <string name="hi028c" translatable="false">वजन की सीमा</string>
+    <string name="hi028d" translatable="false">ऊँचाई की सीमा</string>
+
+    <string name="hi029q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi029a" translatable="false">एक तरफा मार्ग</string>
+    <string name="hi029b" translatable="false">बाएं हाथ मुड़ना निषेध</string>
+    <string name="hi029c" translatable="false">केवल बाएं हाथ चलें</string>
+    <string name="hi029d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi030q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi030a" translatable="false">केवल बाएं हाथ चलें</string>
+    <string name="hi030b" translatable="false">केवल आगे चलना जरुरी है</string>
+    <string name="hi030c" translatable="false">बाएं मुड़ना जरुरी</string>
+    <string name="hi030d" translatable="false">दाएं हाथ चलना जरुरी</string>
+
+    <string name="hi031q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi031a" translatable="false">केवल आगे चलना जरुरी है</string>
+    <string name="hi031b" translatable="false">आगे बाएं मुड़ना जरुरी</string>
+    <string name="hi031c" translatable="false">आगे दाएं मुड़ना जरुरी</string>
+    <string name="hi031d" translatable="false">सीधे जाना या बाएं ओर मुड़ना जरुरी</string>
+
+    <string name="hi032q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi032a" translatable="false">दाहिना हाथ वक्र</string>
+    <string name="hi032b" translatable="false">दाएं मुड़ना जरुरी</string>
+    <string name="hi032c" translatable="false">आगे बाएं मुड़ना जरुरी</string>
+    <string name="hi032d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi033q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi033a" translatable="false">बाएं मुड़ना जरुरी</string>
+    <string name="hi033b" translatable="false">दाएं हाथ चलना जरुरी</string>
+    <string name="hi033c" translatable="false">सीधे जाना या बाएं ओर मुड़ना जरुरी</string>
+    <string name="hi033d" translatable="false">सीधे जाना या दाएं ओर मुड़ना जरुरी</string>
+
+    <string name="hi034q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi034a" translatable="false">दाहिना हाथ वक्र</string>
+    <string name="hi034b" translatable="false">दाएं मुड़ना जरुरी</string>
+    <string name="hi034c" translatable="false">बाएं मुड़ना जरुरी</string>
+    <string name="hi034d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi035q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi035a" translatable="false">सीधे जाना या बाएं ओर मुड़ना जरुरी</string>
+    <string name="hi035b" translatable="false">सीधे जाना या दाएं ओर मुड़ना जरुरी</string>
+    <string name="hi035c" translatable="false">दाएं मुड़ना जरुरी</string>
+    <string name="hi035d" translatable="false">बाएं मुड़ना जरुरी</string>
+
+    <string name="hi036q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi036a" translatable="false">बाएं मुड़ना जरुरी</string>
+    <string name="hi036b" translatable="false">दाएं मुड़ना जरुरी</string>
+    <string name="hi036c" translatable="false">सीधे जाना या बाएं ओर मुड़ना जरुरी</string>
+    <string name="hi036d" translatable="false">सीधे जाना या दाएं ओर मुड़ना जरुरी</string>
+
+    <string name="hi037q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi037a" translatable="false">हॉर्न जरुर बजाएं</string>
+    <string name="hi037b" translatable="false">हॉर्न निषेध</string>
+    <string name="hi037c" translatable="false">धूम्रपान निषेध</string>
+    <string name="hi037d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi038q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi038a" translatable="false">साइकिल ट्रैक जरुरी</string>
+    <string name="hi038b" translatable="false">स्कूल क्षेत्र</string>
+    <string name="hi038c" translatable="false">साइकिल प्रतिबंधित</string>
+    <string name="hi038d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi039q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi039a" translatable="false">साइकिल ट्रैक जरुरी</string>
+    <string name="hi039b" translatable="false">साइकिल प्रतिबंधित</string>
+    <string name="hi039c" translatable="false">साइकिल ट्रैक</string>
+    <string name="hi039d" translatable="false">साइकिल क्रासिंग</string>
+
+    <string name="hi040q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi040a" translatable="false">दाहिना हाथ वक्र</string>
+    <string name="hi040b" translatable="false">बायां हाथ वक्र</string>
+    <string name="hi040c" translatable="false">हेयर पिन दायां मोड़ ( पतला दायां मोड़ )</string>
+    <string name="hi040d" translatable="false">हेयर पिन बायां मोड़ ( पतला बायां मोड़ )</string>
+
+    <string name="hi041q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi041a" translatable="false">दाहिना हाथ वक्र</string>
+    <string name="hi041b" translatable="false">बायां हाथ वक्र</string>
+    <string name="hi041c" translatable="false">उल्टा दायां मोड़</string>
+    <string name="hi041d" translatable="false">उल्टा बायां मोड़</string>
+
+    <string name="hi042q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi042a" translatable="false">हेयर पिन दायां मोड़ ( पतला दायां मोड़ )</string>
+    <string name="hi042b" translatable="false">हेयर पिन बायां मोड़ ( पतला बायां मोड़ )</string>
+    <string name="hi042c" translatable="false">उल्टा दायां मोड़</string>
+    <string name="hi042d" translatable="false">उल्टा बायां मोड़</string>
+
+    <string name="hi043q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi043a" translatable="false">हेयर पिन बायां मोड़ ( पतला बायां मोड़ )</string>
+    <string name="hi043b" translatable="false">हेयर पिन दायां मोड़ ( पतला दायां मोड़ )</string>
+    <string name="hi043c" translatable="false">बायां हाथ वक्र</string>
+    <string name="hi043d" translatable="false">दाहिना हाथ वक्र</string>
+
+    <string name="hi044q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi044a" translatable="false">दाहिना हाथ वक्र</string>
+    <string name="hi044b" translatable="false">उल्टा बायां मोड़</string>
+    <string name="hi044c" translatable="false">उल्टा दायां मोड़</string>
+    <string name="hi044d" translatable="false">हेयर पिन दायां मोड़ ( पतला दायां मोड़ )</string>
+
+    <string name="hi045q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi045a" translatable="false">गहरा उतार</string>
+    <string name="hi045b" translatable="false">गहरा चढ़ाव</string>
+    <string name="hi045c" translatable="false">फिसलन सड़क</string>
+    <string name="hi045d" translatable="false">ऊबड़-खाबड़ या उबड़-खाबड़ सड़क</string>
+
+    <string name="hi046q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi046a" translatable="false">गहरा चढ़ाव</string>
+    <string name="hi046b" translatable="false">गहरा उतार</string>
+    <string name="hi046c" translatable="false">आगे सकरी सड़क</string>
+    <string name="hi046d" translatable="false">सकरा पुल</string>
+
+    <string name="hi047q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi047a" translatable="false">आगे सकरी सड़क</string>
+    <string name="hi047b" translatable="false">आगे चौड़ी सड़क</string>
+    <string name="hi047c" translatable="false">सकरा पुल</string>
+    <string name="hi047d" translatable="false">फिसलन सड़क</string>
+
+    <string name="hi048q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi048a" translatable="false">आगे सकरी सड़क</string>
+    <string name="hi048b" translatable="false">आगे चौड़ी सड़क</string>
+    <string name="hi048c" translatable="false">सकरा पुल</string>
+    <string name="hi048d" translatable="false">फिसलन सड़क</string>
+
+    <string name="hi049q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi049a" translatable="false">आगे सकरी सड़क</string>
+    <string name="hi049b" translatable="false">आगे चौड़ी सड़क</string>
+    <string name="hi049c" translatable="false">सकरा पुल</string>
+    <string name="hi049d" translatable="false">फिसलन सड़क</string>
+
+    <string name="hi050q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi050a" translatable="false">फिसलन सड़क</string>
+    <string name="hi050b" translatable="false">खुली बजरी ( या खुले पत्थर )</string>
+    <string name="hi050c" translatable="false">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+    <string name="hi050d" translatable="false">ऊबड़-खाबड़ या उबड़-खाबड़ सड़क</string>
+
+    <string name="hi051q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi051a" translatable="false">सकरा पुल</string>
+    <string name="hi051b" translatable="false">फिसलन सड़क</string>
+    <string name="hi051c" translatable="false">खुली बजरी ( या खुले पत्थर )</string>
+    <string name="hi051d" translatable="false">गहरा उतार</string>
+
+    <string name="hi052q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi052a" translatable="false">स्कूली क्षेत्र</string>
+    <string name="hi052b" translatable="false">कार्य प्रगति पर</string>
+    <string name="hi052c" translatable="false">साइकिल क्रासिंग</string>
+    <string name="hi052d" translatable="false">पदचालन क्रासिंग ( पैदल चलने वालों का मार्ग )</string>
+
+    <string name="hi053q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi053a" translatable="false">साइकिल क्रासिंग</string>
+    <string name="hi053b" translatable="false">स्कूली क्षेत्र</string>
+    <string name="hi053c" translatable="false">खुली बजरी ( या खुले पत्थर )</string>
+    <string name="hi053d" translatable="false">पदचालन क्रासिंग ( पैदल चलने वालों का मार्ग )</string>
+
+    <string name="hi054q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi054a" translatable="false">आगे आड़</string>
+    <string name="hi054b" translatable="false">खतरनाक डुबकी (  या खतरनाक गड्ढे )</string>
+    <string name="hi054c" translatable="false">कार्य प्रगति पर</string>
+    <string name="hi054d" translatable="false">आगे बड़ी सड़क</string>
+
+    <string name="hi055q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi055a" translatable="false">चट्टानें गिरती हैं</string>
+    <string name="hi055b" translatable="false">गहरा चढ़ाव</string>
+    <string name="hi055c" translatable="false">ऊबड़-खाबड़ या उबड़-खाबड़ सड़क</string>
+    <string name="hi055d" translatable="false">खुली बजरी ( या खुले पत्थर )</string>
+
+    <string name="hi056q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi056a" translatable="false">आगे आड़</string>
+    <string name="hi056b" translatable="false">गोल चक्कर</string>
+    <string name="hi056c" translatable="false">क्रॉस रोड ( या चौराहा )</string>
+    <string name="hi056d" translatable="false">आगे रेलवे क्रॉसिंग</string>
+
+    <string name="hi057q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi057a" translatable="false">मंझले में गैप ( या बीच में फासला है )</string>
+    <string name="hi057b" translatable="false">दायीं ओर सड़क</string>
+    <string name="hi057c" translatable="false">बायीं ओर सड़क</string>
+    <string name="hi057d" translatable="false">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+
+    <string name="hi058q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi058a" translatable="false">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+    <string name="hi058b" translatable="false">गोल चक्कर</string>
+    <string name="hi058c" translatable="false">क्रॉस रोड ( या चौराहा )</string>
+    <string name="hi058d" translatable="false">बायीं ओर सड़क</string>
+
+    <string name="hi059q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi059a" translatable="false">खतरनाक डुबकी (  या खतरनाक गड्ढे )</string>
+    <string name="hi059b" translatable="false">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+    <string name="hi059c" translatable="false">y-चौराहा ( वाई-चौराहा )</string>
+    <string name="hi059d" translatable="false">आगे बड़ी सड़क</string>
+
+    <string name="hi060q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi060a" translatable="false">खतरनाक डुबकी (  या खतरनाक गड्ढे )</string>
+    <string name="hi060b" translatable="false">आगे बड़ी सड़क</string>
+    <string name="hi060c" translatable="false">y-चौराहा ( वाई-चौराहा )</string>
+    <string name="hi060d" translatable="false">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+
+    <string name="hi061q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi061a" translatable="false">आगे आड़</string>
+    <string name="hi061b" translatable="false">ऊबड़-खाबड़ या उबड़-खाबड़ सड़क</string>
+    <string name="hi061c" translatable="false">आगे बड़ी सड़क</string>
+    <string name="hi061d" translatable="false">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+
+    <string name="hi062q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi062a" translatable="false">रेलवे क्रॉसिंग</string>
+    <string name="hi062b" translatable="false">आगे आड़</string>
+    <string name="hi062c" translatable="false">कार्य प्रगति पर</string>
+    <string name="hi062d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi063q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi063a" translatable="false">दाहिना हाथ वक्र</string>
+    <string name="hi063b" translatable="false">बायां हाथ वक्र</string>
+    <string name="hi063c" translatable="false">कंपित चौराहा ( या लड़खड़ाया कटाव )</string>
+    <string name="hi063d" translatable="false">जिग झग दायां मोड़</string>
+
+    <string name="hi064q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi064a" translatable="false">गोल चक्कर</string>
+    <string name="hi064b" translatable="false">चौराहा</string>
+    <string name="hi064c" translatable="false">खुली सड़क</string>
+    <string name="hi064d" translatable="false">y-चौराहा ( वाई-चौराहा )</string>
+
+    <string name="hi065q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi065a" translatable="false">गोल चक्कर</string>
+    <string name="hi065b" translatable="false">चौराहा</string>
+    <string name="hi065c" translatable="false">y-चौराहा ( वाई-चौराहा )</string>
+    <string name="hi065d" translatable="false">खुली सड़क</string>
+
+    <string name="hi066q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi066a" translatable="false">बायीं ओर सड़क</string>
+    <string name="hi066b" translatable="false">एक दिशा में जाने का चिन्ह</string>
+    <string name="hi066c" translatable="false">t-सड़क ( टी-सड़क )</string>
+    <string name="hi066d" translatable="false">चौड़ी सड़क</string>
+
+    <string name="hi067q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi067a" translatable="false">ज़िग ज़ग रोड</string>
+    <string name="hi067b" translatable="false">नौका</string>
+    <string name="hi067c" translatable="false">ऊबड़-खाबड़ या उबड़-खाबड़ सड़क</string>
+    <string name="hi067d" translatable="false">सीधे सड़क</string>
+
+    <string name="hi068q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi068a" translatable="false">पशु</string>
+    <string name="hi068b" translatable="false">बैलगाड़ी</string>
+    <string name="hi068c" translatable="false">टोंगा</string>
+    <string name="hi068d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi069q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi069a" translatable="false">संरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="hi069b" translatable="false">असंरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="hi069c" translatable="false">असंरक्षित क्रॉसिंग 200 मीटर</string>
+    <string name="hi069d" translatable="false">संरक्षित क्रॉसिंग 200 मीटर</string>
+
+    <string name="hi070q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi070a" translatable="false">संरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="hi070b" translatable="false">असंरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="hi070c" translatable="false">असंरक्षित क्रॉसिंग 200 मीटर</string>
+    <string name="hi070d" translatable="false">संरक्षित क्रॉसिंग 200 मीटर</string>
+
+    <string name="hi071q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi071a" translatable="false">संरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="hi071b" translatable="false">असंरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="hi071c" translatable="false">असंरक्षित क्रॉसिंग 200 मीटर</string>
+    <string name="hi071d" translatable="false">संरक्षित क्रॉसिंग 200 मीटर</string>
+
+    <string name="hi072q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi072a" translatable="false">संरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="hi072b" translatable="false">असंरक्षित क्रॉसिंग 50–100 मीटर</string>
+    <string name="hi072c" translatable="false">असंरक्षित क्रॉसिंग 200 मीटर</string>
+    <string name="hi072d" translatable="false">संरक्षित क्रॉसिंग 200 मीटर</string>
+
+    <string name="hi073q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi073a" translatable="false">atm ( एटीएम )</string>
+    <string name="hi073b" translatable="false">होटल</string>
+    <string name="hi073c" translatable="false">पेट्रोल पंप</string>
+    <string name="hi073d" translatable="false">हवा भरने का स्थान</string>
+
+    <string name="hi074q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi074a" translatable="false">खाने की जगह</string>
+    <string name="hi074b" translatable="false">अल्पाहार</string>
+    <string name="hi074c" translatable="false">आराम करने का क्षेत्र</string>
+    <string name="hi074d" translatable="false">ये सभी</string>
+
+    <string name="hi075q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi075a" translatable="false">अस्पताल</string>
+    <string name="hi075b" translatable="false">आराम करने का क्षेत्र</string>
+    <string name="hi075c" translatable="false">अल्पाहार</string>
+    <string name="hi075d" translatable="false">ये सभी</string>
+
+    <string name="hi076q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi076a" translatable="false">आराम करने का क्षेत्र</string>
+    <string name="hi076b" translatable="false">अस्पताल</string>
+    <string name="hi076c" translatable="false">प्राथमिक चिकित्सा पोस्ट</string>
+    <string name="hi076d" translatable="false">ये सभी</string>
+
+    <string name="hi077q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi077a" translatable="false">अस्पताल</string>
+    <string name="hi077b" translatable="false">चौराहा</string>
+    <string name="hi077c" translatable="false">प्राथमिक चिकित्सा पोस्ट</string>
+    <string name="hi077d" translatable="false">पार्किंग नहीं</string>
+
+    <string name="hi078q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi078a" translatable="false">प्राथमिक चिकित्सा पोस्ट</string>
+    <string name="hi078b" translatable="false">छोटी सड़क नहीं है</string>
+    <string name="hi078c" translatable="false">आगे बड़ी सड़क</string>
+    <string name="hi078d" translatable="false">आगे सड़क नहीं है</string>
+
+    <string name="hi079q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi079a" translatable="false">h-चौराहा ( एच-चौराहा )</string>
+    <string name="hi079b" translatable="false">आगे सड़क नहीं है</string>
+    <string name="hi079c" translatable="false">समानांतर सड़क</string>
+    <string name="hi079d" translatable="false">छोटी सड़क नहीं है</string>
+
+    <string name="hi080q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi080a" translatable="false">डाक घर</string>
+    <string name="hi080b" translatable="false">पार्किंग नहीं</string>
+    <string name="hi080c" translatable="false">यहाँ पार्क करें</string>
+    <string name="hi080d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi081q" translatable="false">%1$d. इस चिन्ह का क्या मतलब है?</string>
+    <string name="hi081a" translatable="false">डाक घर</string>
+    <string name="hi081b" translatable="false">पार्किंग नहीं</string>
+    <string name="hi081c" translatable="false">यहाँ पार्क करें</string>
+    <string name="hi081d" translatable="false">स्कूटर और मोटर साइकिल के लिए पार्किंग</string>
+
+    <string name="hi082q" translatable="false">%1$d. आने वाले ट्रैफ़िक को एक पुलिस अधिकारी के इस संकेत का मतलब क्या है ?</string>
+    <string name="hi082a" translatable="false">आगे बढ़ें</string>
+    <string name="hi082b" translatable="false">रुकें</string>
+    <string name="hi082c" translatable="false">बाएं मुड़ें</string>
+    <string name="hi082d" translatable="false">दायें मुड़ें</string>
+
+    <string name="hi083q" translatable="false">%1$d. आप एक जंक्शन पर पहुंचें। ट्रैफिक लाइट काम नहीं कर रही हैं। एक पुलिस अधिकारी यह संकेत देता है। आपको यह करना चाहिए।</string>
+    <string name="hi083a" translatable="false">केवल बायें मुड़ें</string>
+    <string name="hi083b" translatable="false">केवल दाएं मुड़ें</string>
+    <string name="hi083c" translatable="false">अधिकारी के बताये हाथ के सामने रुकें</string>
+    <string name="hi083d" translatable="false">स्टॉप लाइन से पहले रुकें</string>
+
+    <string name="hi084q" translatable="false">%1$d. वाहन चलते समय दायीं ओर मुड़ना है, तो आप हाथ का संकेत ऐसे देंगे</string>
+    <string name="hi084a" translatable="false">दाहिना हाथ सीधे बाहर निकाल कर हथेली को आगे की तरफ रखेंगे</string>
+    <string name="hi084b" translatable="false">दाहिने हाथ निकाल कर वामावर्त (यानी विपरीत दिशा) में घुमाएंगे</string>
+    <string name="hi084c" translatable="false">दाहिने हाथ निकाल कर हथेली को नीचे की ओर रखेंगे, और उस हाथ को कई बार ऊपर-नीचे करेंगे</string>
+    <string name="hi084d" translatable="false">बार-बार अपने हॉर्न बजायेंगे</string>
+
+    <string name="hi085q" translatable="false">%1$d. यदि ड्राइवर इस हाथ संकेत दे रहा है, तो उसका क्या मतलब है?</string>
+    <string name="hi085a" translatable="false">वह बाईं ओर जाना या बाईं ओर मुड़ना चाहता है</string>
+    <string name="hi085b" translatable="false">वह दाईं ओर जाना चाहता है या दाईं ओर मुड़ना चाहता है</string>
+    <string name="hi085c" translatable="false">वह रुकने चाहता है</string>
+    <string name="hi085d" translatable="false">वह वाहन को धीमा करना चाहता है</string>
+
+    <string name="hi086q" translatable="false">%1$d. यदि ड्राइवर इस हाथ संकेत दे रहा है, तो उसका क्या मतलब है?</string>
+    <string name="hi086a" translatable="false">वह बाईं ओर जाना या बाईं ओर मुड़ना चाहता है</string>
+    <string name="hi086b" translatable="false">वह दाईं ओर जाना चाहता है या दाईं ओर मुड़ना चाहता है</string>
+    <string name="hi086c" translatable="false">वह रुकने चाहता है</string>
+    <string name="hi086d" translatable="false">वह वाहन को धीमा करना चाहता है</string>
+
+    <string name="hi087q" translatable="false">%1$d. यदि ड्राइवर इस हाथ संकेत दे रहा है, तो उसका क्या मतलब है?</string>
+    <string name="hi087a" translatable="false">वह बाईं ओर जाना या बाईं ओर मुड़ना चाहता है</string>
+    <string name="hi087b" translatable="false">वह दाईं ओर जाना चाहता है या दाईं ओर मुड़ना चाहता है</string>
+    <string name="hi087c" translatable="false">वह रुकने चाहता है</string>
+    <string name="hi087d" translatable="false">वह वाहन को धीमा करना चाहता है</string>
+
+    <string name="hi088q" translatable="false">%1$d. यदि ड्राइवर इस हाथ संकेत दे रहा है, तो उसका क्या मतलब है?</string>
+    <string name="hi088a" translatable="false">वह बाईं ओर जाना या बाईं ओर मुड़ना चाहता है</string>
+    <string name="hi088b" translatable="false">वह दाईं ओर जाना चाहता है या दाईं ओर मुड़ना चाहता है</string>
+    <string name="hi088c" translatable="false">वह रुकने चाहता है</string>
+    <string name="hi088d" translatable="false">वह वाहन को धीमा करना चाहता है</string>
+
+    <string name="hi089q" translatable="false">%1$d. यदि ड्राइवर इस हाथ संकेत दे रहा है, तो उसका क्या मतलब है?</string>
+    <string name="hi089a" translatable="false">वह बाईं ओर जाना या बाईं ओर मुड़ना चाहता है</string>
+    <string name="hi089b" translatable="false">वह दाईं ओर जाना चाहता है या दाईं ओर मुड़ना चाहता है</string>
+    <string name="hi089c" translatable="false">वह रुकने चाहता है</string>
+    <string name="hi089d" translatable="false">वह ओवरटेक होजाने केलिए आपको रास्ता देना चाहता है</string>
+
+    <string name="hi090q" translatable="false">%1$d. टूटी हुई सफेद रेखा इंगित करती है …</string>
+    <string name="hi090a" translatable="false">लेन को सावधानी से बदल सकते हैं</string>
+    <string name="hi090b" translatable="false">ओवरटेक करना प्रतिबंधित है</string>
+    <string name="hi090c" translatable="false">लेन बदलना निषेध</string>
+    <string name="hi090d" translatable="false">इनमे से कोई भी नहीं</string>
+
+    <string name="hi091q" translatable="false">%1$d. लगातार सफेद या पीले रंग की रेखा इंगित करती है</string>
+    <string name="hi091a" translatable="false">लेन को सावधानी से बदल सकते हैं</string>
+    <string name="hi091b" translatable="false">सावधानी से बायीं तरफ वाले वाहन लेन बदल सकते हैं</string>
+    <string name="hi091c" translatable="false">लेन बदलना निषेध</string>
+    <string name="hi091d" translatable="false">ये सभी</string>
+
+    <string name="hi092q" translatable="false">%1$d. बाएं तरफ की टूटी लाइन और आसन्न ठोस लाइन का मतलब है</string>
+    <string name="hi092a" translatable="false">सावधानी के साथ ठोस लाइन की बगल का यातायात को ओवरटेकिंग की अनुमति है, लेकिन टूटी हुई लाइन की बगल का यातायात को ओवरटेकिंग निषेध है</string>
+    <string name="hi092b" translatable="false">सावधानी के साथ टूटी हुई लाइन की बगल का यातायात को ओवरटेकिंग की अनुमति है, लेकिन ठोस लाइन की बगल का यातायात को ओवरटेकिंग निषेध है</string>
+    <string name="hi092c" translatable="false">लेन बदलना निषेध</string>
+    <string name="hi092d" translatable="false">ये सभी</string>
+
+    <string name="hi093q" translatable="false">%1$d. दो ठोस पीली रेखाओं का अर्थ है</string>
+    <string name="hi093a" translatable="false">ओवरटेक करने या यू टर्न लेने के लिए आपको इन लाइनों को पार नहीं करना चाहिए</string>
+    <string name="hi093b" translatable="false">एकतरफा सड़क</string>
+    <string name="hi093c" translatable="false">लेन को सावधानी से बदल सकते हैं</string>
+    <string name="hi093d" translatable="false">इनमे से कोई भी नहीं</string>
+    
+</resources>

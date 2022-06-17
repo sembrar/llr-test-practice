@@ -43,7 +43,7 @@ public class ModelLearn extends ModelBase {
 
     @Override
     String get_question_res_identifier_name() {
-        return "s" + subject_index + "_" + current_question_index + "q";
+        return questions_and_choices_language_code + subject_index + current_question_index + "q";
     }
 
     @Override
@@ -54,7 +54,7 @@ public class ModelLearn extends ModelBase {
     @Override
     String get_option_res_identifier_name(int option_index) {
         final String[] option_suffixes = {"a", "b", "c", "d"};
-        return "s" + subject_index + "_" + current_question_index + option_suffixes[option_index];
+        return questions_and_choices_language_code + subject_index + current_question_index + option_suffixes[option_index];
     }
 
     @Override

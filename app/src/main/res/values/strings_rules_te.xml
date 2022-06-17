@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="te10q" translatable="false">%1$d. ఒక కూడలివద్ద మీరు కుడివైపునకు తిరగాలనుకుంటున్నారు. అయితే మీ వాహనం యొక్క ఇండికేటర్ లైటు అందరికి స్పష్టంగా కనపడడం లేదని భావిస్తే మీరేం చేస్తారు ?</string>
+    <string name="te10a" translatable="false">వాహనం నుంచి కిందికి దిగి మీ ఇండికేటర్లు ఎలా పనిచేస్తున్నాయో పరిశీలించాలి</string>
+    <string name="te10b" translatable="false">రోడ్డుకు ఎడమవైపున వున్న లేన్లోనే వుండిపోవాలి.</string>
+    <string name="te10c" translatable="false">పూర్తిగా కుడి వైపునకు రావాలి</string>
+    <string name="te10d" translatable="false">ఇండికేటర్తోపాటు కుడివైపునకు తిరుగుతున్నటు చేతితో కూడా సూచించాలి</string>
+
+    <string name="te11q" translatable="false">%1$d. పొగమంచు ఎక్కువగా వున్న పరిస్థితుల్లో ప్రయాణించాల్సివస్తే మీరేం చేస్తారు?</string>
+    <string name="te11a" translatable="false">ముందు వెళ్తున్న వాహనం వెనుక వెలుగుతున్న లైట్లను గమనిస్తూ వాహనానికి దగ్గరగా ప్రయాణించాలి.</string>
+    <string name="te11b" translatable="false">ఎట్టి పరిస్థితుల్లోనూ అద్దాలపై వున్న డి మిస్టిఫైయర్లను, వైపర్లను ఉపయోగించకూడదు</string>
+    <string name="te11c" translatable="false">మీ ప్రయాణానికి సరిపోయేంతటి సమయాన్ని కేటాయించుకోవాలి.</string>
+    <string name="te11d" translatable="false">ఎదుట వెళ్తున్న వాహనానికి కనీసం 2 సెకండ్ల సురక్షిత దూరాన్ని పాటించాలి.</string>
+
+    <string name="te12q" translatable="false">%1$d. మీ వాహనానికి ముందు గుర్రపు స్వారీ చేస్తున్నవారు ఎదురైతే మీరు ముందుగా చేయాల్సిన పనేమిటి?</string>
+    <string name="te12a" translatable="false">వాహనాన్ని రోడ్డు మధ్యకు తీసుకెళ్లాలి</string>
+    <string name="te12b" translatable="false">వేగాన్ని తగ్గించేందుకు సిద్ధమవ్వాలి</string>
+    <string name="te12c" translatable="false">వారిని దాటడానికి వేగం పెంచాలి</string>
+    <string name="te12d" translatable="false">కుడివైపు తిరుగుతున్నట్లు సిగ్నల్ ఇవ్వాలి</string>
+
+    <string name="te13q" translatable="false">%1$d. పార్క్ చేసిన కార్ల వరుసగుండా పోతున్న సమయంలో మీముందున్న రోడ్డుపైన ఒక బంతి దొర్లుకుంటూ వెళ్లడం కనిపిస్తే ఏంచేయాలి ?</string>
+    <string name="te13a" translatable="false">హారన్ మోగించి అదే వేగంతో ముందుకెళ్లాలి</string>
+    <string name="te13b" translatable="false">హెడ్ లైట్లను వెలిగించి ఆర్పుతూ అదే వేగంతో ముందుకు పోవాలి</string>
+    <string name="te13c" translatable="false">వేగాన్ని తగ్గించి ఎవరైనా చిన్నపిల్లలు ఎదురయితే ఆపడానికి సిద్ధంగా ఉండాలి</string>
+    <string name="te13d" translatable="false">వాహనాన్ని ఆపి ఆగిఉన్న పిల్లల్ని బంతి తీసుకోమని సైగ చేయాలి</string>
+
+    <string name="te14q" translatable="false">%1$d. సైకిల్ పై వెళ్తున్న వ్యక్తి ముందుంటే జరిగే అవకాశమున్న ప్రమాదమేది ?</string>
+    <string name="te14a" translatable="false">సైకిల్ నడిపేవారు ఎడమకు వెళ్లి సైకిల్ దిగిపోయే అవకాశముంటుంది</string>
+    <string name="te14b" translatable="false">అతడు రోడ్డుపైకి దూసుకురావచ్చు</string>
+    <string name="te14c" translatable="false">సైకిల్ క్యారియర్ పైన ఉన్న వస్తువులు రోడ్డుపైకి దొర్లవచ్చు</string>
+    <string name="te14d" translatable="false">సైకిల్ పై ఉన్న వ్యక్తి రోడ్డు చివర కుడివైపు తిరగాలనుకోవచ్చు</string>
+
+    <string name="te15q" translatable="false">%1$d. ఈ తరహా వాహనాల్ని ఓవర్ టేక్ చేసేటప్పుడు మరింత జాగ్రత్త అవసరం</string>
+    <string name="te15a" translatable="false">ఎల్ బోర్డు ఉన్న వాహనాలు</string>
+    <string name="te15b" translatable="false">తక్కువ వేగంతో వెళ్తున్న వాహనాలు</string>
+    <string name="te15c" translatable="false">పాత వాహనాలు</string>
+    <string name="te15d" translatable="false">కార్లు మొదలైన లైట్ వెహికిల్స్</string>
+
+    <string name="te16q" translatable="false">%1$d. న్న (వాహనం నడపడం నేర్చుకుంటున్న వారి వాహనాన్ని దాటి ముందుకు వెళ్ళేటప్పుడు జాగ్రత్తగా వుండాలి. ఎందుకు?</string>
+    <string name="te16a" translatable="false">వాటిని నడిపేవారు ఎప్పుడూ కుడిచేతివైపు వుండడానికి ప్రయత్నిస్తారు.</string>
+    <string name="te16b" translatable="false">దీనివల్ల వారిపై వారికున్న నమ్మకం తగ్గుతుంది</string>
+    <string name="te16c" translatable="false">వాళ్లు కంగారుపడొచ్చు. దానివల్ల ఏదైనా ప్రమాదం జరగొచ్చు</string>
+    <string name="te16d" translatable="false">సాధారణంగా వాళ్లెవరూ అంత ఆరోగ్యవంతులు కారు</string>
+
+    <string name="te17q" translatable="false">%1$d. గతుకుల రోడ్డుపై ఒక ద్విచక్రవాహనం వెనకే ప్రయాణించాల్సి వచ్చినప్పుడు ఏం చేయాలంటే..?</string>
+    <string name="te17a" translatable="false">ముందు వాహనానికి ఎక్కువ దూరంగా వుండేటట్లు జాగ్రత్తపడాలి</string>
+    <string name="te17b" translatable="false">ఆ వాహనం హఠాత్తుగా అటూ ఇటూ ఊగుతుందేమో గమనిస్తూ ఉండాలి</string>
+    <string name="te17c" translatable="false">ముందు వాహనం నడుపుతున్న వ్యక్తి హఠాత్తుగా దిశన మార్చుకోవచ్చని కూడా గమనించాలి</string>
+    <string name="te17d" translatable="false">అన్ని సమాధానాలు సరైనవే.</string>
+
+    <string name="te18q" translatable="false">%1$d. ఇలాంటి సందర్భాలలో ఎదుటి వాహనాన్ని దాటి ముందుకుపోకూడదు</string>
+    <string name="te18a" translatable="false">ఎడమపక్క తిరిగే ముందు</string>
+    <string name="te18b" translatable="false">జంక్షన్ లేదా కూడలి దగ్గరపడుతున్న సమయంలో</string>
+    <string name="te18c" translatable="false">ముందున్న ప్రదేశం సరిగ్గా కనపడని పరిస్థితులలో</string>
+    <string name="te18d" translatable="false">అన్ని సమాధానాలు సరైనవే.</string>
+
+    <string name="te19q" translatable="false">%1$d. ఎప్పుడు ఒక సైకిల్ ను ఓవర్ టేక్ చేయడానికి ప్రయత్నించకూడదు ?</string>
+    <string name="te19a" translatable="false">చుట్టూ తిరిగి వెళ్లే మార్గం (రౌండ్ ఎబౌట్) దగ్గరపడుతున్న సమయంలో</string>
+    <string name="te19b" translatable="false">ఇరుకు రోడ్డులో</string>
+    <string name="te19c" translatable="false">ఎడమవైపునకు తిరిగే మలుపుకు కాస్త ముందర</string>
+    <string name="te19d" translatable="false">కుడి మలుపు దగ్గర</string>
+
+    <string name="te110q" translatable="false">%1$d. బస్టాప్ నుండి బయలుదేరుతున్నట్లు సిగ్నల్ ఇస్తున్న బస్సు దగ్గరపడినప్పుడు ఏం చేయాలి ?</string>
+    <string name="te110a" translatable="false">బస్సు కదలడానికి ముందే దాన్ని దాటి ముందుకు పోవాలి</string>
+    <string name="te110b" translatable="false">ఏ ప్రమాదం లేదనిపిస్తే ఆ బస్సు బయలుదేరేందుకు అవకాశమివ్వాలి</string>
+    <string name="te110c" translatable="false">బస్సు దగ్గర పడుతున్న సమయంలో మీ హెడ్ లైట్లను ఫ్లాష్ చేస్తారు</string>
+    <string name="te110d" translatable="false">మీరు ఎడమవైపునకు తిరుగుతున్నట్లుగా సిగ్నల్ ఇచ్చి బస్సును ముందుకెళ్ళవచ్చని చేతితో సిగ్నల్ ఇస్తారు.</string>
+
+    <string name="te111q" translatable="false">%1$d. ఒక మోటార్ సైకిల్ మీవాహనానికి అతి దగ్గరగా దాటుకుంటూ ముందుకుపోవడం గమనించారు. మీరేం చేస్తారు ?</string>
+    <string name="te111a" translatable="false">హారన్ మోగిస్తారు</string>
+    <string name="te111b" translatable="false">గట్టిగా బ్రేక్ వేస్తారు</string>
+    <string name="te111c" translatable="false">ఇద్దరి మధ్య సురక్షితమైన దూరం ఉండేటట్లు జాగ్రత్త పడతారు</string>
+    <string name="te111d" translatable="false">మీ లైట్లను వెలిగించి వెలిగిస్తూ, ఆర్పుతూ వుంటారు</string>
+
+    <string name="te112q" translatable="false">%1$d. గాలి ఎక్కువగా ఉన్న పరిస్థితుల్లో మోటార్ వేలో ప్రయాణిస్తున్నప్పుడు ఎత్తుగా ఉన్న వాహనాన్ని దాటవలసి వస్తే ఏంచేయాలి?</string>
+    <string name="te112a" translatable="false">మీ వేగాన్ని పెంచాలి</string>
+    <string name="te112b" translatable="false">ఒక్కసారిగా వీచే గాలితో జాగ్రత్తగా ఉండాలి</string>
+    <string name="te112c" translatable="false">ఆ వాహనానికి పక్కనే దగ్గరగా మీ వాహనాన్ని నడపాలి</string>
+    <string name="te112d" translatable="false">మామూలు పరిస్థితులే ఉంటాయని ఆశించాలి</string>
+
+    <string name="te113q" translatable="false">%1$d. మీరు సిగ్నల్ లైట్లు లేని కూడలిని సమీపిస్తున్నారు. కొంతమంది పాదచారులు రోడ్డును దాటుతున్నారు. అలాంటి పరిస్థితుల్లో మీరేం చేయాలి ?</string>
+    <string name="te113a" translatable="false">వేగాన్ని తగ్గించకుండానే కూడలిలోకీ దూసుకుపోవాలి</string>
+    <string name="te113b" translatable="false">వేగాన్ని తగ్గించి జాగ్రత్త పడాలి</string>
+    <string name="te113c" translatable="false">ఆగి, పాదచారులను రోడ్డు దాటనివ్వాలి</string>
+    <string name="te113d" translatable="false">మీ హారన్ మోగిస్తూనే ఉండాలి</string>
+
+    <string name="te114q" translatable="false">%1$d. ట్రాఫిక్ లైట్ ద్వా రా నియంత్రించబడుతున్న ఒక కూడలిలో మీరు యుటర్న్ తీసుకోవాలనుకుంటే ఏం చేయాలి?</string>
+    <string name="te114a" translatable="false">ట్రాఫిక్ లైట్ లేని ఇంకోకూడలి వద్దకు వెళ్లాలి</string>
+    <string name="te114b" translatable="false">ఆకుపచ్చ లైటు వెలిగేవరకూ ఆగి, ఆతర్వాత యు టర్న్ తీసుకోవాలి</string>
+    <string name="te114c" translatable="false">పోలీస్ అధికారి ఉన్న కూడలి వద్ద యు టర్న్ తీసుకోవాలి</string>
+    <string name="te114d" translatable="false">యు టర్స్ తీసుకోవడాన్ని నివారించండి</string>
+
+    <string name="te115q" translatable="false">%1$d. మీరు రెండు లేన్లున్న వీధిలో ప్రయాణిస్తున్నారు. మీ ముందున్న వాహనం చాలా నెమ్మదిగా వెళోంది. దానిముందు రోడ్డు అంతా ఖాళీగా ఉంటే మీరేం చేయాలి?</string>
+    <string name="te115a" translatable="false">ముందున్న వాహనం ఎడమవైపునుండి ముందుకు పోవాలి</string>
+    <string name="te115b" translatable="false">ముందున్న వాహనం కుడివైపునుండి ముందుకు పోవాలి</string>
+    <string name="te115c" translatable="false">ఎటువైపు వీలుంటే అటునుంచి ఎదుటి వాహనాన్ని దాటి ముందుకు పోవాలి</string>
+    <string name="te115d" translatable="false">దానిని ఓవర్ టేక్ చేయనే కూడదు</string>
+
+    <string name="te116q" translatable="false">%1$d. మీరు కూడళ్ళ దగ్గరకు చేరుతున్న సమయంలో మీ కుడి, ఎడమల ట్రాఫిక ను గమనించాలి. ఇది ఏ సందర్భాల్లో వర్తిస్తుంది?</string>
+    <string name="te116a" translatable="false">కూడళ్లకి వెళ్లే ప్రతిసారీ</string>
+    <string name="te116b" translatable="false">ట్రాఫిక్ మరీ ఎక్కువగా ఉన్న సమయంలో మాత్రమే</string>
+    <string name="te116c" translatable="false">స్టాప్ లైన్ దగ్గరకు వెళ్లే సమయంలో మాత్రమే</string>
+    <string name="te116d" translatable="false">ఏదీ సరైన సమాధానం కాదు</string>
+
+    <string name="te117q" translatable="false">%1$d. మోటార్ వే పై వెళుతున్న సమయంలో ప్రమాదం జరగడం వల్ల మీ వేగాన్ని తగ్గించాల్సి వస్తే ఏంచేయాలి ?</string>
+    <string name="te117a" translatable="false">మీ హారన్ మోగించండి</string>
+    <string name="te117b" translatable="false">\'హజార్డ్ లైట్\'ను వెలిగించండి</string>
+    <string name="te117c" translatable="false">\'ఫాగ్ లైట్లను\' వెలిగించండి</string>
+    <string name="te117d" translatable="false">మీ హెడ్ లైట్లను పూర్తి ప్రకాశవంతంగా చేయడానికి హైబీమ్ వెలిగించండి</string>
+
+    <string name="te118q" translatable="false">%1$d. మీరు ఒక మూలవరకూ ప్రయాణిస్తున్నప్పుడు రోడ్డుమీద బురద ఉండటాన్ని గమనించారు. అప్పుడు మీరేం చేయాలి?</string>
+    <string name="te118a" translatable="false">అద్దాలగుండా గమనిస్తూ ఇంకో లేని మారాలి</string>
+    <string name="te118b" translatable="false">వాహనం వేగాన్ని పెంచి బురద మీదనుంచి వీలైనంత వేగంగా వెళ్లిపోవాలి</string>
+    <string name="te118c" translatable="false">వేగాన్ని తగ్గించాలి</string>
+    <string name="te118d" translatable="false">ఏదీ సరైన సమాధానం కాదు</string>
+
+    <string name="te119q" translatable="false">%1$d. మీరు మీ ముందు ఉన్న కారును దాటి వెళ్ళాలనుకున్నారు, మీరు ఆ కారు యొక్క కుడి ఇండికేటర్ వెలుగుతుండడం గమనించారు అప్పుడు మీరు ఏమి చేస్తారు</string>
+    <string name="te119a" translatable="false">వేగంగా ఆ కారును దాటడానికి ప్రయత్నిస్తారు</string>
+    <string name="te119b" translatable="false">ఆగిపోతారు</string>
+    <string name="te119c" translatable="false">మీ హెడ్ లైట్లను వెలిగించి వేగంగా ముందుకు వెళ్తారు</string>
+    <string name="te119d" translatable="false">మీ అద్దంలో చూసుకుంటూ కారు వెనుకాలే వెళతారు</string>
+
+    <string name="te120q" translatable="false">%1$d. రోడ్డు మధ్యలో విరిగిన తెల్లటి గీత దేనిని సూచిస్తుంది ?</string>
+    <string name="te120a" translatable="false">ఎప్పుడు దాటాలనిపిస్తే అప్పుడు ఆగీత దాటి వెళ్లచ్చు.</string>
+    <string name="te120b" translatable="false">ఎదుటినుంచి ఎటువంటి వాహనాలు రానప్పుడు ఈ లైన్ ను దాటవచ్చు</string>
+    <string name="te120c" translatable="false">ఎటువంటి సందర్భంలోనూ ఈగీత దాటి వెళ్లకూడదు</string>
+    <string name="te120d" translatable="false">మీరు సురక్షితంగా దాటగలమని భావించినప్పుడు ఈగీతను క్రాస్ చేసి మీ ముందు వాహనాన్ని దాటిన తర్వాత వెంటనే మీ లేన్లోకి తిరిగి చేరుకోవాలి</string>
+
+    <string name="te121q" translatable="false">%1$d. రోడ్డు మధ్యలో నిరంతరంగా ఉండే పసుపు/తెలుపు గీతను దాటవచ్చా?</string>
+    <string name="te121a" translatable="false">సురక్షితం అని అనిపించేటప్పుడు దాటవచ్చు</string>
+    <string name="te121b" translatable="false">ఎదుటి నుంచి వాహనములు రానప్పుడు దాటవచ్చును</string>
+    <string name="te121c" translatable="false">ఎటువంటి సందర్భంలోనూ ఈగీత దాటి వెళ్లకూడదు</string>
+    <string name="te121d" translatable="false">అవకాశం ఉన్నంతమేరకు దాటవద్దు</string>
+
+    <string name="te122q" translatable="false">%1$d. రోడ్డు మధ్యలో నిరంతరంగా ఉండే రెండు పసుపు రంగు గీతలకు అర్ధం ఏమిటి?</string>
+    <string name="te122a" translatable="false">ఓవర్ టేకింగ్ చేయవచ్చును</string>
+    <string name="te122b" translatable="false">ఓవర్ టేకింగ్ చేయరాదు</string>
+    <string name="te122c" translatable="false">ఓవర్ టేకింగ్ మరియు కుడి మలుపు తిరగరాదు</string>
+    <string name="te122d" translatable="false">ఓవర్ టేకింగ్ చేయరాదు కుడి మలుపు తిరగవచ్చును</string>
+
+    <string name="te123q" translatable="false">%1$d. సాధారణ పరిస్థితుల్లో వెళ్లాల్సిన వేగం యొక్క అత్యధిక స్థాయిని వేగ పరిమితి చిహ్నం సూచిస్తుంది ?</string>
+    <string name="te123a" translatable="false">నిజం</string>
+    <string name="te123b" translatable="false">కాదు</string>
+    <string name="te123c" translatable="false">రెండూ</string>
+    <string name="te123d" translatable="false">ఏదీ కాదు</string>
+
+    <string name="te124q" translatable="false">%1$d. ట్రాఫిక్ సిగ్నల్ తో నియంత్రించబడుతున్న జీబ్రా క్రాసింగ్ కు చేరువవుతున్న సమయంలో ఆకుపచ్చ లైటు వెలిగింది. కానీ ఇంకా కాలినడకన వెళ్లేవాళ్లు రోడ్డుపైనే ఉన్నారు. మీరేం చేయాలి?</string>
+    <string name="te124a" translatable="false">వేగాన్ని తగ్గించి వారికి దారి వదలాలి</string>
+    <string name="te124b" translatable="false">మీకు అనుకూలంగా సిగ్నల్ ఉన్నందుకు వేగంగా ముందుకు వెళ్లిపోవాలి</string>
+    <string name="te124c" translatable="false">వేగాన్ని పెంచినా పాదచారుల విషయంలో జాగ్రత్త వహించాలి</string>
+    <string name="te124d" translatable="false">పైవేవీ సరైన సమాధానాలు కావు</string>
+
+    <string name="te125q" translatable="false">%1$d. సిగ్నల్ లైట్ మీరు ముందుకు పోవడానికి అనుకూలంగా ఉన్నా ఏ పరిస్థితులు ఎదురైతే మీరు అక్కడే ఆగిపోవాలి ?</string>
+    <string name="te125a" translatable="false">రెండు మూడు మార్గాలు కలిసే ప్రదేశంలో రోడ్డుకు మరమ్మత్తులు జరుగుతున్నప్పుడు</string>
+    <string name="te125b" translatable="false">కాస్త దూరంగా వున్న బిచ్చగానికి దానం చేయాలనిపించినప్పుడు</string>
+    <string name="te125c" translatable="false">అలా చేయడం వల్ల జంక్షన్ మూసుకుపోతుందని భావిస్తే</string>
+    <string name="te125d" translatable="false">డ్యూటీలో ఉన్న పోలీస్ అధికారి ఆగమని సైగచేస్తే</string>
+
+    <string name="te126q" translatable="false">%1$d. రెండు మూడు మార్గాలు కలిసే కూడలి వద్ద ఎరుపురంగు లైటు వెలిగి ఆరుతూ ఉంటే ఏమని అర్థం ?</string>
+    <string name="te126a" translatable="false">వేగాన్ని తగ్గించి ఎంతో జాగ్రత్తగా వాహనాన్ని నడపాలని అర్థం</string>
+    <string name="te126b" translatable="false">వేగాన్ని తగ్గించి కుడి, ఎడమల వచ్చే వాహనాలకు దారి వదలాలి</string>
+    <string name="te126c" translatable="false">సిగ్నల్ లైటు సరిగ్గా పనిచేయట్లేదని,మీరు మరింత జాగ్రతగా ముదుకు పోవాలని అర్థం</string>
+    <string name="te126d" translatable="false">ఆగి వెళ్లాల్సిన వాహనాలకు దారివదిలి, అందరూ వెళ్లిన తర్వాత నెమ్మదిగా ముందుకు పోవాలి</string>
+
+    <string name="te127q" translatable="false">%1$d. రెండు లేదా మూడు రోడ్లు కలిసే ఇంటర్సెక్షన్ దగ్గరపడుతున్న సమయంలో ఆకుపచ్చ రంగు సిగ్నల్ అప్పుడే పసుపురంగుకు మారితే ఏం చేస్తారు?</string>
+    <string name="te127a" translatable="false">వేగం పెంచి సిగ్నలను దాటడానికి ప్రయత్నించాలి</string>
+    <string name="te127b" translatable="false">బ్రేక్ వేసి వేగం తగ్గించి కూడలి దాటతారు</string>
+    <string name="te127c" translatable="false">వెనుక వస్తున్న వాహనములను రియర్ వ్యూ మిర్రర్ లో గమనించి మీరు సిగ్నల్ వద్ద గీసిన స్టాలైన కు ముందే ఆపాలి</string>
+    <string name="te127d" translatable="false">జాగ్రత్తగా అటూ ఇటూ చూసి పోలీస్ ఉంటే అక్కడే ఆగాలి. లేకపోతే ముందుకు పోవాలి</string>
+
+    <string name="te128q" translatable="false">%1$d. కింది లైట్లలో ఏ లైటు పసుపు లైట్ తరువాత వస్తుంది</string>
+    <string name="te128a" translatable="false">ఎరుపు</string>
+    <string name="te128b" translatable="false">ఆకుపచ్చ</string>
+    <string name="te128c" translatable="false">నీలం</string>
+    <string name="te128d" translatable="false">ఏవికాదు</string>
+
+    <string name="te129q" translatable="false">%1$d. స్టార్టైన్ సమీపించే సమయంలో సిగ్నల్ లైటు పసుపుపచ్చరంగుకు మారితే ఏంచేస్తారు?</string>
+    <string name="te129a" translatable="false">ముందుకు వెళ్లడానికి సిద్ధమవ్వాలి</string>
+    <string name="te129b" translatable="false">దారి ఖాళీగా ఉంటే ముందుకు వెళ్లాలి</string>
+    <string name="te129c" translatable="false">కాలినడకన వెళ్లేవారు ఎవరూ లేకుంటే మీరు ముందుకు పోవాలి</string>
+    <string name="te129d" translatable="false">స్టాలైన్ కంటే ముందు ఆగడానికి సిద్ధమవ్వాలి</string>
+
+    <string name="te130q" translatable="false">%1$d. వాహనాన్ని నడుపుతూ హఠాత్తుగా ఆగాలనుకుంటే చేతితో సూచించే పద్ధతి ఏది</string>
+    <string name="te130a" translatable="false">కుడి చేతిని బయటకు చాచి అరచేయ్యి కిందకి తిప్పి ఉంచాలి</string>
+    <string name="te130b" translatable="false">కుడిచేతిని బయటకు జాపి మోచేతి వద్ద లంబకోణంలో పైకి మడచి అరచేతిని ముందుకు తిప్పాలి</string>
+    <string name="te130c" translatable="false">ఎటువంటి సిగ్నల్ అవసరం లేదు</string>
+    <string name="te130d" translatable="false">ఏవి కాదు</string>
+
+    <string name="te131q" translatable="false">%1$d. పసుపు రంగు లైటు ఫ్లాష్ అవుతున్న ఒక జంక్షన్ ఎదురైనప్పుడు ఏంచేయాలి</string>
+    <string name="te131a" translatable="false">వేగాన్ని తగ్గించి జాగ్రత్తగా ముందుకెళ్లాలి</string>
+    <string name="te131b" translatable="false">ఏమాత్రం వీలున్నా ఆగి,సురక్షితంగా ముందుకెళ్లాలి</string>
+    <string name="te131c" translatable="false">అదే వేగంతో ముందుకు పోవాలి</string>
+    <string name="te131d" translatable="false">సిగ్నలను దాటి వెళ్లిపోవాలి</string>
+
+    <string name="te132q" translatable="false">%1$d. మీ వాహనాన్ని రోడ్డుపైన మలుపు తిప్పేటప్పుడు మీరేం చేయాలి ?</string>
+    <string name="te132a" translatable="false">మీ వాహనం చుట్టుపక్కల ఇంకెవరైనా రోడ్డు మీద వెళ్తున్నారేమో పరిశీలించాలి</string>
+    <string name="te132b" translatable="false">అవకాశముంటే డ్రయివ్వను ఉపయోగించాలి</string>
+    <string name="te132c" translatable="false">మలుపు తిరిగేంతవరకూ చేతిని హ్యాండ్ బ్రేక్ మీదనే ఉంచాలి</string>
+    <string name="te132d" translatable="false">హెడ్ లైట్లను వెలిగించి ఉండాలి</string>
+
+    <string name="te133q" translatable="false">%1$d. మీరు వాహనం నడుపుతున్న సమయంలో మీ మొబైల్ ఫోన్ మోగితే ఏంచేయాలి?</string>
+    <string name="te133a" translatable="false">వెంటనే ఆగిపోవాలి</string>
+    <string name="te133b" translatable="false">వెంటనే కాల్ రిసీవ్ చేసుకోవాలి</string>
+    <string name="te133c" translatable="false">సరైన ప్రదేశంలో వాహనాన్ని ఆపాలి</string>
+    <string name="te133d" translatable="false">దగ్గరగా ఉన్న ప్లాట్ ఫామ్ అంచువద్ద వాహనాన్ని ఆపాలి</string>
+
+    <string name="te134q" translatable="false">%1$d. మీరు డ్రయివింగ్ చేసే సమయంలో మీ ఏకాగ్రతను ఖచ్చితంగా కోల్పోయే సందర్భం ఏమిటి?</string>
+    <string name="te134a" translatable="false">మీ వాహనం ఎయిర్ కండిషన్ ఆన్ చేస్తున్నప్పుడు</string>
+    <string name="te134b" translatable="false">మొబైల్ ఫోన్ ఉపయోగిస్తున్నప్పుడు</string>
+    <string name="te134c" translatable="false">వెనుకవున్న ట్రాఫికన్ను చూడటానికి ఉపయోగించే రేవ్యూ అద్దాలను గమనిస్తున్నప్పుడు</string>
+    <string name="te134d" translatable="false">అన్ని సమాధానాలూ సరైనవే</string>
+
+    <string name="te135q" translatable="false">%1$d. మీరు జీబ్రాలైన్ల దగ్గరకు చేరుతున్న సమయంలో చాలామంది పాదచారులు వేచి ఉండటం గమనించారు. మీరేం చేయాలి?</string>
+    <string name="te135a" translatable="false">వృద్దులకు, బలహీనులకు మాత్రమే దారి ఇవ్వాలి</string>
+    <string name="te135b" translatable="false">వాహనం యొక్క వేగం తగ్గించి వాహనం ఆపడానికి సిద్ధంకావాలి</string>
+    <string name="te135c" translatable="false">హెడ్ లైట్లను ఉపయోగించి వారు రోడ్డు దాటవచ్చని సూచించాలి</string>
+    <string name="te135d" translatable="false">వారిని రోడ్డు దాటమని చేతిని ఉపాలి</string>
+
+    <string name="te136q" translatable="false">%1$d. వాహనాన్ని ఆపడానికి ముందు మీరేం చేయాలి?</string>
+    <string name="te136a" translatable="false">హారన్ మోగించాలి</string>
+    <string name="te136b" translatable="false">రియర్ వ్యూ, సైడ్ వ్యూ మిర్రర్లను గమనించాలి</string>
+    <string name="te136c" translatable="false">పై గేరులోకి మారాలి</string>
+    <string name="te136d" translatable="false">హెడ్ లైట్లను ఆపి వెలిగిస్తూ ఉండాలి</string>
+
+    <string name="te137q" translatable="false">%1$d. పార్క్ చేసిన కారు వెనుక నుండి వెళ్ళేటప్పుడు నీవు ఏమి చేయాలి?</string>
+    <string name="te137a" translatable="false">చుట్టు పక్కల గమనించాలి</string>
+    <string name="te137b" translatable="false">కారులోని అన్ని అద్దాలను వాడాలి</string>
+    <string name="te137c" translatable="false">సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te137d" translatable="false">పైవి అన్ని</string>
+
+    <string name="te138q" translatable="false">%1$d. మీవెనుక నీలం రంగు లైటును వెలిగించి ఆర్పుతూ ఒక అంబులెన్స్ రావడం గమనిస్తే ఏంచేయాలి?</string>
+    <string name="te138a" translatable="false">మీ వాహనాన్ని జాగ్రత్తగా పక్కకు జరిపి వీలైనంత వేగంగా దానికి దారి వదలాలి</string>
+    <string name="te138b" translatable="false">వేగాన్ని పెంచి దానికి దూరంగా వెళ్లడానికి ప్రయత్నించాలి</string>
+    <string name="te138c" translatable="false">అదే వేగంతో ముందుకెళ్లాలి</string>
+    <string name="te138d" translatable="false">హరాత్తుగా బ్రేక్ వేసి రోడ్డు మధ్యలో వెంటనే ఆగిపోవాలి</string>
+
+    <string name="te139q" translatable="false">%1$d. మీ వాహనాన్ని ఆపి, వదిలి వెళ్లవలసి వస్తే ఏంచేయాలి?</string>
+    <string name="te139a" translatable="false">లో ఆపి ఉంచాలి</string>
+    <string name="te139b" translatable="false">ఎండలో ఆపి ఉంచాలి</string>
+    <string name="te139c" translatable="false">నిశ్శబ్దంగా ఉన్న రోడ్డులో ఆపి ఉంచాలి</string>
+    <string name="te139d" translatable="false">స్టీరింగ్ లాక్ వేయాలి</string>
+
+    <string name="te140q" translatable="false">%1$d. కింది వాహనాల్లో వేటిని దాటి ముందుకెళ్లే సమయంలో ఎక్కువ చోటు వదలాలి ?</string>
+    <string name="te140a" translatable="false">మోటార్ సైకిల్, సైకిళ్లకు</string>
+    <string name="te140b" translatable="false">ట్రాక్టర్ లకు</string>
+    <string name="te140c" translatable="false">ట్రిల్లర్ లకు</string>
+    <string name="te140d" translatable="false">పైవేవీ కావు</string>
+
+    <string name="te141q" translatable="false">%1$d. \'మోటార్‌\'లో మీ వాహనం ఎప్పుడు ఆపాలి?</string>
+    <string name="te141a" translatable="false">ట్రాఫిక్ సిగ్నల్ ఎరుపురంగునకు మారినప్పుడు</string>
+    <string name="te141b" translatable="false">పోలీస్ ఆగవున్నప్పుడు</string>
+    <string name="te141c" translatable="false">అత్యవసరంగా లేదా వాహనం ఆగిపోయినప్పుడు</string>
+    <string name="te141d" translatable="false">అన్ని సమాధానాలూ సరైనవే</string>
+
+    <string name="te142q" translatable="false">%1$d. ఈ కింది ప్రదేశాలలో మీరు కారును పార్క్ చేయడం లేదా ఆపి ఎదురుచూడటం చేయకూడదు ?.</string>
+    <string name="te142a" translatable="false">బస్ స్టాప్ వద్ద</string>
+    <string name="te142b" translatable="false">ట్రాఫిక్ ఐలాండ్ వద్ద</string>
+    <string name="te142c" translatable="false">ఇతరుల గేట్ ముందు</string>
+    <string name="te142d" translatable="false">అన్ని సమాధానాలు సరైనవే</string>
+
+    <string name="te143q" translatable="false">%1$d. మీ వాహనాన్ని వదిలి వెళ్లాల్సి వస్తే దానిని ఎక్కడ పార్క్ చేయాలి?</string>
+    <string name="te143a" translatable="false">ట్రాఫిక్ ఐలాండ్ వద్ద</string>
+    <string name="te143b" translatable="false">సురక్షిత పార్కింగ్ ప్రదేశంలో</string>
+    <string name="te143c" translatable="false">మలుపులలో</string>
+    <string name="te143d" translatable="false">సొరంగం దగ్గరగా</string>
+
+    <string name="te144q" translatable="false">%1$d. ఈ కింది ప్రదేశాలలో ఎక్కడ వాహనాన్ని పార్క్ చేయకూడదు ?</string>
+    <string name="te144a" translatable="false">షాపింగ్ మాల్ వద్ద</string>
+    <string name="te144b" translatable="false">బస్ స్టాప్ వద్ద దగ్గరగా లేదా</string>
+    <string name="te144c" translatable="false">జంక్షన్ కు పదిమీటర్ల {32 అడుగుల దూరంలో</string>
+    <string name="te144d" translatable="false">అన్ని సమాధానాలు సరైనవే</string>
+
+    <string name="te145q" translatable="false">%1$d. ఈకింది ప్రదేశాలలో ఎక్కడ కారును పార్క్ చేయకూడదు?</string>
+    <string name="te145a" translatable="false">స్కూల్ గేట్ వద్ద</string>
+    <string name="te145b" translatable="false">పోలీస్ స్టేషన్ దగ్గర</string>
+    <string name="te145c" translatable="false">రోడ్డు పక్కన</string>
+    <string name="te145d" translatable="false">వన్ పై ఉన్న వీధిలో</string>
+
+    <string name="te146q" translatable="false">%1$d. మీ వాహనాన్ని కొద్ది నిమిషాల పాటు రక్షణ లేకుండా వదిలివెళ్లాల్సి వస్తే ఏంచేయాలి?</string>
+    <string name="te146a" translatable="false">వాహనానికి తాళం వేసి తాళం చెవి తీసుకోవాలి</string>
+    <string name="te146b" translatable="false">ఇంజనన్ను ఆపుచేయకుండా అలాగే వదిలేయాలి</string>
+    <string name="te146c" translatable="false">ఇంజినను ఆపుచేయాలి. అయితే తాళాన్ని బండికే ఉండాలి</string>
+    <string name="te146d" translatable="false">ట్రాఫిక్ పోలీసు దగ్గరగా వాహనాన్ని పార్క్ చేయాలి</string>
+
+    <string name="te147q" translatable="false">%1$d. ఎటువంటి గుర్తులు, మార్కింగు లేని కూడలి వద్ద రెండు వాహనాలు ఒకేసారి దగ్గరగా వచ్చాయి. ఏది ముందు వెళ్లాలి</string>
+    <string name="te147a" translatable="false">ఏ వాహనమూ వెళ్లకూడదు</string>
+    <string name="te147b" translatable="false">వేగంగా వెళ్తున్న వాహనం</string>
+    <string name="te147c" translatable="false">వెడల్పుగా ఉన్న రోడ్డుపై ఉన్న వాహనం ముందు వెళ్లాలి</string>
+    <string name="te147d" translatable="false">కుడివైపునుండి వస్తున్న వాహనం ముందు వెళ్లాలి</string>
+
+    <string name="te148q" translatable="false">%1$d. జీబ్రా క్రాసింగ్ వద్ద పాదచారులు రోడ్డు దాటేందుకు పేప్మెంట్ పైన నిలబడి ఉన్నారు. సాధారణంగా మీరేం చేస్తారు ?</string>
+    <string name="te148a" translatable="false">వాళ్లు జీబ్రా క్రాసింగ్ మీద అడుగుపెట్టకముందు వాహనాన్ని వేగంగా నడుపుతూ వెళ్ళిపోతారు</string>
+    <string name="te148b" translatable="false">జీబ్రా క్రాసింగ్ వద్ద ఆగి వారిని వెళ్లనిస్తారు</string>
+    <string name="te148c" translatable="false">స్టార్టైన్ కంటే ముందే ఆగి, వాళ్లు రోడ్డు దాటేవరకు ఓపిగ్గా ఎదురుచూస్తారు</string>
+    <string name="te148d" translatable="false">వాళ్లు ఇంకా పేవ్ మెంట్ పైనే ఉన్నారు కాబట్టి వాళ్లను పట్టించుకోవద్దు</string>
+
+    <string name="te149q" translatable="false">%1$d. ఈ కింద పేర్కొన్న ఏ సందర్భాల్లో మీ వాహనాన్ని వెనక్కి నడపకూడదు?</string>
+    <string name="te149a" translatable="false">రద్దీరోడ్లపై</string>
+    <string name="te149b" translatable="false">వన్ పై ఉన్న రోడ్లమీద</string>
+    <string name="te149c" translatable="false">చుట్టూ తిరిగి వెళ్లాల్సివచ్చే రోడ్లమీద</string>
+    <string name="te149d" translatable="false">పై అన్ని సందర్భాలలోనూ</string>
+
+    <string name="te150q" translatable="false">%1$d. మీ వాహనం వెనక్కి నడపడం సురక్షితం కాదని మీకనిపిస్తే ఏం చేయాలి?</string>
+    <string name="te150a" translatable="false">హారన్ ను మోగించాలి</string>
+    <string name="te150b" translatable="false">ఇంజన్ ను రివర్స్ చేయాలి</string>
+    <string name="te150c" translatable="false">వాహనం దిగి పరిశీలించాలి</string>
+    <string name="te150d" translatable="false">మెల్లగా రివర్స్ చేయాలి</string>
+
+    <string name="te151q" translatable="false">%1$d. సందుల్లో నుండి ప్రధాన మార్గంలోకి ఏసమయంలో మీ వాహనాన్ని రివర్స్ చేయొచ్చు?</string>
+    <string name="te151a" translatable="false">రెండు మార్గాలపై ఎటువంటి వాహనాలు లేని సమయంలో</string>
+    <string name="te151b" translatable="false">ఎట్టి పరిస్థితుల్లోనూ అలా చేయకూడదు</string>
+    <string name="te151c" translatable="false">ఎప్పుడైనా రివర్స్ చేయవచ్చు</string>
+    <string name="te151d" translatable="false">ప్రధాన మార్గంపై ఎటువంటి వాహనాలు లేని సమయంలో మాత్రమే అలా చేయొచ్చు</string>
+
+    <string name="te152q" translatable="false">%1$d. రద్దీగా వున్న ప్రాంతంలో కుడివైపునకు తిరగదల్చుకున్నారు. సిగ్నల్ లైట్ వెలిగించినా, మీ ఉద్దేశం అందరికీ తెలిసేలా చేయడానికి భద్రత కోసం ఇంకా ఏం చేయాలి?</string>
+    <string name="te152a" translatable="false">హారన్ మోగించాలి</string>
+    <string name="te152b" translatable="false">చేతితో కూడా సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te152c" translatable="false">మీ హెడ్ లైట్లను వెలిగించి ఆర్పుతూ ఉండాలి</string>
+    <string name="te152d" translatable="false">మధ్యలో ఉన్న గీతమీదకు చేరుకోవాలి</string>
+
+    <string name="te153q" translatable="false">%1$d. ట్రాఫిక్ సిగ్నళ్లు సరిగ్గా పనిచేయని సమయంలో మీరేం జాగ్రత్తలు తీసుకోవాలి?</string>
+    <string name="te153a" translatable="false">వేగాన్ని బాగా తగ్గించి ముందుకు కదలాలి</string>
+    <string name="te153b" translatable="false">ఆగి.. కుడి, ఎడమలను బాగా గమనించి జాగ్రత్తగా ముందుకు పోవాలి</string>
+    <string name="te153c" translatable="false">ఎటువంటి జాగ్రత్తలు తీసుకోనవసరం లేదు</string>
+    <string name="te153d" translatable="false">అదే వేగంతో ముందుకు పోవాలి</string>
+
+    <string name="te154q" translatable="false">%1$d. మీ వాహనం వెనుక ఒక పోలీస్ కారు వస్తోంది. పోలీస్ అధికారి హెడ్ లైట్లను వెలిగించి ఆపి ఎడమవైపును చూపిస్తే మీరేం చేయాలి ?</string>
+    <string name="te154a" translatable="false">ముందున్న ఎడమ మలుపు తిరగాలి</string>
+    <string name="te154b" translatable="false">ఎడమవైపున ఆగాలి</string>
+    <string name="te154c" translatable="false">వెంటనే ఆగాలి</string>
+    <string name="te154d" translatable="false">కుడివైపుకు వెళ్లాలి</string>
+
+    <string name="te155q" translatable="false">%1$d. చుట్టూ తిరిగి వెళ్లాల్సిన మార్గానికి చేరువవుతున్న సమయంలో వేటికి దారి ఇవ్వాలి?</string>
+    <string name="te155a" translatable="false">సైకిల్ పై వెళ్లేవారికి</string>
+    <string name="te155b" translatable="false">నెమ్మదిగా వెళ్తున్న వాహనాలకు</string>
+    <string name="te155c" translatable="false">మీకు కుడివైపున ఉన్న వాహనాలకు</string>
+    <string name="te155d" translatable="false">మీకు ఎడమవైపున ఉన్న వాహనాలకు</string>
+
+    <string name="te156q" translatable="false">%1$d. ఒక సందులోకి మీరు వాహనాన్ని రివర్స్ చేస్తున్నారు. అప్పుడు మీరు ప్రధానంగా దేనిపైన దృష్టిపెట్టాలి ?</string>
+    <string name="te156a" translatable="false">రేర్ వ్యూ మిర్రర్ పై</string>
+    <string name="te156b" translatable="false">వెనుక అద్దంలోంచి చూస్తూ ఉండాలి</string>
+    <string name="te156c" translatable="false">ప్లాట్ఫామ్ అంచుకు దగ్గరగా ఉన్న సైడ్ మిర్రర్ మీద</string>
+    <string name="te156d" translatable="false">ప్లాట్ఫామ్ అంచుకు దూరంగా ఉన్న సైడ్ మిర్రర్ మీద</string>
+
+    <string name="te157q" translatable="false">%1$d. పార్కింగ్ స్థానం నుండి సురక్షితంగా వాహనాన్ని బయటకు తీసేటప్పుడు మీరేం చేయాలి ?</string>
+    <string name="te157a" translatable="false">అన్ని అద్దాలనుంచి చుట్టూ అన్ని వైపులా పరిశీలించాలి</string>
+    <string name="te157b" translatable="false">ఇతర వాహనదారుల్ని వేగం తగ్గించుకోమని సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te157c" translatable="false">మీ ఎదురుగా ఇంకో వాహనం వున్నట్లయితే ఇటూ అటూ చూడకూడదు</string>
+    <string name="te157d" translatable="false">ఇండికేటర్ను ఉపయోగించడంతో పాటు చేతితో కూడా సిగ్నల్ ఇవ్వాలి</string>
+
+    <string name="te158q" translatable="false">%1$d. రోడ్డు పనులు జరుగుతున్న ప్రదేశాల వద్దకు చేరుకుంటున్నప్పుడు మీరేం చేయకూడదు?</string>
+    <string name="te158a" translatable="false">ఓవర్ టేక్ చేయడం మొదలుపెట్టాలి. వేగాన్ని పెంచాలి</string>
+    <string name="te158b" translatable="false">మీ వాహనం హెడ్ లైట్లను ఫ్లాష్ చేయాలి</string>
+    <string name="te158c" translatable="false">ఏదో ఒక సిగ్నలను ఇవ్వాలి</string>
+    <string name="te158d" translatable="false">ఏదీ సరైన సమాధానం కాదు</string>
+
+    <string name="te159q" translatable="false">%1$d. ముందు వెళుతున్న వాహనాలను మీరు దగ్గరగా అనుసరించకపోవడానికి సహేతుకమైన కారణం ఏమిటి ?</string>
+    <string name="te159a" translatable="false">ఎదుటి వాహనంలోనుంచి వచ్చే పొగను తప్పించుకోవడానికి</string>
+    <string name="te159b" translatable="false">ఎదుటి వాహనాల చక్రాలు వెదజిల్లే దుమ్ము, ధూళిని తప్పించుకోవడానికి</string>
+    <string name="te159c" translatable="false">రోడ్డు పరిస్థితి స్పష్టంగా కనిపించడానికి, ఎదుటి వాహనానికి అకస్మాత్తుగా బ్రేక్ పడితే ఎదురయ్యే ప్రమాదాలనుంచి తప్పించుకోవడానికి</string>
+    <string name="te159d" translatable="false">అలా చేస్తే డ్రయివింగ్ మీద ఎక్కువ శ్రద్ధ పెట్టాల్సిన అవసరం వుండదు కాబట్టి</string>
+
+    <string name="te160q" translatable="false">%1$d. మీరు సిగ్నల్ వద్దకు చేరే సమయానికి రెండు లేన్లలో వాహనాలు నిలిచిపోయి ఉన్నాయి. అప్పుడు మీరేం చేయాలి ?</string>
+    <string name="te160a" translatable="false">ఆగిఉన్న వాహనాలను దాటి అన్నిటికన్నా ముందు ఆగాలి</string>
+    <string name="te160b" translatable="false">రెండు లేన్లలోనూ ఆగిఉన్న వాహనాల మధ్యనుండి వెళ్లిపోవాలి</string>
+    <string name="te160c" translatable="false">సరైన లేన్లో ఉన్న ఆఖరి వాహనం వెనక మీరు ఆగాలి</string>
+    <string name="te160d" translatable="false">ఎక్కడైనా ఆగవచ్చు</string>
+
+    <string name="te161q" translatable="false">%1$d. ఒక పాదవారి ఎటువంటి గుర్తులు (మార్కింగ్స్) లేని కూడలి వద్ద రోడ్డును దాటడానికి ప్రయత్నిస్తున్నాడు. అప్పుడు మీరేం చేయాలి?</string>
+    <string name="te161a" translatable="false">పాదచారుల రోడ్డును ఉపయోగించే హక్కును గౌరవించాలి</string>
+    <string name="te161b" translatable="false">జాగ్రత్తగా ముందుకు వెళ్లాలి</string>
+    <string name="te161c" translatable="false">వేగాన్ని తగ్గించి పాదచారులను హెచ్చరించాలి</string>
+    <string name="te161d" translatable="false">వేగంగా రోడ్డు దాటమని చేతితో సైగచేయాలి</string>
+
+    <string name="te162q" translatable="false">%1$d. వాహనాన్ని నడుపుతున్న సమయంలో ఒక లేననుండి మరో లేను మారాలంటే ఏంచేయాలి ?</string>
+    <string name="te162a" translatable="false">పక్కకు తిరుగుతునట్లు సరైన సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te162b" translatable="false">సురక్షితమని భావించినప్పుడు మాత్రమే సరైన సిగ్నలను ఇస్తూ లేన్ను మారాలి</string>
+    <string name="te162c" translatable="false">చట్టవిరుద్ధం కాబట్టి ఒకలే లో నుండి మరో లే లోకి మారకండి</string>
+    <string name="te162d" translatable="false">లేన్లు మారకూడదు</string>
+
+    <string name="te163q" translatable="false">%1$d. ట్రాఫిక్ లైట్లు కానీ, పోలీస్ అధికారి కానీ, ఎటువంటి ట్రాఫిక్ గుర్తులు కానీ లేని కూడలి దగ్గరపడుతుంటే ఏం చేయాలి ?</string>
+    <string name="te163a" translatable="false">వేగం తగ్గించి జాగ్రత్తగా ముందుకెళ్లాలి</string>
+    <string name="te163b" translatable="false">పూర్తిగా ఆగిపోవాలి</string>
+    <string name="te163c" translatable="false">వెళ్లే మార్గం ఖాళీగా ఉంటే వేగాన్ని మార్చనక్కరలేదు</string>
+    <string name="te163d" translatable="false">పోలీస్ అధికారివచ్చే వరకు వేచి చూడాలి</string>
+
+    <string name="te164q" translatable="false">%1$d. మీరు ప్రేవే నుండి బయటకు పోయే మార్గం దాటిపోయినట్లయితే ఏంచేయాలి ?</string>
+    <string name="te164a" translatable="false">మరో సరైన బయటికి పోయే మార్గం వచ్చేవరకూ అలాగే ముందుకు వెళ్లాలి</string>
+    <string name="te164b" translatable="false">ఆగి, ప్రీవే మీదనే వెనక్కి తిరిగి మీరు దాటిపోయిన మలుపు చేరుకోవాలి</string>
+    <string name="te164c" translatable="false">మలుపును దాటిన వెంటనే వాహనాన్ని ఆపి వెనకకు తిరగాలి</string>
+    <string name="te164d" translatable="false">రేర్ వ్యూ మిర్రర్ లో జాగ్రత్తగా గమనిస్తూ రివర్స్ చేయాలి</string>
+
+    <string name="te165q" translatable="false">%1$d. కూడలి ప్రదేశాల్లో కుడివైపునకు తిరిగేందుకు మీకు అనుమతి ఉంది. ఇంతలో కొన్ని పైరింజన్లు మిమ్మల్ని ఓవర్ టేక్ చేయడానికి ప్రయత్నిస్తే ఏంచేయాలి?</string>
+    <string name="te165a" translatable="false">మీకు తిరగడానికి అనుమతి ఉంది కనుక ముందుకు వెళ్లిపోతారు</string>
+    <string name="te165b" translatable="false">ఆగి, పైరింజన్లను ముందుకు పోనిస్తారు</string>
+    <string name="te165c" translatable="false">వేగాన్ని మరింత పెంచి పైరింజన్లను దాటుకొని పోతారు</string>
+    <string name="te165d" translatable="false">అన్ని సమాధానాలు సరైనవే</string>
+
+    <string name="te166q" translatable="false">%1$d. మీరు రోడు ఎడమ అంచుకు దగరగా భారీగా నీళ్లు నిలిచిపోయిన ప్రదేశానికి దగ్గరగా వెళ్తున్నారు. కొంతమంది పాదచారులు అటుగా వస్తూ కనిపించారు. మీరేం చేస్తారు ?</string>
+    <string name="te166a" translatable="false">నిలిచిన నీళ్లను పట్టించుకోవద్దు</string>
+    <string name="te166b" translatable="false">హఠాత్తుగా బ్రేక్ వేసి హారన్ మోగిస్తూనే ఉండండి</string>
+    <string name="te166c" translatable="false">నీరు నిలిచిన ప్రదేశానికి చేరుకునే ముందే వేగాన్ని తగ్గించి నీళ్లు పాదచారుల మీద చిందకుండా నివారించాలి</string>
+    <string name="te166d" translatable="false">పాదచారులను దూరంగా జరగవని చేతితో సిగ్నల్ ఇవ్వాలి</string>
+
+    <string name="te167q" translatable="false">%1$d. వృద్దులు రోడ్డు దాటుతుంటే మీరేం చేస్తారు ?</string>
+    <string name="te167a" translatable="false">మీరు వాళ్లను చూశారని తెలియజేస్తూ రోడ్డు దాటమని చేతితో సైగ చేస్తారు</string>
+    <string name="te167b" translatable="false">సహనంతో ఉండి వారికి రోడ్డు దాటడానికి సరిపడా సమయాన్ని ఇవ్వండి</string>
+    <string name="te167c" translatable="false">ఇంజినను రైజ్ చేస్తుండటం ద్వారా మీరు ఎదురుచూస్తున్న సంగతి వారికి తెలియజేయండి</string>
+    <string name="te167d" translatable="false">వారికి వినికిడి శక్తి తక్కువగా ఉందనిపిస్తే మీ హారన్ మోగించండి</string>
+
+    <string name="te168q" translatable="false">%1$d. నల్ల కళ్లజోడు పెట్టుకొని, చేతిలో కర్రను పట్టుకున్న ఓ వ్యక్తి కాలినడకన రోడ్డు దాటడానికి ప్రయత్నించడం కనిపించింది. మీరెలా అర్థం చేసుకుంటారు ?</string>
+    <string name="te168a" translatable="false">ఆవ్యక్తి మూగవాడు</string>
+    <string name="te168b" translatable="false">ఆవ్యక్తి చెవిటివాడు</string>
+    <string name="te168c" translatable="false">ఆవ్యక్తికి ఏలోపమూ లేదు</string>
+    <string name="te168d" translatable="false">ఆవ్యక్తి అంధుడు</string>
+
+    <string name="te169q" translatable="false">%1$d. పిల్లలు ఆడుకుంటున్న లేదా నడుస్తున్న రోడ్డు అంచుల్లో డ్రయివ్ చేస్తున్నప్పుడు మీరేం చేయాలి?</string>
+    <string name="te169a" translatable="false">వారి ఆట పూర్తయ్యేవరకు వేచి ఉండాలి</string>
+    <string name="te169b" translatable="false">మీ ఉనికిని వారు గమనించేలా హారన్ మోగించాలి</string>
+    <string name="te169c" translatable="false">వాహనం వేగాన్ని తగ్గించి, సురక్షితంగా ఆపేందుకు సిద్ధం కావాలి</string>
+    <string name="te169d" translatable="false">అదేవేగాన్ని కొనసాగిస్తూ ఆపిల్లలను దాటుకుంటూ ముందుకు పోవాలి</string>
+
+    <string name="te170q" translatable="false">%1$d. పాదచారులు ఎక్కువగా ఉన్న బస్ స్టాప్ వంటి ప్రదేశాలలో వాహనాలు నడుపుతున్నప్పుడు ఇలా చేయడం చాలా ముఖ్యం.</string>
+    <string name="te170a" translatable="false">మీ హారన్ ను ఆపకుండా మోగిస్తూ ఉండాలి</string>
+    <string name="te170b" translatable="false">మీ హెడ్ లైట్లను హైబీమ్ లో ఉంచితే వారు మిమ్మల్ని ఇంకొంత స్పష్టంగా చూడగలుగుతారు</string>
+    <string name="te170c" translatable="false">వారిని డీకొట్టే ప్రమాదాన్ని తప్పించడం కోసం వేగాన్ని పెంచండి</string>
+    <string name="te170d" translatable="false">వేగాన్ని తగ్గించి, వారు రోడ్డు పైకి వచ్చే అవకాశాన్ని పరిశీలించాలి</string>
+
+    <string name="te171q" translatable="false">%1$d. మీ ముందు పాదచారులు రోడ్డుదాటే ప్రాంతంలో ఒక వాహనం ఆగి ఉంది. అప్పుడు మీరు…</string>
+    <string name="te171a" translatable="false">ఆ వాహనాన్ని ఓవర్ టేక్ చేయకూడదు</string>
+    <string name="te171b" translatable="false">పాదచారులెవరూ రోడ్డు దాటే ప్రయత్నం చేస్తుండకపోతే ఓవర్ టేక్ చేయవచ్చు</string>
+    <string name="te171c" translatable="false">ఆ దారిలో వస్తున్న వాహనాలేవీ లేకపోతే ఓవర్ టేక్ చేయొచ్చు.</string>
+    <string name="te171d" translatable="false">హెడ్ లైట్లను ఫ్లాష్ చేస్తూ వేగంగా ముందుకు వెళ్లాలి</string>
+
+    <string name="te172q" translatable="false">%1$d. రోడ్డుపై వాహనాన్ని నడిపేటప్పుడు?</string>
+    <string name="te172a" translatable="false">రోడ్డుకు ఎడమ చేతి వైపు నడపాలి</string>
+    <string name="te172b" translatable="false">రోడ్డుకు కుడిచేతి వైపు నడపాలి</string>
+    <string name="te172c" translatable="false">జాగ్రత్తగా రోడ్డు మద్యలో నడపాలి</string>
+    <string name="te172d" translatable="false">నీకు వీలైన విదంగా రోడ్డుకు కుడి లేదా ఎడమ వైపు నడపాలి</string>
+
+    <string name="te173q" translatable="false">%1$d. మీరు రోడ్డుపై వాహనం నడుపుతున్నప్పుడు ఎదురుగా వస్తున్న వాహనాలకు ఎటువైపునుండి దారి ఇవ్వాలి</string>
+    <string name="te173a" translatable="false">కుడిచేతి వైపు</string>
+    <string name="te173b" translatable="false">ఎడమ చేతి వైపు</string>
+    <string name="te173c" translatable="false">రోడ్డు మద్యలో</string>
+    <string name="te173d" translatable="false">మీ వీలును బట్టి కుడి చేతి వైపు నుండి లేదా ఎడమ చేతి వైపు నుండి</string>
+
+    <string name="te174q" translatable="false">%1$d. మీరు రోడ్డుపై ఎడమ వైపునకు తిరగాల్సి వచ్చినప్పుడు, నీవు ఎలా డ్రయివ్ చేయాలి</string>
+    <string name="te174a" translatable="false">ఎంత వీలైతే అంత రోడ్డుకు ఎడమ చేతివైపునకు వెళ్ళాలి</string>
+    <string name="te174b" translatable="false">ఎంత వీలైతే అంత రోడ్డుకు కుడి చేతివైపునకు వెళ్ళాలి</string>
+    <string name="te174c" translatable="false">వాహనాని సులభంగా తిప్పడానికి రోడ్డు మద్యలోకి వెళ్లాలి</string>
+    <string name="te174d" translatable="false">నీ సౌలబ్యం ప్రకారం కుడి లేదా ఎడమ వైపునకు వెళ్ళాలి</string>
+
+    <string name="te175q" translatable="false">%1$d. మీరు రోడ్డు పై కుడి వైపునకు తిరగాల్సి వచ్చినప్పుడు, మీరు ఎలా డ్రయివ్ చేయాలి</string>
+    <string name="te175a" translatable="false">కుడి వైపు సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te175b" translatable="false">మీరు వెళ్తున్న మార్గంలో ఎంత దగ్గరైతే అంత రోడ్డు మద్యలోకి వెళ్లాలి</string>
+    <string name="te175c" translatable="false">మీరు ప్రవేశించిన రోడ్డుపై ఎడమ వైపునకు వెళ్ళాలి</string>
+    <string name="te175d" translatable="false">పైవి అన్ని</string>
+
+    <string name="te176q" translatable="false">%1$d. మీ ముందు వెళుతున్న వాహనాన్ని మీరు ఓవర్ టేక్ చేయాలి అనుకున్నారు మీరు ఎటుప్రక్క నుండి ఓవర్ టేక్ చేస్తారు?</string>
+    <string name="te176a" translatable="false">ఆ వాహనం కుడి వైపు నుండి మాత్రమే</string>
+    <string name="te176b" translatable="false">ఆ వాహనం ఎడన వైపు నుండి మాత్రమే</string>
+    <string name="te176c" translatable="false">ఆ వాహనం కుడి లేదా ఎడమ వైపు నుండి</string>
+    <string name="te176d" translatable="false">పైవి ఏవి కావు</string>
+
+    <string name="te177q" translatable="false">%1$d. మీ ముందు వెళుతున్న వాహనాన్ని మీరు ఎడమ వైపునుండి ఓవర్ టేక్ చేయవచ్చా?</string>
+    <string name="te177a" translatable="false">ముందు వాహనం డ్రయివర్ కుడి చేతి వైపు వెల్లడానికి సిద్ధమైనప్పుడు, ఆ వాహనాని రోడ్డు మద్యకు తీసుకు వెళ్ళినప్పుడు</string>
+    <string name="te177b" translatable="false">ముందు వాహనం డ్రయివర్ నీ యొక్క సిగ్నల్స్ కి స్పందించనప్పుడు</string>
+    <string name="te177c" translatable="false">మీరు తొందరగా మీ గమ్యానికి చేరుకోవలనుకున్నప్పుడు</string>
+    <string name="te177d" translatable="false">నేషనల్ హైవే మీద</string>
+
+    <string name="te178q" translatable="false">%1$d. మీరు మీ ముందున్న వాహనాన్ని ఓవర్ టేక్ చేద్దామని అనుకున్న సమయంలో మీ వెనుక వచ్చే వాహనం మీ వాహనాన్ని ఓవర్ టేక్ చేస్తుండడం గమనించినప్పుడు మీరు ఏమి చేస్తారు</string>
+    <string name="te178a" translatable="false">మీ ముందు వాహనాన్ని అతి వేగంతో ఓవర్ టేక్ చేస్తారు</string>
+    <string name="te178b" translatable="false">వెనుక వాహనాన్ని దారి ఇవ్వకుండా ముందుకు వెళతారు</string>
+    <string name="te178c" translatable="false">ప్రమాదకరం అని తెలిసి మీ ముందున్న వాహనాన్ని మీరు ఓవర్ టేక్ చేయడం మానేస్తారు</string>
+    <string name="te178d" translatable="false">పైవి ఏవి కావు</string>
+
+    <string name="te179q" translatable="false">%1$d. ఈ క్రింది ప్రదేశాలలో ఎక్కడ ఓవర్ టేకింగ్ చేయకూడదు</string>
+    <string name="te179a" translatable="false">ఇతర వాహనాలకు ఇబ్బందికరంగా లేదా ప్రమాదకరంగా ఉన్నప్పుడు</string>
+    <string name="te179b" translatable="false">ప్రమాదపు మలుపు మరియు ఎత్తు ప్రదేశాలలో ముందు రోడ్డు సరిగ్గా కనపడనప్పుడు</string>
+    <string name="te179c" translatable="false">నీ ముందు వాహనం డ్రయివర్ నీకు ఓవర్ టేక్ చేయుటకు అనుమతి ఇవ్వనప్పుడు</string>
+    <string name="te179d" translatable="false">పైవి అన్నీ</string>
+
+    <string name="te180q" translatable="false">%1$d. మీ వాహనాన్ని వెనుక వచ్చే వాహనం ఓవర్ టేక్ చేయుచున్నప్పుడు మీరు ఏమి చేయాలి</string>
+    <string name="te180a" translatable="false">మీ వాహనం వేగం పెంచాలి</string>
+    <string name="te180b" translatable="false">వెనుక వాహనం గురించి పట్టించుకోకుండా ముందుకు వెళతావు</string>
+    <string name="te180c" translatable="false">వేగాన్ని తగించి, ప్రమాదం లేని సమయంలో వెనుక వాహనానికి ఓవర్ టేక్ చేయడానికి అనుమతిస్తావు</string>
+    <string name="te180d" translatable="false">పైవి ఏవి కావు</string>
+
+    <string name="te181q" translatable="false">%1$d. నీవు నీ వాహనం వేగాన్ని ఎప్పుడు తగ్గిస్తావు</string>
+    <string name="te181a" translatable="false">ట్రాపిక్ సిగ్నల్ దగ్గర పసుపు రంగు లైటు వెలిగి ఆరుతున్నప్పుడు</string>
+    <string name="te181b" translatable="false">కూడలికి చేరుతున్న సమయంలో</string>
+    <string name="te181c" translatable="false">పాదచారుల క్రాసింగ్ దగ్గరికి చేరుకున్న సమయంలో</string>
+    <string name="te181d" translatable="false">పైవి అన్నీ</string>
+
+    <string name="te182q" translatable="false">%1$d. మీరు ఒక ప్రధాన రహదారి కూడలి వద్ద ప్రవేశించినప్పుడు</string>
+    <string name="te182a" translatable="false">ప్రదాన రహదారిలో వెళ్ళే వాహనాలకి దారి వదలాలి</string>
+    <string name="te182b" translatable="false">వేగంగా ప్రధాన రహదారిపైకి వెళ్ళాలి</string>
+    <string name="te182c" translatable="false">మీ కుడి చేతి వైపు నుండి వచ్చే వాహనములను అడ్డుకోవాలి</string>
+    <string name="te182d" translatable="false">ప్రదాన రహదారి పై వెళ్ళు వాహనాలను మీ కొరకు ఆగమని చెప్పాలి</string>
+
+    <string name="te183q" translatable="false">%1$d. మీరు రోడ్డుపై వాహనాన్ని నడుపుతున్నప్పుడు ఏ వాహనాలకు ప్రాదాన్యత ఇవ్వాలి?</string>
+    <string name="te183a" translatable="false">అగ్నిమాపక వాహనాలకు</string>
+    <string name="te183b" translatable="false">అంబులెన్సులకు</string>
+    <string name="te183c" translatable="false">బారీ వాహనాలకు</string>
+    <string name="te183d" translatable="false">1&amp;2 మాత్రమే</string>
+
+    <string name="te184q" translatable="false">%1$d. ట్రాఫిక్ సిగ్నల్ తో నియంత్రించబడుతున్న జీబ్రా క్రాసింగ్ కు చేరువవుతున్న సమయంలో ఆకుపచ్చ లైటు వెలిగింది. కానీ ఇంకా కాలినడకన వెళ్లేవాళ్లు రోడ్డుపైనే ఉన్నారు. మీరేం చేయాలి?</string>
+    <string name="te184a" translatable="false">హారన్ మ్రోగిస్తూ ముందుకు వెళ్ళాలి</string>
+    <string name="te184b" translatable="false">పాదచారులు దాటి వెళ్ళేంతవరకు వేచి ఉండాలి</string>
+    <string name="te184c" translatable="false">పాదచారులని ఆగమని సంజ్ఞ చేయాలి</string>
+    <string name="te184d" translatable="false">కుడివైపునకు తిరిగి వెళ్లిపోవాలి</string>
+
+    <string name="te185q" translatable="false">%1$d. ట్రాపిక్ సిగ్నల్ వద్ద మీరు యూ-టర్న్ తీసుకోవలనుకున్నప్పుడు?</string>
+    <string name="te185a" translatable="false">ముందుగా కుడి వైపు సిగ్నల్ ఇచ్చి అద్దంలోంచి చూస్తూ టర్న్ తీసుకోవాలి</string>
+    <string name="te185b" translatable="false">వేగంగా టర్న్ తీసుకోవాలి</string>
+    <string name="te185c" translatable="false">రోడ్డుకు ఎడమవైపునకు రావాలి</string>
+    <string name="te185d" translatable="false">హారన్ మ్రోగిస్తూ టర్న్ తీసుకోవాలి</string>
+
+    <string name="te186q" translatable="false">%1$d. నీవు వాహనం నడుపుతున్నప్పుడు నెమ్మదిగా వెళ్ళవలసి వచ్చినప్పుడు, నీవు ఇచ్చే చేతి సిగ్నల్ ఏమిటి</string>
+    <string name="te186a" translatable="false">కుడి చేతిని వాహనపు బయటకి చాపి కిందకి పైకి ఊపుతూ సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te186b" translatable="false">సమాంతరంగా కుడి చేతిని వాహనం బయటకు బాపి అరచేతిని ముందుకు చూపుతు సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te186c" translatable="false">అడ్డంగా కుడి చేతిని వాహనం బయటకు చాపి అరచేతిని ముందుకు చూపుతు సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te186d" translatable="false">కుడి చేతిని వాహనపు బయటకు చాపి గడియారపు వ్యతిరేక దిశలో తిప్పుతూ సిగ్నల్ ఇవ్వాలి</string>
+
+    <string name="te187q" translatable="false">%1$d. రోడ్డు పై వాహనాన్ని నడుపుతున్నప్పుడు అగడానికి ఇవ్వవలసిన చేతి సిగ్నల్ ఏమిటి</string>
+    <string name="te187a" translatable="false">కుడి చేతిని వాహనపు బయటకి చాపి కిందకి పైకి ఉపుతూ సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te187b" translatable="false">కుడి చేతిని వాహనం బయటకు చాపి మెచేతిని పైకి ఎత్తి ముందుకు చూపుతు సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te187c" translatable="false">అడ్డంగా కుడి చేతిని వాహనం బయటకు చాపి అరచేతిని ముందుకు చూపుతు సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te187d" translatable="false">కుడి చేతిని వాహనపు బయటకు బాపి గడియారపు వ్యతిరేక దిశలో తిప్పుతూ సిగ్నల్ ఇవ్వాలి</string>
+
+    <string name="te188q" translatable="false">%1$d. వాహనం నడిపేటప్పుడు కుడివైపు తిరగాలంటే చేతితో ఇచ్చే సరైన సిగ్నల్ ఏది ?</string>
+    <string name="te188a" translatable="false">కుడి చేతిని వాహనపు బయటకీ చాపి కిందకి పైకి ఉపుతూ సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te188b" translatable="false">కుడి చేతిని వాహనం బయటకు చాపి మోచేతిని పైకి ఎత్తి ముందుకు చూపుతు సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te188c" translatable="false">కుడి చేతిని వాహనం బయటకు చాపి అరచేతిని ముందుకు చూపుతు సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te188d" translatable="false">కుడి చేతిని వాహనపు బయటకు చాపి గడియారపు వ్యతిరేక దిశలో తిప్పుతూ సిగ్నల్ ఇవ్వాలి</string>
+
+    <string name="te189q" translatable="false">%1$d. వాహనం నడిపేటప్పుడు ఎడమవైపు తిరగాలంటే చేతితో ఇచ్చే సరైన సిగ్నల్ ఏది?</string>
+    <string name="te189a" translatable="false">కుడి చేతిని వాహనపు బయటకీ చాపి కిందకి పైకీ ఊపుతూ సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te189b" translatable="false">కుడి చేతిని వాహనం బయటకు చాపి మోచేతిని పైకి ఎత్తి ముందుకు చూపుతు సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te189c" translatable="false">అడ్డంగా కుడి చేతిని వాహనం బయటకు చాపి అరచేతిని ముందుకు చూపుతు సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te189d" translatable="false">కుడి చేతిని వాహనపు బయటకు చాపి గడియారపు వ్యతిరేక దిశలో అరచేతిని తిప్పుతూ సిగ్నల్ ఇవ్వాలి</string>
+
+    <string name="te190q" translatable="false">%1$d. ఈ క్రింది వాటిలో ఏ ప్రదేశంలో మీ కారును పార్క్ చేయవచ్చును?</string>
+    <string name="te190a" translatable="false">రోడ్ క్రాసింగ్ దగ్గర</string>
+    <string name="te190b" translatable="false">రోడ్డు మలుపు దగ్గర</string>
+    <string name="te190c" translatable="false">పుట్ పాత్ పై</string>
+    <string name="te190d" translatable="false">పైవి ఏవి కావు</string>
+
+    <string name="te191q" translatable="false">%1$d. ఈ క్రింది వాటిలో ఏ ప్రదేశంలో మీ కారును పార్క్ చేయవచ్చును?</string>
+    <string name="te191a" translatable="false">ట్రాఫిక్ లైట్ల దగ్గర</string>
+    <string name="te191b" translatable="false">పాదచారుల క్రాసింగ్ దగ్గర</string>
+    <string name="te191c" translatable="false">రద్దీగా ఉన్న ప్రదాన రహదారిపై</string>
+    <string name="te191d" translatable="false">పైవి ఏవి కావు</string>
+
+    <string name="te192q" translatable="false">%1$d. ఈ క్రింది వాటిలో ఏ ప్రదేశంలో మీ కారును పార్క్ చేయవచ్చును?</string>
+    <string name="te192a" translatable="false">ఇంకోక పార్క్ చేసిన వాహనం ముందు</string>
+    <string name="te192b" translatable="false">పార్క్ చేసి ఉన్న ఇంకో వాహనం ప్రక్కన</string>
+    <string name="te192c" translatable="false">ఎక్కడైతే పొడవాటి తెల్ల గీత ఉంటుందో అక్కడ</string>
+    <string name="te192d" translatable="false">పైవి ఏవి కావు</string>
+
+    <string name="te193q" translatable="false">%1$d. విభజన అయ్యి ఉండే రహదారి పై వాహనం నడిపేటప్పుడు</string>
+    <string name="te193a" translatable="false">ట్రాపిక్ లేనప్పుడు లేన్ దాటవచ్చు</string>
+    <string name="te193b" translatable="false">నెమ్మదిగా వెళుతున్నప్పుడు లేన్ దాటవచ్చును</string>
+    <string name="te193c" translatable="false">సరైన సిగ్నల్ ఇచ్చి లేన్ దాటవచ్చును</string>
+    <string name="te193d" translatable="false">ద్విచక్ర వాహనములు లేన్ దాటడానికి ఎటువంటి నిబందనలు లేవు</string>
+
+    <string name="te194q" translatable="false">%1$d. ఒక పసుపు గీతటే రోడ్డు విభజించినప్పుడు</string>
+    <string name="te194a" translatable="false">నీ ముందరి వాహనములను పసుపు గీత దాటకుండా ఓవర్ టేక్ చేయవచ్చును</string>
+    <string name="te194b" translatable="false">నీ ముందు వాహనమును ఓవర్ టేక్ చేయరాదు</string>
+    <string name="te194c" translatable="false">నీ ముందరి వాహనములను పసుపు గీత దాటి ఓవర్ టేక్ చేయవచ్చును</string>
+    <string name="te194d" translatable="false">సిగ్నల్ ఇచ్చి నీ ముందరి వాహనములను పసుపు గీత దాటి ఓవర్ టేక్ చేయవచ్చును</string>
+
+    <string name="te195q" translatable="false">%1$d. మీరు రద్దీ ఉన్న రోడ్డులో వేరొక వాహనము వెనుకాల వెళుతున్నారు, మీరు ఏమి చేయాలి</string>
+    <string name="te195a" translatable="false">ముందరి వాహనమునకు దగ్గరగా వెళ్ళాలి</string>
+    <string name="te195b" translatable="false">మీ ముందు వాహనమునకు ప్రమాదం జరగకుండా సరిపడ దూరంలో ఉండాలి</string>
+    <string name="te195c" translatable="false">ముందు వాహనమునకు చాల ఎక్కువ దూరంలో ఉండాలి</string>
+    <string name="te195d" translatable="false">పైవి ఏవి కావు</string>
+
+    <string name="te196q" translatable="false">%1$d. నీవు ఇరుకైన కొండ మార్గం నుండి కిందకి దిగుతున్నప్పుడు, నీ ముందు నుండి వేరొక వాహనము వస్తున్నప్పుడు, నీవు ఏమి చేయాలి</string>
+    <string name="te196a" translatable="false">నీ ముందు వస్తున్న వాహనమును ఆపి నీకు మార్గం ఇవ్వాలని అడగాలి</string>
+    <string name="te196b" translatable="false">కొండ పైకి వస్తున్న వాహనములకు దారి ఇవ్వాలి</string>
+    <string name="te196c" translatable="false">నీ వాహనమును ఎదురుగా వస్తున్న వాహనములకు అడ్డంగా పెట్టాలి</string>
+    <string name="te196d" translatable="false">నీ వాహనము వేగం పెంచాలి</string>
+
+    <string name="te197q" translatable="false">%1$d. మీ వాహనం ముందున్న బస్ స్టాప్ వద్ద ఒక బస్సు బయలుదేరడానికి సిద్ధంగా ఉంది. దాని కుడివైపు ఇండికేటర్లు వెలుగుతూ ఉంటే మీరేం చేయాలి ?</string>
+    <string name="te197a" translatable="false">మీ హెడ్ లైట్లను ఫ్లాష్ చేస్తూ వేగాన్ని తగ్గించండి</string>
+    <string name="te197b" translatable="false">వేగాన్ని తగ్గించి,ఎటువంటి హానీ జరగదనుకుంటే బస్సును ముందుకు వెళ్లనివ్వాలి</string>
+    <string name="te197c" translatable="false">హారన్ మోగించి ముందుకెళ్లాలి</string>
+    <string name="te197d" translatable="false">వేగాన్ని తగ్గించి హారన్ మోగించాలి</string>
+
+    <string name="te198q" translatable="false">%1$d. అప్పటికే ఆకుపచ్చ లైటు వెలుగుతూ ఉన్న కూడలికి చేరువవుతున్న సమయంలో ఏంచేయాలి?</string>
+    <string name="te198a" translatable="false">వేగం పెంచాలి</string>
+    <string name="te198b" translatable="false">అదే వేగాన్ని పాటించాలి</string>
+    <string name="te198c" translatable="false">ఆగడానికి సిద్ధం కావాలి</string>
+    <string name="te198d" translatable="false">గట్టిగా బ్రేక్ వేయాలి</string>
+
+    <string name="te199q" translatable="false">%1$d. మీరు భారీ సరుకుల రవాణా వాహనం వెనక వెళ్తున్నారు. ముందున్న వాహనం ఎడమకు తిరుగుతున్నట్లు సిగ్నల్ ఇచ్చి కుడికీ తిరిగితే ఏంచేస్తారు</string>
+    <string name="te199a" translatable="false">వేగాన్ని తగ్గించి ఆ వాహనాన్ని తిరగనివ్వాలి</string>
+    <string name="te199b" translatable="false">ఎడమవైపునే ఉండి ముందుకు వెళ్తూనే ఉండాలి</string>
+    <string name="te199c" translatable="false">కుడివైపునుంచే ఆ వాహనాన్ని దాటి ముందుకు వెళ్లాలి</string>
+    <string name="te199d" translatable="false">అదేవేగాన్ని కొనసాగిస్తూ హారన్ మోగించాలి</string>
+
+    <string name="te1100q" translatable="false">%1$d. ఒక గొర్రెల కాపరి మిమ్మల్ని ఆగమని అంటే ఏం చేయాలి?</string>
+    <string name="te1100a" translatable="false">వాళ్లకి ఆహక్కు లేదు కాబట్టి అతన్ని పట్టించుకోనవసరం లేదు</string>
+    <string name="te1100b" translatable="false">ఆగి మీ ఇంజిన్ ఆపేయండి</string>
+    <string name="te1100c" translatable="false">ఆగవద్దు కానీ, నెమ్మదిగా వెళ్లండి</string>
+    <string name="te1100d" translatable="false">వేగంగా అతన్ని దాటి ముందుకు వెళ్లడానికి ప్రయత్నించండి</string>
+
+    <string name="te1101q" translatable="false">%1$d. వాహనాన్ని రివర్స్ చేసుకునేటప్పుడు మీరు వెనకకు స్పష్టంగా గమనించలేరు. అప్పుడు మీరేం చేయాలి ?</string>
+    <string name="te1101a" translatable="false">కిటికిని తెరిచి వెనక్కి చూడాలి</string>
+    <string name="te1101b" translatable="false">తలుపు తెరిచి వెనక్కి చూడాలి</string>
+    <string name="te1101c" translatable="false">సైడ్ మిర్రర్ లో చూడాలి</string>
+    <string name="te1101d" translatable="false">ఇతరుల సాయంతో వాహనం వెనుక పరిస్థితులు తెలుసుకోవాలి</string>
+
+    <string name="te1102q" translatable="false">%1$d. మీరు ఇద్దరు సైకిలిస్టులను అనుసరిస్తున్నారు. వాళ్లు ఎడము లేన్ నుండి చుట్టూ తిరిగి వెళ్లే ప్రదేశానికి చేరుతున్నారు. వాళ్లు ఎటువైపు వెళ్తారని ఊహించవచ్చు ?</string>
+    <string name="te1102a" translatable="false">ఎడమ</string>
+    <string name="te1102b" translatable="false">కుడి</string>
+    <string name="te1102c" translatable="false">ఎటువైపైనా</string>
+    <string name="te1102d" translatable="false">తిన్నగా</string>
+
+    <string name="te1103q" translatable="false">%1$d. ఓ ఇరుకైన సందులోంచి రాత్రివేళ వెళ్తున్నారు. ముందు నెమ్మదిగా పోతున్న ఓ వాహనం కుడివైపునకు వెళ్తున్నట్లు కొంతసేపటి నుండి సిగ్నల్ ఇస్తోంది. అప్పుడేం చేయాలి ?</string>
+    <string name="te1103a" translatable="false">ఎడమవైపునుండి ఓవర్ టేక్ చేయాలి</string>
+    <string name="te1103b" translatable="false">ఓవర్ టేక్ చేసే ముందు హెడ్ లైట్లను ఫ్లాష్ చేయాలి</string>
+    <string name="te1103c" translatable="false">కుడివైపు సిగ్నల్ ఇచ్చి హారన్ మోగించాలి</string>
+    <string name="te1103d" translatable="false">సిగ్నల్ ఆపే వరకు ఆగి ఓవర్ టేక్ చేయాలి</string>
+
+    <string name="te1104q" translatable="false">%1$d. మోటార్ వేలోకి చేరేముందు మీరేం చేయాలి?</string>
+    <string name="te1104a" translatable="false">హార్డ్ షోల్డర్ ను ఉపయోగించాలి</string>
+    <string name="te1104b" translatable="false">వేగంగా వెళ్లి లేన్ చివరన ఆగాలి</string>
+    <string name="te1104c" translatable="false">మోటార్ వేకి చేరేముందు ఆగాలి</string>
+    <string name="te1104d" translatable="false">అప్పటికే మోటార్ వేలో ఉన్న వాహనాలకు దారి వదలాలి</string>
+
+    <string name="te1105q" translatable="false">%1$d. మోటార్ వేపై నడుపుతున్నప్పుడు పొరపాటున మీరు తిరగాల్సిన మలుపు దాటి ముందుకు పోతే ఏంచేస్తారు ?</string>
+    <string name="te1105a" translatable="false">. హార్డ్ షోల్డర్ వద్ద జాగ్రత్తగా వెనక్కి తిప్పుతారు</string>
+    <string name="te1105b" translatable="false">తర్వాత మలుపువరకూ ముందుకు వెళ్తారు</string>
+    <string name="te1105c" translatable="false">జాగ్రత్తగా రివర్స్ చేసి ఎడమలేన్ లోకి మరలుతారు</string>
+    <string name="te1105d" translatable="false">ఖాళీ దొరకగానే యూటర్న్ చేస్తారు</string>
+
+    <string name="te1106q" translatable="false">%1$d. రోడ్డుపైన మీ వాహనాన్ని పార్క్ చేసి వెళ్తున్నారు. ఏ పరిస్థితుల్లో మీ ఇంజినన్ను రన్నింగ్ ఉంచాలి ?</string>
+    <string name="te1106a" translatable="false">5నిమిషాల కంటే తక్కువ సమయం పార్క్ చేసినప్పుడు</string>
+    <string name="te1106b" translatable="false">బ్యాటరీ చార్జ్ తగ్గిపోయినప్పుడు</string>
+    <string name="te1106c" translatable="false">20 కిలోమీటర్ల వేగపరిమితి ఉన్న ప్రాంతాల్లో</string>
+    <string name="te1106d" translatable="false">ఎటువంటి పరిస్థితుల్లోనూ ఇంజినన్ను ఆన్ చేసి వుంచకూడదు</string>
+
+    <string name="te1107q" translatable="false">%1$d. చుట్టూ తిరిగి వెళ్లే ప్రదేశంలో నేరుగా ముందుకు వెళ్లాల్సి వస్తే ఏంచేయాలి ?</string>
+    <string name="te1107a" translatable="false">చుట్టూ తిరిగి వెళ్ళే ప్రదేశం వదిలేముందు ఎడమ ఇండికేటర్ ను వేయాలి</string>
+    <string name="te1107b" translatable="false">అసలు ఇండికేటర్లు ఉపయోగించకూడదు</string>
+    <string name="te1107c" translatable="false">ఆ ప్రదేశానికి చేరేముందు కుడి ఇండికేటర్ వేయాలి</string>
+    <string name="te1107d" translatable="false">ఆ ప్రదేశానికి చేరే ముందు ఎడమ ఇండికేటర్ వేయాలి.</string>
+
+    <string name="te1108q" translatable="false">%1$d. కొండపై ప్రయాణించేటప్పుడు ఎవరికి దారివ్వాలి?</string>
+    <string name="te1108a" translatable="false">కిందివైపునకు వచ్చేవారు</string>
+    <string name="te1108b" translatable="false">పైకి వెళ్లే వాహనాలకు</string>
+    <string name="te1108c" translatable="false">ఏ ఒక్కరికీ అవసరం లేదు</string>
+    <string name="te1108d" translatable="false">రోడ్డు పరిస్తితిని బట్టి</string>
+
+    <string name="te1109q" translatable="false">%1$d. కూడలి వైపు వెళ్లేటప్పుడు ట్రాఫిక్ లైట్ గ్రీన్ నుంచి ఎల్లోకి మారితే ఏంచేయాలి ?</string>
+    <string name="te1109a" translatable="false">ట్రాఫిక్ లైట్ రెడ్ గా మారేలోగా కూడలిని దాటేందుకు వేగం పెంచాలి</string>
+    <string name="te1109b" translatable="false">ప్రమాదం లేకుండా ఆపగలిగితే కూడలికి ముందే ఆపాలి</string>
+    <string name="te1109c" translatable="false">తక్షణమే ఆపాలి</string>
+    <string name="te1109d" translatable="false">కార్నర్ వైపునకు వెళ్లి అక్కడ వెంటనే ఆపాలి</string>
+
+    <string name="te1110q" translatable="false">%1$d. ఏదన్నా కూడలి నుంచి కుడివైపునకు మలుపు తిప్పాలంటే మీరు తప్పనిసరిగా చేయాల్సిందేమిటి ?</string>
+    <string name="te1110a" translatable="false">మలుపు తిరిగే ముందే సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te1110b" translatable="false">ట్రాఫిక్ మీకు దగ్గరగా వచ్చేవరకు సిగ్నల్ అవసరం లేదు"</string>
+    <string name="te1110c" translatable="false">ఎలాంటి సిగ్నలూ అవసరం లేదు</string>
+    <string name="te1110d" translatable="false">మలుపు తిరగడానికి కనీసం 3 సెకన్ల ముందర కుడివైపుకు సిగ్నల్ ఇవ్వాలి</string>
+
+    <string name="te1111q" translatable="false">%1$d. వాహనాన్ని ప్రయివ్ చేస్తున్నప్పుడు, మీముందు ఒక జంతువు హఠాత్తుగా రోడ్డుకు అడ్డంగా పరుగెత్తడం గమనించారు. అప్పుడేం చేయాలి ?</string>
+    <string name="te1111a" translatable="false">వెంటనే బ్రేకుల్ని వేయాలి</string>
+    <string name="te1111b" translatable="false">హారన్ మోగించి ఎటువైపు వీలుంటే అటువైపునుంచి ఆ జంతువును ఓవర్ టేక్ చేయాలి</string>
+    <string name="te1111c" translatable="false">వేగాన్ని పెంచి ఆ జంతువు ముందుకు చేరుకోవాలి</string>
+    <string name="te1111d" translatable="false">వెనక వస్తున్న ట్రాఫిక్ ను చెక్ చేసి ఆ జింతువు రోడ్డు దాటేందుకు వీలుగా వేగాన్ని తగ్గించాలి, లేదా ఆగాలి</string>
+
+    <string name="te1112q" translatable="false">%1$d. వర్షం పడుతున్నప్పుడు మరియు రోడ్డు తేమగా ఉన్నప్పుడు బ్రేక్ వేయాల్సి వస్తే ఏంచేయాలి?</string>
+    <string name="te1112a" translatable="false">పూర్తి ఫోర్స్ ను ఉపయోగించాలి</string>
+    <string name="te1112b" translatable="false">బ్రేకులను తరచుగా వేయాలి</string>
+    <string name="te1112c" translatable="false">వీల్స్ ను లాక్ చేసేందుకు ప్రయత్నించాలి</string>
+    <string name="te1112d" translatable="false">ఏదీ సరైన సమాధానం కాదు</string>
+
+    <string name="te1113q" translatable="false">%1$d. మీరు ఓకొండ నుండి ఏటవాలుగా కిందకు డ్రయివ్ చేసుకుంటూ వెళ్తున్నారు. మీ వాహనం యొక్క వేగాన్ని నియంత్రించడానికి , తప్పనిసరిగా చేయాల్సిందేమిటి ?</string>
+    <string name="te1113a" translatable="false">\'లో గేర్\'ను ఎంచుకొని బ్రేకులు జాగ్రత్తగా వేయాలి</string>
+    <string name="te1113b" translatable="false">\'హై గేర్\'ను ఎంచుకొని బ్రేకులు జాగ్రత్తగా వేయాలి</string>
+    <string name="te1113c" translatable="false">\'హై గేర్\'ను ఎంచుకొని బ్రేకులు వేయకూడదు</string>
+    <string name="te1113d" translatable="false">న్యూట్రల్ గేర్ వేసి బ్రేకులను గట్టిగా వేయాలి</string>
+
+    <string name="te1114q" translatable="false">%1$d. కొండమీదినుంచి కిందకు డ్రయివ్ చేస్తున్నారు. అప్పుడు ఏం చేయాలి ?</string>
+    <string name="te1114a" translatable="false">గరిష్ట టాకోమీటర్ పనితీరు కోసం టాప్ గేర్ ను వాడాలి</string>
+    <string name="te1114b" translatable="false">ఇంజన్ శబ్దాన్ని తగ్గించడానికి న్యూట్రల్ గేర్ వేయాలి</string>
+    <string name="te1114c" translatable="false">ఇగ్నీషన్ ఆఫ్ చేసి న్యూట్రల్ గేర్ లో డైవ్ చేస్తూ ఇంధనాన్ని ఆదా చేయాలి</string>
+    <string name="te1114d" translatable="false">కొండపైకి వెళ్లేటప్పుడు ఏగేర్ ను వాడతారో దిగేటప్పుడు కూడా అదే గేర్ వాడాలి</string>
+
+    <string name="te1115q" translatable="false">%1$d. జీబ్రా క్రాసింగ్ దగ్గర వేచి ఉన్న పాదచారుల కోసం ఆగారు. వారు రోడ్డు దాటడం మొదలు పెట్టకపోతే మీరేం చేయాలి?</string>
+    <string name="te1115a" translatable="false">సహనంతో వేచి ఉండాలి</string>
+    <string name="te1115b" translatable="false">మీ హారన్ మోగించాలి</string>
+    <string name="te1115c" translatable="false">డైవ్ చేసుకుపోవాలి</string>
+    <string name="te1115d" translatable="false">క్రాస్ చేయమని వారికి చేయి ఊపి చెప్పాలి</string>
+
+    <string name="te1116q" translatable="false">%1$d. ఎప్పుడు సైకిలిస్టును ఓవర్ టేక్ చేయడానికి ప్రయత్నించకూడదు ?</string>
+    <string name="te1116a" translatable="false">ఎడమకు తిరిగేముందు</string>
+    <string name="te1116b" translatable="false">కుడికి తిరిగేముందు</string>
+    <string name="te1116c" translatable="false">వన్ వే ఉన్న వీధిలో</string>
+    <string name="te1116d" translatable="false">డ్యూయల్ క్యారేజ్ వే పైన</string>
+
+    <string name="te1117q" translatable="false">%1$d. గాలి ఎక్కువగా విస్తోంది. మీ ముందున్న మోటార్ సైకిలిస్టు ఒక పెద్ద వాహనాన్ని ఓవర్ టేక్ చేసే ప్రయంత్సంలో ఉన్నాడు. అప్పుడు మీరేం చేయాలి ?</string>
+    <string name="te1117a" translatable="false">వెంటనే మోటార్ సైకిలిస్టును ఓవర్ టేక్ చేయాలి</string>
+    <string name="te1117b" translatable="false">బాగా వెనుకనే ఉండాలి</string>
+    <string name="te1117c" translatable="false">మోటార్ సైకిలిస్టు పక్కనే ఉండాలి</string>
+    <string name="te1117d" translatable="false">మోటార్ సైకిలిస్టు దగ్గరగా ఉండాలి</string>
+
+    <string name="te1118q" translatable="false">%1$d. మీరు కుడివైపు ఉన్న ఒక సందులోకి తిరగాలనుకుంటున్నారు. తిరగడానికి కొద్దిగా ముందుగా మోటార్ సైక్లిస్టను చెక్ చేయాలి ఎందుకంటే అతను "</string>
+    <string name="te1118a" translatable="false">మీ ఎడమనుండి ఓవర్ టేక్ చేయవచ్చు</string>
+    <string name="te1118b" translatable="false">మిమ్మల్ని చాలా దగ్గరగా అనుసరించవచ్చు</string>
+    <string name="te1118c" translatable="false">పక్క రోడ్డు నుండి బయటకి రావచ్చు</string>
+    <string name="te1118d" translatable="false">కుడి నుండి ఓవర్ టేక్ చేయవచ్చు</string>
+
+    <string name="te1119q" translatable="false">%1$d. బారీ వాహనాన్ని మీరు దాటేందుకు తగిన దూరం ఉండాలని మీరు ప్రయత్నించినప్పుడు మరొక కారు మద్యలోకి దూసుకు వస్తే ఏంచేస్తారు?</string>
+    <string name="te1119a" translatable="false">హారన్ మ్రోగిస్తారు</string>
+    <string name="te1119b" translatable="false">మరింత దూరం పెంచుతారు</string>
+    <string name="te1119c" translatable="false">హెడ్ లైట్లను వెలిగించి ఆర్పుతారు</string>
+    <string name="te1119d" translatable="false">ఓవర్ టేక్ చేస్తారు</string>
+
+    <string name="te1120q" translatable="false">%1$d. పాదచారులను రోడ్డు దాటవలసిందిగా ఎప్పుడు తొందరపెట్టవచ్చు?</string>
+    <string name="te1120a" translatable="false">పాదచారుల క్రాసింగ్ వద్ద</string>
+    <string name="te1120b" translatable="false">ఎప్పుడూ అలా చేయకూడదు</string>
+    <string name="te1120c" translatable="false">కూడలి వద్ద</string>
+    <string name="te1120d" translatable="false">పాఠశాలల వద్ద</string>
+
+    <string name="te1121q" translatable="false">%1$d. మీ ముందు ఒక మోటార్ సైకిల్ మెల్లగా వెల్తోంది. అది ఏవైపు తిరుగుతుందో తెలియనప్పుడు మీరేం చేయాలి?</string>
+    <string name="te1121a" translatable="false">ఎడమవైపు నుంచి దాటాలి</string>
+    <string name="te1121b" translatable="false">కుడివైపు నుంచి దాటాలి</string>
+    <string name="te1121c" translatable="false">వెనుకనే వుండాలి</string>
+    <string name="te1121d" translatable="false">మరింత దగ్గరగా వెళ్ళాలి</string>
+
+    <string name="te1122q" translatable="false">%1$d. మలుపులో వేగంగా వెళుతూ బ్రేక్ వేస్తే ?</string>
+    <string name="te1122a" translatable="false">మీ వాహనం స్థిరంగా వుంటుంది</string>
+    <string name="te1122b" translatable="false">అదుపు తప్పుతుంది</string>
+    <string name="te1122c" translatable="false">ఆగిపోతుంది</string>
+    <string name="te1122d" translatable="false">సురక్షితంగా మలుపును దాటుతుంది</string>
+
+    <string name="te1123q" translatable="false">%1$d. పొడవైన, బరువుతో వెళుతున్న లారీ మీ వాహనాన్ని దాటివెళ్లేందుకు ఎక్కువ సమయం తీసుకుంటే ఏం చేస్తారు ?</string>
+    <string name="te1123a" translatable="false">వేగం పెంచుతారు</string>
+    <string name="te1123b" translatable="false">వేగం తగ్గిస్తారు</string>
+    <string name="te1123c" translatable="false">ఒకే వేగంలో వెళతారు</string>
+    <string name="te1123d" translatable="false">దిశ మార్చుకుంటారు</string>
+
+    <string name="te1124q" translatable="false">%1$d. సైకిలిస్ట్ వెనుక వెళుతున్నప్పుడు ఎదురయ్యే ప్రధానమైన ప్రమాదం ఏమిటి?</string>
+    <string name="te1124a" translatable="false">హఠాత్తుగా ఎడమవైపుకు వచ్చి సైకిలిస్ట్ కిందకు దిగవచ్చు</string>
+    <string name="te1124b" translatable="false">హఠాత్తుగా రోడ్డు పైన ఎటువైపైనా తిరగవచ్చు</string>
+    <string name="te1124c" translatable="false">సైకిల్ వెనుక పెట్టుకున్న సామాను కింద పడవచ్చ</string>
+    <string name="te1124d" translatable="false">రోడ్డు చివర కుడివైపుకు తిరగాలని ప్రయత్నించవచ్చు</string>
+
+    <string name="te1125q" translatable="false">%1$d. లైటింగ్ బాగా ఉన్న మోటారు వేపై రాత్రి సమయంలో వెళ్తున్నప్పుడు?</string>
+    <string name="te1125a" translatable="false">సైడు లైట్లను మాత్రమే ఉపయోగించాలి</string>
+    <string name="te1125b" translatable="false">ఎప్పుడూ హెడ్ లైట్లు ఉపయోగించాలి</string>
+    <string name="te1125c" translatable="false">వెనుక ఉండే మంచు లైట్లను ఉపయోగించాలి</string>
+    <string name="te1125d" translatable="false">వాతావరణం సరిగా లేనప్పుడే హెడ్ లైట్లను ఉపయోగించాలి</string>
+
+    <string name="te1126q" translatable="false">%1$d. మీ ముందు సైక్లిస్ట్ వెళుతున్నాడు మీరు రాబోయే ఎడమ వైపు సందులోకి తిరగాలనుకుంటున్నారు అప్పుడు మీరు ఏం చేయాలి.</string>
+    <string name="te1126a" translatable="false">కూడలి రాకముందే సైక్లిస్ట్ ని ఓవర్ టేక్ చేయాలి</string>
+    <string name="te1126b" translatable="false">జంక్షన్ దాటే వరకు సైక్లిస్ట్ కు సమాంతరంగా వెళ్ళాలి</string>
+    <string name="te1126c" translatable="false">సైక్లిస్ట్ జంక్షన్ దాటే వరకు అగివుండాలి</string>
+    <string name="te1126d" translatable="false">కూడలి వద్ద సైక్లిస్ట్ చుట్టూ తిరిగి వెళ్ళాలి</string>
+
+    <string name="te1127q" translatable="false">%1$d. పెద్ద లారీని ఓవర్ టేక్ చేయాలంటే మొట్టమొదట మీరు చేయవలసినది</string>
+    <string name="te1127a" translatable="false">త్వరగా దాటడానికి వీలుగా లారీకి దగ్గరగా వెళ్ళాలి</string>
+    <string name="te1127b" translatable="false">ఎడమవైపు దగ్గరగా వెళ్ళాలి</string>
+    <string name="te1127c" translatable="false">మీరు హెడ్ లైట్లు ఫ్లాష్ చేసిన తరువాత ముందు డ్రయివర్ సిగ్నల్ ఇచ్చేంతవరకు ఆగాలి</string>
+    <string name="te1127d" translatable="false">రోడ్డు స్పష్టంగా కనబడేట్లు తగినంత దూరంలో ఉండాలి</string>
+
+    <string name="te1128q" translatable="false">%1$d. మీరు పాదచారుల క్రాసింగ్ దగ్గర ఆగారు. పాదచారులు రోడు కాస్ చేస్తున్నారు అప్పుడు మీరు ఏంచేస్తారు?</string>
+    <string name="te1128a" translatable="false">పాదచారులు రోడ్డు దాటేవరకు వేచి ఉంటారు</string>
+    <string name="te1128b" translatable="false">మెల్లగా మీ వాహనాన్ని ముందుకు కదుపుతూఉంటారు</string>
+    <string name="te1128c" translatable="false">మీ ఇంజిన్ ఆపి, వేచి ఉంటారు</string>
+    <string name="te1128d" translatable="false">రోడ్డు దాటమని పాదచారులకు సూచిస్తారు</string>
+
+    <string name="te1129q" translatable="false">%1$d. కూడలి లో ఎడమ వైపునకు తిరగాలనుకున్నారు అప్పటికి పాదచారులు రోడ్డు దాటుతున్నారు అప్పుడు మీరు ఏమిచేయాలి? "</string>
+    <string name="te1129a" translatable="false">వారికి సరిపడ స్థలం ఇస్తూ ముందుకు వెళ్ళిపోవాలి</string>
+    <string name="te1129b" translatable="false">మీరు ఆగి రోడ్డు దాటమని వారికి చేయి ఊపాలి</string>
+    <string name="te1129c" translatable="false">హార్ మోగించుకుంటు ముందుకు వెళ్ళాలి</string>
+    <string name="te1129d" translatable="false">వారికి దారి ఇవ్వాలి</string>
+
+    <string name="te1130q" translatable="false">%1$d. ఒక పాదవారి సరిగ్గా రోడ్డుపైకి మీ ముందు వచ్చాడు. అప్పుడు మొదట మీరేం చేయాలి?</string>
+    <string name="te1130a" translatable="false">హారన్ మోగించాలి</string>
+    <string name="te1130b" translatable="false">మీ వాహనం అద్దాల్ని పరిశీలించాలి</string>
+    <string name="te1130c" translatable="false">హెడ్ లైట్లు ఫ్లాష్ చేయాలి</string>
+    <string name="te1130d" translatable="false">బ్రేక్ వేయాలి</string>
+
+    <string name="te1131q" translatable="false">%1$d. మీరు ఒక రౌండ్ అబౌట్ ప్రదేశానికి చేరారు. ఒక సైకిలిస్ట్ కుడివైపు తిరుగుతున్నట్లు సిగ్నల్ చూపాడు. మీరు ఏం చేస్తారు ?</string>
+    <string name="te1131a" translatable="false">కుడివైపు నుంచి ఓవర్ టేక్ చేస్తారు</string>
+    <string name="te1131b" translatable="false">హారతో హెచ్చరిస్తారు</string>
+    <string name="te1131c" translatable="false">వెళ్ళమని సైకిలిస్ట్ కు సూచిస్తారు</string>
+    <string name="te1131d" translatable="false">సైకిలిస్ట్ కు దారి వదులుతారు</string>
+
+    <string name="te1132q" translatable="false">%1$d. ట్రాపిక్ సిగ్నల్ నీకు అనుకూలంగా ఉన్నా, మీరేంచేయాలి</string>
+    <string name="te1132a" translatable="false">ఆగడానికి సిద్ధంగా ఉండాలి</string>
+    <string name="te1132b" translatable="false">అత్యవసర సమయాలలో వాటిని పట్టించుకోవలసిన అవసరం లేదు</string>
+    <string name="te1132c" translatable="false">ట్రాపిక్ సిగ్నల్స్ పట్టించుకోని డ్రయివర్లను గమనించాలి</string>
+    <string name="te1132d" translatable="false">మంచు కురిసే సమయాలలో వెళ్లకూడదు</string>
+
+    <string name="te1133q" translatable="false">%1$d. మీరు వెళుతున్న రోడ్డు పక్కన మీకు ఒక అవాంతరం కనిపించింది. మీరేం చేయాలి ?</string>
+    <string name="te1133a" translatable="false">వెళ్లిపోండి. మీకు ప్రాధాన్యత వుంది</string>
+    <string name="te1133b" translatable="false">వస్తూపోతున్న వాహనాలకు దారి ఇవ్వండి</string>
+    <string name="te1133c" translatable="false">వస్తున్న వాహనాలకు దారి ఇవ్వాలి</string>
+    <string name="te1133d" translatable="false">ముందుగా వెళ్లిపోవడానికి వేగం పెంచండి</string>
+
+    <string name="te1134q" translatable="false">%1$d. ఎత్తైనా ప్రదేశంలో మీ వాహనాన్ని కొద్ది సేపు ఆపాలంటే మీరు ఏమి చేయాలి</string>
+    <string name="te1134a" translatable="false">క్లబ్ ను వాడాలి</string>
+    <string name="te1134b" translatable="false">కాలి బ్రేకును వాడాలి</string>
+    <string name="te1134c" translatable="false">న్యూట్రల్ చేసి పార్కింగ్ బ్రేకును వాడాలి</string>
+    <string name="te1134d" translatable="false">ఇంజన్ ఆపిన తరువాత పార్కింగ్ బ్రేక్ ను ఉపయోగించాలి</string>
+
+    <string name="te1135q" translatable="false">%1$d. ఒక వ్యక్తి చేతిలో ఎర్ర రంగు ఉన్న తెల్లకర్రతో రోడ్డు దాటుతున్నప్పుడు మీరేం చేయాలి?</string>
+    <string name="te1135a" translatable="false">అతను రోడ్డు దాటేంత వరకు వేచి ఉండాలి</string>
+    <string name="te1135b" translatable="false">అతన్ని కొట్టాలి, తోయాలి</string>
+    <string name="te1135c" translatable="false">అతన్ని ఎత్తి దాటించండి</string>
+    <string name="te1135d" translatable="false">పట్టించుకోకండి</string>
+
+    <string name="te1136q" translatable="false">%1$d. మీరు \'టి-జంక్షన్\' దగ్గర ఎదురుచూస్తున్నారు. కుడివైపునుండి ఎడమ సిగ్నల్ వేసుకుంటూ ఒక వాహనం వస్తున్నది. మీరేం చేయాలి?</string>
+    <string name="te1136a" translatable="false">స్పీడు పెంచి వెళ్లిపోండి</string>
+    <string name="te1136b" translatable="false">ఆ వాహనం మలుపు తిరిగేదాకా ఆగండి</string>
+    <string name="te1136c" translatable="false">ఆ వాహనం జంక్షన్ చేరేలోగా వెళ్లిపోండి</string>
+    <string name="te1136d" translatable="false">మెల్లగా వెళ్లండి</string>
+
+    <string name="te1137q" translatable="false">%1$d. వరుస స్పీడ్ బ్రేకర్లున్న రోడ్డులో మీరు వెళ్తున్నారు. మీరేం చేయాలి ?</string>
+    <string name="te1137a" translatable="false">వెళ్తున్నంతసేపూ వేగం తగ్గించి అంతే వేగంతో వాహనం నడపాలి</string>
+    <string name="te1137b" translatable="false">స్పీడ్ బ్రేకర్లున్న ప్రతిచోటా వేగం త్వరగా పెంచాలి</string>
+    <string name="te1137c" translatable="false">ఎల్లవేళలా గరిష్ట పరిమితిలో అనుమతించిన వేగంతోనే కారును నడపాలి</string>
+    <string name="te1137d" translatable="false">పాఠశాలల సమయాల్లో మాత్రమే నెమ్మదిగా నడపాలి</string>
+
+    <string name="te1138q" translatable="false">%1$d. కుడి చేతి మలుపు వద్దకు చేరుకున్నప్పుడు నీవు ఎడమ వైపునకు ఉండాలి, ఎందుకు</string>
+    <string name="te1138a" translatable="false">మీ ముందు మార్గం బాగా కనబడడానికి</string>
+    <string name="te1138b" translatable="false">రోడ్డు ఎత్తుపల్లాలు అదిగమించుటకు</string>
+    <string name="te1138c" translatable="false">వెనుక ఉన్న వాహనములు ఓవర్ టేక్ చేయుటకు అనువుగా ఉండుటకు</string>
+    <string name="te1138d" translatable="false">జారేటప్పుడు జాగ్రత్తగా ఉండడానికి</string>
+
+    <string name="te1139q" translatable="false">%1$d. మీరు పొడవైన కొండదిగుడు ప్రాంతంలాంటి చోట ఉన్నారు. మీ వాహన వేగాన్ని అదుపులో ఉంచడానికి మీరేం చేస్తారు ?</string>
+    <string name="te1139a" translatable="false">న్యూట్రల్ లోకి రావాలి</string>
+    <string name="te1139b" translatable="false">లోయర్ గేర్ కు మారుస్తారు</string>
+    <string name="te1139c" translatable="false">హ్యాండ్ బ్రేక్ ను గట్టిగా పట్టుకుంటారు</string>
+    <string name="te1139d" translatable="false">వాహనాన్ని పార్క్ చేసి బ్రేక్ ను సున్నితంగా ఉపయోగిస్తారు</string>
+
+    <string name="te1140q" translatable="false">%1$d. క్రాసింగ్ దగ్గరికి చేరుకునేటప్పుడు డైవర్ చేయవలసిన పని ఏమిటి?</string>
+    <string name="te1140a" translatable="false">అదేవేగంతో ముందుకు వెళ్ళాలి</string>
+    <string name="te1140b" translatable="false">హార్న్ మోగించాలి</string>
+    <string name="te1140c" translatable="false">వేగంగా వెళ్ళిపోవాలి</string>
+    <string name="te1140d" translatable="false">వేగం తగ్గించి ఆపడానికి సిద్ధపడాలి</string>
+
+    <string name="te1141q" translatable="false">%1$d. మీరు సైకిలిస్టు వెనుక ఉన్నారు. ట్రాఫిక్ లైట్ మారినపుడు మీరేం చేస్తారు?</string>
+    <string name="te1141a" translatable="false">సైకిలిస్టు కంటే ముందే వెళ్లడానికి ప్రయత్నించండి</string>
+    <string name="te1141b" translatable="false">సైకిలిస్టుకు తగినంత స్థలాన్ని, సమయాన్ని ఇవ్వండి</string>
+    <string name="te1141c" translatable="false">కుడివైపునకు తిరగండి కానీ సైకిలిస్టుకు కూడా స్థలం కేటాయించండి</string>
+    <string name="te1141d" translatable="false">హారన్ మోగిస్తూ ముందుగా వెళ్లిపోండి</string>
+
+    <string name="te1142q" translatable="false">%1$d. ట్రాఫిక్ లైట్ల దగ్గర మీరు ఎడము వైపునకు వెళ్ళాలని అనుకున్నారు. మలుపు తిరిగే ముందు మీరు ఏమి చేయాలి</string>
+    <string name="te1142a" translatable="false">కుడి వైపు ఉండే అద్దాన్ని పరిశీలించాలి</string>
+    <string name="te1142b" translatable="false">తెల్లకారుకు సమీపంగా వెళ్ళాలి</string>
+    <string name="te1142c" translatable="false">గీతలపైనే నిలిచి ఉండాలి</string>
+    <string name="te1142d" translatable="false">మీ ఎడమ వైపుఉన్న ద్విచక్ర వాహనాలను పరిశీలించాలి</string>
+
+    <string name="te1143q" translatable="false">%1$d. మీరు ఒక సైకిల్ వెనుక వెళుతున్నా కొంచెం ముందర మీరు ఎడమవైపునకు తిరగాలి అప్పుడు ఏంచేస్తారు?</string>
+    <string name="te1143a" translatable="false">కూడలికి ముందుగానే సైకిల్ ని దాటి వెళ్తారు</string>
+    <string name="te1143b" translatable="false">కూడలి వచ్చే వరకు సైకిల్ తో సమానంగా వెళ్తారు</string>
+    <string name="te1143c" translatable="false">సైక్లిస్ట్ జంక్షన్ దాటే వరకు అతని వెనకే వెళ్తారు</string>
+    <string name="te1143d" translatable="false">కూడలి దగ్గర సైకిల్ చుట్టూ తిరిగి వెళ్తారు</string>
+
+    <string name="te1144q" translatable="false">%1$d. మీరు పట్టణంలో వాహనం నడుపుతున్నారు. రోడ్డుకు అవతలివైపు బస్టాప్ దగ్గర ఒక బస్సు ఆగి ఉంది. ఆ సమయంలో మీరెందుకు జాగ్రత్తగా ఉండాలి ?</string>
+    <string name="te1144a" translatable="false">బస్సు చెడిపోయి ఉండొచ్చు</string>
+    <string name="te1144b" translatable="false">బస్సు వెనక నుండి పాదచారులు రోడ్డు దాటడానికి వస్తుండవచ్చు</string>
+    <string name="te1144c" translatable="false">బస్సు అకస్మాత్తుగా కదలవచ్చు</string>
+    <string name="te1144d" translatable="false">బస్సు అలాగే కదలకుండా ఉండొచ్చు</string>
+
+    <string name="te1145q" translatable="false">%1$d. మీరు ఒక చిన్న రౌండ్ ఎబౌట్ ని సమీపిస్తున్నారు. ముందుండే పొడవాటి వాహనం ఎడమవైపునకు సిగ్నలిస్తూ కుడివైపునకు వెళోంది. మీరేం చేయాలి ?</string>
+    <string name="te1145a" translatable="false">మీ హారన్ మోగించండి</string>
+    <string name="te1145b" translatable="false">ఎడమవైపు నుండి ఓవర్ టేక్ చేయండి</string>
+    <string name="te1145c" translatable="false">లారీ వెళ్లిన మార్గంలోనే మీరు కూడా వెళ్ళిపోండి</string>
+    <string name="te1145d" translatable="false">బాగా వెనక్కి ఉండండి</string>
+
+    <string name="te1146q" translatable="false">%1$d. రోడ్డు పక్కన మీకు ఒక అవాంతరం కనిపించింది. మీరేం చేయాలి ?</string>
+    <string name="te1146a" translatable="false">వెళ్లిపోండి. మీకు ప్రాధాన్యత వుంది</string>
+    <string name="te1146b" translatable="false">వస్తున్న వాహనాలకు దారి ఇవ్వాలి</string>
+    <string name="te1146c" translatable="false">వస్తూపోతున్న వాహనాలకు దారి ఇవ్వండి</string>
+    <string name="te1146d" translatable="false">ముందుగా వెళ్లిపోవడానికి వేగం పెంచండి</string>
+
+    <string name="te1147q" translatable="false">%1$d. రోడ్డు పక్కన పొడవుగా ఉన్న తెల్లని గీత</string>
+    <string name="te1147a" translatable="false">రోడ్డు అంచును సూచిస్తుంది</string>
+    <string name="te1147b" translatable="false">ప్రమాదాన్ని సమీపిస్తున్నదని చెబుతుంది</string>
+    <string name="te1147c" translatable="false">వాహనం అక్కడ ఆపకూడదని</string>
+    <string name="te1147d" translatable="false">ఓవర్దిక్ చేయకూడదని</string>
+
+    <string name="te1148q" translatable="false">%1$d. మీరు టి-జంక్షన్ వద్ద వేచి ఉన్నారు. ఎడమవైపునకు సిగ్నలను ఫ్లాష్ చేస్తూ ఒక వాహనం కుడివైపునకు వస్తోంది. అప్పుడు మీరేం చేయాలి ?</string>
+    <string name="te1148a" translatable="false">మీ వాహనం ఆపకుండా బాగా వేగం పెంచండి</string>
+    <string name="te1148b" translatable="false">వాహనం మలుపు తిరిగేదాకా వేచి ఉండండి</string>
+    <string name="te1148c" translatable="false">ఆ వాహనం బింక్షన్ చేరేలోపే మీరు వెళ్లండి</string>
+    <string name="te1148d" translatable="false">మెల్లగా వెళ్లండి</string>
+
+    <string name="te1149q" translatable="false">%1$d. ఏదైన ఎత్తైన ప్రదేశానికి వెళ్ళినప్పుడు కొద్ది సేపు ఆగాల్సి వస్తే ఏం చేయాలి?</string>
+    <string name="te1149a" translatable="false">కాలి బ్రేకును క్లచ్ ను వాడాలి</string>
+    <string name="te1149b" translatable="false">గేర్లను మాత్రమే వాడాలి</string>
+    <string name="te1149c" translatable="false">ఇంజిన్ ఆపివేయాలి</string>
+    <string name="te1149d" translatable="false">పార్కింగ్ బ్రేక్ ను ఉపయోగించాలి</string>
+
+    <string name="te1150q" translatable="false">%1$d. గొర్రెలు రోడ్డు దాటుతున్నప్పుడు ఏం చేయాలి?"</string>
+    <string name="te1150a" translatable="false">వాహనాన్ని నెమ్మదిగా నడపాలి</string>
+    <string name="te1150b" translatable="false">వీలైనంత ఖాళీ స్థలం ఉండేలా చూడండి</string>
+    <string name="te1150c" translatable="false">వాహనాన్ని ఆపుచేసేందుకు తయారుగా ఉండాలి</string>
+    <string name="te1150d" translatable="false">అన్ని సమాధానాలూ సరైనవే</string>
+
+    <string name="te1151q" translatable="false">%1$d. యు టర్న్ తీసుకునేప్పుడు ఎలాంటి హ్యాండ్ సిగ్నల్ ఇవాల్సి ఉంటుంది?</string>
+    <string name="te1151a" translatable="false">ఎడమ వైపు తిరుగుతున్న సిగ్నల్</string>
+    <string name="te1151b" translatable="false">షోడౌన్ అవుతున్నట్టు సూచించే సిగ్నల్</string>
+    <string name="te1151c" translatable="false">కుడి వైపు తిరుగుతున్నట్టు సూచించే సిగ్నల్</string>
+    <string name="te1151d" translatable="false">స్పెషల్ యూ టర్న్ సిగ్నల్</string>
+
+    <string name="te1152q" translatable="false">%1$d. మీ వాహనాన్ని ఇంకో వాహనం ఓవర్ టేక్ చేస్తున్నప్పుడు మీరేం చేయాలి</string>
+    <string name="te1152a" translatable="false">మీరు కూడా జాగ్రత్తగా స్పీడును పెంచాలి</string>
+    <string name="te1152b" translatable="false">మీరు కూడా లేన్లను మార్చుకోవచ్చు</string>
+    <string name="te1152c" translatable="false">మీరు ఓవర్ టేకింగ్ లేన్లోకి మారవచ్చు</string>
+    <string name="te1152d" translatable="false">మీరు మీ వాహనం వేగాన్ని పెంచకూడదు.</string>
+
+    <string name="te1153q" translatable="false">%1$d. మీరు ఒక ఇరుకైన వంతెన వద్దకు వస్తూండగా, వంతెనపై ఇంకో వాహనం ఎదురునుంచి వస్తుందనుకోండి. అప్పుడు మీరేం చేయాలి?</string>
+    <string name="te1153a" translatable="false">మీ వేగాన్ని పెంచి త్వరగా బ్రిడ్జిని దాటాలి.</string>
+    <string name="te1153b" translatable="false">మీ హెడ్ లైట్లను వెళిగించాలి</string>
+    <string name="te1153c" translatable="false">ఎదుటినుంచి వచ్చే వాహనం వంతెన దాటే వరకూ ఆగి, ఆ తరువాత వెళ్లాలి</string>
+    <string name="te1153d" translatable="false">హారన్ కొడుతూ వెళ్లిపోవాలి</string>
+
+    <string name="te1154q" translatable="false">%1$d. మానవ రహిత రైల్వే లెవెల్ క్రాసింగ్ వద్దకు వాహనం వచ్చినప్పుడు ఏం చేయాలి?</string>
+    <string name="te1154a" translatable="false">హారన్ కొడుతూ వాహనాన్ని దాటించేయాలి.</string>
+    <string name="te1154b" translatable="false">వాహనం హెడ్ లైట్లను వెళిగించి వాహనాన్ని దాటించేయాలి.</string>
+    <string name="te1154c" translatable="false">డ్రయివర్ వాహనం నుంచి దిగి, ఏదైనా రైలు వస్తోందా అన్నది చూసి, ఏమీ రావడం లేదని నిర్ధారించుకున్నాక ముందుకు వెళ్లాలి.</string>
+    <string name="te1154d" translatable="false">డ్రయివర్ రైల్వే అధికారులతో రైళ్ల రాకపోకల సమయాల వివరాలను తెలుసుకోవాలి.</string>
+
+    <string name="te1155q" translatable="false">%1$d. కొండ వాలులో పార్కింగ్ చేయాలనుకుంటే మీరు తీసుకోవాల్సిన జాగ్రత్తలు</string>
+    <string name="te1155a" translatable="false">స్టీరింగ్ వీలను రోడ్డుఅంచు వైపునకు తిప్పి ఉంచి, హ్యాండ్ బ్రేక్ గట్టిగా వేసి ఉంచడం</string>
+    <string name="te1155b" translatable="false">మరొక కారు బంపరకు దగ్గరగా పార్కింగ్ చేయడం</string>
+    <string name="te1155c" translatable="false">వాహనం రెండు చక్రాలు రోడ్డు అంచున ఉండేట్లు పార్క్ చేయడం</string>
+    <string name="te1155d" translatable="false">స్టీరింగ్ వీలను రోడ్డు అంచుకు వ్యతిరేక దిశలో తిప్పి ఉంచాలి</string>
+
+    <string name="te1156q" translatable="false">%1$d. సరైన లైసెన్సు లేని వ్యక్తికి నడిపేందుకు మన వాహనాన్ని ఇవ్వడం సరైనదేనా?</string>
+    <string name="te1156a" translatable="false">తీసుకున్నవాడే పూర్తిగా బాధ్యుడు కాబట్టి మన తప్పేం ఉండదు</string>
+    <string name="te1156b" translatable="false">ఇది తీవ్రమైన నేరం</string>
+    <string name="te1156c" translatable="false">వాహనం యాక్సిడెంట్ చేసినప్పుడే నేరం</string>
+    <string name="te1156d" translatable="false">ఏదీ సరైన సమాధానం కాదు</string>
+
+    <string name="te1157q" translatable="false">%1$d. యు-టర్న్ ఎక్కడ నిషేదించబడినది</string>
+    <string name="te1157a" translatable="false">నో యుటర్న్ సిగ్నల్ ఉన్న రోడ్డుపై</string>
+    <string name="te1157b" translatable="false">రద్దీగా ఉన్న రోడ్డుపై</string>
+    <string name="te1157c" translatable="false">యు టర్న్ చేయడం సురక్షితం కానప్పుడు</string>
+    <string name="te1157d" translatable="false">పైవి అన్ని</string>
+
+    <string name="te1158q" translatable="false">%1$d. రోడ్డు మలుపు తిరిగే చోట పాదచారులు రోడ్డును ఎందుకు దాటకూడదు?</string>
+    <string name="te1158a" translatable="false">వారు రోడ్డును వేగంగా దాటలేకపోవచ్చు</string>
+    <string name="te1158b" translatable="false">వారు తోటి పాదచారులకు ఇబ్బంది కలిగించే ప్రమాదం ఉంది</string>
+    <string name="te1158c" translatable="false">చిన్నపిల్లలు భయపడే అవకాశం ఉంది</string>
+    <string name="te1158d" translatable="false">మలుపుల దగ్గర రోడ్ క్రాస్ చేసేవారిని డ్రయివర్లు గమనించలేకపోయే ప్రమాదం ఉంది</string>
+    
+</resources>
