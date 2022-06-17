@@ -1,17 +1,14 @@
 package com.ghsembrar.llrtestpreparation.model;
 
 import android.content.Context;
-import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.util.Log;
-
-import androidx.annotation.NonNull;
 
 import com.ghsembrar.llrtestpreparation.CONSTANTS;
 import com.ghsembrar.llrtestpreparation.R;
 
 import java.util.Arrays;
-import java.util.Locale;
+
 
 abstract public class ModelBase {
 
@@ -19,6 +16,7 @@ abstract public class ModelBase {
 
     Context context;
     Resources resources;
+    String questions_and_choices_language_code = "en";  // this will be set by the app using the function at the bottom
     int num_questions = 0;
     int current_question_index = 0;
     int[] user_answers;
@@ -123,18 +121,7 @@ abstract public class ModelBase {
         Arrays.fill(user_answers, NO_ANSWER_CHOSEN_YET);
     }
 
-    // the following function is from stack overflow
-    // todo place link to the page
-    @NonNull
-    private Resources getLocalizedResources(Context context, Locale desiredLocale) {
-        Configuration configuration = context.getResources().getConfiguration();
-        configuration = new Configuration(configuration);
-        configuration.setLocale(desiredLocale);
-        Context localizedContext = context.createConfigurationContext(configuration);
-        return localizedContext.getResources();
-    }
-
     public void set_language(String language_code) {
-        resources = getLocalizedResources(context, new Locale(language_code));
+        this.questions_and_choices_language_code = language_code;
     }
 }

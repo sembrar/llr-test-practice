@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="te00q" translatable="false">%1$d. ఎరుపు రంగు (రెడ్) సిగ్నల్ పడిందంటే ఏమని అర్థం?</string>
+    <string name="te00a" translatable="false">తెల్లటి స్టా ర్టైన్ దాటకుండా ఆగాలని అర్థం</string>
+    <string name="te00b" translatable="false">ఇతర వాహనాలు ఏవీ లేనప్పుడు ముందుకు వెళ్లమని అర్థం</string>
+    <string name="te00c" translatable="false">ఏ ప్రమాదమూ ఎదురవ్వదనిపిస్తే ఎడమ పక్కకు తిరగమని అర్థం</string>
+    <string name="te00d" translatable="false">మీ వ్యతిరేక దిశలో ట్రాఫిక్ మొదలైతే వెంటనే ఆగేందుకు వీలుగా మీరు వేగాన్ని తగ్గించాలని అర్థం</string>
+
+    <string name="te01q" translatable="false">%1$d. పసుపు రంగు లైటు ఫ్లాష్ అవుతున్న ఒక జంక్షన్ ఎదురైనప్పుడు ఏంచేయాలి ?</string>
+    <string name="te01a" translatable="false">వేగాన్ని తగ్గించి జాగ్రత్తగా ముందుకెళ్లాలి</string>
+    <string name="te01b" translatable="false">ప్రవేశం లేదు</string>
+    <string name="te01c" translatable="false">ఆగిపోవాలి</string>
+    <string name="te01d" translatable="false">పైవి ఏవి కాదు</string>
+
+    <string name="te02q" translatable="false">%1$d. ఎరుపు రంగు లైట్ ఫ్లాష్ అవుతున్న ఒక జంక్షన్ ఎదురైనప్పుడు ఏం చేయాలి?</string>
+    <string name="te02a" translatable="false">ఆగడానికి</string>
+    <string name="te02b" translatable="false">ఎర్రటి సూర్యుడు</string>
+    <string name="te02c" translatable="false">ఆగి చుట్టుప్రక్కల చూసి జాగ్రత్తగా వెళ్ళాలి</string>
+    <string name="te02d" translatable="false">పైవి ఏవి కాదు</string>
+
+    <string name="te03q" translatable="false">%1$d. ఈ ఆకారంలో ఉండే గుర్తు దేనిని సూచిస్తుంది</string>
+    <string name="te03a" translatable="false">తప్పనిసరి ఆదేశాలను</string>
+    <string name="te03b" translatable="false">జాగ్రత్త పరిచేవి</string>
+    <string name="te03c" translatable="false">సమాచారం కోసం</string>
+    <string name="te03d" translatable="false">పైవి అన్ని</string>
+
+    <string name="te04q" translatable="false">%1$d. త్రికోణంలో ఇచ్చిన గుర్తులు దేనికి సంకేతం</string>
+    <string name="te04a" translatable="false">ఖచ్చితంగా పాటించాలి</string>
+    <string name="te04b" translatable="false">జాగ్రత్త పరిచేవి</string>
+    <string name="te04c" translatable="false">సమాచారం కోసం</string>
+    <string name="te04d" translatable="false">పైవి అన్ని</string>
+
+    <string name="te05q" translatable="false">%1$d. ఈ ఆకారంలో ఉండే గుర్తు దేనిని సూచిస్తుంది</string>
+    <string name="te05a" translatable="false">తప్పనిసరి ఆదేశాలను</string>
+    <string name="te05b" translatable="false">హెచ్చరికలు</string>
+    <string name="te05c" translatable="false">సమాచారం కోసం</string>
+    <string name="te05d" translatable="false">పైవి అన్ని</string>
+
+    <string name="te06q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te06a" translatable="false">ఆగండి</string>
+    <string name="te06b" translatable="false">ఒక ప్రక్క మాత్రమే వెళ్ళాలి</string>
+    <string name="te06c" translatable="false">వాహనాలు నిలుపరాదు</string>
+    <string name="te06d" translatable="false">ఇక్కడ ఆగరాదు</string>
+
+    <string name="te07q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te07a" translatable="false">ఎడమ చేతి మలుపు</string>
+    <string name="te07b" translatable="false">సమాచారం కోసం</string>
+    <string name="te07c" translatable="false">హెచ్చరిక గుర్తు</string>
+    <string name="te07d" translatable="false">దారి ఇవ్వాలి</string>
+
+    <string name="te08q" translatable="false">%1$d. నువ్వు రోడ్డు మద్యలోకి వెళ్ళాక నువ్వు ఒక వైపు మాత్రమే ప్రవేశం ఉన్న రోడ్డులో ఉన్నావని తెలుసుకున్నావు. అప్పుడు నువ్వు ఏమిచేస్తావు</string>
+    <string name="te08a" translatable="false">ఆ రోడ్డు నుంచి వెనుకకు తిరిగి వస్తావు</string>
+    <string name="te08b" translatable="false">హారన్ కొట్టుకొంటూ ముందుకు వెళ్తావు</string>
+    <string name="te08c" translatable="false">రోడ్డు చివరకు వెళ్తావు</string>
+    <string name="te08d" translatable="false">అనుమతించిన రోడ్డులోకి మారతావు</string>
+
+    <string name="te09q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te09a" translatable="false">ఒక వైపు ప్రవేశం మాత్రమే</string>
+    <string name="te09b" translatable="false">రెండు వైపులా ఎటువంటి వాహనాలకు ప్రవేశం లేదు</string>
+    <string name="te09c" translatable="false">కుడి మలుపు నిషేదం</string>
+    <string name="te09d" translatable="false">పైవి ఏవి కాదు</string>
+
+    <string name="te010q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te010a" translatable="false">ప్రవేశం లేదు</string>
+    <string name="te010b" translatable="false">ఒక వైపు ప్రవేశం మాత్రమే</string>
+    <string name="te010c" translatable="false">ఖచ్చితంగా ముందుకు వెళ్ళా లి</string>
+    <string name="te010d" translatable="false">ఎడమవైపునకు తిరగరాదు</string>
+
+    <string name="te011q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te011a" translatable="false">రెండు వైపులా ఎటువంటి వాహనాలకు ప్రవేశం లేదు</string>
+    <string name="te011b" translatable="false">ఎడమవైపునకు తిరగరాదు</string>
+    <string name="te011c" translatable="false">ఓవర్ టేకింగ్ చెయ్యరాదు</string>
+    <string name="te011d" translatable="false">కుడి వైపునకు తిరగరాదు</string>
+
+    <string name="te012q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te012a" translatable="false">సైకిల్స్ కి ప్రవేశం లేదు</string>
+    <string name="te012b" translatable="false">ట్రక్స్ కు ప్రవేశం లేదు</string>
+    <string name="te012c" translatable="false">కుడి వైపునకు తిరుగుట నిషేధం</string>
+    <string name="te012d" translatable="false">ఎడమవైపునకు తిరగరాదు</string>
+
+    <string name="te013q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te013a" translatable="false">ఎడమవైపునకు తిరగరాదు</string>
+    <string name="te013b" translatable="false">కుడి వైపునకు తిరగరాదు</string>
+    <string name="te013c" translatable="false">యు టర్న్ తిరగరాదు</string>
+    <string name="te013d" translatable="false">ఓవర్ టేకింగ్ చెయ్యరాదు</string>
+
+    <string name="te014q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te014a" translatable="false">ట్రక్స్ కు ప్రవేశం లేదు</string>
+    <string name="te014b" translatable="false">అన్ని రకముల మోటారు వాహనాలకు ప్రవేశం లేదు</string>
+    <string name="te014c" translatable="false">ఎద్దుల బండ్లకు ప్రవేశం లేదు</string>
+    <string name="te014d" translatable="false">సైకిల్స్ కి ప్రవేశం లేదు</string>
+
+    <string name="te015q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te015a" translatable="false">ముందు వెళ్ళు వాహనములను దాటుట నిషేధం</string>
+    <string name="te015b" translatable="false">ఎడమవైపునకు తిరగరాదు</string>
+    <string name="te015c" translatable="false">కుడి వైపునకు తిరగరాదు</string>
+    <string name="te015d" translatable="false">రెండు వైపుల ఎటువంటి వాహనములకు ప్రవేశం లేదు</string>
+
+    <string name="te016q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te016a" translatable="false">పొగత్రాగరాదు</string>
+    <string name="te016b" translatable="false">కుడి వైపునకు తిరగరాదు</string>
+    <string name="te016c" translatable="false">సైకిల్స్ కి ప్రవేశం లేదు</string>
+    <string name="te016d" translatable="false">హారన్ మ్రోగించరాదు</string>
+
+    <string name="te017q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te017a" translatable="false">పాదచారులకు ప్రవేశం లేదు</string>
+    <string name="te017b" translatable="false">స్కూల్ జోన్</string>
+    <string name="te017c" translatable="false">ఆటల జోన్</string>
+    <string name="te017d" translatable="false">పైవి ఏవి కాదు</string>
+
+    <string name="te018q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te018a" translatable="false">సైకిల్స్ రహదారి</string>
+    <string name="te018b" translatable="false">సైకిల్స్ కి ప్రవేశం లేదు</string>
+    <string name="te018c" translatable="false">సైకిల్స్ నిలుపు ప్రదేశం</string>
+    <string name="te018d" translatable="false">పైవి ఏవి కాదు</string>
+
+    <string name="te019q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te019a" translatable="false">వాహనములకు ప్రవేశం లేదు</string>
+    <string name="te019b" translatable="false">బ్రిక్స్ పార్కింగ్</string>
+    <string name="te019c" translatable="false">కొండ మార్గము</string>
+    <string name="te019d" translatable="false">ట్రక్స్ కు ప్రవేశం లేదు</string>
+
+    <string name="te020q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te020a" translatable="false">ఆగరాదు</string>
+    <string name="te020b" translatable="false">నిబంధనలు ముగింపు</string>
+    <string name="te020c" translatable="false">వాహనములు నిలుపరాదు</string>
+    <string name="te020d" translatable="false">వేగ నియంత్రణ</string>
+
+    <string name="te021q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te021a" translatable="false">నోపార్కింగ్</string>
+    <string name="te021b" translatable="false">వాహనములు నిలుపరాదు మరియు ఆపరాదు</string>
+    <string name="te021c" translatable="false">పొడవు యొక్క పరిమితి</string>
+    <string name="te021d" translatable="false">వేగ నియంత్రణ</string>
+
+    <string name="te022q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te022a" translatable="false">ఆగుము</string>
+    <string name="te022b" translatable="false">నిబంధనలు ముగింపు</string>
+    <string name="te022c" translatable="false">ప్రవేశం లేదు</string>
+    <string name="te022d" translatable="false">నోపార్కింగ్</string>
+
+    <string name="te023q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te023a" translatable="false">పొడవు యొక్క పరిమితి</string>
+    <string name="te023b" translatable="false">వేగ నియంత్రణ</string>
+    <string name="te023c" translatable="false">లోడ్ పరిమితము</string>
+    <string name="te023d" translatable="false">ఎత్తు యొక్క పరిమితి</string>
+
+    <string name="te024q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te024a" translatable="false">బరువు నియంత్రణ</string>
+    <string name="te024b" translatable="false">వేగ నియంత్రణ</string>
+    <string name="te024c" translatable="false">వాహనాల పొడవు నియంత్రణ</string>
+    <string name="te024d" translatable="false">ఎత్తు యొక్క పరిమితి</string>
+
+    <string name="te025q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te025a" translatable="false">ఇరుసు బరువు పరిమితి</string>
+    <string name="te025b" translatable="false">ఎత్తు పరిమితి</string>
+    <string name="te025c" translatable="false">వెడల్పు పరిమితి</string>
+    <string name="te025d" translatable="false">బరువు పరిమితి</string>
+
+    <string name="te026q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te026a" translatable="false">వాహనాల పొడవు పరిమితి</string>
+    <string name="te026b" translatable="false">వేగ పరిమితి</string>
+    <string name="te026c" translatable="false">బరువు పరిమితి</string>
+    <string name="te026d" translatable="false">ఎత్తు పరిమితి</string>
+
+    <string name="te027q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te027a" translatable="false">ఎత్తు పరిమితి</string>
+    <string name="te027b" translatable="false">వేగ పరిమితి</string>
+    <string name="te027c" translatable="false">వెడల్పు పరిమితి</string>
+    <string name="te027d" translatable="false">ఎత్తు పరిమితి</string>
+
+    <string name="te028q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te028a" translatable="false">ఇరుసు బరువు పరిమితి</string>
+    <string name="te028b" translatable="false">వెడల్పు పరిమితి</string>
+    <string name="te028c" translatable="false">బరువు పరిమితి</string>
+    <string name="te028d" translatable="false">ఎత్తు పరిమితి</string>
+
+    <string name="te029q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te029a" translatable="false">ఒక వైపు ప్రవేశం మాత్రమే</string>
+    <string name="te029b" translatable="false">ఎడమ వైపుకు తిరగరాదు</string>
+    <string name="te029c" translatable="false">ఖచ్చితంగా ఎడమవైపు నుండి వెళ్ళాలి</string>
+    <string name="te029d" translatable="false">ముందుకు మాత్రమే వెళ్ళాలి</string>
+
+    <string name="te030q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te030a" translatable="false">ఖచ్చితంగా ఎడమవైపు నుండి వెళ్ళాలి</string>
+    <string name="te030b" translatable="false">తిన్నగా ముందుకు మాత్రమే వెళ్ళాలి</string>
+    <string name="te030c" translatable="false">ఎడమ వైపుకు తిరగాలి</string>
+    <string name="te030d" translatable="false">కుడివైపునకు తిరగాలి</string>
+
+    <string name="te031q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te031a" translatable="false">ముందుకు మాత్రమే వెళ్ళాలి</string>
+    <string name="te031b" translatable="false">ఎడమ వైపునకు తిరిగి ముందుకు వెళ్ళాలి</string>
+    <string name="te031c" translatable="false">తప్పని సరిగా ముందు కుడి వైపునకు తిరగాలి</string>
+    <string name="te031d" translatable="false">ముందుకు వెళ్ళాలి లేదా ఎడమ వైపునకు తిరగాలి</string>
+
+    <string name="te032q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te032a" translatable="false">కుడి వైపు మలుపు</string>
+    <string name="te032b" translatable="false">కుడివైపునకు తిరగాలి</string>
+    <string name="te032c" translatable="false">తప్పని సరిగా ముందు ఎడమ వైపునకు తిరగాలి</string>
+    <string name="te032d" translatable="false">పైవి ఏవి కాదు</string>
+
+    <string name="te033q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te033a" translatable="false">తప్పని సరిగా ఎడమ వైపునకు తిరగాలి</string>
+    <string name="te033b" translatable="false">కుడివైపునకు తిరగాలి</string>
+    <string name="te033c" translatable="false">ముందుకు వెళ్ళాలి లేదా ఎడమ వైపునకు తిరగాలి</string>
+    <string name="te033d" translatable="false">ముందుకు వెళ్ళాలి లేదా కుడి వైపునకు తిరగాలి</string>
+
+    <string name="te034q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te034a" translatable="false">కుడి వైపు మలుపు</string>
+    <string name="te034b" translatable="false">తప్పని సరిగా కుడి వైపునకు తిరగాలి</string>
+    <string name="te034c" translatable="false">ఎడమ వైపునకు తిరగాలి</string>
+    <string name="te034d" translatable="false">పైవి ఏవి కాదు</string>
+
+    <string name="te035q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te035a" translatable="false">తప్పని సరిగా ముందుకు వెళ్ళాలి లేదా ఎడమ వైపునకు వెళ్ళా లి</string>
+    <string name="te035b" translatable="false">ముందుకు వెళ్ళాలి లేదా కుడివైపునకు తిరగాలి</string>
+    <string name="te035c" translatable="false">కుడి వైపునకు తిరగరాదు</string>
+    <string name="te035d" translatable="false">ఎడమ వైపునకు తిరగాలి</string>
+
+    <string name="te036q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te036a" translatable="false">ఎడమ వైపునకు తిరగాలి</string>
+    <string name="te036b" translatable="false">కుడివైపునకు తిరగాలి</string>
+    <string name="te036c" translatable="false">ముందుకు వెళ్ళాలి లేదా ఎడమ వైపునకు వెళ్ళాలి</string>
+    <string name="te036d" translatable="false">తప్పని సరిగా ముందుకు వెళ్ళాలి లేదా కుడివైపునకు తిరగాలి</string>
+
+    <string name="te037q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te037a" translatable="false">తప్పని సరిగా హారను మ్రోగించాలి</string>
+    <string name="te037b" translatable="false">హారన్ మ్రోగించరాదు</string>
+    <string name="te037c" translatable="false">పొగత్రాగరాదు</string>
+    <string name="te037d" translatable="false">పైవి ఏవి కాదు</string>
+
+    <string name="te038q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te038a" translatable="false">సైకిల్స్ మార్గము</string>
+    <string name="te038b" translatable="false">స్కూలు జోన్</string>
+    <string name="te038c" translatable="false">సైకిల్స్ కి ప్రవేశం లేదు</string>
+    <string name="te038d" translatable="false">పైవి ఏవి కాదు</string>
+
+    <string name="te039q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te039a" translatable="false">సైకిల్స్ కు మాత్రమే ప్రవేశం</string>
+    <string name="te039b" translatable="false">సైకిల్స్ కు ప్రవేశం లేదు</string>
+    <string name="te039c" translatable="false">సైకిల్స్ ట్రాక్</string>
+    <string name="te039d" translatable="false">సైకిళ్లు దాటి ప్రదేశం</string>
+
+    <string name="te040q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te040a" translatable="false">కుడివైపునకు వంగినమార్గం</string>
+    <string name="te040b" translatable="false">ఎడమవైపునకు వంగిన మార్గం</string>
+    <string name="te040c" translatable="false">కుడివైపు హెయిర్ పిన్ వంటి వంపు</string>
+    <string name="te040d" translatable="false">ఎడమవైపు హెయిర్ పిన్ వంటి వంపు</string>
+
+    <string name="te041q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te041a" translatable="false">కుడివైపునకు వంగినమార్గం</string>
+    <string name="te041b" translatable="false">ఎడమవైపునకు వంగినమార్గం</string>
+    <string name="te041c" translatable="false">కుడివైపున వెనుకకు తిరిగిన మలుపు</string>
+    <string name="te041d" translatable="false">ఎడమవైపున వెనకకు తిరిగిన మలుపు</string>
+
+    <string name="te042q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te042a" translatable="false">కుడివైపు హెయిర్ పిన్ వంటి వంపు</string>
+    <string name="te042b" translatable="false">ఎడమవైపు హెయిర్‌ పిన్ వంటి వంపు</string>
+    <string name="te042c" translatable="false">కుడివైపున వెనుకకు తిరిగిన మలుపు</string>
+    <string name="te042d" translatable="false">ఎడమవైపున వెనకకు తిరిగిన మలుపు</string>
+
+    <string name="te043q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te043a" translatable="false">ఎడమవైపు హెయిర్‌ పిన్ వంటి వంపు</string>
+    <string name="te043b" translatable="false">కుడివైపు హెయిర్ పిన్ వంటి వంపు</string>
+    <string name="te043c" translatable="false">ఎడమవైపునకు వంగినమార్గం</string>
+    <string name="te043d" translatable="false">కుడివైపునకు వంగిన మార్గం</string>
+
+    <string name="te044q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te044a" translatable="false">కుడివైపునకు వంగినమార్గం</string>
+    <string name="te044b" translatable="false">ఎడమవైపునకు వంగినమార్గం</string>
+    <string name="te044c" translatable="false">ముందు కుడి మెలిక రోడ్డు ఉన్నది</string>
+    <string name="te044d" translatable="false">కుడివైపు హెయిర్ పిన్ వంటి వంపు</string>
+
+    <string name="te045q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te045a" translatable="false">ఎక్కువ వాలుగా కిందకు దిగడం</string>
+    <string name="te045b" translatable="false">పైకి నిట్టనిలువుగా ఉన్న దారి</string>
+    <string name="te045c" translatable="false">జారుడు రోడ్డు</string>
+    <string name="te045d" translatable="false">ఎత్తుగా లేదా గతుకులుగా ఉన్న రోడ్డు</string>
+
+    <string name="te046q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te046a" translatable="false">ఎక్కువ వాలుగా పైకి ఎక్కడం</string>
+    <string name="te046b" translatable="false">కిందకి నిట్టనిలువుగా ఉన్న దారి</string>
+    <string name="te046c" translatable="false">ఇరుకు రోడ్డు ముందుంది</string>
+    <string name="te046d" translatable="false">ఇరుకు వంతెన</string>
+
+    <string name="te047q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te047a" translatable="false">ఇరుకు రోడ్డు ముందుంది.</string>
+    <string name="te047b" translatable="false">వెడల్పు రోడ్డు ముందుంది</string>
+    <string name="te047c" translatable="false">ఇరుకు వంతెన</string>
+    <string name="te047d" translatable="false">జారుడు రోడ్డు</string>
+
+    <string name="te048q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te048a" translatable="false">ఇరుకు రోడ్డు ముందుంది.</string>
+    <string name="te048b" translatable="false">వెడల్పు రోడ్డు ముందుంది</string>
+    <string name="te048c" translatable="false">ఇరుకు వంతెన</string>
+    <string name="te048d" translatable="false">జారుడు రోడ్డు</string>
+
+    <string name="te049q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te049a" translatable="false">ఇరుకు రోడ్డు ముందుంది</string>
+    <string name="te049b" translatable="false">వెడల్పు రోడ్డు ముందుంది</string>
+    <string name="te049c" translatable="false">ఇరుకు వంతెన</string>
+    <string name="te049d" translatable="false">జారుడు రోడ్డు</string>
+
+    <string name="te050q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te050a" translatable="false">జారుడు రోడ్డు</string>
+    <string name="te050b" translatable="false">వదులైన మట్టి రోడ్డు</string>
+    <string name="te050c" translatable="false">రెండు మూడు మార్గాలు కలిసిన ప్రదేశం</string>
+    <string name="te050d" translatable="false">ఎత్తుగా లేదా గతుకులుగా ఉన్న రోడ్డు</string>
+
+    <string name="te051q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te051a" translatable="false">ఇరుకు వంతెన</string>
+    <string name="te051b" translatable="false">జారుడు రోడ్డు</string>
+    <string name="te051c" translatable="false">వదులైన మట్టి రోడ్డు</string>
+    <string name="te051d" translatable="false">ఎక్కువ వాలుగా కిందకు దిగడం</string>
+
+    <string name="te052q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te052a" translatable="false">స్కూలు ముందుంది</string>
+    <string name="te052b" translatable="false">మనుషులు పని చేయుచున్నారు</string>
+    <string name="te052c" translatable="false">సైకిళ్లు దాటి ప్రదేశం</string>
+    <string name="te052d" translatable="false">పాదచారులు దాటే ప్రదేశం</string>
+
+    <string name="te053q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te053a" translatable="false">సైకిళ్లు దాటే ప్రదేశం</string>
+    <string name="te053b" translatable="false">స్కూలు ముందుంది</string>
+    <string name="te053c" translatable="false">మనుషులు పని చేయుచున్నారు</string>
+    <string name="te053d" translatable="false">పాదచారులు దాటి ప్రదేశం</string>
+
+    <string name="te054q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te054a" translatable="false">మార్గం మూసుకుపోయింది</string>
+    <string name="te054b" translatable="false">ప్రమాదకరంగా కిందికి దిగిన రోడ్డు</string>
+    <string name="te054c" translatable="false">మనుషులు పని చేయుచున్నారు</string>
+    <string name="te054d" translatable="false">ప్రధాన మార్గం ముందుంది</string>
+
+    <string name="te055q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te055a" translatable="false">పైనుండి రాళ్లుపడే ప్రదేశం</string>
+    <string name="te055b" translatable="false">ఎక్కువ వాలుగా పైకి ఎక్కడం</string>
+    <string name="te055c" translatable="false">ఎత్తుగా లేదా గతుకులుగా ఉన్న రోడ్డు</string>
+    <string name="te055d" translatable="false">వదులైన మట్టి రోడ్డు</string>
+
+    <string name="te056q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te056a" translatable="false">ఆటంకం ముందుంది</string>
+    <string name="te056b" translatable="false">ముందుకు మార్గం నిషేధం</string>
+    <string name="te056c" translatable="false">నాలుగు రోడ్ల కూడలి</string>
+    <string name="te056d" translatable="false">రైల్వే క్రాసింగ్ ముందువున్నది</string>
+
+    <string name="te057q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te057a" translatable="false">మధ్యలో ఖాళీ ఉంది.</string>
+    <string name="te057b" translatable="false">కుడి ప్రక్కన రోడ్డు ఉంది</string>
+    <string name="te057c" translatable="false">ఎడమ పక్కరోడ్డు ఉన్నది</string>
+    <string name="te057d" translatable="false">రెండు మూడు మార్గాలు కలిసే ప్రదేశం</string>
+
+    <string name="te058q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te058a" translatable="false">రెండు మూడు మార్గాలు కలిసే ప్రదేశం</string>
+    <string name="te058b" translatable="false">చుట్టూ తిరిగి వెళ్లండి</string>
+    <string name="te058c" translatable="false">క్రాస్ రోడ్డు ముందువున్నది</string>
+    <string name="te058d" translatable="false">ఎడమ పక్కరోడ్డు ఉన్నది</string>
+
+    <string name="te059q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te059a" translatable="false">ప్రమాదకరమైన గొయ్యి</string>
+    <string name="te059b" translatable="false">రెండు మూడు మార్గాలు కలిసే ప్రదేశం</string>
+    <string name="te059c" translatable="false">వై ఆకారపు కూడలి</string>
+    <string name="te059d" translatable="false">ప్రధాన మార్గం ముందుంది</string>
+
+    <string name="te060q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te060a" translatable="false">ప్రమాదకరమైన గొయ్యి ఉన్నది</string>
+    <string name="te060b" translatable="false">ప్రధాన మార్గం ముందుంది</string>
+    <string name="te060c" translatable="false">వై ఆకారపు కూడలి</string>
+    <string name="te060d" translatable="false">రెండు మూడు మార్గాలు కలిసే ప్రదేశం</string>
+
+    <string name="te061q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te061a" translatable="false">మార్గం మూసుకుపోయింది</string>
+    <string name="te061b" translatable="false">వేగం నియంత్రించు గతుకుల రోడ్డు</string>
+    <string name="te061c" translatable="false">ప్రధాన మార్గం ముందుంది</string>
+    <string name="te061d" translatable="false">రెండు మూడు మార్గాలు కలిసే ప్రదేశం</string>
+
+    <string name="te062q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te062a" translatable="false">రైల్వే క్రాసింగ్</string>
+    <string name="te062b" translatable="false">టోల్ గేట్</string>
+    <string name="te062c" translatable="false">మనుషులు పనిలో వున్నారు</string>
+    <string name="te062d" translatable="false">పైవి ఏవి కాదు</string>
+
+    <string name="te063q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te063a" translatable="false">కుడివైపు మలుపు</string>
+    <string name="te063b" translatable="false">ఎడమ వైపు మలుపు</string>
+    <string name="te063c" translatable="false">సంశయము కలుగజేయు రోడ్లు గల కూడలి</string>
+    <string name="te063d" translatable="false">వంకర టింకర రోడ్డు</string>
+
+    <string name="te064q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te064a" translatable="false">చుట్టూ తిరిగి వెళ్లండి</string>
+    <string name="te064b" translatable="false">క్రాస్ రోడ్డు ముందువున్నది</string>
+    <string name="te064c" translatable="false">ముందుకు మార్గం లేదు</string>
+    <string name="te064d" translatable="false">వై ఆకారపు కూడలి</string>
+
+    <string name="te065q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te065a" translatable="false">చుట్టూ తిరిగి వెళ్లండి</string>
+    <string name="te065b" translatable="false">క్రాస్ రోడ్డు ముందువున్నది</string>
+    <string name="te065c" translatable="false">వై ఆకారపు కూడలి</string>
+    <string name="te065d" translatable="false">ముందుకు మార్గం లేదు</string>
+
+    <string name="te066q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te066a" translatable="false">ఎడమ వైపునకు రోడ్డు ఉన్నది</string>
+    <string name="te066b" translatable="false">ఒక వైపు మాత్రమే ప్రవేశం</string>
+    <string name="te066c" translatable="false">టి-జంక్షన్</string>
+    <string name="te066d" translatable="false">వెడల్పు రోడ్డు ముందుంది</string>
+
+    <string name="te067q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te067a" translatable="false">వంకర టింకర రోడ్డు</string>
+    <string name="te067b" translatable="false">పడవల రేవు</string>
+    <string name="te067c" translatable="false">ఎత్తుగా లేదా గతుకులుగా ఉన్న రోడ్డు</string>
+    <string name="te067d" translatable="false">తిన్నని రోడ్డు ముందు ఉన్నది</string>
+
+    <string name="te068q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te068a" translatable="false">ఆవులు సంచరించు ప్రదేశం</string>
+    <string name="te068b" translatable="false">ఎద్దుల బండి</string>
+    <string name="te068c" translatable="false">గుర్రపు బండి</string>
+    <string name="te068d" translatable="false">పైవి ఏవి కాదు</string>
+
+    <string name="te069q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te069a" translatable="false">కాపలా ఉన్న రైల్వేక్రాసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="te069b" translatable="false">కాపలా లేని రైల్వే క్రాసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="te069c" translatable="false">కాపలాలేని రైల్వే క్రాసింగ్ మీటర్స్)ముందువున్నది (200</string>
+    <string name="te069d" translatable="false">కాపలా ఉన్న రైల్వేక్రాసింగ్ (200 మీటర్స్)ముందువున్నది</string>
+
+    <string name="te070q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te070a" translatable="false">కాపలా ఉన్న రైల్వే క్రాసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="te070b" translatable="false">కాపలా లేని రైల్వేక్రాసింగ్ (50–100 ముందువున్నది మీటర్స్)</string>
+    <string name="te070c" translatable="false">కాపలాలేని రైల్వే క్రాసింగ్ (200 మీటర్స్)ముందువున్నది</string>
+    <string name="te070d" translatable="false">కాపలా ఉన్న రైల్వేక్రాసింగ్ (200 మీటర్స్)ముందువున్నది</string>
+
+    <string name="te071q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te071a" translatable="false">కాపలా ఉన్న రైల్వేక్రాసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="te071b" translatable="false">కాపలా లేని రైల్వేసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="te071c" translatable="false">కాపలా లేని రైల్వేక్రాసింగ్ (200 మీటర్స్)ముందువున్నది</string>
+    <string name="te071d" translatable="false">కాపలా ఉన్న రైల్వే క్రాసింగ్ (200 మీటర్)ముందువున్నది</string>
+
+    <string name="te072q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te072a" translatable="false">కాపలా ఉన్న రైల్వేక్రాసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="te072b" translatable="false">కాపలా లేని రైల్వే క్రాసింగ్ (50–100 మీటర్స్) ముందువున్నది</string>
+    <string name="te072c" translatable="false">కాపలా లేని రైల్వేక్రాసింగ్ (200 మీటర్స్)ముందువున్నది</string>
+    <string name="te072d" translatable="false">కాపలా ఉన్న రైల్వే క్రాసింగ్ (200 మీటర్స్)ముందువున్నది</string>
+
+    <string name="te073q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te073a" translatable="false">ఏటియం ముందువున్నది</string>
+    <string name="te073b" translatable="false">హొటల్ ముందు ఉన్నది</string>
+    <string name="te073c" translatable="false">పెట్రోల్ పంపు ముందు వున్నది</string>
+    <string name="te073d" translatable="false">గాలి పట్టుకేంద్రం ముందు ఉన్నది</string>
+
+    <string name="te074q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te074a" translatable="false">హొటల్ ముందు ఉన్నది</string>
+    <string name="te074b" translatable="false">క్రాస్ రోడ్డు ముందువున్నది</string>
+    <string name="te074c" translatable="false">విశ్రాంతి తీసుకునే ప్రదేశం</string>
+    <string name="te074d" translatable="false">పైవి అన్ని</string>
+
+    <string name="te075q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te075a" translatable="false">ఆసుపత్రి</string>
+    <string name="te075b" translatable="false">విశ్రాంతి తీసుకునే ప్రదేశం</string>
+    <string name="te075c" translatable="false">తినుబండారాలు దొరికే ప్రదేశం</string>
+    <string name="te075d" translatable="false">పైవి అన్ని</string>
+
+    <string name="te076q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te076a" translatable="false">విశ్రాంతి తీసుకునే ప్రదేశం</string>
+    <string name="te076b" translatable="false">హాస్పటల్</string>
+    <string name="te076c" translatable="false">ప్రథమ చికిత్సా స్థలము</string>
+    <string name="te076d" translatable="false">పైవి అన్ని</string>
+
+    <string name="te077q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te077a" translatable="false">హాస్పటల్</string>
+    <string name="te077b" translatable="false">క్రాస్ రోడ్డు ముందువున్నది</string>
+    <string name="te077c" translatable="false">ప్రథమ చికిత్సా స్థలము</string>
+    <string name="te077d" translatable="false">వాహనాలను నిలుపరాదు</string>
+
+    <string name="te078q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te078a" translatable="false">ప్రథమ చికిత్సాస్థలము</string>
+    <string name="te078b" translatable="false">పక్క రోడ్డులోకి ప్రవేశం లేదు</string>
+    <string name="te078c" translatable="false">ప్రధాన మార్గం ముందుంది</string>
+    <string name="te078d" translatable="false">ముందుకు వెళ్లే మార్గం లేదు</string>
+
+    <string name="te079q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te079a" translatable="false">ముందుకు వెళ్లే మార్గం లేదు</string>
+    <string name="te079b" translatable="false">రెండు రోడ్డుల మార్గం</string>
+    <string name="te079c" translatable="false">సమాంతర రోడ్డు</string>
+    <string name="te079d" translatable="false">ఎడమ పక్క రోడ్డులోకి ప్రవేశం లేదు</string>
+
+    <string name="te080q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి?</string>
+    <string name="te080a" translatable="false">పోస్ట్ ఆఫీస్</string>
+    <string name="te080b" translatable="false">వాహనాలను నిలుపరాదు</string>
+    <string name="te080c" translatable="false">కుడివైపు వాహనములు నిలుపు ప్రదేశం</string>
+    <string name="te080d" translatable="false">పైవి ఏవి కావు</string>
+
+    <string name="te081q" translatable="false">%1$d. ఈచిహ్నం అర్థమేమిటి ?</string>
+    <string name="te081a" translatable="false">పోస్ట్ ఆఫీస్</string>
+    <string name="te081b" translatable="false">వాహనాలను నిలుపరాదు</string>
+    <string name="te081c" translatable="false">పార్కింగ్ చేయు స్థలం</string>
+    <string name="te081d" translatable="false">మోటారు సైకిళ్ళు నిలుపు ప్రదేశం</string>
+
+    <string name="te082q" translatable="false">%1$d. ఎదురుగా వస్తున్న వాహనాలకు పోలీస్ అధికారి ఇచ్చిన ఈ సిగ్నల్ కు అర్థమేమిటి?</string>
+    <string name="te082a" translatable="false">ముందుకు వెళ్లండి</string>
+    <string name="te082b" translatable="false">ఆగండి</string>
+    <string name="te082c" translatable="false">ఎడమకు తిరగండి</string>
+    <string name="te082d" translatable="false">కుడికి తిరగండి</string>
+
+    <string name="te083q" translatable="false">%1$d. మీరు ఒక జంక్షన్ కు చేరుకున్న సమయానికి ట్రాఫిక్ లైట్లు పనిచేయట్లేదు. పోలీస్ అధికారి ట్రాఫిక్ సూచనలిస్తున్నారు. అలాంటి సమయంలో మీరేం చేయాలి ?</string>
+    <string name="te083a" translatable="false">ఎడమవైపుకు మాత్రమే తిరగాలి</string>
+    <string name="te083b" translatable="false">కుడివైపుకు మాత్రమే తిరగాలి</string>
+    <string name="te083c" translatable="false">పోలీస్ అధికారి చేతికి దగ్గరగా ఆగాలి</string>
+    <string name="te083d" translatable="false">స్టాన్ కు ముందే ఆగాలి</string>
+
+    <string name="te084q" translatable="false">%1$d. వాహనం నడుపుతున్న సమయంలో కుడి వైపునకు మలుపు తిరుగుటకు ఇవ్వవలసిన సరైన సిగ్నల్ ఏది.</string>
+    <string name="te084a" translatable="false">సమాంతరంగా కుడి చేతిని వాహనం బయటకు చాపి అరచేతిని ముందుకు చూపుతు సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te084b" translatable="false">కుడి చేతిని వాహనపు బయటకు చాపి గడియారపు వ్యతిరేక దిశలో తిప్పుతూ సిగ్నల్ ఇవ్వా లి</string>
+    <string name="te084c" translatable="false">కుడి చేతిని వాహనపు బయటకి చాపి అరచేతిని కిందకి పైకి ఉపుతూ సిగ్నల్ ఇవ్వాలి</string>
+    <string name="te084d" translatable="false">హారన్ మోగిస్తూ ఉండాలి</string>
+
+    <string name="te085q" translatable="false">%1$d. డైవర్ బొమ్మలో చూపిన విదంగా సిగ్నల్ ఇస్తే అర్థం ఏమిటి?</string>
+    <string name="te085a" translatable="false">అతను ఎడమవైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="te085b" translatable="false">అతను కుడి వైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="te085c" translatable="false">అతను ఆగడానికి సూచిస్తున్నాడు</string>
+    <string name="te085d" translatable="false">నెమ్మదిగా వెళ్ళడానికి సూచిస్తున్నాడు</string>
+
+    <string name="te086q" translatable="false">%1$d. డ్రైవర్ బొమ్మలో చూపిన విధంగా సిగ్నల్ ఇస్తే అర్థం ఏమిటి?</string>
+    <string name="te086a" translatable="false">అతను ఎడమవైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="te086b" translatable="false">అతను కుడి వైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="te086c" translatable="false">అతను ఆగడానికి సూచిస్తున్నాడు</string>
+    <string name="te086d" translatable="false">నెమ్మదిగా వెళ్ళడానికి సూచిస్తున్నాడు</string>
+
+    <string name="te087q" translatable="false">%1$d. డైవర్ బొమ్మలో చూపిన విధంగా సిగ్నల్ ఇస్తే అర్థం ఏమిటి?</string>
+    <string name="te087a" translatable="false">అతను ఎడమవైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="te087b" translatable="false">అతను కుడి వైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="te087c" translatable="false">అతను ఆగడానికి సూచిస్తున్నాడు</string>
+    <string name="te087d" translatable="false">నెమ్మదిగా వెళ్ళడానికి సూచిస్తున్నాడు</string>
+
+    <string name="te088q" translatable="false">%1$d. డ్రైవర్ బొమ్మలో చూపిన విదంగా సిగ్నల్ ఇస్తే అర్థం ఏమిటి?</string>
+    <string name="te088a" translatable="false">అతను ఎడమవైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="te088b" translatable="false">అతను కుడి వైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="te088c" translatable="false">అతను ఆగడానికి సూచిస్తున్నాడు</string>
+    <string name="te088d" translatable="false">నెమ్మదిగా వెళ్ళడానికి సూచిస్తున్నాడు</string>
+
+    <string name="te089q" translatable="false">%1$d. డ్రైవర్ దొమ్మలో చూపిన విధంగా సిగ్నల్ ఇస్తే అర్థం ఏమిటి?</string>
+    <string name="te089a" translatable="false">అతను ఎడమవైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="te089b" translatable="false">అతను కుడి వైపు మలుపు తిరగడానికి సూచిస్తున్నాడు</string>
+    <string name="te089c" translatable="false">అతను ఆగడానికి సూచిస్తున్నాడు</string>
+    <string name="te089d" translatable="false">వెనుక వాహనమునకు ముందుకు వెళ్ళడానికి సూచిస్తున్నాడు</string>
+
+    <string name="te090q" translatable="false">%1$d. రోడ్డు మద్యలో విరిగిన తెల్లని గీత దేనిని సూచిస్తుంది</string>
+    <string name="te090a" translatable="false">ఎప్పుడు దాటాలనిపిస్తే అప్పుడు సిగ్నల్ ఇచ్చి ఆ గీతను దాటవచ్చు</string>
+    <string name="te090b" translatable="false">ఓవర్ టేకింగ్ నిషిద్ధం</string>
+    <string name="te090c" translatable="false">ఎటువంటి పరిస్థితులలోను గీత దాటి వెళ్లకూడదు</string>
+    <string name="te090d" translatable="false">పైవి ఏవి కావు</string>
+
+    <string name="te091q" translatable="false">%1$d. రోడ్డు మధ్యలో పొడవుగా గీసిన గీత దేనిని సూచిస్తుంది</string>
+    <string name="te091a" translatable="false">క్రాస్ చేయడం సురక్షితం అని మీరు బావించినప్పుడు</string>
+    <string name="te091b" translatable="false">ఎడమ ప్రక్క వాహనాలు జాగ్రత్తగా గీత దాటవచ్చును</string>
+    <string name="te091c" translatable="false">ఎట్టి పరిస్థితులలోను దాటకూడదు</string>
+    <string name="te091d" translatable="false">పైవి అన్నీ</string>
+
+    <string name="te092q" translatable="false">%1$d. రోడ్డు మద్యలో సమాంతరంగా ఉన్న గీతకు ఎడమ వైపు ఉన్న విరిగిన గీతకు అర్థం ఏమిటి</string>
+    <string name="te092a" translatable="false">సమాంతర రేఖకు ప్రక్కన ఉన్న వాహనములను ఓవర్ టేక్ చేయుటకు అనుమతించబడినది,</string>
+    <string name="te092b" translatable="false">విరిగిన గీతకు ప్రక్కన వున్న వాహనాలను ఓవర్ టేక్ చేయటకు అనుమతించబడినది</string>
+    <string name="te092c" translatable="false">ఓవర్ టేక్ రెండు వైపుల చేయవచ్చును</string>
+    <string name="te092d" translatable="false">పైవి అన్నీ</string>
+
+    <string name="te093q" translatable="false">%1$d. రోడ్డు మద్యలో నిరంతరంగా ఉండే రెండు పసుపు గీతలు దేనిని సూచిస్తాయి</string>
+    <string name="te093a" translatable="false">ఎట్టిపరిస్థితులలోను ఈ గీతల వెంబడి ఓవర్ టేక్ చేయడం యూ టర్న్ తీసుకోవడం అనుమతించరు</string>
+    <string name="te093b" translatable="false">వన్ వే రోడ్</string>
+    <string name="te093c" translatable="false">క్రాస్ చేయడం సురక్షితం అని మీరు బావించినప్పుడు</string>
+    <string name="te093d" translatable="false">పైవి ఏవి కావు</string>
+    
+</resources>

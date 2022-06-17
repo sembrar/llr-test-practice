@@ -64,7 +64,7 @@ public class ModelTest extends ModelBase {
     @Override
     String get_question_res_identifier_name() {
         TestQuestion testQuestion = test_questions.get(current_question_index);
-        return "s" + testQuestion.subject_index + "_" + testQuestion.question_index + "q";
+        return questions_and_choices_language_code + testQuestion.subject_index + testQuestion.question_index + "q";
     }
 
     @Override
@@ -78,7 +78,7 @@ public class ModelTest extends ModelBase {
     String get_option_res_identifier_name(int option_index) {
         final String[] option_suffixes = {"a", "b", "c", "d"};
         TestQuestion testQuestion = test_questions.get(current_question_index);
-        return "s" + testQuestion.subject_index + "_" + testQuestion.question_index + option_suffixes[option_index];
+        return questions_and_choices_language_code + testQuestion.subject_index + testQuestion.question_index + option_suffixes[option_index];
     }
 
     @Override

@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="en20q" translatable="false">%1$d. Driving is a repetition of three things. Which are they in correct order?</string>
+    <string name="en20a" translatable="false">Think, do and see</string>
+    <string name="en20b" translatable="false">Do, think and see</string>
+    <string name="en20c" translatable="false">See, think and do</string>
+    <string name="en20d" translatable="false">See, do and think</string>
+
+    <string name="en21q" translatable="false">%1$d. Which of the following should be done continuously while driving a vehicle?</string>
+    <string name="en21a" translatable="false">Checking level of fuel tank</string>
+    <string name="en21b" translatable="false">Assessing road conditions ahead</string>
+    <string name="en21c" translatable="false">Adjusting vehicle controls for smooth running</string>
+    <string name="en21d" translatable="false">Making a visual check for all controls</string>
+
+    <string name="en22q" translatable="false">%1$d. You start to feel tired while driving. What should you do?</string>
+    <string name="en22a" translatable="false">Increase your speed slightly</string>
+    <string name="en22b" translatable="false">Decrease your speed slightly</string>
+    <string name="en22c" translatable="false">Find a less busy route</string>
+    <string name="en22d" translatable="false">Stop at a safe place to rest</string>
+
+    <string name="en23q" translatable="false">%1$d. While driving a car, a properly adjusted head restraint will</string>
+    <string name="en23a" translatable="false">Make you more comfortable</string>
+    <string name="en23b" translatable="false">Help you to avoid neck injury</string>
+    <string name="en23c" translatable="false">Help you to relax</string>
+    <string name="en23d" translatable="false">Help you to maintain your driving position</string>
+
+    <string name="en24q" translatable="false">%1$d. You should only use a mobile phone when</string>
+    <string name="en24a" translatable="false">Receiving a call.</string>
+    <string name="en24b" translatable="false">The vehicle is stationary &amp; parked suitably.</string>
+    <string name="en24c" translatable="false">Driving at less than 30 kmph</string>
+    <string name="en24d" translatable="false">Driving an automatic transmission vehicle.</string>
+
+    <string name="en25q" translatable="false">%1$d. While driving, avoid</string>
+    <string name="en25a" translatable="false">Reacting to wrong behaviour of other drivers.</string>
+    <string name="en25b" translatable="false">Getting distracted by hoardings</string>
+    <string name="en25c" translatable="false">Both of the above.</string>
+    <string name="en25d" translatable="false">Observing dash board gauges because this will affect your concentration.</string>
+
+    <string name="en26q" translatable="false">%1$d. To help concentration on long journeys you should stop frequently and</string>
+    <string name="en26a" translatable="false">Have a rest</string>
+    <string name="en26b" translatable="false">Fill up with fuel</string>
+    <string name="en26c" translatable="false">Eat a meal</string>
+    <string name="en26d" translatable="false">Have a drink</string>
+
+    <string name="en27q" translatable="false">%1$d. What is meant by ‘defensive driving’?</string>
+    <string name="en27a" translatable="false">Being alert and thinking ahead</string>
+    <string name="en27b" translatable="false">Always driving slowly and gently</string>
+    <string name="en27c" translatable="false">Always letting others go first</string>
+    <string name="en27d" translatable="false">Pulling over for faster traffic</string>
+
+    <string name="en28q" translatable="false">%1$d. To drive on the road, learners must</string>
+    <string name="en28a" translatable="false">Have only the registration certificate of the vehicle</string>
+    <string name="en28b" translatable="false">Have taken professional instruction</string>
+    <string name="en28c" translatable="false">Have a valid learners licence</string>
+    <string name="en28d" translatable="false">Apply for a driving test within 12 months.</string>
+
+    <string name="en29q" translatable="false">%1$d. Which of the following types of eye glasses should not be worn when driving at night?</string>
+    <string name="en29a" translatable="false">Half-moon</string>
+    <string name="en29b" translatable="false">Round</string>
+    <string name="en29c" translatable="false">Bi-focal</string>
+    <string name="en29d" translatable="false">Tinted</string>
+
+    <string name="en210q" translatable="false">%1$d. Objects hanging from your interior mirror may</string>
+    <string name="en210a" translatable="false">Restrict your view &amp; distract your attention</string>
+    <string name="en210b" translatable="false">Improve your driving</string>
+    <string name="en210c" translatable="false">Help you concentration</string>
+    <string name="en210d" translatable="false">None of the above</string>
+
+    <string name="en211q" translatable="false">%1$d. What is the best way to prevent fatigue when driving?</string>
+    <string name="en211a" translatable="false">Avoid night driving</string>
+    <string name="en211b" translatable="false">Stop for rest</string>
+    <string name="en211c" translatable="false">Don\'t carry any load</string>
+    <string name="en211d" translatable="false">Drink two pegs of good quality whisky</string>
+
+    <string name="en212q" translatable="false">%1$d. Your overall stopping distance will be much longer when driving</string>
+    <string name="en212a" translatable="false">In rain</string>
+    <string name="en212b" translatable="false">In fog</string>
+    <string name="en212c" translatable="false">At night</string>
+    <string name="en212d" translatable="false">In strong winds</string>
+
+    <string name="en213q" translatable="false">%1$d. When driving at sunset or dawn on a dark day. What should you do?</string>
+    <string name="en213a" translatable="false">Keep your sunglasses on to cut down headlight glare.</string>
+    <string name="en213b" translatable="false">Turn on your lights on low beam.</string>
+    <string name="en213c" translatable="false">Turn on your hazard warning lights.</string>
+    <string name="en213d" translatable="false">Drive very fast</string>
+
+    <string name="en214q" translatable="false">%1$d. At road junctions which of the following are most vulnerable?</string>
+    <string name="en214a" translatable="false">Motorcyclists</string>
+    <string name="en214b" translatable="false">Cyclists</string>
+    <string name="en214c" translatable="false">Pedestrians</string>
+    <string name="en214d" translatable="false">All of the above</string>
+
+    <string name="en215q" translatable="false">%1$d. In what situation are other drivers allowed to flash their headlights at you?</string>
+    <string name="en215a" translatable="false">To warn you of their presence</string>
+    <string name="en215b" translatable="false">To warn you danger is ahead</string>
+    <string name="en215c" translatable="false">To warn you when you\'re breaking the speed limit</string>
+    <string name="en215d" translatable="false">To tell you that they are giving way to you</string>
+
+    <string name="en216q" translatable="false">%1$d. What is the best way to avoid hitting other vehicles, people or animals when moving off from the kerb?</string>
+    <string name="en216a" translatable="false">Get out of the car, look around and quickly drive off.</string>
+    <string name="en216b" translatable="false">Sound your horn continuously.</string>
+    <string name="en216c" translatable="false">Check your mirrors and look over your shoulder before moving off.</string>
+    <string name="en216d" translatable="false">All of the above</string>
+
+    <string name="en217q" translatable="false">%1$d. Which of these statements is true?</string>
+    <string name="en217a" translatable="false">Pedestrians have no special rights on the road</string>
+    <string name="en217b" translatable="false">You must give right of way to pedestrians only on zebra crossings.</string>
+    <string name="en217c" translatable="false">Pedestrians have right of way at uncontrolled pedestrian crossing</string>
+    <string name="en217d" translatable="false">None of the above</string>
+
+    <string name="en218q" translatable="false">%1$d. When driving in wet weather you should</string>
+    <string name="en218a" translatable="false">Drive in the middle of the road to avoid splashing water on pedestrians?</string>
+    <string name="en218b" translatable="false">Watch out for pedestrians who may hurry and take risks.</string>
+    <string name="en218c" translatable="false">Stop and help elderly people cross the road</string>
+    <string name="en218d" translatable="false">Drive at specified speed limit</string>
+
+    <string name="en219q" translatable="false">%1$d. You must obey signs giving orders. These signs are mostly in</string>
+    <string name="en219a" translatable="false">Black triangles</string>
+    <string name="en219b" translatable="false">Red triangles</string>
+    <string name="en219c" translatable="false">Blue rectangles</string>
+    <string name="en219d" translatable="false">Red / blue circles</string>
+
+    <string name="en220q" translatable="false">%1$d. A red traffic light means</string>
+    <string name="en220a" translatable="false">You may go straight on if there is no other traffic</string>
+    <string name="en220b" translatable="false">You must stop behind white stop line</string>
+    <string name="en220c" translatable="false">You may turn left if it is safe to do so</string>
+    <string name="en220d" translatable="false">You must slow down and prepare to stop if traffic has started to cross.</string>
+
+    <string name="en221q" translatable="false">%1$d. As a learning licence-holder you should not drive a vehicle</string>
+    <string name="en221a" translatable="false">Up to 50 kmph</string>
+    <string name="en221b" translatable="false">At night</string>
+    <string name="en221c" translatable="false">On the motorway without a permanent licence holder.</string>
+    <string name="en221d" translatable="false">None of the above</string>
+
+    <string name="en222q" translatable="false">%1$d. On which of these occasions must you stop your vehicle?</string>
+    <string name="en222a" translatable="false">When involved in an accident</string>
+    <string name="en222b" translatable="false">At a red traffic light</string>
+    <string name="en222c" translatable="false">When signaled to do so by a police officer</string>
+    <string name="en222d" translatable="false">All of the above</string>
+
+    <string name="en223q" translatable="false">%1$d. Why should you make sure that you have cancelled your indicators after turning?</string>
+    <string name="en223a" translatable="false">To avoid flattening the battery</string>
+    <string name="en223b" translatable="false">To avoid misleading other road users</string>
+    <string name="en223c" translatable="false">To avoid dazzling other road users</string>
+    <string name="en223d" translatable="false">To avoid damage to the indicator relay</string>
+
+    <string name="en224q" translatable="false">%1$d. How much distance should you keep from a vehicle travelling in front of you?</string>
+    <string name="en224a" translatable="false">15 meters</string>
+    <string name="en224b" translatable="false">10 meters</string>
+    <string name="en224c" translatable="false">Depends on the speed of the vehicle travelling in front of you</string>
+    <string name="en224d" translatable="false">A distance sufficient to avoid collision if the vehicle in front of you suddenly slows down or stops</string>
+
+    <string name="en225q" translatable="false">%1$d. You must not use your horn when you are stationary</string>
+    <string name="en225a" translatable="false">Unless a moving vehicle may cause you danger</string>
+    <string name="en225b" translatable="false">At any time whatsoever</string>
+    <string name="en225c" translatable="false">Unless it is used only briefly</string>
+    <string name="en225d" translatable="false">Except for signaling that you have just arrived</string>
+
+    <string name="en226q" translatable="false">%1$d. When other drivers flash their headlights at you it means</string>
+    <string name="en226a" translatable="false">That there is a radar speed trap ahead</string>
+    <string name="en226b" translatable="false">That they are giving way to you</string>
+    <string name="en226c" translatable="false">That they are warning you of their presence</string>
+    <string name="en226d" translatable="false">That there is something wrong with your vehicle</string>
+
+    <string name="en227q" translatable="false">%1$d. While driving, a warning light on your vehicle\'s instrument panel comes on. You should</string>
+    <string name="en227a" translatable="false">Continue if the engine sounds alright</string>
+    <string name="en227b" translatable="false">Hope that it is just a temporary electrical fault</string>
+    <string name="en227c" translatable="false">Deal with the problem when there is more time</string>
+    <string name="en227d" translatable="false">Check out the problem quickly and safely</string>
+
+    <string name="en228q" translatable="false">%1$d. Which of these must be in good working order for your car to be roadworthy?</string>
+    <string name="en228a" translatable="false">Speedometer</string>
+    <string name="en228b" translatable="false">Horn</string>
+    <string name="en228c" translatable="false">Windscreen wiper</string>
+    <string name="en228d" translatable="false">All of the above</string>
+
+    <string name="en229q" translatable="false">%1$d. Rear view mirror is?</string>
+    <string name="en229a" translatable="false">For viewing the traffic approaching from behind</string>
+    <string name="en229b" translatable="false">For keeping an eye on the passengers on the rear seat</string>
+    <string name="en229c" translatable="false">Not necessary in the vehicle</string>
+    <string name="en229d" translatable="false">A hazard as it causes distraction</string>
+
+    <string name="en230q" translatable="false">%1$d. Hand brake is to be used to?</string>
+    <string name="en230a" translatable="false">Reduce speed</string>
+    <string name="en230b" translatable="false">Park the vehicle</string>
+    <string name="en230c" translatable="false">Brake suddenly</string>
+    <string name="en230d" translatable="false">Control a skid</string>
+
+    <string name="en231q" translatable="false">%1$d. The most effective device for protecting passengers during accident is</string>
+    <string name="en231a" translatable="false">Seat belts</string>
+    <string name="en231b" translatable="false">Safety door latches</string>
+    <string name="en231c" translatable="false">Padded instrument panels</string>
+    <string name="en231d" translatable="false">None of these</string>
+
+    <string name="en232q" translatable="false">%1$d. You borrow a friend\'s car and find that the position of the driver\'s seat puts you sitting a long way from the steering wheel and controls. What should you do?</string>
+    <string name="en232a" translatable="false">You should never borrow another person\'s vehicle.</string>
+    <string name="en232b" translatable="false">You should not adjust another person\'s seat</string>
+    <string name="en232c" translatable="false">Adjust the seat forward to fit you</string>
+    <string name="en232d" translatable="false">Ask your friend for a cushion to place behind your back.</string>
+
+    <string name="en233q" translatable="false">%1$d. Mirrors are often slightly curved (convex), so that</string>
+    <string name="en233a" translatable="false">They totally cover blind spots</string>
+    <string name="en233b" translatable="false">They give a wider field of vision</string>
+    <string name="en233c" translatable="false">They make it easier to judge the speed of following traffic</string>
+    <string name="en233d" translatable="false">They make following traffic look bigger</string>
+
+    <string name="en234q" translatable="false">%1$d. What should be the colour scheme for number plates for private vehicles?</string>
+    <string name="en234a" translatable="false">Black base and white numerals</string>
+    <string name="en234b" translatable="false">Yellow base and white numerals</string>
+    <string name="en234c" translatable="false">White base and black numerals</string>
+    <string name="en234d" translatable="false">None of the above</string>
+
+    <string name="en235q" translatable="false">%1$d. You have a valid learner\'s licence to drive a car, you are allowed to</string>
+    <string name="en235a" translatable="false">Drive only at daytime</string>
+    <string name="en235b" translatable="false">Practice driving on roads that have very little traffic</string>
+    <string name="en235c" translatable="false">Drive at any time, any place</string>
+    <string name="en235d" translatable="false">Drive at any time, and any place provided there is a permanent licence holder with you who can control the vehicle in case of emergency</string>
+
+    <string name="en236q" translatable="false">%1$d. If you have a valid driving licence for a light motor vehicle, what are you allowed to drive?</string>
+    <string name="en236a" translatable="false">Motor car only</string>
+    <string name="en236b" translatable="false">Motor car and motorcycle above 50cc</string>
+    <string name="en236c" translatable="false">Every motor vehicle</string>
+    <string name="en236d" translatable="false">None of the above</string>
+
+    <string name="en237q" translatable="false">%1$d. If you meet with an accident while driving a vehicle, without a valid driving licence, the insurance company will</string>
+    <string name="en237a" translatable="false">Compensate partly for damages</string>
+    <string name="en237b" translatable="false">Compensate fully for damages</string>
+    <string name="en237c" translatable="false">Not compensate for damages</string>
+    <string name="en237d" translatable="false">None of the above</string>
+
+    <string name="en238q" translatable="false">%1$d. While driving on the road without a valid driving licence, when can you face a penal action?</string>
+    <string name="en238a" translatable="false">Only when you have met with an accident</string>
+    <string name="en238b" translatable="false">When checking officer check your vehicle</string>
+    <string name="en238c" translatable="false">Will not face a penal action</string>
+    <string name="en238d" translatable="false">None of the above</string>
+
+    <string name="en239q" translatable="false">%1$d. Learners licence is valid</string>
+    <string name="en239a" translatable="false">For 30 days</string>
+    <string name="en239b" translatable="false">Till permanent licence is issued</string>
+    <string name="en239c" translatable="false">For six months</string>
+    <string name="en239d" translatable="false">For one year</string>
+
+    <string name="en240q" translatable="false">%1$d. Pucc stands for</string>
+    <string name="en240a" translatable="false">Primary unlicenced car &amp; carrier</string>
+    <string name="en240b" translatable="false">Pollution under control certificate</string>
+    <string name="en240c" translatable="false">Pollution uncontrolled cancellation certificate</string>
+    <string name="en240d" translatable="false">None of the above</string>
+
+    <string name="en241q" translatable="false">%1$d. Minimum age to obtain a car driving licence is?</string>
+    <string name="en241a" translatable="false">20 year</string>
+    <string name="en241b" translatable="false">15 years</string>
+    <string name="en241c" translatable="false">16 years</string>
+    <string name="en241d" translatable="false">18 years</string>
+
+    <string name="en242q" translatable="false">%1$d. Your car is involved in an accident hurting people, you should</string>
+    <string name="en242a" translatable="false">Report to the nearest police station and take the persons to the hospital</string>
+    <string name="en242b" translatable="false">Need not report to the police station</string>
+    <string name="en242c" translatable="false">Need not report to the police station but should take the persons to the hospital.</string>
+    <string name="en242d" translatable="false">Run away</string>
+
+    <string name="en243q" translatable="false">%1$d. Is it an offence to obstruct clear vision of your number plates?</string>
+    <string name="en243a" translatable="false">Depends on the type of obstruction</string>
+    <string name="en243b" translatable="false">Yes, at any time</string>
+    <string name="en243c" translatable="false">No, you are allowed to cover your number plates if you want to.</string>
+    <string name="en243d" translatable="false">Yes, but is legal for a towbar or bicycle rack to cover the rear number plate.</string>
+
+    <string name="en244q" translatable="false">%1$d. Are you allowed to use a hand- held mobile phone while driving a car?</string>
+    <string name="en244a" translatable="false">Yes, but only when you stop at intersections.</string>
+    <string name="en244b" translatable="false">No</string>
+    <string name="en244c" translatable="false">Yes, but you must hold the steering wheel with at least one hand.</string>
+    <string name="en244d" translatable="false">Only at night</string>
+
+    <string name="en245q" translatable="false">%1$d. Which of the following is a basic step to take after an accident?</string>
+    <string name="en245a" translatable="false">Protect the area.</string>
+    <string name="en245b" translatable="false">Inform to authorities</string>
+    <string name="en245c" translatable="false">Care for the injured.</string>
+    <string name="en245d" translatable="false">All of the above</string>
+
+    <string name="en246q" translatable="false">%1$d. What phone number will you dial in case of a medical emergency to get assistance by the ambulance?</string>
+    <string name="en246a" translatable="false">102</string>
+    <string name="en246b" translatable="false">103</string>
+    <string name="en246c" translatable="false">108</string>
+    <string name="en246d" translatable="false">105</string>
+
+    <string name="en247q" translatable="false">%1$d. You arrive at the scene of an accident. What is the first thing you should do?</string>
+    <string name="en247a" translatable="false">Call the police</string>
+    <string name="en247b" translatable="false">Warn other traffic</string>
+    <string name="en247c" translatable="false">Call the ambulance</string>
+    <string name="en247d" translatable="false">None of the above</string>
+
+    <string name="en248q" translatable="false">%1$d. Accidents occur</string>
+    <string name="en248a" translatable="false">Due to the negligence of drivers.</string>
+    <string name="en248b" translatable="false">Due to vehicle failure.</string>
+    <string name="en248c" translatable="false">Because of difficult road &amp; climatic conditions</string>
+    <string name="en248d" translatable="false">All of the above</string>
+
+    <string name="en249q" translatable="false">%1$d. The age group of drivers mostly involved in a road accident?</string>
+    <string name="en249a" translatable="false">36 to 45 year old</string>
+    <string name="en249b" translatable="false">55 year old and over</string>
+    <string name="en249c" translatable="false">46 to 55 years old</string>
+    <string name="en249d" translatable="false">17 to 25 years old</string>
+
+    <string name="en250q" translatable="false">%1$d. An older person\'s driving ability could be affected because they may be unable to</string>
+    <string name="en250a" translatable="false">Understand road signs</string>
+    <string name="en250b" translatable="false">Obtain car insurance</string>
+    <string name="en250c" translatable="false">React very quickly</string>
+    <string name="en250d" translatable="false">Give signals correctly</string>
+
+    <string name="en251q" translatable="false">%1$d. You should not use a mobile phone while driving</string>
+    <string name="en251a" translatable="false">Until you are satisfied that no other traffic is near</string>
+    <string name="en251b" translatable="false">Unless you are able to drive one handed</string>
+    <string name="en251c" translatable="false">Because it might distract your attention from the road ahead.</string>
+    <string name="en251d" translatable="false">Because reception ispoor when the engine is running</string>
+
+    <string name="en252q" translatable="false">%1$d. You are taking drugs that are likely to affect your driving. What should you do?</string>
+    <string name="en252a" translatable="false">Seek medical advice before driving</string>
+    <string name="en252b" translatable="false">Limit your driving to essential journeys</string>
+    <string name="en252c" translatable="false">Only drive if accompanied by a permanent licence holder</string>
+    <string name="en252d" translatable="false">Drive only for short distances</string>
+
+    <string name="en253q" translatable="false">%1$d. You have been involved in an argument before starting your journey. This has made you feel angry. You should</string>
+    <string name="en253a" translatable="false">Start to drive, but open a window</string>
+    <string name="en253b" translatable="false">Drive slower than normal and turn your radio on</string>
+    <string name="en253c" translatable="false">Have an alcoholic drink to help you relax before driving</string>
+    <string name="en253d" translatable="false">Calm down before you start to drive.</string>
+
+    <string name="en254q" translatable="false">%1$d. A driver\'s behaviour has upset you. It may help if you</string>
+    <string name="en254a" translatable="false">Stop and take a break</string>
+    <string name="en254b" translatable="false">Shout abusive language</string>
+    <string name="en254c" translatable="false">Gesture to them with your hand</string>
+    <string name="en254d" translatable="false">Follow their car, flashing the headlights</string>
+
+    <string name="en255q" translatable="false">%1$d. A motor driving licence issued in any state of india</string>
+    <string name="en255a" translatable="false">Is valid through out the india</string>
+    <string name="en255b" translatable="false">Is valid throughout the world</string>
+    <string name="en255c" translatable="false">Is valid only in the state</string>
+    <string name="en255d" translatable="false">Not valid anywhere</string>
+
+    <string name="en256q" translatable="false">%1$d. What should you use your horn for?</string>
+    <string name="en256a" translatable="false">To alert others of your presence</string>
+    <string name="en256b" translatable="false">To allow you right of way</string>
+    <string name="en256c" translatable="false">To greet other road users</string>
+    <string name="en256d" translatable="false">To signal your annoyance</string>
+
+    <string name="en257q" translatable="false">%1$d. Before driving a new vehicle the driver should</string>
+    <string name="en257a" translatable="false">Be familiar with the position of controls</string>
+    <string name="en257b" translatable="false">Take a bath and make himself fit for driving.</string>
+    <string name="en257c" translatable="false">Always use choke before starting.</string>
+    <string name="en257d" translatable="false">Check its number plates.</string>
+
+    <string name="en258q" translatable="false">%1$d. The first thing that alcohol affects is</string>
+    <string name="en258a" translatable="false">Vision.</string>
+    <string name="en258b" translatable="false">Speech.</string>
+    <string name="en258c" translatable="false">Hearing</string>
+    <string name="en258d" translatable="false">Judgement.</string>
+
+    <string name="en259q" translatable="false">%1$d. You have to drive in the evening. You are invited to a lunch . What is your best course of action?</string>
+    <string name="en259a" translatable="false">Have only two pegs</string>
+    <string name="en259b" translatable="false">Dont drink any alcohol at all</string>
+    <string name="en259c" translatable="false">Have some milk before drinking alcohol</string>
+    <string name="en259d" translatable="false">Eat a hot meal with your alcoholic drinks</string>
+
+    <string name="en260q" translatable="false">%1$d. What advice should you give to a driver who has had a few alcoholic drinks at a party?</string>
+    <string name="en260a" translatable="false">Have a strong cup of coffee and then drive home</string>
+    <string name="en260b" translatable="false">Drive home carefully and slowly</string>
+    <string name="en260c" translatable="false">Go home by public transport</string>
+    <string name="en260d" translatable="false">Wait for a short while and then drive home.</string>
+
+    <string name="en261q" translatable="false">%1$d. What else can seriously affect your concentration, other than alcoholic drinks?</string>
+    <string name="en261a" translatable="false">Drugs</string>
+    <string name="en261b" translatable="false">Tiredness</string>
+    <string name="en261c" translatable="false">Loud music</string>
+    <string name="en261d" translatable="false">All of the above</string>
+
+    <string name="en262q" translatable="false">%1$d. Do you have any responsibility when opening a vehicle door on a roadway?</string>
+    <string name="en262a" translatable="false">The driver may open his door when ever he wishes to.</string>
+    <string name="en262b" translatable="false">No, any following traffic must stop if the door interferes with progress.</string>
+    <string name="en262c" translatable="false">No, there is no regulation to cover this situation.</string>
+    <string name="en262d" translatable="false">Yes, you must not open a door if you are likely to cause danger to road users or impede traffic.</string>
+
+    <string name="en263q" translatable="false">%1$d. Generally, if you hear the siren of an emergency vehicle you should</string>
+    <string name="en263a" translatable="false">Sound your horn</string>
+    <string name="en263b" translatable="false">Immediately come to a stop</string>
+    <string name="en263c" translatable="false">Let the emergency vehicle pass and follow it closely behind.</string>
+    <string name="en263d" translatable="false">Pull over to the left until the emergency vehicle passes.</string>
+
+    <string name="en264q" translatable="false">%1$d. You arrive at the scene of a motorcycle accident. No other vehicle is involved. The rider is unconscious, lying in the middle of the road. The first thing you should do is to</string>
+    <string name="en264a" translatable="false">Move the rider out of the road.</string>
+    <string name="en264b" translatable="false">Warn other traffic</string>
+    <string name="en264c" translatable="false">Clear the road of debris.</string>
+    <string name="en264d" translatable="false">Give the rider reassurance</string>
+
+    <string name="en265q" translatable="false">%1$d. Which of the following attitudes are most likely to make you a safe driver?</string>
+    <string name="en265a" translatable="false">When i drive, i am responsible for my safety as well as the safety of other road users.</string>
+    <string name="en265b" translatable="false">Crashing or not crashing is a matter of luck</string>
+    <string name="en265c" translatable="false">Other road users must ensure their safety</string>
+    <string name="en265d" translatable="false">Other drivers are rash, i am safety conscious.</string>
+
+    <string name="en266q" translatable="false">%1$d. Your vehicle has broken down on a highway, what is the first thing you should do?</string>
+    <string name="en266a" translatable="false">Warn other traffic</string>
+    <string name="en266b" translatable="false">Stop the following traffic and ask for help</string>
+    <string name="en266c" translatable="false">Attempt to repair your vehicle quickly</string>
+    <string name="en266d" translatable="false">Place a warning triangle on the road.</string>
+
+    <string name="en267q" translatable="false">%1$d. Which of the following should not be kept in your vehicle?</string>
+    <string name="en267a" translatable="false">A first aid kit</string>
+    <string name="en267b" translatable="false">A road atlas</string>
+    <string name="en267c" translatable="false">Inflammable material</string>
+    <string name="en267d" translatable="false">Tool kit</string>
+
+    <string name="en268q" translatable="false">%1$d. Which of the following is true</string>
+    <string name="en268a" translatable="false">The pedestrians have the right of way at all pedestrian crossings</string>
+    <string name="en268b" translatable="false">Pedestrians have no right to cross the road</string>
+    <string name="en268c" translatable="false">Pedestrians shall allow the vehicles to pass</string>
+    <string name="en268d" translatable="false">Pedestrians shall move slowly at road crossings</string>
+
+    <string name="en269q" translatable="false">%1$d. What is the maximum speed limit when towing another mechanically disabled vehicle</string>
+    <string name="en269a" translatable="false">60kmph</string>
+    <string name="en269b" translatable="false">50kmph</string>
+    <string name="en269c" translatable="false">24kmph</string>
+    <string name="en269d" translatable="false">10kmph</string>
+
+    <string name="en270q" translatable="false">%1$d. Which of the following is correct</string>
+    <string name="en270a" translatable="false">You should not sound horn in silence zones</string>
+    <string name="en270b" translatable="false">You should not use multi toned horns</string>
+    <string name="en270c" translatable="false">You should not drive a vehicle creating undue noise</string>
+    <string name="en270d" translatable="false">All the above</string>
+
+    <string name="en271q" translatable="false">%1$d. When you approach a road where workers are undertaking repairs, your speed shall not be more than</string>
+    <string name="en271a" translatable="false">25kmph</string>
+    <string name="en271b" translatable="false">35kmph</string>
+    <string name="en271c" translatable="false">45kmph</string>
+    <string name="en271d" translatable="false">55kmph</string>
+
+    <string name="en272q" translatable="false">%1$d. What shall be your maximum speed when you are passing a procession or meetings on the road</string>
+    <string name="en272a" translatable="false">35kmph</string>
+    <string name="en272b" translatable="false">25kmph</string>
+    <string name="en272c" translatable="false">45kmph</string>
+    <string name="en272d" translatable="false">55kmph</string>
+
+    <string name="en273q" translatable="false">%1$d. A driver of goods vehicle can carry passengers</string>
+    <string name="en273a" translatable="false">On the trailor</string>
+    <string name="en273b" translatable="false">On the body of the vehicle</string>
+    <string name="en273c" translatable="false">For hire or reward</string>
+    <string name="en273d" translatable="false">Can not carry passengers</string>
+
+    <string name="en274q" translatable="false">%1$d. Which of the following documents need not be carried while driving the vehicle</string>
+    <string name="en274a" translatable="false">Driving licence</string>
+    <string name="en274b" translatable="false">Registration certificate</string>
+    <string name="en274c" translatable="false">Insurance certificate</string>
+    <string name="en274d" translatable="false">Invoice</string>
+
+    <string name="en275q" translatable="false">%1$d. Which of the following are authorised to ask you for production of documents while you are driving on the road</string>
+    <string name="en275a" translatable="false">Officers of police department in uniform</string>
+    <string name="en275b" translatable="false">Officers of transport department in uniform</string>
+    <string name="en275c" translatable="false">Any other officer authorised by government</string>
+    <string name="en275d" translatable="false">All of these</string>
+
+    <string name="en276q" translatable="false">%1$d. What is the maximum speed with which you are allowed to drive a two wheeler on the road</string>
+    <string name="en276a" translatable="false">60kmph</string>
+    <string name="en276b" translatable="false">80kmph</string>
+    <string name="en276c" translatable="false">50kmph</string>
+    <string name="en276d" translatable="false">100kmph</string>
+
+    <string name="en277q" translatable="false">%1$d. Stopping with the help of gears can be achieved by</string>
+    <string name="en277a" translatable="false">Bringing the gear into neutral</string>
+    <string name="en277b" translatable="false">Switching off the engine</string>
+    <string name="en277c" translatable="false">Lowering gears one by one</string>
+    <string name="en277d" translatable="false">Depressing the clutch &amp; brake simultaneously</string>
+
+    <string name="en278q" translatable="false">%1$d. Which of the following may cause loss of concentration while driving?</string>
+    <string name="en278a" translatable="false">Loud music</string>
+    <string name="en278b" translatable="false">Arguing with a passenger</string>
+    <string name="en278c" translatable="false">Using a mobile phone</string>
+    <string name="en278d" translatable="false">All of the above</string>
+
+    <string name="en279q" translatable="false">%1$d. On a long motorway journey boredom can cause you to feel sleepy. You should</string>
+    <string name="en279a" translatable="false">Leave the motorway and find a safe place to stop and ensure a supply of fresh air into your vehicle</string>
+    <string name="en279b" translatable="false">Keep looking around at the surrounding landscape</string>
+    <string name="en279c" translatable="false">Drive faster to complete your journey sooner</string>
+    <string name="en279d" translatable="false">Stop on the hard shoulder for a rest</string>
+
+    <string name="en280q" translatable="false">%1$d. Which of these does the law require you to keep in good condition?</string>
+    <string name="en280a" translatable="false">Headlights</string>
+    <string name="en280b" translatable="false">Windscreen</string>
+    <string name="en280c" translatable="false">Seat belts</string>
+    <string name="en280d" translatable="false">All of the above</string>
+
+    <string name="en281q" translatable="false">%1$d. You are carrying two 13 year old children and their parents in your car. Who is responsible for seeing that the children wear seat belts?</string>
+    <string name="en281a" translatable="false">The children\'s parents</string>
+    <string name="en281b" translatable="false">You, the driver</string>
+    <string name="en281c" translatable="false">The front-seat passenger</string>
+    <string name="en281d" translatable="false">The children</string>
+
+    <string name="en282q" translatable="false">%1$d. Noise pollution may result in</string>
+    <string name="en282a" translatable="false">Disturbing mental equilibrium.</string>
+    <string name="en282b" translatable="false">Disturbing the concentration of driver.</string>
+    <string name="en282c" translatable="false">Loss of hearing capacity.</string>
+    <string name="en282d" translatable="false">All of the above</string>
+
+    <string name="en283q" translatable="false">%1$d. A driver does something that upsets you. You should</string>
+    <string name="en283a" translatable="false">Try not to react</string>
+    <string name="en283b" translatable="false">Let them know how you feel</string>
+    <string name="en283c" translatable="false">Flash your headlights several times</string>
+    <string name="en283d" translatable="false">Sound your horn</string>
+
+    <string name="en284q" translatable="false">%1$d. How should you react to drivers who appear to be inexperienced?</string>
+    <string name="en284a" translatable="false">Sound your horn to warn them of your presence</string>
+    <string name="en284b" translatable="false">Be patient and prepared for their slow reaction</string>
+    <string name="en284c" translatable="false">Flash your headlights to indicate that it is safe for them to proceed</string>
+    <string name="en284d" translatable="false">Overtake them as soon as possible</string>
+
+    <string name="en285q" translatable="false">%1$d. You should only flash your headlights at other road users</string>
+    <string name="en285a" translatable="false">To show that you are giving way</string>
+    <string name="en285b" translatable="false">To show that you are about to turn</string>
+    <string name="en285c" translatable="false">To tell them that you have right of way</string>
+    <string name="en285d" translatable="false">To let them know that you are there</string>
+
+    <string name="en286q" translatable="false">%1$d. Pressing the clutch pedal down or rolling in neutral for too long while driving will</string>
+    <string name="en286a" translatable="false">Use more fuel</string>
+    <string name="en286b" translatable="false">Cause the engine to overheat</string>
+    <string name="en286c" translatable="false">Reduce your control</string>
+    <string name="en286d" translatable="false">Improve tyre wear</string>
+
+    <string name="en287q" translatable="false">%1$d. How can you use the gears of your vehicle to control your speed?</string>
+    <string name="en287a" translatable="false">By changing to a lower gear</string>
+    <string name="en287b" translatable="false">By selecting reverse gear</string>
+    <string name="en287c" translatable="false">By changing to a higher gear</string>
+    <string name="en287d" translatable="false">By selecting neutral gear</string>
+
+    <string name="en288q" translatable="false">%1$d. You are driving down a steep hill. Why could keeping the clutch down or selecting neutral for too long be dangerous?</string>
+    <string name="en288a" translatable="false">Fuel consumption will be higher</string>
+    <string name="en288b" translatable="false">Your vehicle will pick up speed</string>
+    <string name="en288c" translatable="false">It will damage the engine</string>
+    <string name="en288d" translatable="false">It will wear tyres out more quickly</string>
+
+    <string name="en289q" translatable="false">%1$d. You are travelling in very heavy rain. Your overall stopping distance is likely to</string>
+    <string name="en289a" translatable="false">Increase</string>
+    <string name="en289b" translatable="false">Decrease</string>
+    <string name="en289c" translatable="false">Be up to ten times greater</string>
+    <string name="en289d" translatable="false">Remain the same</string>
+
+    <string name="en290q" translatable="false">%1$d. What is the legal minimum insurance cover you must have to drive on public roads?</string>
+    <string name="en290a" translatable="false">Third party, fire and theft</string>
+    <string name="en290b" translatable="false">Fully comprehensive</string>
+    <string name="en290c" translatable="false">Third party only</string>
+    <string name="en290d" translatable="false">Personal injury cover</string>
+
+    <string name="en291q" translatable="false">%1$d. You have just bought a second hand vehicle. When should you tell the licensing authority of change of ownership?</string>
+    <string name="en291a" translatable="false">Within 14 days</string>
+    <string name="en291b" translatable="false">Within 28 days</string>
+    <string name="en291c" translatable="false">Within one month</string>
+    <string name="en291d" translatable="false">Only when you insure it</string>
+
+    <string name="en292q" translatable="false">%1$d. You are the first to arrive at the scene of an accident. Which of these should you do?</string>
+    <string name="en292a" translatable="false">Switch off the vehicle engine</string>
+    <string name="en292b" translatable="false">Move uninjured people away from the vehicle(s)</string>
+    <string name="en292c" translatable="false">Call the emergency services</string>
+    <string name="en292d" translatable="false">All of the above</string>
+
+    <string name="en293q" translatable="false">%1$d. An accident has just happened. An injured person is lying on the busy road. What is the first thing you should do?</string>
+    <string name="en293a" translatable="false">Treat the person for shock</string>
+    <string name="en293b" translatable="false">Warn other traffic</string>
+    <string name="en293c" translatable="false">Place him in the recovery position</string>
+    <string name="en293d" translatable="false">Make sure that the injured person is kept warm</string>
+
+    <string name="en294q" translatable="false">%1$d. You have stopped at the scene of an accident to give help. Which of these things should you do?</string>
+    <string name="en294a" translatable="false">Keep injured people warm and comfortable</string>
+    <string name="en294b" translatable="false">Keep injured people calm by talking to them reassuringly</string>
+    <string name="en294c" translatable="false">Make sure that injured people are not left alone</string>
+    <string name="en294d" translatable="false">All of the above</string>
+
+    <string name="en295q" translatable="false">%1$d. Your indicators may be difficult to see in bright sunlight. What should you do?</string>
+    <string name="en295a" translatable="false">Give an arm signal as well as use your indicators</string>
+    <string name="en295b" translatable="false">Put your indicator on earlier</string>
+    <string name="en295c" translatable="false">Touch the brake several time to show the stop lights</string>
+    <string name="en295d" translatable="false">Turn as quickly as you can</string>
+
+    <string name="en296q" translatable="false">%1$d. What are the documents you need to carry with you in your vehicle always while driving?</string>
+    <string name="en296a" translatable="false">Driving licence</string>
+    <string name="en296b" translatable="false">Driving licence and insurance certificate</string>
+    <string name="en296c" translatable="false">Driving licence, certificate of insurance, registration certificate and pollution under control certificate</string>
+    <string name="en296d" translatable="false">No need to carry these documents since they can be stolen or misplaced</string>
+
+    <string name="en297q" translatable="false">%1$d. What is the validity period of a learner\'s licence?</string>
+    <string name="en297a" translatable="false">180 days</string>
+    <string name="en297b" translatable="false">30 days</string>
+    <string name="en297c" translatable="false">60 days</string>
+    <string name="en297d" translatable="false">90 days</string>
+
+    <string name="en298q" translatable="false">%1$d. What is the grace period for the renewal of a permanent driving licence?</string>
+    <string name="en298a" translatable="false">Nil</string>
+    <string name="en298b" translatable="false">30 days</string>
+    <string name="en298c" translatable="false">60 days</string>
+    <string name="en298d" translatable="false">90 days</string>
+
+    <string name="en299q" translatable="false">%1$d. Under what circumstances can your vehicle be impounded?</string>
+    <string name="en299a" translatable="false">When driving a vehicle without registration</string>
+    <string name="en299b" translatable="false">When flashing headlights unnecessarily</string>
+    <string name="en299c" translatable="false">When registration numbers are written in incorrect size dimensions</string>
+    <string name="en299d" translatable="false">When registration plate has a wrong colour background</string>
+
+    <string name="en2100q" translatable="false">%1$d. How does alcohol affect your driving?</string>
+    <string name="en2100a" translatable="false">It speeds up your reactions</string>
+    <string name="en2100b" translatable="false">It reduces your concentration</string>
+    <string name="en2100c" translatable="false">It increases your awareness</string>
+    <string name="en2100d" translatable="false">It improves your co- ordination</string>
+
+    <string name="en2101q" translatable="false">%1$d. What does the law require with regard to the negotiating of uncontrolled pedestrian crossing?</string>
+    <string name="en2101a" translatable="false">Speed up but avoid hitting pedestrians who are already on the pedestrian crossing</string>
+    <string name="en2101b" translatable="false">Slow down and proceed</string>
+    <string name="en2101c" translatable="false">Stop and give precedence to pedestrians who are already on the pedestrian crossing</string>
+    <string name="en2101d" translatable="false">Speed up keeping in mind pedestrians who are already on the pedestrian crossing</string>
+
+    <string name="en2102q" translatable="false">%1$d. What should you do when you are dazzled by headlights of other vehicles at night?</string>
+    <string name="en2102a" translatable="false">Slow down or stop, if necessary</string>
+    <string name="en2102b" translatable="false">Look to the left side of the road and slow down. Keep headlights on low beam</string>
+    <string name="en2102c" translatable="false">Dip your headlights continuously</string>
+    <string name="en2102d" translatable="false">Speed up</string>
+
+    <string name="en2103q" translatable="false">%1$d. A cover note is a document issued before you receive your</string>
+    <string name="en2103a" translatable="false">Driving licence.</string>
+    <string name="en2103b" translatable="false">Registration document</string>
+    <string name="en2103c" translatable="false">Insurance certificate</string>
+    <string name="en2103d" translatable="false">Puc certificate</string>
+
+    <string name="en2104q" translatable="false">%1$d. When you smell or see fire in your vehicle, what should you do?</string>
+    <string name="en2104a" translatable="false">Pull to the side of the road immediately, turn off the engine and all electrical switches and try to smoother burning wires with sand or heavy cloth.</string>
+    <string name="en2104b" translatable="false">Pull to the side of the road immediately, turn off the engine and all electrical switches and smother burning wires by pouring water on them.</string>
+    <string name="en2104c" translatable="false">Don\'t do anything but call the fire brigade.</string>
+    <string name="en2104d" translatable="false">None of the above.</string>
+
+    <string name="en2105q" translatable="false">%1$d. You should not drive with your foot on the clutch for longer than necessary because it</string>
+    <string name="en2105a" translatable="false">Reduces control over the vehicle and will result in premature clutch failure</string>
+    <string name="en2105b" translatable="false">Increases wear of the gearbox</string>
+    <string name="en2105c" translatable="false">Decreases petrol consumption</string>
+    <string name="en2105d" translatable="false">Reduces the grip of the tyres</string>
+
+    <string name="en2106q" translatable="false">%1$d. Function of choke is to</string>
+    <string name="en2106a" translatable="false">Enrich fuel in the air-fuel mixture</string>
+    <string name="en2106b" translatable="false">Enrich air in the air-fuel mixture</string>
+    <string name="en2106c" translatable="false">Enrich fuel in the air- water-fuel mixture</string>
+    <string name="en2106d" translatable="false">None of the above</string>
+
+    <string name="en2107q" translatable="false">%1$d. You have third party insurance. What does this cover?</string>
+    <string name="en2107a" translatable="false">Injury to another person.</string>
+    <string name="en2107b" translatable="false">Damage to someone\'s property.</string>
+    <string name="en2107c" translatable="false">Damage to other vehicles.</string>
+    <string name="en2107d" translatable="false">All of the above.</string>
+
+    <string name="en2108q" translatable="false">%1$d. What is the main reason that your stopping distance increases after heavy rain?</string>
+    <string name="en2108a" translatable="false">You are not able to see large puddles.</string>
+    <string name="en2108b" translatable="false">The brakes are cold because they\'re wet.</string>
+    <string name="en2108c" translatable="false">Your tyres have less grip on the road.</string>
+    <string name="en2108d" translatable="false">Water on the windscreen blurs your view of the road ahead.</string>
+
+    <string name="en2109q" translatable="false">%1$d. When your vehicle is loaded you must make sure that the load will</string>
+    <string name="en2109a" translatable="false">Remain secure</string>
+    <string name="en2109b" translatable="false">Be easy to unload</string>
+    <string name="en2109c" translatable="false">Not be damaged</string>
+    <string name="en2109d" translatable="false">Not damage the vehicle.</string>
+
+    <string name="en2110q" translatable="false">%1$d. You see a pedestrian carrying a white stick. This shows that the person is</string>
+    <string name="en2110a" translatable="false">Disabled</string>
+    <string name="en2110b" translatable="false">Deaf</string>
+    <string name="en2110c" translatable="false">Elderly</string>
+    <string name="en2110d" translatable="false">Blind</string>
+
+    <string name="en2111q" translatable="false">%1$d. While driving, you approach road works. You see a temporary maximum speed limit sign. You must</string>
+    <string name="en2111a" translatable="false">Comply with the sign during the working day</string>
+    <string name="en2111b" translatable="false">Comply with the sign at all times</string>
+    <string name="en2111c" translatable="false">Comply with the sign when the lanes are narrow</string>
+    <string name="en2111d" translatable="false">Comply with the sign during the hours of darkness.</string>
+
+    <string name="en2112q" translatable="false">%1$d. The driver of a four wheeler must ensure that any load that is carried on a roof rack must be</string>
+    <string name="en2112a" translatable="false">Securely fastened when driving</string>
+    <string name="en2112b" translatable="false">Carried only when strictly necessary</string>
+    <string name="en2112c" translatable="false">As light as possible</string>
+    <string name="en2112d" translatable="false">Covered with plastic sheeting</string>
+
+    <string name="en2113q" translatable="false">%1$d. Why passing a lorry is more risky than passing a car?</string>
+    <string name="en2113a" translatable="false">Lorries are longer than cars.</string>
+    <string name="en2113b" translatable="false">Lorries may suddenly pull up</string>
+    <string name="en2113c" translatable="false">The brakes of lorries are not as good</string>
+    <string name="en2113d" translatable="false">Lorries climb hills more slowly</string>
+
+    <string name="en2114q" translatable="false">%1$d. Before starting the vehicle the driver should check-</string>
+    <string name="en2114a" translatable="false">If the no. Plates are clean</string>
+    <string name="en2114b" translatable="false">Tyre condition, pressure &amp; wheel nut for proper tightening.</string>
+    <string name="en2114c" translatable="false">Leakage of fuel, coolant or oil.</string>
+    <string name="en2114d" translatable="false">All of the above</string>
+
+    <string name="en2115q" translatable="false">%1$d. Which is illegal while driving a four wheeler vehicle?</string>
+    <string name="en2115a" translatable="false">Improper working of all lights &amp; indicators.</string>
+    <string name="en2115b" translatable="false">Not using seat belts.</string>
+    <string name="en2115c" translatable="false">Both of the above.</string>
+    <string name="en2115d" translatable="false">None of the above</string>
+
+    <string name="en2116q" translatable="false">%1$d. While driving you should always keep the following in mind-</string>
+    <string name="en2116a" translatable="false">Condition of the road &amp; weather.</string>
+    <string name="en2116b" translatable="false">Type of vehicle &amp; traffic condition.</string>
+    <string name="en2116c" translatable="false">Your own skill &amp; concentration.</string>
+    <string name="en2116d" translatable="false">All of the above</string>
+
+    <string name="en2117q" translatable="false">%1$d. When you are being overtaken or passed by another vehicle. Do not</string>
+    <string name="en2117a" translatable="false">Give hand signals.</string>
+    <string name="en2117b" translatable="false">Reduce your vehicle’s speed.</string>
+    <string name="en2117c" translatable="false">Use head lights.</string>
+    <string name="en2117d" translatable="false">Increase your speed.</string>
+
+    <string name="en2118q" translatable="false">%1$d. Who is responsible for ensuring that the vehicle is not overloaded?</string>
+    <string name="en2118a" translatable="false">The passengers.</string>
+    <string name="en2118b" translatable="false">The mechanic of the vehicle.</string>
+    <string name="en2118c" translatable="false">The driver of the vehicle.</string>
+    <string name="en2118d" translatable="false">All of the above</string>
+
+    <string name="en2119q" translatable="false">%1$d. On a foggy day you have to unavoidably park your vehicle on the road. What should you do?</string>
+    <string name="en2119a" translatable="false">Leave headlights on</string>
+    <string name="en2119b" translatable="false">Leave side lights on</string>
+    <string name="en2119c" translatable="false">Keep stones/bricks around your vehicle</string>
+    <string name="en2119d" translatable="false">None of these</string>
+
+    <string name="en2120q" translatable="false">%1$d. You should use a mobile telephone only when you</string>
+    <string name="en2120a" translatable="false">Have stopped at a safe place</string>
+    <string name="en2120b" translatable="false">Are travelling slowly</string>
+    <string name="en2120c" translatable="false">Are on a motorway</string>
+    <string name="en2120d" translatable="false">Are approaching a light traffic</string>
+
+    <string name="en2121q" translatable="false">%1$d. Turbulence is created by large vehicles travelling at speed. This is most likely to be a danger to</string>
+    <string name="en2121a" translatable="false">Cyclists</string>
+    <string name="en2121b" translatable="false">Pedestrians</string>
+    <string name="en2121c" translatable="false">Motorcyclists</string>
+    <string name="en2121d" translatable="false">All of the above</string>
+
+    <string name="en2122q" translatable="false">%1$d. You are driving in heavy rain. Your steering suddenly becomes very light. You should</string>
+    <string name="en2122a" translatable="false">Steer towards the side of the road</string>
+    <string name="en2122b" translatable="false">Apply gentle acceleration</string>
+    <string name="en2122c" translatable="false">Brake firmly to reduce speed</string>
+    <string name="en2122d" translatable="false">Ease off the accelerator</string>
+
+    <string name="en2123q" translatable="false">%1$d. You are following a large lorry on a wet road. Spray makes it difficult to see. You should</string>
+    <string name="en2123a" translatable="false">Drop back until you can see better</string>
+    <string name="en2123b" translatable="false">Put your headlights on full beam</string>
+    <string name="en2123c" translatable="false">Keep close to the lorry, away from the spray</string>
+    <string name="en2123d" translatable="false">Speed up and overtake quickly</string>
+
+    <string name="en2124q" translatable="false">%1$d. You are driving in fog. Why should you keep well back from the vehicle in front?</string>
+    <string name="en2124a" translatable="false">In case it changes direction suddenly</string>
+    <string name="en2124b" translatable="false">In case it’s fog lights dazzle you</string>
+    <string name="en2124c" translatable="false">In case it stops suddenly</string>
+    <string name="en2124d" translatable="false">In case its brake lights dazzle you</string>
+
+    <string name="en2125q" translatable="false">%1$d. You arrive at an accident where someone is suffering from severe burns. Which of the following would help?</string>
+    <string name="en2125a" translatable="false">Douse the burns with cold water</string>
+    <string name="en2125b" translatable="false">Remove anything stuck to the burns</string>
+    <string name="en2125c" translatable="false">Burst blisters that form on the burns</string>
+    <string name="en2125d" translatable="false">Apply ointment to the burns</string>
+
+    <string name="en2126q" translatable="false">%1$d. Air pollution effects</string>
+    <string name="en2126a" translatable="false">Human beings</string>
+    <string name="en2126b" translatable="false">Plants</string>
+    <string name="en2126c" translatable="false">Animals</string>
+    <string name="en2126d" translatable="false">All of the above</string>
+
+    <string name="en2127q" translatable="false">%1$d. What will happen if the wheels are not properly balanced?</string>
+    <string name="en2127a" translatable="false">Vehicle pulling to the right.</string>
+    <string name="en2127b" translatable="false">Vehicle pulling to the left.</string>
+    <string name="en2127c" translatable="false">Steering wobbling.</string>
+    <string name="en2127d" translatable="false">None of the above.</string>
+
+    <string name="en2128q" translatable="false">%1$d. What is meant by clutch riding?</string>
+    <string name="en2128a" translatable="false">Keeping your foot on the clutch while driving</string>
+    <string name="en2128b" translatable="false">Not using the clutch while changing gear</string>
+    <string name="en2128c" translatable="false">Keeping your foot off the clutch while driving</string>
+    <string name="en2128d" translatable="false">None of the above</string>
+
+    <string name="en2129q" translatable="false">%1$d. There is vibration on your steering wheel as you drive. What is the probable cause?</string>
+    <string name="en2129a" translatable="false">Low level of engine oil.</string>
+    <string name="en2129b" translatable="false">Low level of coolant.</string>
+    <string name="en2129c" translatable="false">Unbalanced wheels.</string>
+    <string name="en2129d" translatable="false">Balding of tyres.</string>
+
+    <string name="en2130q" translatable="false">%1$d. When may a driver lend his driving licence to another person?</string>
+    <string name="en2130a" translatable="false">For driving lessons.</string>
+    <string name="en2130b" translatable="false">At no time.</string>
+    <string name="en2130c" translatable="false">For identification only.</string>
+    <string name="en2130d" translatable="false">If the person is well known to him.</string>
+
+    <string name="en2131q" translatable="false">%1$d. If your vehicle hits a pedestrian you should</string>
+    <string name="en2131a" translatable="false">Identify yourself and leave.</string>
+    <string name="en2131b" translatable="false">Help the person and call an ambulance.</string>
+    <string name="en2131c" translatable="false">Help the injured person, identify yourself and then report to the police.</string>
+    <string name="en2131d" translatable="false">None of the above</string>
+
+    <string name="en2132q" translatable="false">%1$d. Stickers, posters and other non- official items may not be placed on the windshield of an automobile because:-</string>
+    <string name="en2132a" translatable="false">It is unlawful to advertise in this way.</string>
+    <string name="en2132b" translatable="false">They obstruct the driver\'s vision.</string>
+    <string name="en2132c" translatable="false">Other drivers cannot see you.</string>
+    <string name="en2132d" translatable="false">None of the above.</string>
+
+    <string name="en2133q" translatable="false">%1$d. A person having driving licence suspended or cancelled may</string>
+    <string name="en2133a" translatable="false">Drive in an emergency?</string>
+    <string name="en2133b" translatable="false">Drive only when a valid driving licence holder is with him.</string>
+    <string name="en2133c" translatable="false">Not drive under any conditions.</string>
+    <string name="en2133d" translatable="false">None of the above.</string>
+
+    <string name="en2134q" translatable="false">%1$d. If a person\'s driving licence validity period is over, he can apply for renewal of motor driving licence within without penalty</string>
+    <string name="en2134a" translatable="false">Ten days.</string>
+    <string name="en2134b" translatable="false">Twenty days.</string>
+    <string name="en2134c" translatable="false">Thirty days</string>
+    <string name="en2134d" translatable="false">Twenty five days.</string>
+
+    <string name="en2135q" translatable="false">%1$d. Any person may hold</string>
+    <string name="en2135a" translatable="false">Maximum 3 licences at a time, one for each class.</string>
+    <string name="en2135b" translatable="false">Only one licence.</string>
+    <string name="en2135c" translatable="false">Any number of licences however each licence must authorise only one class of motor vehicle for driving.</string>
+    <string name="en2135d" translatable="false">None of the above.</string>
+
+    <string name="en2136q" translatable="false">%1$d. Lending of a motor vehicle to a person for driving, who is not holding a valid licence is:-</string>
+    <string name="en2136a" translatable="false">Not an offence since the borrower is solely responsible.</string>
+    <string name="en2136b" translatable="false">A serious offence.</string>
+    <string name="en2136c" translatable="false">An offence only when vehicle is involved in an accident.</string>
+    <string name="en2136d" translatable="false">None of the above.</string>
+
+    <string name="en2137q" translatable="false">%1$d. Driving a vehicle having pollution values above the limit specified by the law: -</string>
+    <string name="en2137a" translatable="false">Is permitted only in emergency.</string>
+    <string name="en2137b" translatable="false">Is an offence</string>
+    <string name="en2137c" translatable="false">Is liable for a strict warning from authorities.</string>
+    <string name="en2137d" translatable="false">None of the above.</string>
+
+    <string name="en2138q" translatable="false">%1$d. Fitment of a multitoned horn to a motor vehicle: -</string>
+    <string name="en2138a" translatable="false">Is permitted only in emergency.</string>
+    <string name="en2138b" translatable="false">Is an offence under the law as it causes noise pollution.</string>
+    <string name="en2138c" translatable="false">Is liable for a strict warning from authorities.</string>
+    <string name="en2138d" translatable="false">None of the above.</string>
+
+    <string name="en2139q" translatable="false">%1$d. The aim of first aid is</string>
+    <string name="en2139a" translatable="false">To save life</string>
+    <string name="en2139b" translatable="false">To promote recovery</string>
+    <string name="en2139c" translatable="false">To prevent worsening of victim\'s condition</string>
+    <string name="en2139d" translatable="false">All of the above.</string>
+
+    <string name="en2140q" translatable="false">%1$d. Alcohol may result in</string>
+    <string name="en2140a" translatable="false">Irritability</string>
+    <string name="en2140b" translatable="false">Loose temper</string>
+    <string name="en2140c" translatable="false">Anger</string>
+    <string name="en2140d" translatable="false">All of the above</string>
+
+    <string name="en2141q" translatable="false">%1$d. Alcohol affects</string>
+    <string name="en2141a" translatable="false">Decision making</string>
+    <string name="en2141b" translatable="false">Self control</string>
+    <string name="en2141c" translatable="false">Thinking</string>
+    <string name="en2141d" translatable="false">All of the above</string>
+
+    <string name="en2142q" translatable="false">%1$d. Alcohol may result in</string>
+    <string name="en2142a" translatable="false">Hostile behaviour</string>
+    <string name="en2142b" translatable="false">Indecision</string>
+    <string name="en2142c" translatable="false">Violent behaviour</string>
+    <string name="en2142d" translatable="false">All of the above</string>
+
+    <string name="en2143q" translatable="false">%1$d. Alcohol may affect adversely by</string>
+    <string name="en2143a" translatable="false">Reducing alertness</string>
+    <string name="en2143b" translatable="false">Affecting vision</string>
+    <string name="en2143c" translatable="false">Loss of decision making</string>
+    <string name="en2143d" translatable="false">All of the above</string>
+
+    <string name="en2144q" translatable="false">%1$d. Increasing your speed has what effect on stopping distance?</string>
+    <string name="en2144a" translatable="false">No difference in stopping distance.</string>
+    <string name="en2144b" translatable="false">The more the speed the lesser the stopping distance</string>
+    <string name="en2144c" translatable="false">The more the speed the more the stopping distance</string>
+    <string name="en2144d" translatable="false">None of the above</string>
+
+    <string name="en2145q" translatable="false">%1$d. While starting the vehicle which of the following things should be done</string>
+    <string name="en2145a" translatable="false">Gear should be in neutral.</string>
+    <string name="en2145b" translatable="false">Parking brake should be on.</string>
+    <string name="en2145c" translatable="false">Clutch pedal should be depressed.</string>
+    <string name="en2145d" translatable="false">All of the above.</string>
+
+    <string name="en2146q" translatable="false">%1$d. The right of way should be given to</string>
+    <string name="en2146a" translatable="false">Police vehicles</string>
+    <string name="en2146b" translatable="false">Buses</string>
+    <string name="en2146c" translatable="false">Emergency vehicles</string>
+    <string name="en2146d" translatable="false">Two wheelers</string>
+
+    <string name="en2147q" translatable="false">%1$d. Fog lamps are used</string>
+    <string name="en2147a" translatable="false">At night</string>
+    <string name="en2147b" translatable="false">Instead of parking lights</string>
+    <string name="en2147c" translatable="false">On highways</string>
+    <string name="en2147d" translatable="false">When there is mist</string>
+
+    <string name="en2148q" translatable="false">%1$d. Zebra crossing is meant for</string>
+    <string name="en2148a" translatable="false">Pedestrians</string>
+    <string name="en2148b" translatable="false">Emergency vehicles</string>
+    <string name="en2148c" translatable="false">Slow moving vehicles</string>
+    <string name="en2148d" translatable="false">Stopping the vehicle</string>
+
+    <string name="en2149q" translatable="false">%1$d. Boarding and alighting while the vehicle is in motion</string>
+    <string name="en2149a" translatable="false">Is permitted for buses</string>
+    <string name="en2149b" translatable="false">Is prohibited for all types of vehicles</string>
+    <string name="en2149c" translatable="false">Is prohibited for buses</string>
+    <string name="en2149d" translatable="false">Is permitted for passenger vehicles</string>
+
+    <string name="en2150q" translatable="false">%1$d. More than two persons on a two wheeler is</string>
+    <string name="en2150a" translatable="false">Allowed when traffic density is low</string>
+    <string name="en2150b" translatable="false">Violation of law</string>
+    <string name="en2150c" translatable="false">Allowed in some places</string>
+    <string name="en2150d" translatable="false">All of the above</string>
+
+    <string name="en2151q" translatable="false">%1$d. Using unregistered vehicle in public places is</string>
+    <string name="en2151a" translatable="false">Illegal</string>
+    <string name="en2151b" translatable="false">Legal</string>
+    <string name="en2151c" translatable="false">Allowed in some places</string>
+    <string name="en2151d" translatable="false">Any of the above</string>
+
+    <string name="en2152q" translatable="false">%1$d. Driving at high speed</string>
+    <string name="en2152a" translatable="false">Gives you a better fuel average</string>
+    <string name="en2152b" translatable="false">Does not give you sufficient time to react to hazards</string>
+    <string name="en2152c" translatable="false">Take less time for your journey</string>
+    <string name="en2152d" translatable="false">Will cause less damage to your engine</string>
+
+    <string name="en2153q" translatable="false">%1$d. A basic rule when on highways is</string>
+    <string name="en2153a" translatable="false">Use the lane that has least traffic</string>
+    <string name="en2153b" translatable="false">Keep the left lane unless overtaking</string>
+    <string name="en2153c" translatable="false">Overtake on the side that is clearest</string>
+    <string name="en2153d" translatable="false">Try to keep above 50 kmph to prevent congestion</string>
+
+    <string name="en2154q" translatable="false">%1$d. Causes of the automobile pollution is / are</string>
+    <string name="en2154a" translatable="false">Poor maintenance</string>
+    <string name="en2154b" translatable="false">Over loading of vehicles</string>
+    <string name="en2154c" translatable="false">Frequent traffic jams</string>
+    <string name="en2154d" translatable="false">All of the above</string>
+
+    <string name="en2155q" translatable="false">%1$d. Which of the following will affect your stopping distance</string>
+    <string name="en2155a" translatable="false">How fast you are going</string>
+    <string name="en2155b" translatable="false">The tyres of your vehicle</string>
+    <string name="en2155c" translatable="false">Weather</string>
+    <string name="en2155d" translatable="false">All of the above</string>
+
+    <string name="en2156q" translatable="false">%1$d. To reduce the volume of traffic on the roads you could</string>
+    <string name="en2156a" translatable="false">Use public transport more often</string>
+    <string name="en2156b" translatable="false">Share a car when possible</string>
+    <string name="en2156c" translatable="false">Walk or cycle on short journeys</string>
+    <string name="en2156d" translatable="false">All of the above</string>
+
+    <string name="en2157q" translatable="false">%1$d. To prevent polluting the environment, you can help by</string>
+    <string name="en2157a" translatable="false">Having your vehicle properly serviced</string>
+    <string name="en2157b" translatable="false">Making sure your tyres are correctly inflated</string>
+    <string name="en2157c" translatable="false">Not over driving in lower gears</string>
+    <string name="en2157d" translatable="false">All of the above</string>
+
+    <string name="en2158q" translatable="false">%1$d. A properly serviced vehicle will give</string>
+    <string name="en2158a" translatable="false">Lower insurance premiums</string>
+    <string name="en2158b" translatable="false">You a refund on your road tax</string>
+    <string name="en2158c" translatable="false">Better fuel economy and cleaner exhaust emissions</string>
+    <string name="en2158d" translatable="false">None of the above</string>
+    
+</resources>
